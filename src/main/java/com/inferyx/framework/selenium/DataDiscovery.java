@@ -32,7 +32,7 @@ public class DataDiscovery extends TestBase {
 		}
 	}
 	
-	@Test(priority = 5, description = "dataDiscoveryCard")
+	@Test(priority = 6, description = "dataDiscoveryCard")
 	public void dataDiscoveryCard() throws IOException, InterruptedException {
 		// DataDiscovery
 		try {
@@ -48,7 +48,7 @@ public class DataDiscovery extends TestBase {
 			dataFromExcelSheet.updateResult(updateResult, "Account Card", "FAIL", totalTime);
 		}
 	}
-	@Test(priority = 6, description = "dataDiscoveryCardEdit")
+	@Test(priority = 7, description = "dataDiscoveryCardEdit")
 	public void dataDiscoveryCardEdit() throws IOException, InterruptedException {
 		// DataDiscovery
 		try {

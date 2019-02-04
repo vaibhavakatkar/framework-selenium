@@ -1,13 +1,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
 
-<suite thread-count="3" verbose="1" name="Selenium Suite" annotations="JDK" parallel="false">
+<suite thread-count="2" verbose="10" name="Selenium Suite" annotations="JDK" parallel="tests">
          
-  <test name="test1">
+  <test verbose="2" name="LOGIN" group-by-instances="true">
 	 <classes>
 	   <class name="com.inferyx.framework.selenium.LoginPage"/>
 	  <class name="com.inferyx.framework.selenium.DataDiscovery"/>
-	  	 <class name="com.inferyx.framework.selenium.AllPages"/>
-	  
+	  	 	  <class name="com.inferyx.framework.selenium.AllPages"/>
+	  	 
 	 </classes>
    </test>
  

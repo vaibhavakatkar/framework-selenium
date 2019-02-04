@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.inferyx.framework.selenium.DataDiscovery">
+      <class name="com.inferyx.framework.selenium.AllPages">
         <methods>
-          <include name="dataDiscoveryList"/>
+          <include name="AllListPages"/>
         </methods>
-      </class> <!-- com.inferyx.framework.selenium.DataDiscovery -->
+      </class> <!-- com.inferyx.framework.selenium.AllPages -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
