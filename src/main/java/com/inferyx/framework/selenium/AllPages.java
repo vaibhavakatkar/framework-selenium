@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import org.openqa.selenium.NoSuchElementException;
 
-public class Login extends TestBase{
+public class AllPages extends TestBase{
 	//String excellocation = "test.xlsx";
 	String excellocation =System.getProperty("user.dir")+"/src/main/resources/test.xlsx";
 

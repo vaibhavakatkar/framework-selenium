@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.inferyx.framework.selenium.Login" hash-for-method="AllListPages">AllListPages</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.inferyx.framework.selenium.DataDiscovery" hash-for-method="dataDiscoveryList">dataDiscoveryList</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -116,22 +116,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.inferyx.framework.selenium.LoginPageTest" hash-for-method="appSelection">appSelection</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.inferyx.framework.selenium.LoginPageTest" hash-for-method="login">login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.inferyx.framework.selenium.LoginPageTest" hash-for-method="openBrowser">openBrowser</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.inferyx.framework.selenium.DataDiscovery" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.inferyx.framework.selenium.LoginPage" hash-for-method="openBrowser">openBrowser</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -149,24 +134,25 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.inferyx.framework.selenium.Login</span>
+              <span class="class-name">com.inferyx.framework.selenium.DataDiscovery</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="AllListPages">
-                  </a> <!-- AllListPages -->
-                  <span class="method-name">AllListPages</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+                  <a name="dataDiscoveryList">
+                  </a> <!-- dataDiscoveryList -->
+                  <span class="method-name">dataDiscoveryList</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/screenshot/div[4]/div[1]/div/ul/li[2]/a/span[1]&quot;}
   (Session info: chrome=72.0.3626.81)
-  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.2.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 16 milliseconds
+  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.4.0-140-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 68 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.2.0&apos;, revision: &apos;8c03df6b79&apos;, time: &apos;2017-02-23 10:51:31 +0000&apos;
-System info: host: &apos;gridedge1&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.2.0-42-generic&apos;, java.version: &apos;1.8.0_151&apos;
+System info: host: &apos;rohini007-Inspiron-3551&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.4.0-140-generic&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:43887}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.wFtBI6}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.81, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f0cfb6788f5c02508c02700a59aabe70
-*** Element info: {Using=xpath, value=/html/body/screenshot/div[4]/div[1]/div/ul/li[10]/ul/li[2]/a/span[1]}
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:43835}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706), userDataDir=/tmp/.org.chromium.Chromium.exAjeH}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.81, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 59704aad073093ed04b65bba1e096923
+*** Element info: {Using=xpath, value=/html/body/screenshot/div[4]/div[1]/div/ul/li[2]/a/span[1]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -178,7 +164,7 @@ Session ID: f0cfb6788f5c02508c02700a59aabe70
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:476)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at com.inferyx.framework.selenium.Login.AllListPages(Login.java:694)
+	at com.inferyx.framework.selenium.DataDiscovery.dataDiscoveryList(DataDiscovery.java:19)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -207,7 +193,7 @@ Session ID: f0cfb6788f5c02508c02700a59aabe70
 
 </div> <!-- stack-trace -->
                   <em>
-(Lisfilingt ALL)                  </em>
+(dataDiscovery)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -215,27 +201,9 @@ Session ID: f0cfb6788f5c02508c02700a59aabe70
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.inferyx.framework.selenium.LoginPageTest</span>
+              <span class="class-name">com.inferyx.framework.selenium.LoginPage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="appSelection">
-                  </a> <!-- appSelection -->
-                  <span class="method-name">appSelection</span>
-                  <em>
-(appSelection)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="login">
-                  </a> <!-- login -->
-                  <span class="method-name">login</span>
-                  <em>
-(login check)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="openBrowser">
@@ -247,27 +215,10 @@ Session ID: f0cfb6788f5c02508c02700a59aabe70
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
-          <div class="suite-Default_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.inferyx.framework.selenium.DataDiscovery</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="test1">
-                  </a> <!-- test1 -->
-                  <span class="method-name">test1</span>
-                  <em>
-(DataDiscovery)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse-462053880/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse--1315238683/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -276,13 +227,13 @@ Session ID: f0cfb6788f5c02508c02700a59aabe70
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.inferyx.framework.selenium.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;com.inferyx.framework.selenium.LoginPage&quot;/&gt;
       &lt;class name=&quot;com.inferyx.framework.util.WebEventListener&quot;/&gt;
       &lt;class name=&quot;com.inferyx.framework.selenium.TestBase&quot;/&gt;
       &lt;class name=&quot;com.inferyx.framework.selenium.ReadDataFromExcelSheet&quot;/&gt;
       &lt;class name=&quot;com.inferyx.framework.selenium.TestScript&quot;/&gt;
+      &lt;class name=&quot;com.inferyx.framework.selenium.AllPages&quot;/&gt;
       &lt;class name=&quot;com.inferyx.framework.selenium.DataDiscovery&quot;/&gt;
-      &lt;class name=&quot;com.inferyx.framework.selenium.Login&quot;/&gt;
       &lt;class name=&quot;com.inferyx.framework.util.TestUtil&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
@@ -323,32 +274,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'AllListPages')
-data.setCell(0, 2, 'com.inferyx.framework.selenium.Login')
-data.setCell(0, 3, 135980);
+data.setCell(0, 1, 'openBrowser')
+data.setCell(0, 2, 'com.inferyx.framework.selenium.LoginPage')
+data.setCell(0, 3, 5548);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test1')
+data.setCell(1, 1, 'dataDiscoveryList')
 data.setCell(1, 2, 'com.inferyx.framework.selenium.DataDiscovery')
-data.setCell(1, 3, 11370);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'openBrowser')
-data.setCell(2, 2, 'com.inferyx.framework.selenium.LoginPageTest')
-data.setCell(2, 3, 3772);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'appSelection')
-data.setCell(3, 2, 'com.inferyx.framework.selenium.LoginPageTest')
-data.setCell(3, 3, 2840);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'login')
-data.setCell(4, 2, 'com.inferyx.framework.selenium.LoginPageTest')
-data.setCell(4, 3, 505);
+data.setCell(1, 3, 84);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -374,34 +313,19 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.inferyx.framework.selenium.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.inferyx.framework.selenium.LoginPage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">openBrowser</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">login</span>
-                <span class="method-start">3775 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">appSelection</span>
-                <span class="method-start">4297 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.inferyx.framework.selenium.DataDiscovery</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">test1</span>
-                <span class="method-start">7139 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.inferyx.framework.selenium.Login</div> <!-- chronological-class-name -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">AllListPages</span>
-                <span class="method-start">18511 ms</span>
+                <span class="method-name">dataDiscoveryList</span>
+                <span class="method-start">5555 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

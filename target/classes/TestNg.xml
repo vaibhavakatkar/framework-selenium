@@ -4,8 +4,10 @@
          
   <test name="test1">
 	 <classes>
-	   <class name="com.inferyx.framework.selenium.LoginPageTest"/>
-	  <class name="com.inferyx.framework.selenium.Login"/>
+	   <class name="com.inferyx.framework.selenium.LoginPage"/>
+	  <class name="com.inferyx.framework.selenium.DataDiscovery"/>
+	  	 <class name="com.inferyx.framework.selenium.AllPages"/>
+	  
 	 </classes>
    </test>
    

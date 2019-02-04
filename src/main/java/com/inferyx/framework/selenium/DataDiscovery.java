@@ -11,7 +11,7 @@ public class DataDiscovery extends TestBase {
 
 	ReadDataFromExcelSheet dataFromExcelSheet = new ReadDataFromExcelSheet();
 
-	@Test(priority = 1, description = "dataDiscovery")
+	@Test(priority = 4, description = "dataDiscovery")
 	public void dataDiscoveryList() throws IOException {
 		// DataDiscovery
 		try {
@@ -31,7 +31,7 @@ public class DataDiscovery extends TestBase {
 		}
 	}
 	
-	@Test(priority = 2, description = "dataDiscovery")
+	@Test(priority = 5, description = "dataDiscovery")
 	public void dataDiscoveryCard() throws IOException, InterruptedException {
 		// DataDiscovery
 		try {
