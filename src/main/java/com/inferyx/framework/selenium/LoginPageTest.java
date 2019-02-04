@@ -36,9 +36,9 @@ public class LoginPageTest extends TestBase {
 		driver.manage().window().maximize();
 		// Assert.assertEquals(driver.getTitle().toString(), "Inferyx | Login");
 		if (driver.getTitle().isEmpty() || !driver.getTitle().equalsIgnoreCase("Inferyx | Login")) {
-			dataFromExcelSheet.updateResult(1, 2, "Open Browser", "FAIL");
+			dataFromExcelSheet.updateResult(1, 2, "Open Browser", "FAIL",0);
 		} else {
-			dataFromExcelSheet.updateResult(1, 2, "Open Browser", "PASS");
+			dataFromExcelSheet.updateResult(1, 2, "Open Browser", "PASS",0);
 		}
 
 	}
@@ -48,8 +48,7 @@ public class LoginPageTest extends TestBase {
 		// initialize Chrome driver
 		// Enter user id
 		WebElement username = driver.findElement(By.xpath("/html/body/div[2]/form[1]/div[2]/input"));
-		username.sendKeys("ypalrecha");
-		/*
+		username.sendKeys(dataFromExcelSheet.getResult(getResult,"USER_NAME"));/*
 		 * //wait 5 secs for userid to be entered
 		 * driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		 */
@@ -64,10 +63,10 @@ public class LoginPageTest extends TestBase {
 			 * "//*[@id=\"myModal\"]/div/div/div[2]/form/div/div[2]/div[3]/button"));
 			 * System.out.println(nextResponse.getText());
 			 */
-			dataFromExcelSheet.updateResult(1, 2, "Login_page", "PASS");
+			dataFromExcelSheet.updateResult(1, 2, "Login_page", "PASS",0);
 
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(1, 2, "Login_page", "FAIL");
+			dataFromExcelSheet.updateResult(1, 2, "Login_page", "FAIL",0);
 		}
 	}
 
@@ -92,10 +91,10 @@ public class LoginPageTest extends TestBase {
 					.findElement(By.xpath("//*[@id=\"myModal\"]/div/div/div[2]/form/div/div[2]/div[3]/button"));
 			System.out.println(nextResponse.getText());
 
-			dataFromExcelSheet.updateResult(1, 2, "Application_page", "PASS");
+			dataFromExcelSheet.updateResult(1, 2, "Application_page", "PASS",0);
 
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(1, 2, "Application_page", "FAIL");
+			dataFromExcelSheet.updateResult(1, 2, "Application_page", "FAIL",0);
 		}
 
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

@@ -1,16 +1,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
 
-<suite thread-count="2" verbose="1" name="Gmail Suite" annotations="JDK" parallel="false">
+<suite thread-count="2" verbose="1" name="Selenium Suite" annotations="JDK" parallel="false">
          
   <test name="test1">
 	 <classes>
-	   <class name="com.inferyx.framework.selenium.Login"/>
+	   <class name="com.inferyx.framework.selenium.LoginPageTest"/>
+	  <class name="com.inferyx.framework.selenium.Login"/>
 	 </classes>
    </test>
    
-  <test name="test2">
-     <classes>
-       <class name="com.inferyx.framework.selenium.Login2"/>
-     </classes>
-   </test>
+  
 </suite>

@@ -22,6 +22,8 @@ public class TestBase {
 	public static Properties prop;
 	public  static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
+	public static String updateResult = "Sheet1";
+	public static String getResult= "Sheet2";
 	
 	public TestBase(){
 		try {
