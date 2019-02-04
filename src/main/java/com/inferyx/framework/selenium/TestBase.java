@@ -24,7 +24,9 @@ public class TestBase {
 	public static WebEventListener eventListener;
 	public static String updateResult = "Sheet1";
 	public static String getResult= "Sheet2";
-	
+	public long totalTime = 0;
+	public long finish =0;
+	public long start =0;
 	public TestBase(){
 		try {
 			prop = new Properties();
