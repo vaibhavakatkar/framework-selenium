@@ -103,8 +103,8 @@ public class LoginPage extends TestBase {
 			WebElement nextResponse = driver
 					.findElement(By.xpath("//*[@id=\"myModal\"]/div/div/div[2]/form/div/div[2]/div[3]/button"));
 			System.out.println(nextResponse.getText());
-
 			dataFromExcelSheet.updateResult(1, 2, "Application_page", "PASS",totalTime);
+			Thread.sleep(2000);
 
 		} catch (NoSuchElementException e) {
 			dataFromExcelSheet.updateResult(1, 2, "Application_page", "FAIL",totalTime);
