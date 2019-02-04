@@ -342,6 +342,8 @@ public class ReadDataFromExcelSheet {
 			// count number of active columns in row
 			for (int i = 1; i < totalRow; i++) {
 				XSSFRow r = sheet.getRow(i);
+				Cell cell = r.getCell(1);
+				if(cell!=null) {			
 				String ce = r.getCell(1).getStringCellValue();
 				if (ce.contains(testCaseName)) {
 					r.createCell(2).setCellValue(testStatus);
@@ -353,7 +355,7 @@ public class ReadDataFromExcelSheet {
 					outFile.close();
 					break;
 				}
-
+				}
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
