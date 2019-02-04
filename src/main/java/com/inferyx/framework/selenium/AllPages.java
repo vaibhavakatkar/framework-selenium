@@ -8,94 +8,20 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import org.openqa.selenium.NoSuchElementException;
 
-public class Login extends TestBase{
+public class AllPages extends TestBase{
 	//String excellocation = "test.xlsx";
 	String excellocation =System.getProperty("user.dir")+"/src/main/resources/test.xlsx";
 
 	ReadDataFromExcelSheet dataFromExcelSheet = new ReadDataFromExcelSheet();
-	
-	/*@Test(priority = 1, description = "openBrowser")
-	public void openBrowser() throws IOException {
-		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-		driver = new ChromeDriver();
-		// Open application
-		driver.get("http://localhost:8080/app/login.html");
-		driver.manage().window().maximize();
-		// Assert.assertEquals(driver.getTitle().toString(), "Inferyx | Login");
-		if (driver.getTitle().isEmpty() || !driver.getTitle().equalsIgnoreCase("Inferyx | Login")) {
-			dataFromExcelSheet.updateResult(excellocation, sheetName, "Open Browser", "FAIL");
-		} else {
-			dataFromExcelSheet.updateResult(excellocation, sheetName, "Open Browser", "PASS");
-		}
 
-	}
-
-	@Test(priority = 2, description = "login check")
-	public void login() throws IOException {
-		// initialize Chrome driver
-		// Enter user id
-		WebElement username = driver.findElement(By.xpath("/html/body/div[2]/form[1]/div[2]/input"));
-		username.sendKeys("ypalrecha");
-		
-		 * //wait 5 secs for userid to be entered
-		 * driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		 
-		// Enter Password
-		WebElement password = driver.findElement(By.xpath("/html/body/div[2]/form[1]/div[3]/input"));
-		password.sendKeys("ypalrecha");
-		// Submit button
-		username.submit();
-		try {
-			
-			 * WebElement nextResponse = driver .findElement(By.xpath(
-			 * "//*[@id=\"myModal\"]/div/div/div[2]/form/div/div[2]/div[3]/button"));
-			 * System.out.println(nextResponse.getText());
-			 
-			dataFromExcelSheet.updateResult(excellocation, sheetName, "Login_page", "PASS");
-
-		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(excellocation, sheetName, "Login_page", "FAIL");
-		}
-	}
-
-	@Test(priority = 3, description = "appSelection")
-	public void appSelection() throws IOException {
-		// for App selection
-
-		try {
-			WebElement appSelection = driver
-					.findElement(By.xpath("//*[@id=\'myModal\']/div/div/div[2]/form/div/div[2]/div[1]/select"));
-			Select dropdownApp = new Select(appSelection);
-			dropdownApp.selectByVisibleText("Enterprise Data Warehouse");
-
-			// for role selection
-			WebElement roleSelection = driver
-					.findElement(By.xpath("//*[@id=\"myModal\"]/div/div/div[2]/form/div/div[2]/div[2]/select"));
-			Select role = new Select(roleSelection);
-			role.selectByVisibleText("admin");
-			driver.findElements(By.xpath("//*[@id=\"myModal\"]/div/div/div[2]/form/div/div[2]/div[3]/button")).get(0)
-					.click();
-			WebElement nextResponse = driver
-					.findElement(By.xpath("//*[@id=\"myModal\"]/div/div/div[2]/form/div/div[2]/div[3]/button"));
-			System.out.println(nextResponse.getText());
-
-			dataFromExcelSheet.updateResult(excellocation, sheetName, "Application_page", "PASS");
-
-		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(excellocation, sheetName, "Application_page", "FAIL");
-		}
-
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-	}*/
-
-	@Test(priority = 4, description = "Lisfilingt ALL")
+	@Test(priority = 7, description = "Lisfilingt ALL")
 	public void AllListPages() throws IOException, InterruptedException {
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		Thread.sleep(8000);
+
 		long totalTime = 0;
 		// Data Discovery
-		try {
+		/*try {
 			WebElement dataDiscovery = driver
 					.findElement(By.xpath("/html/body/screenshot/div[4]/div[1]/div/ul/li[2]/a/span[1]"));
 			long start = System.currentTimeMillis();
@@ -123,7 +49,7 @@ public class Login extends TestBase{
 		
 		} catch (NoSuchElementException e) {
 			dataFromExcelSheet.updateResult(updateResult, "Data Discovery", "FAIL", totalTime);
-		}
+		}*/
 		// Data Visualization
 		try {
 			WebElement dataVisualization = driver
