@@ -1,21 +1,33 @@
 package com.inferyx.framework.selenium;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import org.openqa.selenium.NoSuchElementException;
 
-public class Login extends TestBase{
-	//String excellocation = "test.xlsx";
-	String excellocation =System.getProperty("user.dir")+"/src/main/resources/test.xlsx";
-	String sheetName = "Sheet1";
+public class LoginPageTest extends TestBase {
+	// Login loginPage;
 	ReadDataFromExcelSheet dataFromExcelSheet = new ReadDataFromExcelSheet();
-	
-	/*@Test(priority = 1, description = "openBrowser")
+
+	public LoginPageTest() {
+		super();
+	}
+
+	public void setUp() {
+		System.out.println("initilization");
+		initialization();
+
+	}
+
+	@Test(priority = 1, description = "openBrowser")
 	public void openBrowser() throws IOException {
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		driver = new ChromeDriver();
@@ -24,9 +36,9 @@ public class Login extends TestBase{
 		driver.manage().window().maximize();
 		// Assert.assertEquals(driver.getTitle().toString(), "Inferyx | Login");
 		if (driver.getTitle().isEmpty() || !driver.getTitle().equalsIgnoreCase("Inferyx | Login")) {
-			dataFromExcelSheet.updateResult(excellocation, sheetName, "Open Browser", "FAIL");
+			dataFromExcelSheet.updateResult(1, 2, "Open Browser", "FAIL");
 		} else {
-			dataFromExcelSheet.updateResult(excellocation, sheetName, "Open Browser", "PASS");
+			dataFromExcelSheet.updateResult(1, 2, "Open Browser", "PASS");
 		}
 
 	}
@@ -37,25 +49,25 @@ public class Login extends TestBase{
 		// Enter user id
 		WebElement username = driver.findElement(By.xpath("/html/body/div[2]/form[1]/div[2]/input"));
 		username.sendKeys("ypalrecha");
-		
+		/*
 		 * //wait 5 secs for userid to be entered
 		 * driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		 
+		 */
 		// Enter Password
 		WebElement password = driver.findElement(By.xpath("/html/body/div[2]/form[1]/div[3]/input"));
 		password.sendKeys("ypalrecha");
 		// Submit button
 		username.submit();
 		try {
-			
+			/*
 			 * WebElement nextResponse = driver .findElement(By.xpath(
 			 * "//*[@id=\"myModal\"]/div/div/div[2]/form/div/div[2]/div[3]/button"));
 			 * System.out.println(nextResponse.getText());
-			 
-			dataFromExcelSheet.updateResult(excellocation, sheetName, "Login_page", "PASS");
+			 */
+			dataFromExcelSheet.updateResult(1, 2, "Login_page", "PASS");
 
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(excellocation, sheetName, "Login_page", "FAIL");
+			dataFromExcelSheet.updateResult(1, 2, "Login_page", "FAIL");
 		}
 	}
 
@@ -80,41 +92,13 @@ public class Login extends TestBase{
 					.findElement(By.xpath("//*[@id=\"myModal\"]/div/div/div[2]/form/div/div[2]/div[3]/button"));
 			System.out.println(nextResponse.getText());
 
-			dataFromExcelSheet.updateResult(excellocation, sheetName, "Application_page", "PASS");
+			dataFromExcelSheet.updateResult(1, 2, "Application_page", "PASS");
 
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(excellocation, sheetName, "Application_page", "FAIL");
+			dataFromExcelSheet.updateResult(1, 2, "Application_page", "FAIL");
 		}
 
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-	}*/
-
-	@Test(priority = 5, description = "List ALL")
-	public void AllListPages() throws IOException, InterruptedException {
-
-	//	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		Thread.sleep(8000);
-
-		// Data Discovery
-		try {
-			WebElement dd = driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[1]/div/ul/li[2]/a/span[1]"));
-			dd.click();
-			// driver.findElement(By.className("title ng-binding")).click();
-			// driver.findElement(By.id(id)).click();
-			dataFromExcelSheet.updateResult(excellocation, sheetName, "Data Discovery", "PASS");
-			System.out.println(driver.getTitle());
-		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(excellocation, sheetName, "Data Discovery", "FAIL");
-		}
-		// Data Visualization
-		try {
-			WebElement dv = driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[1]/div/ul/li[3]/a/span[1]"));
-			dv.click();
-			System.out.println(driver.getTitle() + dv.getText());
-			dataFromExcelSheet.updateResult(excellocation, sheetName, "Data Visualization", "PASS");
-		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(excellocation, sheetName, "Data Visualization", "FAIL");
-		}
-
 	}
+
 }

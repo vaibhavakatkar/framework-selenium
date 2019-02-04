@@ -1,6 +1,5 @@
 package com.inferyx.framework.selenium;
 
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -86,7 +85,7 @@ public class ReadDataFromExcelSheet {
 	public void updateResult(String excellocation, String sheetName, String testCaseName, String testStatus) throws IOException {
 
 		try {
-			FileInputStream file = new FileInputStream(new File(excellocation));
+			FileInputStream file = new FileInputStream(new File(System.getProperty("user.dir")+"/src/main/resources/test.xlsx"));
 
 			// Create Workbook instance holding reference to .xlsx file
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
@@ -103,7 +102,38 @@ public class ReadDataFromExcelSheet {
 					r.createCell(2).setCellValue(testStatus);
 					file.close();
 					System.out.println("result updated");
-					FileOutputStream outFile = new FileOutputStream(new File(excellocation));
+					FileOutputStream outFile = new FileOutputStream(new File(System.getProperty("user.dir")+"/src/main/resources/test.xlsx"));
+					workbook.write(outFile);
+					outFile.close();
+					break;
+				}
+
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	public void updateResult(int CheckCell,int putCell, String testCaseName, String testStatus) throws IOException {
+
+		try {
+			FileInputStream file = new FileInputStream(new File(System.getProperty("user.dir")+"/src/main/resources/test.xlsx"));
+			
+			// Create Workbook instance holding reference to .xlsx file
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+		
+			// Get first/desired sheet from the workbook
+			XSSFSheet sheet = workbook.getSheet("Sheet1");
+			// count number of active tows
+			int totalRow = sheet.getLastRowNum() + 1;
+			// count number of active columns in row
+			for (int i = 1; i < totalRow; i++) {
+				XSSFRow r = sheet.getRow(i);
+				String ce = r.getCell(CheckCell).getStringCellValue();
+				if (ce.contains(testCaseName)) {
+					r.createCell(putCell).setCellValue(testStatus);
+					file.close();
+					System.out.println("result updated");
+					FileOutputStream outFile = new FileOutputStream(new File(System.getProperty("user.dir")+"/src/main/resources/test.xlsx"));
 					workbook.write(outFile);
 					outFile.close();
 					break;
