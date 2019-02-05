@@ -13,7 +13,6 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-
 public class ReadDataFromExcelSheet {
 
 	public String[][] getExcelData(String excellocation, String sheetName) {
@@ -82,14 +81,16 @@ public class ReadDataFromExcelSheet {
 		return null;
 	}
 
-	public void updateResult(String excellocation, String sheetName, String testCaseName, String testStatus) throws IOException {
+	public void updateResult(String excellocation, String sheetName, String testCaseName, String testStatus)
+			throws IOException {
 
 		try {
-			FileInputStream file = new FileInputStream(new File(System.getProperty("user.dir")+"/src/main/resources/test.xlsx"));
+			FileInputStream file = new FileInputStream(
+					new File(System.getProperty("user.dir") + "/src/main/resources/test.xlsx"));
 
 			// Create Workbook instance holding reference to .xlsx file
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
-		
+
 			// Get first/desired sheet from the workbook
 			XSSFSheet sheet = workbook.getSheet(sheetName);
 			// count number of active tows
@@ -97,13 +98,14 @@ public class ReadDataFromExcelSheet {
 			// count number of active columns in row
 			for (int i = 1; i < totalRow; i++) {
 				XSSFRow r = sheet.getRow(i);
-				
+
 				String ce = r.getCell(1).getStringCellValue();
 				if (ce.contains(testCaseName)) {
 					r.createCell(2).setCellValue(testStatus);
 					file.close();
 					System.out.println("result updated");
-					FileOutputStream outFile = new FileOutputStream(new File(System.getProperty("user.dir")+"/src/main/resources/test.xlsx"));
+					FileOutputStream outFile = new FileOutputStream(
+							new File(System.getProperty("user.dir") + "/src/main/resources/test.xlsx"));
 					workbook.write(outFile);
 					outFile.close();
 					break;
@@ -114,14 +116,17 @@ public class ReadDataFromExcelSheet {
 			e.printStackTrace();
 		}
 	}
-	public void updateResult(int CheckCell,int putCell, String testCaseName, String testStatus,long totaltime) throws IOException {
+
+	public void updateResult(int CheckCell, int putCell, String testCaseName, String testStatus, long totaltime)
+			throws IOException {
 
 		try {
-			FileInputStream file = new FileInputStream(new File(System.getProperty("user.dir")+"/src/main/resources/test.xlsx"));
-			
+			FileInputStream file = new FileInputStream(
+					new File(System.getProperty("user.dir") + "/src/main/resources/test.xlsx"));
+
 			// Create Workbook instance holding reference to .xlsx file
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
-		
+
 			// Get first/desired sheet from the workbook
 			XSSFSheet sheet = workbook.getSheet("Sheet1");
 			// count number of active tows
@@ -130,19 +135,20 @@ public class ReadDataFromExcelSheet {
 			for (int i = 1; i < totalRow; i++) {
 				XSSFRow r = sheet.getRow(i);
 				Cell cell = r.getCell(CheckCell);
-				if(cell!=null) {
-				String ce = r.getCell(CheckCell).getStringCellValue();
-				
-				if (ce.contains(testCaseName)) {
-					r.createCell(putCell).setCellValue(testStatus);
-					r.createCell(putCell+1).setCellValue(totaltime);
-					file.close();
-					System.out.println("result updated");
-					FileOutputStream outFile = new FileOutputStream(new File(System.getProperty("user.dir")+"/src/main/resources/test.xlsx"));
-					workbook.write(outFile);
-					outFile.close();
-					break;
-				}
+				if (cell != null) {
+					String ce = r.getCell(CheckCell).getStringCellValue();
+
+					if (ce.contains(testCaseName)) {
+						r.createCell(putCell).setCellValue(testStatus);
+						r.createCell(putCell + 1).setCellValue(totaltime);
+						file.close();
+						System.out.println("result updated");
+						FileOutputStream outFile = new FileOutputStream(
+								new File(System.getProperty("user.dir") + "/src/main/resources/test.xlsx"));
+						workbook.write(outFile);
+						outFile.close();
+						break;
+					}
 				}
 			}
 		} catch (Exception e) {
@@ -284,12 +290,13 @@ public class ReadDataFromExcelSheet {
 		System.out.println(arr2d);
 		return arr2d;
 	}
-	
+
 	public String getResult(String sheetName, String param) throws IOException {
 		String value = null;
 
 		try {
-			FileInputStream file = new FileInputStream(new File(System.getProperty("user.dir")+"/src/main/resources/test.xlsx"));
+			FileInputStream file = new FileInputStream(
+					new File(System.getProperty("user.dir") + "/src/main/resources/test.xlsx"));
 			// Create Workbook instance holding reference to .xlsx file
 			// XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
@@ -308,7 +315,8 @@ public class ReadDataFromExcelSheet {
 					value = r.getCell(2).getStringCellValue();
 					file.close();
 					System.out.println("result updated");
-					FileOutputStream outFile = new FileOutputStream(new File(System.getProperty("user.dir")+"/src/main/resources/test.xlsx"));
+					FileOutputStream outFile = new FileOutputStream(
+							new File(System.getProperty("user.dir") + "/src/main/resources/test.xlsx"));
 					workbook.write(outFile);
 					outFile.close();
 					break;
@@ -322,12 +330,13 @@ public class ReadDataFromExcelSheet {
 		return value;
 
 	}
-	
-	public void updateResult( String sheetName, String testCaseName, String testStatus,
-			long totalTime) throws IOException {
+
+	public void updateResult(String sheetName, String testCaseName, String testStatus, long totalTime)
+			throws IOException {
 
 		try {
-			FileInputStream file = new FileInputStream(new File(System.getProperty("user.dir")+"/src/main/resources/test.xlsx"));
+			FileInputStream file = new FileInputStream(
+					new File(System.getProperty("user.dir") + "/src/main/resources/test.xlsx"));
 
 			// Create Workbook instance holding reference to .xlsx file
 			// XSSFWorkbook workbook = new XSSFWorkbook(file);
@@ -343,18 +352,19 @@ public class ReadDataFromExcelSheet {
 			for (int i = 1; i < totalRow; i++) {
 				XSSFRow r = sheet.getRow(i);
 				Cell cell = r.getCell(1);
-				if(cell!=null) {			
-				String ce = r.getCell(1).getStringCellValue();
-				if (ce.contains(testCaseName)) {
-					r.createCell(2).setCellValue(testStatus);
-					r.createCell(3).setCellValue(totalTime);
-					file.close();
-					System.out.println("result updated");
-					FileOutputStream outFile = new FileOutputStream(new File(System.getProperty("user.dir")+"/src/main/resources/test.xlsx"));
-					workbook.write(outFile);
-					outFile.close();
-					break;
-				}
+				if (cell != null) {
+					String ce = r.getCell(1).getStringCellValue();
+					if (ce.contains(testCaseName)) {
+						r.createCell(2).setCellValue(testStatus);
+						r.createCell(3).setCellValue(totalTime);
+						file.close();
+						System.out.println("result updated");
+						FileOutputStream outFile = new FileOutputStream(
+								new File(System.getProperty("user.dir") + "/src/main/resources/test.xlsx"));
+						workbook.write(outFile);
+						outFile.close();
+						break;
+					}
 				}
 			}
 		} catch (Exception e) {
