@@ -26,6 +26,7 @@ public class TestBase {
 	public long totalTime = 0;
 	public long finish = 0;
 	public long start = 0;
+	public ReadDataFromExcelSheet dataFromExcelSheet = new ReadDataFromExcelSheet();
 
 	public TestBase() {
 		try {

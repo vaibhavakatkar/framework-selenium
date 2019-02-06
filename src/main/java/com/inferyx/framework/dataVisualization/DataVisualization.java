@@ -12,7 +12,6 @@ import com.inferyx.framework.selenium.TestBase;
 
 public class DataVisualization extends TestBase {
 
-	ReadDataFromExcelSheet dataFromExcelSheet = new ReadDataFromExcelSheet();
 
 	@Test(priority = 1, description = "dataVisualization")
 	public void dataDiscoveryList() throws IOException, InterruptedException {
