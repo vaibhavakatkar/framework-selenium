@@ -22,6 +22,7 @@ public class DatapodTest extends TestBase {
 
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
+		Thread.sleep(3000);
 		start = System.currentTimeMillis();
 		WebElement datapodAddbutton = driver.findElement(
 				By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div/div[3]/div/div/div[1]/div[2]/a"));

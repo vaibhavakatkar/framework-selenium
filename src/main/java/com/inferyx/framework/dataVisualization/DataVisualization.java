@@ -14,7 +14,7 @@ public class DataVisualization extends TestBase {
 
 
 	@Test(priority = 1, description = "dataVisualization")
-	public void dataDiscoveryList() throws IOException, InterruptedException {
+	public void dataVisualization() throws IOException, InterruptedException {
 		// dataVisualization
 		Thread.sleep(8000);
 		try {
@@ -33,7 +33,7 @@ public class DataVisualization extends TestBase {
 		}
 	}
 	@Test(priority =2, description = "Dashboard")
-	public void dataDiscoveryCard() throws IOException, InterruptedException {
+	public void Dashboard() throws IOException, InterruptedException {
 		Thread.sleep(1000);
 		// Dashboard
 		try {
@@ -84,8 +84,8 @@ public class DataVisualization extends TestBase {
 		}
 	}
 	@Test(priority =4, description = "Vizpod")
-	public void dataDiscoveryCardEdit() throws IOException, InterruptedException {
-		Thread.sleep(1000);
+	public void Vizpod() throws IOException, InterruptedException {
+		Thread.sleep(3000);
 		//Vizpod
 		try {
 			WebElement vizpod = driver
@@ -103,7 +103,7 @@ public class DataVisualization extends TestBase {
 	
 	@Test(priority =5, description = "vizpodAdd")
 	public void vizpodAdd() throws IOException, InterruptedException {
-		Thread.sleep(1000);
+		Thread.sleep(5000);
 		//vizpodAdd
 		try {
 			WebElement vizpodAdd = driver
@@ -120,7 +120,7 @@ public class DataVisualization extends TestBase {
 	}
 	
 	@Test(priority =6, description = "Report")
-	public void dataDiscoveryCardMetaComp() throws IOException, InterruptedException {
+	public void Report() throws IOException, InterruptedException {
 		Thread.sleep(1000);
 		//Report
 		try {

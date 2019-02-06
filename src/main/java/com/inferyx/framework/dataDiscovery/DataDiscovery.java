@@ -51,27 +51,33 @@ public class DataDiscovery extends TestBase {
 			dataFromExcelSheet.updateResult(updateResult, "Account Card", "FAIL", totalTime);
 		}
 	}
-	@Test(priority =3, description = "dataDiscoveryCardEdit")
-	public void dataDiscoveryCardEdit() throws IOException, InterruptedException {
-		// DataDiscovery
+	@Test(priority =3, description = "downloadSample")
+	public void downloadSample() throws IOException, InterruptedException {
+		// downloadSample
 		try {
-			System.out.println("test non 6");
-			WebElement accountEdit = driver
-					.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[1]/div[2]/a[2]/i"));
+			Thread.sleep(2000);
+			WebElement download = driver
+					.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[1]/div[2]/a[6]"));
 			 start = System.currentTimeMillis();
 			Thread.sleep(1000);
-			accountEdit.click();
+			download.click();
+			WebElement down = driver
+					.findElement(By.xpath("//*[@id=\"downloadModel\"]/div[2]/button[2]"));
+			down.click();
 			 finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5,"Account Edit", "PASS",totalTime);
+			
+			dataFromExcelSheet.updateResult(4,5,"Download", "PASS",totalTime);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(updateResult, "Account Edit", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Download", "FAIL", totalTime);
 		}
 	}
+
 	@Test(priority =4, description = "dataDiscoveryMetaComp")
 	public void dataDiscoveryCardMetaComp() throws IOException, InterruptedException {
 		// DataDiscovery
 		try {
+			Thread.sleep(1000);
 			WebElement accountComp = driver
 					.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[1]/div[2]/a[3]/i"));
 			 start = System.currentTimeMillis();
@@ -85,31 +91,13 @@ public class DataDiscovery extends TestBase {
 		}
 	}
 	
-	@Test(priority =5, description = "dataDiscoverySampleRecord")
-	public void dataDiscoverySampleRecord() throws IOException, InterruptedException {
-		// dataDiscoverySampleRecord
-		try {
-			WebElement sampleRecord = driver
-					.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[1]/div[2]/a[4]"));
-			start = System.currentTimeMillis();
-			Thread.sleep(6000);
-			sampleRecord.click();
-			WebElement data = driver
-					.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[1]/div[2]/div[3]/div[2]/ul/li[4]/a"));
-			data.click();
-			Thread.sleep(1000);
-			finish = System.currentTimeMillis();
-			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5,"Sample Record", "PASS",totalTime);
-		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Sample Record", "FAIL", totalTime);
-		}
-	}
 	
-	@Test(priority =6, description = "dataStore")
+	
+	@Test(priority =5, description = "dataStore")
 	public void dataStore() throws IOException, InterruptedException {
 		// dataStore
 		try {
+			Thread.sleep(1000);
 			WebElement dataStore = driver
 					.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[1]/div[2]/a[5]/i"));
 			 start = System.currentTimeMillis();
@@ -123,30 +111,30 @@ public class DataDiscovery extends TestBase {
 		}
 	}
 	
-	@Test(priority =7, description = "downloadSample")
-	public void downloadSample() throws IOException, InterruptedException {
-		// downloadSample
+
+	@Test(priority =6, description = "dataDiscoveryCardEdit")
+	public void dataDiscoveryCardEdit() throws IOException, InterruptedException {
+		// DataDiscovery
 		try {
-			WebElement download = driver
-					.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[1]/div[2]/a[6]"));
+			Thread.sleep(1000);
+			WebElement accountEdit = driver
+					.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[1]/div[2]/a[2]/i"));
 			 start = System.currentTimeMillis();
 			Thread.sleep(1000);
-			download.click();
-			/*WebElement down = driver
-					.findElement(By.xpath("//*[@id=\"downloadModel\"]/div[2]/button[2]"));*/
-		//	download.submit();
+			accountEdit.click();
 			 finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5,"Download", "PASS",totalTime);
+			dataFromExcelSheet.updateResult(4,5,"Account Edit", "PASS",totalTime);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Download", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Account Edit", "FAIL", totalTime);
 		}
 	}
-	
-	@Test(priority =8, description = "knowledgeGraph")
+	@Test(priority =7, description = "knowledgeGraph")
 	public void knowledgeGraph() throws IOException, InterruptedException {
 		// knowledgeGraph
 		try {
+			Thread.sleep(1000);
+
 			WebElement knowledgeGraph = driver
 					.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[1]/div[2]/a[7]"));
 			 start = System.currentTimeMillis();
@@ -162,10 +150,35 @@ public class DataDiscovery extends TestBase {
 			dataFromExcelSheet.updateResult(4,5, "Knowledge Graph", "FAIL", totalTime);
 		}
 	}
+	@Test(priority =8, description = "dataDiscoverySampleRecord")
+	public void dataDiscoverySampleRecord() throws IOException, InterruptedException {
+		// dataDiscoverySampleRecord
+		try {
+			WebElement sampleRecord = driver
+					.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[1]/div[2]/a[4]"));
+			
+			
+			start = System.currentTimeMillis();	
+			Thread.sleep(1000);
+
+			sampleRecord.click();
+			Thread.sleep(10000);
+			WebElement data = driver
+					.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[1]/div[2]/div[3]/div[2]/ul/li[4]/a"));
+			data.click();
+			Thread.sleep(1000);
+			finish = System.currentTimeMillis();
+			totalTime = finish - start; 
+			dataFromExcelSheet.updateResult(4,5,"Sample Record", "PASS",totalTime);
+		} catch (NoSuchElementException e) {
+			dataFromExcelSheet.updateResult(4,5, "Sample Record", "FAIL", totalTime);
+		}
+	}
 	@Test(priority =9, description = "closeIcon")
 	public void closeIcon() throws IOException, InterruptedException {
 		// closeIcon
 		try {
+			Thread.sleep(10000);
 			WebElement closeIcon = driver
 					.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[1]/div[2]/a[9]"));
 			 start = System.currentTimeMillis();
