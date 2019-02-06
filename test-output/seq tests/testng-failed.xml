@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [seq tests]">
-<<<<<<< HEAD
   <test thread-count="2" name="DATA DISCOVERY(failed)">
     <classes>
       <class name="com.inferyx.framework.dataDiscovery.DataDiscovery">
@@ -12,16 +11,4 @@
       </class> <!-- com.inferyx.framework.dataDiscovery.DataDiscovery -->
     </classes>
   </test> <!-- DATA DISCOVERY(failed) -->
-=======
-  <test thread-count="2" name="DatapodTest(failed)">
-    <classes>
-      <class name="com.inferyx.framework.dataPreparation.DatapodTest">
-        <methods>
-          <include name="validateAdd"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.inferyx.framework.dataPreparation.DatapodTest -->
-    </classes>
-  </test> <!-- DatapodTest(failed) -->
->>>>>>> d1f20d234e530176736ad8543d47219ae96b1ea0
 </suite> <!-- Failed suite [seq tests] -->
