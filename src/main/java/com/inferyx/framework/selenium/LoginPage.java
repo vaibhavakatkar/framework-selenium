@@ -98,6 +98,7 @@ public class LoginPage extends TestBase {
 			start = System.currentTimeMillis();
 			driver.findElements(By.xpath("//*[@id=\"myModal\"]/div/div/div[2]/form/div/div[2]/div[3]/button")).get(0)
 					.click();
+			Thread.sleep(8000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
 			WebElement nextResponse = driver

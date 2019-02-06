@@ -17,7 +17,7 @@ public class DataDiscovery extends TestBase {
 	@Test(priority = 1, description = "dataDiscovery")
 	public void dataDiscoveryList() throws IOException, InterruptedException {
 		// DataDiscovery
-		Thread.sleep(8000);
+
 		try {
 			WebElement dataDiscovery = driver
 					.findElement(By.xpath("/html/body/screenshot/div[4]/div[1]/div/ul/li[2]/a/span[1]"));

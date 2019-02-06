@@ -6,7 +6,7 @@
 			<class name="com.inferyx.framework.selenium.LoginPage" />
 		</classes>
 	</test>
-	<test name="DATA DISCOVERY">
+	 <test name="DATA DISCOVERY">
 		<classes>
 			<class name="com.inferyx.framework.dataDiscovery.DataDiscovery" />
 		</classes>
@@ -15,6 +15,17 @@
 		<classes>
 			<class name="com.inferyx.framework.dataVisualization.DataVisualization" />
 		</classes>
+	</test>  
+	<test name="DATA Preaparation">
+		<classes>
+			<class name="com.inferyx.framework.dataPreparation.DataPreaparation" />
+		</classes>
 	</test>
+	<test name="DatapodTest">
+		<classes>
+			<class name="com.inferyx.framework.dataPreparation.DatapodTest" />
+		</classes>
+	</test>
+	
 	
 </suite>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="seq tests" duration-ms="79703" started-at="2019-02-06T06:19:52Z" finished-at="2019-02-06T06:21:11Z">
+    <groups>
+    </groups>
+    <test name="LOGIN" duration-ms="20064" started-at="2019-02-06T06:19:52Z" finished-at="2019-02-06T06:20:12Z">
+      <class name="com.inferyx.framework.selenium.LoginPage">
+        <test-method status="PASS" signature="openBrowser()[pri:1, instance:com.inferyx.framework.selenium.LoginPage@1060b431]" name="openBrowser" duration-ms="5225" started-at="2019-02-06T06:19:52Z" description="openBrowser" finished-at="2019-02-06T06:19:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="login()[pri:2, instance:com.inferyx.framework.selenium.LoginPage@1060b431]" name="login" duration-ms="2657" started-at="2019-02-06T06:19:57Z" description="login check" finished-at="2019-02-06T06:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="appSelection()[pri:3, instance:com.inferyx.framework.selenium.LoginPage@1060b431]" name="appSelection" duration-ms="12150" started-at="2019-02-06T06:19:59Z" description="appSelection" finished-at="2019-02-06T06:20:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appSelection -->
+      </class> <!-- com.inferyx.framework.selenium.LoginPage -->
+    </test> <!-- LOGIN -->
+    <test name="DATA Preaparation" duration-ms="4404" started-at="2019-02-06T06:20:12Z" finished-at="2019-02-06T06:20:16Z">
+      <class name="com.inferyx.framework.dataPreparation.DataPreaparation">
+        <test-method status="PASS" signature="dataDiscoveryList()[pri:1, instance:com.inferyx.framework.dataPreparation.DataPreaparation@1fc2b765]" name="dataDiscoveryList" duration-ms="2228" started-at="2019-02-06T06:20:12Z" description="Data Preparation" finished-at="2019-02-06T06:20:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataDiscoveryList -->
+        <test-method status="PASS" signature="dataDiscoveryCard()[pri:2, instance:com.inferyx.framework.dataPreparation.DataPreaparation@1fc2b765]" name="dataDiscoveryCard" duration-ms="2170" started-at="2019-02-06T06:20:14Z" description="Datapod" finished-at="2019-02-06T06:20:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataDiscoveryCard -->
+      </class> <!-- com.inferyx.framework.dataPreparation.DataPreaparation -->
+    </test> <!-- DATA Preaparation -->
+    <test name="DatapodTest" duration-ms="55216" started-at="2019-02-06T06:20:16Z" finished-at="2019-02-06T06:21:11Z">
+      <class name="com.inferyx.framework.dataPreparation.DatapodTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.DatapodTest@3d0f8e03]" name="setUp" is-config="true" duration-ms="2300" started-at="2019-02-06T06:20:16Z" finished-at="2019-02-06T06:20:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateAdd(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.inferyx.framework.dataPreparation.DatapodTest@3d0f8e03]" name="validateAdd" duration-ms="11480" started-at="2019-02-06T06:20:18Z" description="Datapod validate Add" data-provider="getCRMTestData" finished-at="2019-02-06T06:20:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[aa]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[aa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAdd -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.DatapodTest@3d0f8e03]" name="setUp" is-config="true" duration-ms="2344" started-at="2019-02-06T06:20:30Z" finished-at="2019-02-06T06:20:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateAdd(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.inferyx.framework.dataPreparation.DatapodTest@3d0f8e03]" name="validateAdd" duration-ms="11487" started-at="2019-02-06T06:20:32Z" description="Datapod validate Add" data-provider="getCRMTestData" finished-at="2019-02-06T06:20:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ss]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ss]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ss]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ss]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAdd -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.DatapodTest@3d0f8e03]" name="setUp" is-config="true" duration-ms="2314" started-at="2019-02-06T06:20:44Z" finished-at="2019-02-06T06:20:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateAdd(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.inferyx.framework.dataPreparation.DatapodTest@3d0f8e03]" name="validateAdd" duration-ms="11427" started-at="2019-02-06T06:20:46Z" description="Datapod validate Add" data-provider="getCRMTestData" finished-at="2019-02-06T06:20:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dd]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dd]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAdd -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.DatapodTest@3d0f8e03]" name="setUp" is-config="true" duration-ms="2318" started-at="2019-02-06T06:20:57Z" finished-at="2019-02-06T06:21:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateAdd(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.inferyx.framework.dataPreparation.DatapodTest@3d0f8e03]" name="validateAdd" duration-ms="11484" started-at="2019-02-06T06:21:00Z" description="Datapod validate Add" data-provider="getCRMTestData" finished-at="2019-02-06T06:21:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firstNafme ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[f]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAdd -->
+      </class> <!-- com.inferyx.framework.dataPreparation.DatapodTest -->
+    </test> <!-- DatapodTest -->
+  </suite> <!-- seq tests -->
+</testng-results>
