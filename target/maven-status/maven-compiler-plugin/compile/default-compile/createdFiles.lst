@@ -1,8 +1,8 @@
-com/inferyx/framework/selenium/ReadDataFromExcelSheet.class
 com/inferyx/framework/util/AllTests.class
 com/inferyx/framework/dataDiscovery/DataDiscovery.class
-com/inferyx/framework/util/TestUtil.class
-com/inferyx/framework/dataVisualization/DataVisualization.class
 com/inferyx/framework/selenium/LoginPage.class
+com/inferyx/framework/dataVisualization/DataVisualization.class
 com/inferyx/framework/selenium/TestBase.class
 com/inferyx/framework/util/WebEventListener.class
+com/inferyx/framework/selenium/ReadDataFromExcelSheet.class
+com/inferyx/framework/util/TestUtil.class

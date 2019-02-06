@@ -33,7 +33,6 @@ public class DataVisualization extends TestBase {
 			dataFromExcelSheet.updateResult(updateResult, "Data Visualization", "FAIL", totalTime);
 		}
 	}
-	
 	@Test(priority =2, description = "Dashboard")
 	public void dataDiscoveryCard() throws IOException, InterruptedException {
 		Thread.sleep(1000);
@@ -50,11 +49,44 @@ public class DataVisualization extends TestBase {
 		} catch (NoSuchElementException e) {
 			dataFromExcelSheet.updateResult(updateResult, "Dashboard", "FAIL", totalTime);
 		}
+	}	
+	@Test(priority =3, description = "datshBoardTile")
+	public void datshBoardTile() throws IOException, InterruptedException {
+		Thread.sleep(3000);
+		// datshBoardTileView
+		try {
+			WebElement dashboardTile = driver
+					.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div"));
+			long start11 = System.currentTimeMillis();
+			Thread.sleep(1000);
+			dashboardTile.click();
+			long finish11 = System.currentTimeMillis();
+			totalTime = finish11 - start11; 
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Tile", "PASS", totalTime);
+		} catch (NoSuchElementException e) {
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Tile", "FAIL", totalTime);
+		}
 	}
-	@Test(priority =3, description = "Vizpod")
+	@Test(priority =3, description = "createDashboard")
+	public void createDashboard() throws IOException, InterruptedException {
+		Thread.sleep(3000);
+		// createDashboard
+		try {
+			WebElement createDashboard = driver
+					.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[5]/div/div/div[2]/div/div[1]/div/a"));
+			long start11 = System.currentTimeMillis();
+			Thread.sleep(1000);
+			createDashboard.click();
+			long finish11 = System.currentTimeMillis();
+			totalTime = finish11 - start11; 
+			dataFromExcelSheet.updateResult(4,5, "Create Dashboard", "PASS", totalTime);
+		} catch (NoSuchElementException e) {
+			dataFromExcelSheet.updateResult(4,5, "Create Dashboard", "FAIL", totalTime);
+		}
+	}
+	@Test(priority =4, description = "Vizpod")
 	public void dataDiscoveryCardEdit() throws IOException, InterruptedException {
 		Thread.sleep(1000);
-
 		//Vizpod
 		try {
 			WebElement vizpod = driver
@@ -69,7 +101,26 @@ public class DataVisualization extends TestBase {
 			dataFromExcelSheet.updateResult(updateResult, "Vizpod", "FAIL", totalTime);
 		}
 	}
-	@Test(priority =4, description = "Report")
+	
+	@Test(priority =5, description = "vizpodAdd")
+	public void vizpodAdd() throws IOException, InterruptedException {
+		Thread.sleep(1000);
+		//vizpodAdd
+		try {
+			WebElement vizpodAdd = driver
+					.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div/div[3]/div/div/div[1]/div[2]/a"));
+			long start1 = System.currentTimeMillis();
+			vizpodAdd.click();
+			Thread.sleep(1000);
+			long finish1 = System.currentTimeMillis();
+			totalTime = finish1 - start1; 
+			dataFromExcelSheet.updateResult(4,5, "Vizpod Add", "PASS", totalTime);
+		} catch (NoSuchElementException e) {
+			dataFromExcelSheet.updateResult(4,5, "Vizpod Add", "FAIL", totalTime);
+		}
+	}
+	
+	@Test(priority =6, description = "Report")
 	public void dataDiscoveryCardMetaComp() throws IOException, InterruptedException {
 		Thread.sleep(1000);
 		//Report

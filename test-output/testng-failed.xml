@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [seq tests]">
+  <test thread-count="2" name="DATA DISCOVERY(failed)">
+    <classes>
+      <class name="com.inferyx.framework.dataDiscovery.DataDiscovery">
+        <methods>
+          <include name="dataDiscoverySampleRecord"/>
+          <include name="downloadSample"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataDiscovery.DataDiscovery -->
+    </classes>
+  </test> <!-- DATA DISCOVERY(failed) -->
+</suite> <!-- Failed suite [seq tests] -->
