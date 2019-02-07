@@ -52,7 +52,7 @@ public class DataVisualization extends TestBase {
 	@Test(priority =3, description = "datshBoardTile")
 	public void datshBoardTile() throws IOException, InterruptedException {
 		Thread.sleep(3000);
-		// datshBoardTileView
+		// datshBoardTile
 		try {
 			WebElement dashboardTile = driver
 					.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div"));
@@ -66,19 +66,19 @@ public class DataVisualization extends TestBase {
 			dataFromExcelSheet.updateResult(4,5, "Dashboard Tile", "FAIL", totalTime);
 		}
 	}
-	@Test(priority =3, description = "createDashboard")
+	@Test(priority =3, description = "dashboardAdd")
 	public void createDashboard() throws IOException, InterruptedException {
 		Thread.sleep(3000);
-		// createDashboard
+		// dashboardAdd
 		try {
-			WebElement createDashboard = driver
+			WebElement dashboardAdd = driver
 					.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[5]/div/div/div[2]/div/div[1]/div/a"));
 			long start11 = System.currentTimeMillis();
 			Thread.sleep(1000);
-			createDashboard.click();
+			dashboardAdd.click();
 			long finish11 = System.currentTimeMillis();
 			totalTime = finish11 - start11; 
-			dataFromExcelSheet.updateResult(4,5, "Create Dashboard", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "DashboardAdd", "PASS", totalTime);
 		} catch (NoSuchElementException e) {
 			dataFromExcelSheet.updateResult(4,5, "Create Dashboard", "FAIL", totalTime);
 		}

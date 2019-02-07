@@ -31,9 +31,7 @@ public class DatapodAdd extends TestBase {
 		datapodAddbutton.click();
 
 		Thread.sleep(1000);
-
 	}
-
 	@DataProvider
 	public Object[][] getCRMTestData() {
 		Object data[][] = TestUtil.getTestData("datapod");
