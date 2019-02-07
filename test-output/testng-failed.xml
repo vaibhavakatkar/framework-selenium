@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [seq tests]">
-  <test thread-count="2" name="DATA DISCOVERY(failed)">
+  <test thread-count="2" name="DATA Preaparation(failed)">
     <classes>
-      <class name="com.inferyx.framework.dataDiscovery.DataDiscovery">
+      <class name="com.inferyx.framework.dataPreparation.DatapodActionUnLock">
         <methods>
-          <include name="dataDiscoveryCardMetaComp"/>
+          <include name="datapodUnLockAction"/>
+          <include name="AfterMethod"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.inferyx.framework.dataDiscovery.DataDiscovery -->
+      </class> <!-- com.inferyx.framework.dataPreparation.DatapodActionUnLock -->
     </classes>
-  </test> <!-- DATA DISCOVERY(failed) -->
+  </test> <!-- DATA Preaparation(failed) -->
 </suite> <!-- Failed suite [seq tests] -->
