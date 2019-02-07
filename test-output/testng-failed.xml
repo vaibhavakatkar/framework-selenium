@@ -5,7 +5,7 @@
     <classes>
       <class name="com.inferyx.framework.dataDiscovery.DataDiscovery">
         <methods>
-          <include name="dataDiscoveryCardMetaComp"/>
+          <include name="closeIcon"/>
         </methods>
       </class> <!-- com.inferyx.framework.dataDiscovery.DataDiscovery -->
     </classes>

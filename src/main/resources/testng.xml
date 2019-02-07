@@ -15,17 +15,26 @@
 		<classes>
 			<class name="com.inferyx.framework.dataVisualization.DataVisualization" />
 		</classes>
-	</test>  
-	<test name="DATA Preaparation">
+	</test> 
+	<test name="DATA Preaparation.Datapod">
 		<classes>
-			<class name="com.inferyx.framework.dataPreparation.DataPreaparation" />
+			<class name="com.inferyx.framework.dataPreparation.datapod.DataPreaparation" />
+	  		<class name="com.inferyx.framework.dataPreparation.datapod.DatapodAdd" /> 
+			<class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionView" />
+			<class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionEdit" />
+			<class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionDelete" />
+			<class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionRestore" />
+			<class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionLock" />
+			<class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionUnLock" />
+		    <class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionPublish" />
+			<class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionUnPublish" />
+			<class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionClone" />
+			<class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionExport" />
+			<!--<class name="com.inferyx.framework.dataPreparation.DatapodActionUpload" /> -->
 		</classes>
+
 	</test>
-	<test name="DatapodTest">
-		<classes>
-			<class name="com.inferyx.framework.dataPreparation.DatapodTest" />
-		</classes>
-	</test>
-	
-	
+
+
+
 </suite>
