@@ -18,7 +18,7 @@ public class DatapodAdd extends TestBase {
 
 	public DatapodAdd() {
 		datapodTest = new DatapodPage();
-	}	
+	}
 
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
@@ -54,9 +54,9 @@ public class DatapodAdd extends TestBase {
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4,5, "Datapod  Add", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Datapod  Add", "PASS", totalTime);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Datapod  Add", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Datapod  Add", "FAIL", totalTime);
 		}
 		Thread.sleep(3000);
 	}

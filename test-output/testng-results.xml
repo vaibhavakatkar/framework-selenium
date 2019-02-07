@@ -2,156 +2,156 @@
 <testng-results skipped="0" failed="0" ignored="0" total="35" passed="35">
   <reporter-output>
   </reporter-output>
-  <suite name="seq tests" duration-ms="279108" started-at="2019-02-07T07:15:10Z" finished-at="2019-02-07T07:19:50Z">
+  <suite name="seq tests" duration-ms="283616" started-at="2019-02-07T09:31:26Z" finished-at="2019-02-07T09:36:09Z">
     <groups>
     </groups>
-    <test name="LOGIN" duration-ms="18270" started-at="2019-02-07T07:15:10Z" finished-at="2019-02-07T07:15:29Z">
+    <test name="LOGIN" duration-ms="21631" started-at="2019-02-07T09:31:26Z" finished-at="2019-02-07T09:31:47Z">
       <class name="com.inferyx.framework.selenium.LoginPage">
-        <test-method status="PASS" signature="openBrowser()[pri:1, instance:com.inferyx.framework.selenium.LoginPage@1b26f7b2]" name="openBrowser" duration-ms="3956" started-at="2019-02-07T07:15:11Z" description="openBrowser" finished-at="2019-02-07T07:15:14Z">
+        <test-method status="PASS" signature="openBrowser()[pri:1, instance:com.inferyx.framework.selenium.LoginPage@1b26f7b2]" name="openBrowser" duration-ms="7275" started-at="2019-02-07T09:31:26Z" description="openBrowser" finished-at="2019-02-07T09:31:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="login()[pri:2, instance:com.inferyx.framework.selenium.LoginPage@1b26f7b2]" name="login" duration-ms="2794" started-at="2019-02-07T07:15:14Z" description="login check" finished-at="2019-02-07T07:15:17Z">
+        <test-method status="PASS" signature="login()[pri:2, instance:com.inferyx.framework.selenium.LoginPage@1b26f7b2]" name="login" duration-ms="2811" started-at="2019-02-07T09:31:33Z" description="login check" finished-at="2019-02-07T09:31:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="appSelection()[pri:3, instance:com.inferyx.framework.selenium.LoginPage@1b26f7b2]" name="appSelection" duration-ms="11483" started-at="2019-02-07T07:15:17Z" description="appSelection" finished-at="2019-02-07T07:15:29Z">
+        <test-method status="PASS" signature="appSelection()[pri:3, instance:com.inferyx.framework.selenium.LoginPage@1b26f7b2]" name="appSelection" duration-ms="11509" started-at="2019-02-07T09:31:36Z" description="appSelection" finished-at="2019-02-07T09:31:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appSelection -->
       </class> <!-- com.inferyx.framework.selenium.LoginPage -->
     </test> <!-- LOGIN -->
-    <test name="DATA DISCOVERY" duration-ms="26945" started-at="2019-02-07T07:15:29Z" finished-at="2019-02-07T07:15:56Z">
+    <test name="DATA DISCOVERY" duration-ms="27230" started-at="2019-02-07T09:31:47Z" finished-at="2019-02-07T09:32:15Z">
       <class name="com.inferyx.framework.dataDiscovery.DataDiscovery">
-        <test-method status="PASS" signature="dataDiscoveryList()[pri:1, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@17d0685f]" name="dataDiscoveryList" duration-ms="1176" started-at="2019-02-07T07:15:29Z" description="dataDiscovery" finished-at="2019-02-07T07:15:30Z">
+        <test-method status="PASS" signature="dataDiscoveryList()[pri:1, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@17d0685f]" name="dataDiscoveryList" duration-ms="1193" started-at="2019-02-07T09:31:47Z" description="dataDiscovery" finished-at="2019-02-07T09:31:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataDiscoveryList -->
-        <test-method status="PASS" signature="dataDiscoveryCard()[pri:2, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@17d0685f]" name="dataDiscoveryCard" duration-ms="1157" started-at="2019-02-07T07:15:30Z" description="dataDiscoveryCard" finished-at="2019-02-07T07:15:31Z">
+        <test-method status="PASS" signature="dataDiscoveryCard()[pri:2, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@17d0685f]" name="dataDiscoveryCard" duration-ms="1230" started-at="2019-02-07T09:31:49Z" description="dataDiscoveryCard" finished-at="2019-02-07T09:31:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataDiscoveryCard -->
-        <test-method status="PASS" signature="downloadSample()[pri:3, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@17d0685f]" name="downloadSample" duration-ms="3095" started-at="2019-02-07T07:15:31Z" description="downloadSample" finished-at="2019-02-07T07:15:34Z">
+        <test-method status="PASS" signature="downloadSample()[pri:3, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@17d0685f]" name="downloadSample" duration-ms="3087" started-at="2019-02-07T09:31:50Z" description="downloadSample" finished-at="2019-02-07T09:31:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- downloadSample -->
-        <test-method status="PASS" signature="dataDiscoveryCardMetaComp()[pri:4, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@17d0685f]" name="dataDiscoveryCardMetaComp" duration-ms="2193" started-at="2019-02-07T07:15:34Z" description="dataDiscoveryMetaComp" finished-at="2019-02-07T07:15:36Z">
+        <test-method status="PASS" signature="dataDiscoveryCardMetaComp()[pri:4, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@17d0685f]" name="dataDiscoveryCardMetaComp" duration-ms="2200" started-at="2019-02-07T09:31:53Z" description="dataDiscoveryMetaComp" finished-at="2019-02-07T09:31:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataDiscoveryCardMetaComp -->
-        <test-method status="PASS" signature="dataStore()[pri:5, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@17d0685f]" name="dataStore" duration-ms="2254" started-at="2019-02-07T07:15:36Z" description="dataStore" finished-at="2019-02-07T07:15:39Z">
+        <test-method status="PASS" signature="dataStore()[pri:5, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@17d0685f]" name="dataStore" duration-ms="2250" started-at="2019-02-07T09:31:55Z" description="dataStore" finished-at="2019-02-07T09:31:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataStore -->
-        <test-method status="PASS" signature="dataDiscoveryCardEdit()[pri:6, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@17d0685f]" name="dataDiscoveryCardEdit" duration-ms="2471" started-at="2019-02-07T07:15:39Z" description="dataDiscoveryCardEdit" finished-at="2019-02-07T07:15:41Z">
+        <test-method status="PASS" signature="dataDiscoveryCardEdit()[pri:6, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@17d0685f]" name="dataDiscoveryCardEdit" duration-ms="2512" started-at="2019-02-07T09:31:57Z" description="dataDiscoveryCardEdit" finished-at="2019-02-07T09:32:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataDiscoveryCardEdit -->
-        <test-method status="PASS" signature="knowledgeGraph()[pri:7, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@17d0685f]" name="knowledgeGraph" duration-ms="2198" started-at="2019-02-07T07:15:41Z" description="knowledgeGraph" finished-at="2019-02-07T07:15:43Z">
+        <test-method status="PASS" signature="knowledgeGraph()[pri:7, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@17d0685f]" name="knowledgeGraph" duration-ms="2299" started-at="2019-02-07T09:32:00Z" description="knowledgeGraph" finished-at="2019-02-07T09:32:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- knowledgeGraph -->
-        <test-method status="PASS" signature="dataDiscoverySampleRecord()[pri:8, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@17d0685f]" name="dataDiscoverySampleRecord" duration-ms="2184" started-at="2019-02-07T07:15:43Z" description="dataDiscoverySampleRecord" finished-at="2019-02-07T07:15:46Z">
+        <test-method status="PASS" signature="dataDiscoverySampleRecord()[pri:8, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@17d0685f]" name="dataDiscoverySampleRecord" duration-ms="2183" started-at="2019-02-07T09:32:02Z" description="dataDiscoverySampleRecord" finished-at="2019-02-07T09:32:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataDiscoverySampleRecord -->
-        <test-method status="PASS" signature="closeIcon()[pri:9, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@17d0685f]" name="closeIcon" duration-ms="10188" started-at="2019-02-07T07:15:46Z" description="closeIcon" finished-at="2019-02-07T07:15:56Z">
+        <test-method status="PASS" signature="closeIcon()[pri:9, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@17d0685f]" name="closeIcon" duration-ms="10244" started-at="2019-02-07T09:32:04Z" description="closeIcon" finished-at="2019-02-07T09:32:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeIcon -->
       </class> <!-- com.inferyx.framework.dataDiscovery.DataDiscovery -->
     </test> <!-- DATA DISCOVERY -->
-    <test name="DATA Visualization" duration-ms="33176" started-at="2019-02-07T07:15:56Z" finished-at="2019-02-07T07:16:29Z">
+    <test name="DATA Visualization" duration-ms="33351" started-at="2019-02-07T09:32:15Z" finished-at="2019-02-07T09:32:48Z">
       <class name="com.inferyx.framework.dataVisualization.DataVisualization">
-        <test-method status="PASS" signature="dataVisualization()[pri:1, instance:com.inferyx.framework.dataVisualization.DataVisualization@365185bd]" name="dataVisualization" duration-ms="10226" started-at="2019-02-07T07:15:56Z" description="dataVisualization" finished-at="2019-02-07T07:16:06Z">
+        <test-method status="PASS" signature="dataVisualization()[pri:1, instance:com.inferyx.framework.dataVisualization.DataVisualization@365185bd]" name="dataVisualization" duration-ms="10198" started-at="2019-02-07T09:32:15Z" description="dataVisualization" finished-at="2019-02-07T09:32:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataVisualization -->
-        <test-method status="PASS" signature="Dashboard()[pri:2, instance:com.inferyx.framework.dataVisualization.DataVisualization@365185bd]" name="Dashboard" duration-ms="2137" started-at="2019-02-07T07:16:06Z" description="Dashboard" finished-at="2019-02-07T07:16:08Z">
+        <test-method status="PASS" signature="Dashboard()[pri:2, instance:com.inferyx.framework.dataVisualization.DataVisualization@365185bd]" name="Dashboard" duration-ms="2179" started-at="2019-02-07T09:32:25Z" description="Dashboard" finished-at="2019-02-07T09:32:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Dashboard -->
-        <test-method status="PASS" signature="createDashboard()[pri:3, instance:com.inferyx.framework.dataVisualization.DataVisualization@365185bd]" name="createDashboard" duration-ms="4107" started-at="2019-02-07T07:16:08Z" description="createDashboard" finished-at="2019-02-07T07:16:12Z">
+        <test-method status="PASS" signature="createDashboard()[pri:3, instance:com.inferyx.framework.dataVisualization.DataVisualization@365185bd]" name="createDashboard" duration-ms="4120" started-at="2019-02-07T09:32:27Z" description="createDashboard" finished-at="2019-02-07T09:32:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDashboard -->
-        <test-method status="PASS" signature="datshBoardTile()[pri:3, instance:com.inferyx.framework.dataVisualization.DataVisualization@365185bd]" name="datshBoardTile" duration-ms="4189" started-at="2019-02-07T07:16:12Z" description="datshBoardTile" finished-at="2019-02-07T07:16:16Z">
+        <test-method status="PASS" signature="datshBoardTile()[pri:3, instance:com.inferyx.framework.dataVisualization.DataVisualization@365185bd]" name="datshBoardTile" duration-ms="4365" started-at="2019-02-07T09:32:31Z" description="datshBoardTile" finished-at="2019-02-07T09:32:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- datshBoardTile -->
-        <test-method status="PASS" signature="Vizpod()[pri:4, instance:com.inferyx.framework.dataVisualization.DataVisualization@365185bd]" name="Vizpod" duration-ms="4147" started-at="2019-02-07T07:16:16Z" description="Vizpod" finished-at="2019-02-07T07:16:21Z">
+        <test-method status="PASS" signature="Vizpod()[pri:4, instance:com.inferyx.framework.dataVisualization.DataVisualization@365185bd]" name="Vizpod" duration-ms="4156" started-at="2019-02-07T09:32:36Z" description="Vizpod" finished-at="2019-02-07T09:32:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Vizpod -->
-        <test-method status="PASS" signature="vizpodAdd()[pri:5, instance:com.inferyx.framework.dataVisualization.DataVisualization@365185bd]" name="vizpodAdd" duration-ms="6163" started-at="2019-02-07T07:16:21Z" description="vizpodAdd" finished-at="2019-02-07T07:16:27Z">
+        <test-method status="PASS" signature="vizpodAdd()[pri:5, instance:com.inferyx.framework.dataVisualization.DataVisualization@365185bd]" name="vizpodAdd" duration-ms="6148" started-at="2019-02-07T09:32:40Z" description="vizpodAdd" finished-at="2019-02-07T09:32:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vizpodAdd -->
-        <test-method status="PASS" signature="Report()[pri:6, instance:com.inferyx.framework.dataVisualization.DataVisualization@365185bd]" name="Report" duration-ms="2189" started-at="2019-02-07T07:16:27Z" description="Report" finished-at="2019-02-07T07:16:29Z">
+        <test-method status="PASS" signature="Report()[pri:6, instance:com.inferyx.framework.dataVisualization.DataVisualization@365185bd]" name="Report" duration-ms="2158" started-at="2019-02-07T09:32:46Z" description="Report" finished-at="2019-02-07T09:32:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Report -->
       </class> <!-- com.inferyx.framework.dataVisualization.DataVisualization -->
     </test> <!-- DATA Visualization -->
-    <test name="DATA Preaparation.Datapod" duration-ms="200697" started-at="2019-02-07T07:16:29Z" finished-at="2019-02-07T07:19:50Z">
+    <test name="DATA Preaparation.Datapod" duration-ms="201377" started-at="2019-02-07T09:32:48Z" finished-at="2019-02-07T09:36:09Z">
       <class name="com.inferyx.framework.dataPreparation.datapod.DataPreaparation">
-        <test-method status="PASS" signature="dataPreparationList()[pri:1, instance:com.inferyx.framework.dataPreparation.datapod.DataPreaparation@60438a68]" name="dataPreparationList" duration-ms="2235" started-at="2019-02-07T07:16:29Z" description="Data Preparation " finished-at="2019-02-07T07:16:31Z">
+        <test-method status="PASS" signature="dataPreparationList()[pri:1, instance:com.inferyx.framework.dataPreparation.datapod.DataPreaparation@60438a68]" name="dataPreparationList" duration-ms="2788" started-at="2019-02-07T09:32:48Z" description="Data Preparation " finished-at="2019-02-07T09:32:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataPreparationList -->
-        <test-method status="PASS" signature="dataDatapod()[pri:2, instance:com.inferyx.framework.dataPreparation.datapod.DataPreaparation@60438a68]" name="dataDatapod" duration-ms="3686" started-at="2019-02-07T07:16:31Z" description="Datapod" finished-at="2019-02-07T07:16:35Z">
+        <test-method status="PASS" signature="dataDatapod()[pri:2, instance:com.inferyx.framework.dataPreparation.datapod.DataPreaparation@60438a68]" name="dataDatapod" duration-ms="3549" started-at="2019-02-07T09:32:51Z" description="Datapod" finished-at="2019-02-07T09:32:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataDatapod -->
       </class> <!-- com.inferyx.framework.dataPreparation.datapod.DataPreaparation -->
       <class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionRestore">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionRestore@17695df3]" name="setUp" is-config="true" duration-ms="4089" started-at="2019-02-07T07:18:24Z" finished-at="2019-02-07T07:18:28Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionRestore@17695df3]" name="setUp" is-config="true" duration-ms="4089" started-at="2019-02-07T09:34:44Z" finished-at="2019-02-07T09:34:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="datapodRestoreAction()[pri:7, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionRestore@17695df3]" name="datapodRestoreAction" duration-ms="4132" started-at="2019-02-07T07:18:28Z" description="Datapod Restore Action" finished-at="2019-02-07T07:18:32Z">
+        <test-method status="PASS" signature="datapodRestoreAction()[pri:7, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionRestore@17695df3]" name="datapodRestoreAction" duration-ms="4138" started-at="2019-02-07T09:34:48Z" description="Datapod Restore Action" finished-at="2019-02-07T09:34:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- datapodRestoreAction -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionRestore@17695df3]" name="AfterMethod" is-config="true" duration-ms="3063" started-at="2019-02-07T07:18:32Z" finished-at="2019-02-07T07:18:36Z">
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionRestore@17695df3]" name="AfterMethod" is-config="true" duration-ms="3059" started-at="2019-02-07T09:34:52Z" finished-at="2019-02-07T09:34:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
       </class> <!-- com.inferyx.framework.dataPreparation.datapod.DatapodActionRestore -->
       <class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionClone">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionClone@3d8314f0]" name="setUp" is-config="true" duration-ms="5104" started-at="2019-02-07T07:19:25Z" finished-at="2019-02-07T07:19:30Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionClone@3d8314f0]" name="setUp" is-config="true" duration-ms="5118" started-at="2019-02-07T09:35:45Z" finished-at="2019-02-07T09:35:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="datapodEditAction()[pri:12, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionClone@3d8314f0]" name="datapodEditAction" duration-ms="4130" started-at="2019-02-07T07:19:30Z" description="Datapod Clone  Action" finished-at="2019-02-07T07:19:34Z">
+        <test-method status="PASS" signature="datapodEditAction()[pri:12, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionClone@3d8314f0]" name="datapodEditAction" duration-ms="4144" started-at="2019-02-07T09:35:50Z" description="Datapod Clone  Action" finished-at="2019-02-07T09:35:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- datapodEditAction -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionClone@3d8314f0]" name="AfterMethod" is-config="true" duration-ms="3084" started-at="2019-02-07T07:19:34Z" finished-at="2019-02-07T07:19:37Z">
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionClone@3d8314f0]" name="AfterMethod" is-config="true" duration-ms="3127" started-at="2019-02-07T09:35:54Z" finished-at="2019-02-07T09:35:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
       </class> <!-- com.inferyx.framework.dataPreparation.datapod.DatapodActionClone -->
       <class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionUnPublish">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionUnPublish@2bea5ab4]" name="setUp" is-config="true" duration-ms="5101" started-at="2019-02-07T07:19:12Z" finished-at="2019-02-07T07:19:18Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionUnPublish@2bea5ab4]" name="setUp" is-config="true" duration-ms="5150" started-at="2019-02-07T09:35:32Z" finished-at="2019-02-07T09:35:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="datapodUnPublishAction()[pri:11, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionUnPublish@2bea5ab4]" name="datapodUnPublishAction" duration-ms="4296" started-at="2019-02-07T07:19:18Z" description="Datapod UnPublish Action" finished-at="2019-02-07T07:19:22Z">
+        <test-method status="PASS" signature="datapodUnPublishAction()[pri:11, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionUnPublish@2bea5ab4]" name="datapodUnPublishAction" duration-ms="4150" started-at="2019-02-07T09:35:37Z" description="Datapod UnPublish Action" finished-at="2019-02-07T09:35:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- datapodUnPublishAction -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionUnPublish@2bea5ab4]" name="AfterMethod" is-config="true" duration-ms="3082" started-at="2019-02-07T07:19:22Z" finished-at="2019-02-07T07:19:25Z">
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionUnPublish@2bea5ab4]" name="AfterMethod" is-config="true" duration-ms="3096" started-at="2019-02-07T09:35:42Z" finished-at="2019-02-07T09:35:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
       </class> <!-- com.inferyx.framework.dataPreparation.datapod.DatapodActionUnPublish -->
       <class name="com.inferyx.framework.dataPreparation.datapod.DatapodAdd">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodAdd@140e5a13]" name="setUp" is-config="true" duration-ms="5234" started-at="2019-02-07T07:16:35Z" finished-at="2019-02-07T07:16:40Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodAdd@140e5a13]" name="setUp" is-config="true" duration-ms="5303" started-at="2019-02-07T09:32:54Z" finished-at="2019-02-07T09:33:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateAdd(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.inferyx.framework.dataPreparation.datapod.DatapodAdd@140e5a13]" name="validateAdd" duration-ms="11511" started-at="2019-02-07T07:16:40Z" description="Datapod  Add" data-provider="getCRMTestData" finished-at="2019-02-07T07:16:52Z">
+        <test-method status="PASS" signature="validateAdd(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.inferyx.framework.dataPreparation.datapod.DatapodAdd@140e5a13]" name="validateAdd" duration-ms="11475" started-at="2019-02-07T09:33:00Z" description="Datapod  Add" data-provider="getCRMTestData" finished-at="2019-02-07T09:33:11Z">
           <params>
             <param index="0">
               <value>
@@ -177,11 +177,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateAdd -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodAdd@140e5a13]" name="setUp" is-config="true" duration-ms="5338" started-at="2019-02-07T07:16:52Z" finished-at="2019-02-07T07:16:57Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodAdd@140e5a13]" name="setUp" is-config="true" duration-ms="5243" started-at="2019-02-07T09:33:11Z" finished-at="2019-02-07T09:33:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateAdd(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.inferyx.framework.dataPreparation.datapod.DatapodAdd@140e5a13]" name="validateAdd" duration-ms="11502" started-at="2019-02-07T07:16:57Z" description="Datapod  Add" data-provider="getCRMTestData" finished-at="2019-02-07T07:17:08Z">
+        <test-method status="PASS" signature="validateAdd(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.inferyx.framework.dataPreparation.datapod.DatapodAdd@140e5a13]" name="validateAdd" duration-ms="11390" started-at="2019-02-07T09:33:16Z" description="Datapod  Add" data-provider="getCRMTestData" finished-at="2019-02-07T09:33:28Z">
           <params>
             <param index="0">
               <value>
@@ -207,11 +207,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateAdd -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodAdd@140e5a13]" name="setUp" is-config="true" duration-ms="5300" started-at="2019-02-07T07:17:08Z" finished-at="2019-02-07T07:17:14Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodAdd@140e5a13]" name="setUp" is-config="true" duration-ms="5349" started-at="2019-02-07T09:33:28Z" finished-at="2019-02-07T09:33:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateAdd(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.inferyx.framework.dataPreparation.datapod.DatapodAdd@140e5a13]" name="validateAdd" duration-ms="11449" started-at="2019-02-07T07:17:14Z" description="Datapod  Add" data-provider="getCRMTestData" finished-at="2019-02-07T07:17:25Z">
+        <test-method status="PASS" signature="validateAdd(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.inferyx.framework.dataPreparation.datapod.DatapodAdd@140e5a13]" name="validateAdd" duration-ms="11715" started-at="2019-02-07T09:33:33Z" description="Datapod  Add" data-provider="getCRMTestData" finished-at="2019-02-07T09:33:45Z">
           <params>
             <param index="0">
               <value>
@@ -237,11 +237,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateAdd -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodAdd@140e5a13]" name="setUp" is-config="true" duration-ms="5299" started-at="2019-02-07T07:17:25Z" finished-at="2019-02-07T07:17:30Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodAdd@140e5a13]" name="setUp" is-config="true" duration-ms="5353" started-at="2019-02-07T09:33:45Z" finished-at="2019-02-07T09:33:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateAdd(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.inferyx.framework.dataPreparation.datapod.DatapodAdd@140e5a13]" name="validateAdd" duration-ms="11408" started-at="2019-02-07T07:17:30Z" description="Datapod  Add" data-provider="getCRMTestData" finished-at="2019-02-07T07:17:42Z">
+        <test-method status="PASS" signature="validateAdd(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.inferyx.framework.dataPreparation.datapod.DatapodAdd@140e5a13]" name="validateAdd" duration-ms="11431" started-at="2019-02-07T09:33:50Z" description="Datapod  Add" data-provider="getCRMTestData" finished-at="2019-02-07T09:34:02Z">
           <params>
             <param index="0">
               <value>
@@ -269,99 +269,99 @@
         </test-method> <!-- validateAdd -->
       </class> <!-- com.inferyx.framework.dataPreparation.datapod.DatapodAdd -->
       <class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionEdit">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionEdit@dbd940d]" name="setUp" is-config="true" duration-ms="5141" started-at="2019-02-07T07:17:57Z" finished-at="2019-02-07T07:18:02Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionEdit@dbd940d]" name="setUp" is-config="true" duration-ms="5135" started-at="2019-02-07T09:34:17Z" finished-at="2019-02-07T09:34:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="datapodEditAction()[pri:5, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionEdit@dbd940d]" name="datapodEditAction" duration-ms="4331" started-at="2019-02-07T07:18:02Z" description="Datapod Edit Action" finished-at="2019-02-07T07:18:06Z">
+        <test-method status="PASS" signature="datapodEditAction()[pri:5, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionEdit@dbd940d]" name="datapodEditAction" duration-ms="4335" started-at="2019-02-07T09:34:22Z" description="Datapod Edit Action" finished-at="2019-02-07T09:34:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- datapodEditAction -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionEdit@dbd940d]" name="AfterMethod" is-config="true" duration-ms="5554" started-at="2019-02-07T07:18:06Z" finished-at="2019-02-07T07:18:12Z">
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionEdit@dbd940d]" name="AfterMethod" is-config="true" duration-ms="5468" started-at="2019-02-07T09:34:26Z" finished-at="2019-02-07T09:34:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
       </class> <!-- com.inferyx.framework.dataPreparation.datapod.DatapodActionEdit -->
-      <class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionPublish">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionPublish@76b10754]" name="setUp" is-config="true" duration-ms="5082" started-at="2019-02-07T07:19:00Z" finished-at="2019-02-07T07:19:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="datapodPublishAction()[pri:10, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionPublish@76b10754]" name="datapodPublishAction" duration-ms="4138" started-at="2019-02-07T07:19:05Z" description="Datapod Publish Action" finished-at="2019-02-07T07:19:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- datapodPublishAction -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionPublish@76b10754]" name="AfterMethod" is-config="true" duration-ms="3094" started-at="2019-02-07T07:19:09Z" finished-at="2019-02-07T07:19:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-      </class> <!-- com.inferyx.framework.dataPreparation.datapod.DatapodActionPublish -->
       <class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionUnLock">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionUnLock@de3a06f]" name="setUp" is-config="true" duration-ms="5092" started-at="2019-02-07T07:18:48Z" finished-at="2019-02-07T07:18:53Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionUnLock@de3a06f]" name="setUp" is-config="true" duration-ms="5085" started-at="2019-02-07T09:35:08Z" finished-at="2019-02-07T09:35:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="datapodUnLockAction()[pri:9, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionUnLock@de3a06f]" name="datapodUnLockAction" duration-ms="4106" started-at="2019-02-07T07:18:53Z" description="Datapod UnLock Action" finished-at="2019-02-07T07:18:57Z">
+        <test-method status="PASS" signature="datapodUnLockAction()[pri:9, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionUnLock@de3a06f]" name="datapodUnLockAction" duration-ms="4125" started-at="2019-02-07T09:35:13Z" description="Datapod UnLock Action" finished-at="2019-02-07T09:35:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- datapodUnLockAction -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionUnLock@de3a06f]" name="AfterMethod" is-config="true" duration-ms="3093" started-at="2019-02-07T07:18:57Z" finished-at="2019-02-07T07:19:00Z">
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionUnLock@de3a06f]" name="AfterMethod" is-config="true" duration-ms="3076" started-at="2019-02-07T09:35:17Z" finished-at="2019-02-07T09:35:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
       </class> <!-- com.inferyx.framework.dataPreparation.datapod.DatapodActionUnLock -->
-      <class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionExport">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionExport@2df32bf7]" name="setUp" is-config="true" duration-ms="5076" started-at="2019-02-07T07:19:37Z" finished-at="2019-02-07T07:19:42Z">
+      <class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionPublish">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionPublish@76b10754]" name="setUp" is-config="true" duration-ms="5098" started-at="2019-02-07T09:35:20Z" finished-at="2019-02-07T09:35:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="datapodEditAction()[pri:13, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionExport@2df32bf7]" name="datapodEditAction" duration-ms="4141" started-at="2019-02-07T07:19:42Z" description="Datapod Edit Action" finished-at="2019-02-07T07:19:46Z">
+        <test-method status="PASS" signature="datapodPublishAction()[pri:10, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionPublish@76b10754]" name="datapodPublishAction" duration-ms="4145" started-at="2019-02-07T09:35:25Z" description="Datapod Publish Action" finished-at="2019-02-07T09:35:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- datapodPublishAction -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionPublish@76b10754]" name="AfterMethod" is-config="true" duration-ms="3081" started-at="2019-02-07T09:35:29Z" finished-at="2019-02-07T09:35:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+      </class> <!-- com.inferyx.framework.dataPreparation.datapod.DatapodActionPublish -->
+      <class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionExport">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionExport@2df32bf7]" name="setUp" is-config="true" duration-ms="5066" started-at="2019-02-07T09:35:57Z" finished-at="2019-02-07T09:36:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="datapodEditAction()[pri:13, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionExport@2df32bf7]" name="datapodEditAction" duration-ms="4147" started-at="2019-02-07T09:36:02Z" description="Datapod Export Action" finished-at="2019-02-07T09:36:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- datapodEditAction -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionExport@2df32bf7]" name="AfterMethod" is-config="true" duration-ms="3103" started-at="2019-02-07T07:19:46Z" finished-at="2019-02-07T07:19:50Z">
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionExport@2df32bf7]" name="AfterMethod" is-config="true" duration-ms="3098" started-at="2019-02-07T09:36:06Z" finished-at="2019-02-07T09:36:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
       </class> <!-- com.inferyx.framework.dataPreparation.datapod.DatapodActionExport -->
       <class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionLock">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionLock@6c9f5c0d]" name="setUp" is-config="true" duration-ms="5088" started-at="2019-02-07T07:18:36Z" finished-at="2019-02-07T07:18:41Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionLock@6c9f5c0d]" name="setUp" is-config="true" duration-ms="5086" started-at="2019-02-07T09:34:55Z" finished-at="2019-02-07T09:35:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="datapodLockAction()[pri:8, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionLock@6c9f5c0d]" name="datapodLockAction" duration-ms="4136" started-at="2019-02-07T07:18:41Z" description="Datapod Lock Action" finished-at="2019-02-07T07:18:45Z">
+        <test-method status="PASS" signature="datapodLockAction()[pri:8, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionLock@6c9f5c0d]" name="datapodLockAction" duration-ms="4155" started-at="2019-02-07T09:35:00Z" description="Datapod Lock Action" finished-at="2019-02-07T09:35:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- datapodLockAction -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionLock@6c9f5c0d]" name="AfterMethod" is-config="true" duration-ms="3105" started-at="2019-02-07T07:18:45Z" finished-at="2019-02-07T07:18:48Z">
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionLock@6c9f5c0d]" name="AfterMethod" is-config="true" duration-ms="3106" started-at="2019-02-07T09:35:05Z" finished-at="2019-02-07T09:35:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
       </class> <!-- com.inferyx.framework.dataPreparation.datapod.DatapodActionLock -->
       <class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionDelete">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionDelete@71d15f18]" name="setUp" is-config="true" duration-ms="5138" started-at="2019-02-07T07:18:12Z" finished-at="2019-02-07T07:18:17Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionDelete@71d15f18]" name="setUp" is-config="true" duration-ms="5126" started-at="2019-02-07T09:34:32Z" finished-at="2019-02-07T09:34:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="datapodDeleteAction()[pri:6, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionDelete@71d15f18]" name="datapodDeleteAction" duration-ms="4151" started-at="2019-02-07T07:18:17Z" description="Datapod Delete Action" finished-at="2019-02-07T07:18:21Z">
+        <test-method status="PASS" signature="datapodDeleteAction()[pri:6, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionDelete@71d15f18]" name="datapodDeleteAction" duration-ms="4225" started-at="2019-02-07T09:34:37Z" description="Datapod Delete Action" finished-at="2019-02-07T09:34:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- datapodDeleteAction -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionDelete@71d15f18]" name="AfterMethod" is-config="true" duration-ms="3079" started-at="2019-02-07T07:18:21Z" finished-at="2019-02-07T07:18:24Z">
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionDelete@71d15f18]" name="AfterMethod" is-config="true" duration-ms="3086" started-at="2019-02-07T09:34:41Z" finished-at="2019-02-07T09:34:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
       </class> <!-- com.inferyx.framework.dataPreparation.datapod.DatapodActionDelete -->
       <class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionView">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionView@3439f68d]" name="setUp" is-config="true" duration-ms="5141" started-at="2019-02-07T07:17:42Z" finished-at="2019-02-07T07:17:47Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionView@3439f68d]" name="setUp" is-config="true" duration-ms="5138" started-at="2019-02-07T09:34:02Z" finished-at="2019-02-07T09:34:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="datapodViewAction()[pri:4, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionView@3439f68d]" name="datapodViewAction" duration-ms="4291" started-at="2019-02-07T07:17:47Z" description="Datapod View Action" finished-at="2019-02-07T07:17:51Z">
+        <test-method status="PASS" signature="datapodViewAction()[pri:4, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionView@3439f68d]" name="datapodViewAction" duration-ms="4318" started-at="2019-02-07T09:34:07Z" description="Datapod View Action" finished-at="2019-02-07T09:34:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- datapodViewAction -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionView@3439f68d]" name="AfterMethod" is-config="true" duration-ms="5519" started-at="2019-02-07T07:17:51Z" finished-at="2019-02-07T07:17:57Z">
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataPreparation.datapod.DatapodActionView@3439f68d]" name="AfterMethod" is-config="true" duration-ms="5531" started-at="2019-02-07T09:34:11Z" finished-at="2019-02-07T09:34:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->

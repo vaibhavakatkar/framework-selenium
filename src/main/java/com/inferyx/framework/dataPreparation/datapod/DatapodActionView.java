@@ -39,9 +39,9 @@ public class DatapodActionView extends TestBase {
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4, 5, "Datapod Action Add", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Datapod Action View", "PASS", totalTime);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4, 5, "Datapod Action Add", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Datapod Action View", "FAIL", totalTime);
 		}
 		Thread.sleep(3000);
 	}
