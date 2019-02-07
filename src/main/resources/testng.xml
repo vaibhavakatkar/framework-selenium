@@ -6,7 +6,7 @@
 			<class name="com.inferyx.framework.selenium.LoginPage" />
 		</classes>
 	</test>
-	 <test name="DATA DISCOVERY">
+	<!-- <test name="DATA DISCOVERY">
 		<classes>
 			<class name="com.inferyx.framework.dataDiscovery.DataDiscovery" />
 		</classes>
@@ -30,11 +30,25 @@
 			<class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionUnPublish" />
 			<class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionClone" />
 			<class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionExport" />
-			<!--<class name="com.inferyx.framework.dataPreparation.DatapodActionUpload" /> -->
+			<class name="com.inferyx.framework.dataPreparation.DatapodActionUpload" />
 		</classes>
 
 	</test>
+ -->	<test name="DATA Preaparation.DataSet">
+		<classes>
+			<class name="com.inferyx.framework.dataPreparation.dataset.DataPreaparation" />
+			<class name="com.inferyx.framework.dataPreparation.dataset.DatasetActionView" />
+			<class name="com.inferyx.framework.dataPreparation.dataset.DatasetActionEdit" />
+			<class name="com.inferyx.framework.dataPreparation.dataset.DatasetActionDelete" />
+			<class name="com.inferyx.framework.dataPreparation.dataset.DatasetActionRestore" />
+			<class name="com.inferyx.framework.dataPreparation.dataset.DatasetActionLock" />
+			<class name="com.inferyx.framework.dataPreparation.dataset.DatasetActionUnLock" />
+		    <class name="com.inferyx.framework.dataPreparation.dataset.DatasetActionPublish" />
+			<class name="com.inferyx.framework.dataPreparation.dataset.DatasetActionUnPublish" />
+			<class name="com.inferyx.framework.dataPreparation.dataset.DatasetActionClone" />
+			<class name="com.inferyx.framework.dataPreparation.dataset.DatasetActionExport" />
+			<!--<class name="com.inferyx.framework.dataPreparation.DatasetActionUpload" /> -->
+		</classes>
 
-
-
+	</test>
 </suite>

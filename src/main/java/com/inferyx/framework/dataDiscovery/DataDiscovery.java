@@ -93,6 +93,12 @@ public class DataDiscovery extends TestBase {
 			accountComp.click();
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
+			WebElement metaCompareVerif = driver.findElement(
+					By.xpath("//*[@id='1549538362519-grid-container']/div[1]/div/div/div/div/div[1]/div[1]/div"));
+			
+		
+		
+			//String aa=metaCompareVerif.getText();
 			dataFromExcelSheet.updateResult(4, 5, "Meta Comp", "PASS", totalTime);
 		} catch (NoSuchElementException e) {
 			dataFromExcelSheet.updateResult(4, 5, "Meta Comp", "FAIL", totalTime);
@@ -131,7 +137,7 @@ public class DataDiscovery extends TestBase {
 			totalTime = finish - start;
 			dataFromExcelSheet.updateResult(4, 5, "Account Edit", "PASS", totalTime);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(updateResult, "Account Edit", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Account Edit", "FAIL", totalTime);
 		}
 	}
 
@@ -170,14 +176,10 @@ public class DataDiscovery extends TestBase {
 			Thread.sleep(1000);
 
 			sampleRecord.click();
-		//	driver.findElement(By.id("1549463795974-uiGrid-0096-header-text")).click();
-			
-			//driver.findElement(By.cssSelector("i.fa.fa-bar-chart")).click();
-			/*WebElement data1 = driver.findElement(By.xpath("//*[@id=\"1549451749079-0-uiGrid-001D-cell\"]/div"));
-
-			//*[@id="1549451749079-0-uiGrid-001D-cell"]/div
-			WebElement data = driver.findElement(By.xpath("//*[@id=\"1549451162269-uiGrid-007T-header-text\"]/i"));
-			data.click();*/
+			WebElement sampleRecordVerify = driver.findElement(
+					By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[1]/div[2]/div[2]/div/div[2]/div[1]/div/div/div/div/div/div[1]/div[1]/div[1]/div[3]/i"));
+			String sampleRecordVerif=sampleRecordVerify.getText();
+			sampleRecordVerify.click();
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
