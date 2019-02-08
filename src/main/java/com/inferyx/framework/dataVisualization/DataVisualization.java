@@ -80,7 +80,7 @@ public class DataVisualization extends TestBase {
 			totalTime = finish11 - start11; 
 			dataFromExcelSheet.updateResult(4,5, "DashboardAdd", "PASS", totalTime);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Create Dashboard", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "DashboardAdd", "FAIL", totalTime);
 		}
 	}
 	@Test(priority =4, description = "Vizpod")

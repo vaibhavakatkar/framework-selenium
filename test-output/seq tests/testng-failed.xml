@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [seq tests]">
-  <test thread-count="2" name="DATA DISCOVERY(failed)">
+  <test thread-count="2" name="DATA Preaparation.DataSet(failed)">
     <classes>
-      <class name="com.inferyx.framework.dataDiscovery.DataDiscovery">
+      <class name="com.inferyx.framework.dataPreparation.dataset.DatasetActionExport">
         <methods>
-          <include name="closeIcon"/>
+          <include name="AfterMethod"/>
+          <include name="setUp"/>
+          <include name="datasetEditAction"/>
         </methods>
-      </class> <!-- com.inferyx.framework.dataDiscovery.DataDiscovery -->
+      </class> <!-- com.inferyx.framework.dataPreparation.dataset.DatasetActionExport -->
     </classes>
+<<<<<<< HEAD
   </test> <!-- DATA DISCOVERY(failed) -->
   <test thread-count="2" name="DATA Preaparation.Datapod(failed)">
     <classes>
@@ -77,4 +80,7 @@
       </class> <!-- com.inferyx.framework.dataPreparation.datapod.DatapodActionUnLock -->
     </classes>
   </test> <!-- DATA Preaparation.Datapod(failed) -->
+=======
+  </test> <!-- DATA Preaparation.DataSet(failed) -->
+>>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
 </suite> <!-- Failed suite [seq tests] -->
