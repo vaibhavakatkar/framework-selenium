@@ -1,15 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [seq tests]">
-  <test thread-count="2" name="DATA Preaparation.DataSet(failed)">
+  <test thread-count="2" name="DATA Preaparation.Datapod(failed)">
     <classes>
-      <class name="com.inferyx.framework.dataPreparation.dataset.DatasetActionExport">
+      <class name="com.inferyx.framework.dataPreparation.datapod.DatapodAdd">
+        <methods>
+          <include name="setUp"/>
+          <include name="validateAdd" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataPreparation.datapod.DatapodAdd -->
+      <class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionLock">
+        <methods>
+          <include name="datapodLockAction"/>
+          <include name="AfterMethod"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataPreparation.datapod.DatapodActionLock -->
+      <class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionEdit">
+        <methods>
+          <include name="setUp"/>
+          <include name="AfterMethod"/>
+          <include name="datapodEditAction"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataPreparation.datapod.DatapodActionEdit -->
+      <class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionPublish">
+        <methods>
+          <include name="setUp"/>
+          <include name="datapodPublishAction"/>
+          <include name="AfterMethod"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataPreparation.datapod.DatapodActionPublish -->
+      <class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionUnPublish">
+        <methods>
+          <include name="setUp"/>
+          <include name="datapodUnPublishAction"/>
+          <include name="AfterMethod"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataPreparation.datapod.DatapodActionUnPublish -->
+      <class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionClone">
+        <methods>
+          <include name="datapodEditAction"/>
+          <include name="AfterMethod"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataPreparation.datapod.DatapodActionClone -->
+      <class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionDelete">
+        <methods>
+          <include name="datapodDeleteAction"/>
+          <include name="AfterMethod"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataPreparation.datapod.DatapodActionDelete -->
+      <class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionView">
+        <methods>
+          <include name="setUp"/>
+          <include name="datapodViewAction"/>
+          <include name="AfterMethod"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataPreparation.datapod.DatapodActionView -->
+      <class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionUnLock">
+        <methods>
+          <include name="setUp"/>
+          <include name="datapodUnLockAction"/>
+          <include name="AfterMethod"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataPreparation.datapod.DatapodActionUnLock -->
+      <class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionExport">
+        <methods>
+          <include name="setUp"/>
+          <include name="AfterMethod"/>
+          <include name="datapodEditAction"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataPreparation.datapod.DatapodActionExport -->
+      <class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionRestore">
         <methods>
           <include name="AfterMethod"/>
           <include name="setUp"/>
-          <include name="datasetEditAction"/>
+          <include name="datapodRestoreAction"/>
         </methods>
-      </class> <!-- com.inferyx.framework.dataPreparation.dataset.DatasetActionExport -->
+      </class> <!-- com.inferyx.framework.dataPreparation.datapod.DatapodActionRestore -->
     </classes>
-  </test> <!-- DATA Preaparation.DataSet(failed) -->
+  </test> <!-- DATA Preaparation.Datapod(failed) -->
 </suite> <!-- Failed suite [seq tests] -->
