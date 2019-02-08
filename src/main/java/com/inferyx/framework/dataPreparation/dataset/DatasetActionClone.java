@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 
 import com.inferyx.framework.selenium.TestBase;
 
+
 public class DatasetActionClone extends TestBase {
 
 	
@@ -27,10 +28,10 @@ public class DatasetActionClone extends TestBase {
 	}
 	
 	@Test(priority = 11, description = "DataSet Clone  Action")
-	public void datasetEditAction() throws IOException, InterruptedException {
+	public void datasetCloneAction() throws IOException, InterruptedException {
 		try {
-			WebElement actionEdit = driver.findElement(By.xpath("/html/body/ul/li[6]/a"));
-			actionEdit.click();
+			WebElement actionClone = driver.findElement(By.xpath("/html/body/ul/li[6]/a"));
+			actionClone.click();
 			start = System.currentTimeMillis();
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
@@ -46,7 +47,7 @@ public class DatasetActionClone extends TestBase {
 	public void AfterMethod() throws InterruptedException {
 		Thread.sleep(1000);
 		start = System.currentTimeMillis();
-		WebElement actionclose = driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[1]/div/div[4]/div[1]/div[2]/a[7]/i"));
+		WebElement actionclose = driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div/div[3]/div/div/div[9]/div/div/div[3]/button[2]"));
 		actionclose.click();
 		Thread.sleep(2000);
 	}

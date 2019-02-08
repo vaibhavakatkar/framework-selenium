@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 
 import com.inferyx.framework.selenium.TestBase;
 
+
 public class DatasetActionExport extends TestBase {
 
 	
@@ -27,7 +28,7 @@ public class DatasetActionExport extends TestBase {
 	}
 	
 	@Test(priority = 12, description = "DataSet Export Action")
-	public void datasetEditAction() throws IOException, InterruptedException {
+	public void datasetExportAction() throws IOException, InterruptedException {
 		try {
 			WebElement actionExport = driver.findElement(By.xpath("/html/body/ul/li[7]/a"));
 			actionExport.click();

@@ -3,19 +3,16 @@ package com.inferyx.framework.dataDiscovery;
 import java.io.IOException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
+
 import org.testng.annotations.Test;
 
-import com.inferyx.framework.selenium.ReadDataFromExcelSheet;
 import com.inferyx.framework.selenium.TestBase;
+
+
 
 public class DataDiscovery extends TestBase {
 
-	ReadDataFromExcelSheet dataFromExcelSheet = new ReadDataFromExcelSheet();
 
 	@Test(priority = 1, description = "dataDiscovery")
 	public void dataDiscoveryList() throws IOException, InterruptedException {
@@ -243,7 +240,7 @@ public class DataDiscovery extends TestBase {
 			dataFromExcelSheet.updateResult(4, 5, "HistogramGrid", "FAIL", totalTime);
 		}
 	}
-	@Test(priority = 11, description = "datapodClose")
+	@Test(priority = 12, description = "datapodClose")
 	public void closeIcon() throws IOException, InterruptedException {
 		// datapodClose
 		try {

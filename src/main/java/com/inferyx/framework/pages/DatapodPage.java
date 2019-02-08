@@ -3,6 +3,7 @@ package com.inferyx.framework.pages;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -49,6 +50,12 @@ public class DatapodPage extends TestBase {
 					"/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[2]/div/form/div[2]/div/input"));
 			name.sendKeys(name1);
 
+			
+			WebElement tags = driver.findElement(By.xpath(
+					"/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[2]/div/form/div[6]/div/tags-input/div/div"));
+			
+			tags.sendKeys("asdasd"+Keys.ENTER);
+		
 			// sWebElement tags = driver.findElement(By.xpath("<div class=\"tags\"
 			// ng-class=\"{focused: hasFocus}\"><ul class=\"tag-list\"><!-- ngRepeat: tag in
 			// tagList.items track by track(tag) --></ul><input class=\"input ng-pristine

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-seq_tests">
-              <span class="suite-name border-skipped">seq tests</span>
+              <span class="suite-name border-failed">seq tests</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">15 methods,  1 skipped,  14 passed</span>
+                    <span class="method-stats">19 methods, 1 failed,  13 skipped,  5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-seq_tests" class="hide-methods failed suite-seq_tests"> (hide)</a> <!-- hide-methods failed suite-seq_tests -->
+                      <a href="#" panel-name="suite-seq_tests" class="show-methods failed suite-seq_tests"> (show)</a> <!-- show-methods failed suite-seq_tests -->
+                    </span>
+                    <div class="method-list-content failed suite-seq_tests">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.datapod.DatapodAdd" hash-for-method="validateAdd(aa, aa, aa, aa)">validateAdd(aa, aa, aa, aa)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-seq_tests -->
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -102,7 +116,67 @@
                     <div class="method-list-content skipped suite-seq_tests">
                       <span>
                         <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.dataset.DatasetActionExport" hash-for-method="datasetEditAction">datasetEditAction</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.datapod.DatapodActionDelete" hash-for-method="datapodDeleteAction">datapodDeleteAction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.datapod.DatapodActionClone" hash-for-method="datapodEditAction">datapodEditAction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.datapod.DatapodActionExport" hash-for-method="datapodEditAction">datapodEditAction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.datapod.DatapodActionEdit" hash-for-method="datapodEditAction">datapodEditAction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.datapod.DatapodActionLock" hash-for-method="datapodLockAction">datapodLockAction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.datapod.DatapodActionPublish" hash-for-method="datapodPublishAction">datapodPublishAction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.datapod.DatapodActionRestore" hash-for-method="datapodRestoreAction">datapodRestoreAction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.datapod.DatapodActionUnLock" hash-for-method="datapodUnLockAction">datapodUnLockAction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.datapod.DatapodActionUnPublish" hash-for-method="datapodUnPublishAction">datapodUnPublishAction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.datapod.DatapodActionView" hash-for-method="datapodViewAction">datapodViewAction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.datapod.DatapodAdd" hash-for-method="validateAdd">validateAdd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.datapod.DatapodAdd" hash-for-method="validateAdd">validateAdd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.datapod.DatapodAdd" hash-for-method="validateAdd">validateAdd</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-seq_tests -->
@@ -121,60 +195,20 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.dataset.DataPreaparation" hash-for-method="dataDataSet">dataDataSet</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.dataset.DataPreaparation" hash-for-method="dataPreparationList">dataPreparationList</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.dataset.DatasetActionRestore" hash-for-method="datapodRestoreAction">datapodRestoreAction</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.dataset.DatasetActionDelete" hash-for-method="datasetDeleteAction">datasetDeleteAction</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.dataset.DatasetActionEdit" hash-for-method="datasetEditAction">datasetEditAction</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.dataset.DatasetActionClone" hash-for-method="datasetEditAction">datasetEditAction</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.dataset.DatasetActionLock" hash-for-method="datasetLockAction">datasetLockAction</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.dataset.DatasetActionPublish" hash-for-method="datasetPublishAction">datasetPublishAction</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.dataset.DatasetActionUnLock" hash-for-method="datasetUnLockAction">datasetUnLockAction</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
                         <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.datapod.DatapodActionExport" hash-for-method="datapodEditAction">datapodEditAction</a> <!-- method navigator-link -->
 =======
                         <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.dataset.DatasetActionUnPublish" hash-for-method="datasetUnPublishAction">datasetUnPublishAction</a> <!-- method navigator-link -->
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
+=======
+                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.datapod.DataPreaparation" hash-for-method="dataDatapod">dataDatapod</a> <!-- method navigator-link -->
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
                         <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.datapod.DatapodActionEdit" hash-for-method="datapodEditAction">datapodEditAction</a> <!-- method navigator-link -->
                       </span>
@@ -230,6 +264,9 @@
 =======
                         <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.dataset.DatasetActionView" hash-for-method="datasetViewAction">datasetViewAction</a> <!-- method navigator-link -->
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
+=======
+                        <a href="#" class="method navigator-link" panel-name="suite-seq_tests" title="com.inferyx.framework.dataPreparation.datapod.DataPreaparation" hash-for-method="dataPreparationList">dataPreparationList</a> <!-- method navigator-link -->
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
                       </span>
                       <br/>
                       <span>
@@ -282,8 +319,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-seq_tests" class="panel seq_tests">
-          <div class="suite-seq_tests-class-skipped">
+          <div class="suite-seq_tests-class-failed">
             <div class="main-panel-header rounded-window-top">
+<<<<<<< HEAD
 <<<<<<< HEAD
               <img src="passed.png"/>
               <span class="class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionPublish</span>
@@ -291,10 +329,15 @@
               <img src="skipped.png"/>
               <span class="class-name">com.inferyx.framework.dataPreparation.dataset.DatasetActionExport</span>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
+=======
+              <img src="failed.png"/>
+              <span class="class-name">com.inferyx.framework.dataPreparation.datapod.DatapodAdd</span>
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+<<<<<<< HEAD
 <<<<<<< HEAD
                   <a name="datapodPublishAction">
                   </a> <!-- datapodPublishAction -->
@@ -332,41 +375,59 @@
                   </a> <!-- datasetEditAction -->
                   <span class="method-name">datasetEditAction</span>
                   <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;button class=&quot;btn green btn-xs btn-outline dropdown-toggle&quot; uib-dropdown-toggle=&quot;&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;...&lt;/button&gt; is not clickable at point (1199, 399). Other element would receive the click: &lt;div class=&quot;modal fade in&quot; id=&quot;clonemodal&quot; tabindex=&quot;-1&quot; role=&quot;basic&quot; aria-hidden=&quot;true&quot; style=&quot;padding-right: 15px;&quot;&gt;...&lt;/div&gt;
+=======
+                  <a name="validateAdd(aa, aa, aa, aa)">
+                  </a> <!-- validateAdd(aa, aa, aa, aa) -->
+                  <span class="method-name">validateAdd</span>
+                  <span class="parameters">(aa, aa, aa, aa)</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
   (Session info: chrome=72.0.3626.81)
   (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.2.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 45 milliseconds
+Command duration or timeout: 202 milliseconds
 Build info: version: &apos;3.2.0&apos;, revision: &apos;8c03df6b79&apos;, time: &apos;2017-02-23 10:51:31 +0000&apos;
 System info: host: &apos;gridedge1&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.2.0-42-generic&apos;, java.version: &apos;1.8.0_151&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:43911}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.sjp5Yv}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.81, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d3cdc2e653bb033c36661c7541286d7a
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:36220}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.z9eHgp}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.81, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b3051383148ea6530cc125ca15946ddb
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.inferyx.framework.dataPreparation.dataset.DatasetActionExport.setUp(DatasetActionExport.java:23)
-... Removed 32 stack frames
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
+	at com.inferyx.framework.pages.DatapodPage.createNewDatapod(Unknown Source)
+	at com.inferyx.framework.dataPreparation.datapod.DatapodAdd.validateAdd(DatapodAdd.java:49)
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                   <em>
+<<<<<<< HEAD
 (DataSet Export Action)                  </em>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
+=======
+(Datapod  Add)                  </em>
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-seq_tests-class-skipped -->
-          <div class="suite-seq_tests-class-passed">
+          </div> <!-- suite-seq_tests-class-failed -->
+          <div class="suite-seq_tests-class-skipped">
             <div class="main-panel-header rounded-window-top">
+<<<<<<< HEAD
               <img src="passed.png"/>
 <<<<<<< HEAD
               <span class="class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionView</span>
 =======
               <span class="class-name">com.inferyx.framework.dataPreparation.dataset.DatasetActionView</span>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
+=======
+              <img src="skipped.png"/>
+              <span class="class-name">com.inferyx.framework.dataPreparation.datapod.DatapodAdd</span>
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+<<<<<<< HEAD
 <<<<<<< HEAD
                   <a name="datapodViewAction">
                   </a> <!-- datapodViewAction -->
@@ -380,22 +441,116 @@ Session ID: d3cdc2e653bb033c36661c7541286d7a
                   <em>
 (DataSet View Action)                  </em>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
+=======
+                  <a name="validateAdd">
+                  </a> <!-- validateAdd -->
+                  <span class="method-name">validateAdd</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div/div[3]/div/div/div[1]/div[2]/a&quot;}
+  (Session info: chrome=72.0.3626.81)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.2.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.2.0&apos;, revision: &apos;8c03df6b79&apos;, time: &apos;2017-02-23 10:51:31 +0000&apos;
+System info: host: &apos;gridedge1&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.2.0-42-generic&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:36220}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.z9eHgp}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.81, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b3051383148ea6530cc125ca15946ddb
+*** Element info: {Using=xpath, value=/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div/div[3]/div/div/div[1]/div[2]/a}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:476)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.inferyx.framework.dataPreparation.datapod.DatapodAdd.setUp(DatapodAdd.java:27)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Datapod  Add)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAdd">
+                  </a> <!-- validateAdd -->
+                  <span class="method-name">validateAdd</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div/div[3]/div/div/div[1]/div[2]/a&quot;}
+  (Session info: chrome=72.0.3626.81)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.2.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.2.0&apos;, revision: &apos;8c03df6b79&apos;, time: &apos;2017-02-23 10:51:31 +0000&apos;
+System info: host: &apos;gridedge1&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.2.0-42-generic&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:36220}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.z9eHgp}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.81, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b3051383148ea6530cc125ca15946ddb
+*** Element info: {Using=xpath, value=/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div/div[3]/div/div/div[1]/div[2]/a}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:476)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.inferyx.framework.dataPreparation.datapod.DatapodAdd.setUp(DatapodAdd.java:27)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Datapod  Add)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAdd">
+                  </a> <!-- validateAdd -->
+                  <span class="method-name">validateAdd</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div/div[3]/div/div/div[1]/div[2]/a&quot;}
+  (Session info: chrome=72.0.3626.81)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.2.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.2.0&apos;, revision: &apos;8c03df6b79&apos;, time: &apos;2017-02-23 10:51:31 +0000&apos;
+System info: host: &apos;gridedge1&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.2.0-42-generic&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:36220}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.z9eHgp}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.81, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b3051383148ea6530cc125ca15946ddb
+*** Element info: {Using=xpath, value=/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div/div[3]/div/div/div[1]/div[2]/a}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:476)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.inferyx.framework.dataPreparation.datapod.DatapodAdd.setUp(DatapodAdd.java:27)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Datapod  Add)                  </em>
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-seq_tests-class-passed -->
-          <div class="suite-seq_tests-class-passed">
+          </div> <!-- suite-seq_tests-class-skipped -->
+          <div class="suite-seq_tests-class-skipped">
             <div class="main-panel-header rounded-window-top">
+<<<<<<< HEAD
               <img src="passed.png"/>
 <<<<<<< HEAD
               <span class="class-name">com.inferyx.framework.dataDiscovery.DataDiscovery</span>
 =======
               <span class="class-name">com.inferyx.framework.dataPreparation.dataset.DatasetActionUnLock</span>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
+=======
+              <img src="skipped.png"/>
+              <span class="class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionLock</span>
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+<<<<<<< HEAD
 <<<<<<< HEAD
                   <a name="closeIcon">
                   </a> <!-- closeIcon -->
@@ -469,24 +624,70 @@ Session ID: d3cdc2e653bb033c36661c7541286d7a
                   <a name="datasetUnLockAction">
                   </a> <!-- datasetUnLockAction -->
                   <span class="method-name">datasetUnLockAction</span>
+=======
+                  <a name="datapodLockAction">
+                  </a> <!-- datapodLockAction -->
+                  <span class="method-name">datapodLockAction</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=72.0.3626.81)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.2.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds
+Build info: version: &apos;3.2.0&apos;, revision: &apos;8c03df6b79&apos;, time: &apos;2017-02-23 10:51:31 +0000&apos;
+System info: host: &apos;gridedge1&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.2.0-42-generic&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:36220}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.z9eHgp}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.81, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b3051383148ea6530cc125ca15946ddb
+*** Element info: {Using=css selector, value=button.btn.green.btn-xs.btn-outline.dropdown-toggle}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:468)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.inferyx.framework.dataPreparation.datapod.DatapodActionLock.setUp(DatapodActionLock.java:24)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
                   <em>
-(DataSet UnLock Action)                  </em>
+(Datapod Lock Action)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-seq_tests-class-passed -->
-          <div class="suite-seq_tests-class-passed">
+          </div> <!-- suite-seq_tests-class-skipped -->
+          <div class="suite-seq_tests-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.inferyx.framework.selenium.LoginPage</span>
+              <img src="skipped.png"/>
+              <span class="class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionPublish</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="appSelection">
-                  </a> <!-- appSelection -->
-                  <span class="method-name">appSelection</span>
+                  <a name="datapodPublishAction">
+                  </a> <!-- datapodPublishAction -->
+                  <span class="method-name">datapodPublishAction</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=72.0.3626.81)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.2.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 7 milliseconds
+Build info: version: &apos;3.2.0&apos;, revision: &apos;8c03df6b79&apos;, time: &apos;2017-02-23 10:51:31 +0000&apos;
+System info: host: &apos;gridedge1&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.2.0-42-generic&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:36220}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.z9eHgp}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.81, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b3051383148ea6530cc125ca15946ddb
+*** Element info: {Using=css selector, value=button.btn.green.btn-xs.btn-outline.dropdown-toggle}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:468)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.inferyx.framework.dataPreparation.datapod.DatapodActionPublish.setUp(DatapodActionPublish.java:25)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                   <em>
+<<<<<<< HEAD
 (appSelection)                  </em>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
                 </div> <!-- method-content -->
@@ -537,10 +738,22 @@ Session ID: d3cdc2e653bb033c36661c7541286d7a
                   <span class="parameters">(ff, firstNafme, f, ff)</span>
                   <em>
 (Datapod  Add)                  </em>
+=======
+(Datapod Publish Action)                  </em>
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-seq_tests-class-skipped -->
+          <div class="suite-seq_tests-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionUnPublish</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+<<<<<<< HEAD
                   <a name="validateAdd(ss, ss, ss, ss)">
                   </a> <!-- validateAdd(ss, ss, ss, ss) -->
                   <span class="method-name">validateAdd</span>
@@ -551,34 +764,97 @@ Session ID: d3cdc2e653bb033c36661c7541286d7a
                   <a name="login">
                   </a> <!-- login -->
                   <span class="method-name">login</span>
+=======
+                  <a name="datapodUnPublishAction">
+                  </a> <!-- datapodUnPublishAction -->
+                  <span class="method-name">datapodUnPublishAction</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=72.0.3626.81)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.2.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+Build info: version: &apos;3.2.0&apos;, revision: &apos;8c03df6b79&apos;, time: &apos;2017-02-23 10:51:31 +0000&apos;
+System info: host: &apos;gridedge1&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.2.0-42-generic&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:36220}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.z9eHgp}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.81, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b3051383148ea6530cc125ca15946ddb
+*** Element info: {Using=css selector, value=button.btn.green.btn-xs.btn-outline.dropdown-toggle}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:468)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.inferyx.framework.dataPreparation.datapod.DatapodActionUnPublish.setUp(DatapodActionUnPublish.java:24)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
                   <em>
-(login check)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="openBrowser">
-                  </a> <!-- openBrowser -->
-                  <span class="method-name">openBrowser</span>
-                  <em>
-(openBrowser)                  </em>
->>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
+(Datapod UnPublish Action)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-seq_tests-class-passed -->
-          <div class="suite-seq_tests-class-passed">
+          </div> <!-- suite-seq_tests-class-skipped -->
+          <div class="suite-seq_tests-class-skipped">
             <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionEdit</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="datapodEditAction">
+                  </a> <!-- datapodEditAction -->
+                  <span class="method-name">datapodEditAction</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=72.0.3626.81)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.2.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 7 milliseconds
+Build info: version: &apos;3.2.0&apos;, revision: &apos;8c03df6b79&apos;, time: &apos;2017-02-23 10:51:31 +0000&apos;
+System info: host: &apos;gridedge1&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.2.0-42-generic&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:36220}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.z9eHgp}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.81, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b3051383148ea6530cc125ca15946ddb
+*** Element info: {Using=css selector, value=button.btn.green.btn-xs.btn-outline.dropdown-toggle}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:468)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.inferyx.framework.dataPreparation.datapod.DatapodActionEdit.setUp(DatapodActionEdit.java:25)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+<<<<<<< HEAD
+(openBrowser)                  </em>
+>>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
+=======
+(Datapod Edit Action)                  </em>
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-seq_tests-class-skipped -->
+          <div class="suite-seq_tests-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+<<<<<<< HEAD
               <img src="passed.png"/>
 <<<<<<< HEAD
               <span class="class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionDelete</span>
 =======
               <span class="class-name">com.inferyx.framework.dataPreparation.dataset.DatasetActionDelete</span>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
+=======
+              <img src="skipped.png"/>
+              <span class="class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionClone</span>
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+<<<<<<< HEAD
 <<<<<<< HEAD
                   <a name="datapodDeleteAction">
                   </a> <!-- datapodDeleteAction -->
@@ -592,22 +868,55 @@ Session ID: d3cdc2e653bb033c36661c7541286d7a
                   <em>
 (DataSet Delete Action)                  </em>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
+=======
+                  <a name="datapodEditAction">
+                  </a> <!-- datapodEditAction -->
+                  <span class="method-name">datapodEditAction</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=72.0.3626.81)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.2.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 7 milliseconds
+Build info: version: &apos;3.2.0&apos;, revision: &apos;8c03df6b79&apos;, time: &apos;2017-02-23 10:51:31 +0000&apos;
+System info: host: &apos;gridedge1&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.2.0-42-generic&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:36220}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.z9eHgp}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.81, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b3051383148ea6530cc125ca15946ddb
+*** Element info: {Using=css selector, value=button.btn.green.btn-xs.btn-outline.dropdown-toggle}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:468)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.inferyx.framework.dataPreparation.datapod.DatapodActionClone.setUp(DatapodActionClone.java:25)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Datapod Clone  Action)                  </em>
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-seq_tests-class-passed -->
-          <div class="suite-seq_tests-class-passed">
+          </div> <!-- suite-seq_tests-class-skipped -->
+          <div class="suite-seq_tests-class-skipped">
             <div class="main-panel-header rounded-window-top">
+<<<<<<< HEAD
               <img src="passed.png"/>
 <<<<<<< HEAD
               <span class="class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionClone</span>
 =======
               <span class="class-name">com.inferyx.framework.dataPreparation.dataset.DatasetActionUnPublish</span>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
+=======
+              <img src="skipped.png"/>
+              <span class="class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionView</span>
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+<<<<<<< HEAD
 <<<<<<< HEAD
                   <a name="datapodEditAction">
                   </a> <!-- datapodEditAction -->
@@ -621,22 +930,39 @@ Session ID: d3cdc2e653bb033c36661c7541286d7a
                   <em>
 (DataSet UnPublish Action)                  </em>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
+=======
+                  <a name="datapodViewAction">
+                  </a> <!-- datapodViewAction -->
+                  <span class="method-name">datapodViewAction</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.inferyx.framework.dataPreparation.datapod.DatapodActionView.setUp(DatapodActionView.java:25)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Datapod View Action)                  </em>
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-seq_tests-class-passed -->
-          <div class="suite-seq_tests-class-passed">
+          </div> <!-- suite-seq_tests-class-skipped -->
+          <div class="suite-seq_tests-class-skipped">
             <div class="main-panel-header rounded-window-top">
+<<<<<<< HEAD
               <img src="passed.png"/>
 <<<<<<< HEAD
               <span class="class-name">com.inferyx.framework.dataVisualization.DataVisualization</span>
 =======
               <span class="class-name">com.inferyx.framework.dataPreparation.dataset.DatasetActionClone</span>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
+=======
+              <img src="skipped.png"/>
+              <span class="class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionDelete</span>
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+<<<<<<< HEAD
 <<<<<<< HEAD
                   <a name="Dashboard">
                   </a> <!-- Dashboard -->
@@ -683,30 +1009,88 @@ Session ID: d3cdc2e653bb033c36661c7541286d7a
                   <a name="datasetEditAction">
                   </a> <!-- datasetEditAction -->
                   <span class="method-name">datasetEditAction</span>
+=======
+                  <a name="datapodDeleteAction">
+                  </a> <!-- datapodDeleteAction -->
+                  <span class="method-name">datapodDeleteAction</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=72.0.3626.81)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.2.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;3.2.0&apos;, revision: &apos;8c03df6b79&apos;, time: &apos;2017-02-23 10:51:31 +0000&apos;
+System info: host: &apos;gridedge1&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.2.0-42-generic&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:36220}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.z9eHgp}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.81, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b3051383148ea6530cc125ca15946ddb
+*** Element info: {Using=css selector, value=button.btn.green.btn-xs.btn-outline.dropdown-toggle}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:468)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.inferyx.framework.dataPreparation.datapod.DatapodActionDelete.setUp(DatapodActionDelete.java:25)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
                   <em>
-(DataSet Clone  Action)                  </em>
+(Datapod Delete Action)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-seq_tests-class-passed -->
-          <div class="suite-seq_tests-class-passed">
+          </div> <!-- suite-seq_tests-class-skipped -->
+          <div class="suite-seq_tests-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.inferyx.framework.dataPreparation.dataset.DataPreaparation</span>
+              <img src="skipped.png"/>
+              <span class="class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionUnLock</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="dataDataSet">
-                  </a> <!-- dataDataSet -->
-                  <span class="method-name">dataDataSet</span>
+                  <a name="datapodUnLockAction">
+                  </a> <!-- datapodUnLockAction -->
+                  <span class="method-name">datapodUnLockAction</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=72.0.3626.81)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.2.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 7 milliseconds
+Build info: version: &apos;3.2.0&apos;, revision: &apos;8c03df6b79&apos;, time: &apos;2017-02-23 10:51:31 +0000&apos;
+System info: host: &apos;gridedge1&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.2.0-42-generic&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:36220}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.z9eHgp}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.81, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b3051383148ea6530cc125ca15946ddb
+*** Element info: {Using=css selector, value=button.btn.green.btn-xs.btn-outline.dropdown-toggle}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:468)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.inferyx.framework.dataPreparation.datapod.DatapodActionUnLock.setUp(DatapodActionUnLock.java:24)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                   <em>
+<<<<<<< HEAD
 (DataSet)                  </em>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
+=======
+(Datapod UnLock Action)                  </em>
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-seq_tests-class-skipped -->
+          <div class="suite-seq_tests-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionExport</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+<<<<<<< HEAD
                   <a name="datshBoardTile">
                   </a> <!-- datshBoardTile -->
                   <span class="method-name">datshBoardTile</span>
@@ -722,12 +1106,40 @@ Session ID: d3cdc2e653bb033c36661c7541286d7a
                   <span class="method-name">vizpodAdd</span>
                   <em>
 (vizpodAdd)                  </em>
+=======
+                  <a name="datapodEditAction">
+                  </a> <!-- datapodEditAction -->
+                  <span class="method-name">datapodEditAction</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=72.0.3626.81)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.2.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 7 milliseconds
+Build info: version: &apos;3.2.0&apos;, revision: &apos;8c03df6b79&apos;, time: &apos;2017-02-23 10:51:31 +0000&apos;
+System info: host: &apos;gridedge1&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.2.0-42-generic&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:36220}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.z9eHgp}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.81, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b3051383148ea6530cc125ca15946ddb
+*** Element info: {Using=css selector, value=button.btn.green.btn-xs.btn-outline.dropdown-toggle}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:468)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.inferyx.framework.dataPreparation.datapod.DatapodActionExport.setUp(DatapodActionExport.java:25)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Datapod Export Action)                  </em>
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-seq_tests-class-passed -->
-          <div class="suite-seq_tests-class-passed">
+          </div> <!-- suite-seq_tests-class-skipped -->
+          <div class="suite-seq_tests-class-skipped">
             <div class="main-panel-header rounded-window-top">
+<<<<<<< HEAD
               <img src="passed.png"/>
               <span class="class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionUnLock</span>
             </div> <!-- main-panel-header rounded-window-top -->
@@ -746,6 +1158,10 @@ Session ID: d3cdc2e653bb033c36661c7541286d7a
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.inferyx.framework.dataPreparation.dataset.DatasetActionRestore</span>
+=======
+              <img src="skipped.png"/>
+              <span class="class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionRestore</span>
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -753,25 +1169,54 @@ Session ID: d3cdc2e653bb033c36661c7541286d7a
                   <a name="datapodRestoreAction">
                   </a> <!-- datapodRestoreAction -->
                   <span class="method-name">datapodRestoreAction</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=72.0.3626.81)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.2.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;3.2.0&apos;, revision: &apos;8c03df6b79&apos;, time: &apos;2017-02-23 10:51:31 +0000&apos;
+System info: host: &apos;gridedge1&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.2.0-42-generic&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:36220}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.z9eHgp}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.81, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b3051383148ea6530cc125ca15946ddb
+*** Element info: {Using=css selector, value=button.btn.green.btn-xs.btn-outline.dropdown-toggle}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:468)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.inferyx.framework.dataPreparation.datapod.DatapodActionRestore.setUp(DatapodActionRestore.java:22)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                   <em>
+<<<<<<< HEAD
 (DataSet Restore Action)                  </em>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
+=======
+(Datapod Restore Action)                  </em>
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-seq_tests-class-passed -->
+          </div> <!-- suite-seq_tests-class-skipped -->
           <div class="suite-seq_tests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
               <span class="class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionUnPublish</span>
 =======
               <span class="class-name">com.inferyx.framework.dataPreparation.dataset.DatasetActionEdit</span>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
+=======
+              <span class="class-name">com.inferyx.framework.selenium.LoginPage</span>
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+<<<<<<< HEAD
 <<<<<<< HEAD
                   <a name="datapodUnPublishAction">
                   </a> <!-- datapodUnPublishAction -->
@@ -814,6 +1259,31 @@ Session ID: d3cdc2e653bb033c36661c7541286d7a
                   <em>
 (DataSet Publish Action)                  </em>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
+=======
+                  <a name="appSelection">
+                  </a> <!-- appSelection -->
+                  <span class="method-name">appSelection</span>
+                  <em>
+(appSelection)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                  <em>
+(login check)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openBrowser">
+                  </a> <!-- openBrowser -->
+                  <span class="method-name">openBrowser</span>
+                  <em>
+(openBrowser)                  </em>
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -821,6 +1291,7 @@ Session ID: d3cdc2e653bb033c36661c7541286d7a
           <div class="suite-seq_tests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
               <span class="class-name">com.inferyx.framework.selenium.LoginPage</span>
 =======
@@ -896,10 +1367,14 @@ Session ID: d3cdc2e653bb033c36661c7541286d7a
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionLock</span>
+=======
+              <span class="class-name">com.inferyx.framework.dataPreparation.datapod.DataPreaparation</span>
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+<<<<<<< HEAD
                   <a name="datapodLockAction">
                   </a> <!-- datapodLockAction -->
                   <span class="method-name">datapodLockAction</span>
@@ -912,6 +1387,22 @@ Session ID: d3cdc2e653bb033c36661c7541286d7a
                   <em>
 (DataSet Lock Action)                  </em>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
+=======
+                  <a name="dataDatapod">
+                  </a> <!-- dataDatapod -->
+                  <span class="method-name">dataDatapod</span>
+                  <em>
+(Datapod)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dataPreparationList">
+                  </a> <!-- dataPreparationList -->
+                  <span class="method-name">dataPreparationList</span>
+                  <em>
+(Data Preparation )                  </em>
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -931,21 +1422,22 @@ Session ID: d3cdc2e653bb033c36661c7541286d7a
       &lt;class name=&quot;com.inferyx.framework.selenium.LoginPage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- LOGIN --&gt;
-  &lt;test thread-count=&quot;2&quot; name=&quot;DATA Preaparation.DataSet&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;DATA Preaparation.Datapod&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.inferyx.framework.dataPreparation.dataset.DataPreaparation&quot;/&gt;
-      &lt;class name=&quot;com.inferyx.framework.dataPreparation.dataset.DatasetActionView&quot;/&gt;
-      &lt;class name=&quot;com.inferyx.framework.dataPreparation.dataset.DatasetActionEdit&quot;/&gt;
-      &lt;class name=&quot;com.inferyx.framework.dataPreparation.dataset.DatasetActionDelete&quot;/&gt;
-      &lt;class name=&quot;com.inferyx.framework.dataPreparation.dataset.DatasetActionRestore&quot;/&gt;
-      &lt;class name=&quot;com.inferyx.framework.dataPreparation.dataset.DatasetActionLock&quot;/&gt;
-      &lt;class name=&quot;com.inferyx.framework.dataPreparation.dataset.DatasetActionUnLock&quot;/&gt;
-      &lt;class name=&quot;com.inferyx.framework.dataPreparation.dataset.DatasetActionPublish&quot;/&gt;
-      &lt;class name=&quot;com.inferyx.framework.dataPreparation.dataset.DatasetActionUnPublish&quot;/&gt;
-      &lt;class name=&quot;com.inferyx.framework.dataPreparation.dataset.DatasetActionClone&quot;/&gt;
-      &lt;class name=&quot;com.inferyx.framework.dataPreparation.dataset.DatasetActionExport&quot;/&gt;
+      &lt;class name=&quot;com.inferyx.framework.dataPreparation.datapod.DataPreaparation&quot;/&gt;
+      &lt;class name=&quot;com.inferyx.framework.dataPreparation.datapod.DatapodAdd&quot;/&gt;
+      &lt;class name=&quot;com.inferyx.framework.dataPreparation.datapod.DatapodActionView&quot;/&gt;
+      &lt;class name=&quot;com.inferyx.framework.dataPreparation.datapod.DatapodActionEdit&quot;/&gt;
+      &lt;class name=&quot;com.inferyx.framework.dataPreparation.datapod.DatapodActionDelete&quot;/&gt;
+      &lt;class name=&quot;com.inferyx.framework.dataPreparation.datapod.DatapodActionRestore&quot;/&gt;
+      &lt;class name=&quot;com.inferyx.framework.dataPreparation.datapod.DatapodActionLock&quot;/&gt;
+      &lt;class name=&quot;com.inferyx.framework.dataPreparation.datapod.DatapodActionUnLock&quot;/&gt;
+      &lt;class name=&quot;com.inferyx.framework.dataPreparation.datapod.DatapodActionPublish&quot;/&gt;
+      &lt;class name=&quot;com.inferyx.framework.dataPreparation.datapod.DatapodActionUnPublish&quot;/&gt;
+      &lt;class name=&quot;com.inferyx.framework.dataPreparation.datapod.DatapodActionClone&quot;/&gt;
+      &lt;class name=&quot;com.inferyx.framework.dataPreparation.datapod.DatapodActionExport&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- DATA Preaparation.DataSet --&gt;
+  &lt;/test&gt; &lt;!-- DATA Preaparation.Datapod --&gt;
 &lt;/suite&gt; &lt;!-- seq tests --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -960,7 +1452,7 @@ Session ID: d3cdc2e653bb033c36661c7541286d7a
                 <span class="test-name">LOGIN (1 class)</span>
               </li>
               <li>
-                <span class="test-name">DATA Preaparation.DataSet (11 classes)</span>
+                <span class="test-name">DATA Preaparation.Datapod (12 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -986,8 +1478,9 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(15);
+data.addRows(19);
 data.setCell(0, 0, 0)
+<<<<<<< HEAD
 <<<<<<< HEAD
 data.setCell(0, 1, 'dataDiscoveryCardMetaComp')
 data.setCell(0, 2, 'com.inferyx.framework.dataDiscovery.DataDiscovery')
@@ -997,9 +1490,15 @@ data.setCell(0, 1, 'appSelection')
 data.setCell(0, 2, 'com.inferyx.framework.selenium.LoginPage')
 data.setCell(0, 3, 11489);
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
+=======
+data.setCell(0, 1, 'validateAdd')
+data.setCell(0, 2, 'com.inferyx.framework.dataPreparation.datapod.DatapodAdd')
+data.setCell(0, 3, 301613);
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'openBrowser')
+data.setCell(1, 1, 'appSelection')
 data.setCell(1, 2, 'com.inferyx.framework.selenium.LoginPage')
+<<<<<<< HEAD
 <<<<<<< HEAD
 data.setCell(1, 3, 14425);
 data.setCell(2, 0, 2)
@@ -1136,68 +1635,94 @@ data.setCell(34, 2, 'com.inferyx.framework.dataDiscovery.DataDiscovery')
 data.setCell(34, 3, 1369);
 =======
 data.setCell(1, 3, 6050);
+=======
+data.setCell(1, 3, 11491);
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'datasetEditAction')
-data.setCell(2, 2, 'com.inferyx.framework.dataPreparation.dataset.DatasetActionEdit')
-data.setCell(2, 3, 4506);
+data.setCell(2, 1, 'openBrowser')
+data.setCell(2, 2, 'com.inferyx.framework.selenium.LoginPage')
+data.setCell(2, 3, 5448);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'datasetViewAction')
-data.setCell(3, 2, 'com.inferyx.framework.dataPreparation.dataset.DatasetActionView')
-data.setCell(3, 3, 4184);
+data.setCell(3, 1, 'dataDatapod')
+data.setCell(3, 2, 'com.inferyx.framework.dataPreparation.datapod.DataPreaparation')
+data.setCell(3, 3, 3211);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'datasetDeleteAction')
-data.setCell(4, 2, 'com.inferyx.framework.dataPreparation.dataset.DatasetActionDelete')
-data.setCell(4, 3, 4175);
+data.setCell(4, 1, 'login')
+data.setCell(4, 2, 'com.inferyx.framework.selenium.LoginPage')
+data.setCell(4, 3, 2915);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'datasetLockAction')
-data.setCell(5, 2, 'com.inferyx.framework.dataPreparation.dataset.DatasetActionLock')
-data.setCell(5, 3, 4168);
+data.setCell(5, 1, 'dataPreparationList')
+data.setCell(5, 2, 'com.inferyx.framework.dataPreparation.datapod.DataPreaparation')
+data.setCell(5, 3, 2326);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'datasetPublishAction')
-data.setCell(6, 2, 'com.inferyx.framework.dataPreparation.dataset.DatasetActionPublish')
-data.setCell(6, 3, 4156);
+data.setCell(6, 1, 'datapodUnLockAction')
+data.setCell(6, 2, 'com.inferyx.framework.dataPreparation.datapod.DatapodActionUnLock')
+data.setCell(6, 3, 0);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'datasetEditAction')
-data.setCell(7, 2, 'com.inferyx.framework.dataPreparation.dataset.DatasetActionClone')
-data.setCell(7, 3, 4145);
+data.setCell(7, 1, 'datapodEditAction')
+data.setCell(7, 2, 'com.inferyx.framework.dataPreparation.datapod.DatapodActionClone')
+data.setCell(7, 3, 0);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'datasetUnLockAction')
-data.setCell(8, 2, 'com.inferyx.framework.dataPreparation.dataset.DatasetActionUnLock')
-data.setCell(8, 3, 4135);
+data.setCell(8, 1, 'datapodPublishAction')
+data.setCell(8, 2, 'com.inferyx.framework.dataPreparation.datapod.DatapodActionPublish')
+data.setCell(8, 3, 0);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'datasetUnPublishAction')
-data.setCell(9, 2, 'com.inferyx.framework.dataPreparation.dataset.DatasetActionUnPublish')
-data.setCell(9, 3, 4132);
+data.setCell(9, 1, 'datapodEditAction')
+data.setCell(9, 2, 'com.inferyx.framework.dataPreparation.datapod.DatapodActionExport')
+data.setCell(9, 3, 0);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'datapodRestoreAction')
-data.setCell(10, 2, 'com.inferyx.framework.dataPreparation.dataset.DatasetActionRestore')
-data.setCell(10, 3, 4122);
+data.setCell(10, 1, 'validateAdd')
+data.setCell(10, 2, 'com.inferyx.framework.dataPreparation.datapod.DatapodAdd')
+data.setCell(10, 3, 0);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'dataDataSet')
-data.setCell(11, 2, 'com.inferyx.framework.dataPreparation.dataset.DataPreaparation')
-data.setCell(11, 3, 3206);
+data.setCell(11, 1, 'datapodRestoreAction')
+data.setCell(11, 2, 'com.inferyx.framework.dataPreparation.datapod.DatapodActionRestore')
+data.setCell(11, 3, 0);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'login')
-data.setCell(12, 2, 'com.inferyx.framework.selenium.LoginPage')
-data.setCell(12, 3, 2918);
+data.setCell(12, 1, 'datapodUnPublishAction')
+data.setCell(12, 2, 'com.inferyx.framework.dataPreparation.datapod.DatapodActionUnPublish')
+data.setCell(12, 3, 0);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'dataPreparationList')
-data.setCell(13, 2, 'com.inferyx.framework.dataPreparation.dataset.DataPreaparation')
-data.setCell(13, 3, 2316);
+data.setCell(13, 1, 'validateAdd')
+data.setCell(13, 2, 'com.inferyx.framework.dataPreparation.datapod.DatapodAdd')
+data.setCell(13, 3, 0);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'datasetEditAction')
-data.setCell(14, 2, 'com.inferyx.framework.dataPreparation.dataset.DatasetActionExport')
+data.setCell(14, 1, 'validateAdd')
+data.setCell(14, 2, 'com.inferyx.framework.dataPreparation.datapod.DatapodAdd')
 data.setCell(14, 3, 0);
+<<<<<<< HEAD
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
+=======
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'datapodViewAction')
+data.setCell(15, 2, 'com.inferyx.framework.dataPreparation.datapod.DatapodActionView')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'datapodLockAction')
+data.setCell(16, 2, 'com.inferyx.framework.dataPreparation.datapod.DatapodActionLock')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'datapodEditAction')
+data.setCell(17, 2, 'com.inferyx.framework.dataPreparation.datapod.DatapodActionEdit')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'datapodDeleteAction')
+data.setCell(18, 2, 'com.inferyx.framework.dataPreparation.datapod.DatapodActionDelete')
+data.setCell(18, 3, 0);
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
 window.suiteTableData['seq_tests']= { tableData: data, tableDiv: 'times-div-seq_tests'}
 return data;
 }
               </script>
 <<<<<<< HEAD
+<<<<<<< HEAD
               <span class="suite-total-time">Total running time: 13 minutes</span>
 =======
               <span class="suite-total-time">Total running time: 1 minutes</span>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
+=======
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
               <div id="times-div-seq_tests">
               </div> <!-- times-div-seq_tests -->
             </div> <!-- times-div -->
@@ -1230,6 +1755,7 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">login</span>
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <span class="method-start">7382 ms</span>
               </div> <!-- test-method -->
@@ -1369,43 +1895,60 @@ return data;
                 <span class="method-start">797059 ms</span>
 =======
                 <span class="method-start">6055 ms</span>
+=======
+                <span class="method-start">5454 ms</span>
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">appSelection</span>
-                <span class="method-start">8976 ms</span>
+                <span class="method-start">8371 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.dataset.DataPreaparation</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.datapod.DataPreaparation</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">dataPreparationList</span>
-                <span class="method-start">20488 ms</span>
+                <span class="method-start">19886 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">dataDataSet</span>
-                <span class="method-start">22806 ms</span>
+                <span class="method-name">dataDatapod</span>
+                <span class="method-start">22213 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.dataset.DatasetActionView</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.datapod.DatapodAdd</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">26015 ms</span>
+                <span class="method-start">25548 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">datasetViewAction</span>
-                <span class="method-start">31134 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateAdd(aa, aa, aa, aa)</span>
+                <span class="method-start">30676 ms</span>
               </div> <!-- test-method -->
+<<<<<<< HEAD
               <div class="configuration-method after">
                 <span class="method-name">AfterMethod</span>
                 <span class="method-start">35320 ms</span>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
               </div> <!-- configuration-method after -->
+=======
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp</span>
+                <span class="method-start">332310 ms</span>
+              </div> <!-- configuration-method before -->
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.dataset.DatasetActionEdit</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionView</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp</span>
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <span class="method-start">803265 ms</span>
               </div> <!-- configuration-method before -->
@@ -1428,11 +1971,18 @@ return data;
                 <span class="method-start">50609 ms</span>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
               </div> <!-- configuration-method after -->
+=======
+                <span class="method-start">340348 ms</span>
+              </div> <!-- configuration-method before -->
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.dataset.DatasetActionDelete</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionEdit</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp</span>
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <span class="method-start">819594 ms</span>
               </div> <!-- configuration-method before -->
@@ -1455,11 +2005,18 @@ return data;
                 <span class="method-start">65528 ms</span>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
               </div> <!-- configuration-method after -->
+=======
+                <span class="method-start">346209 ms</span>
+              </div> <!-- configuration-method before -->
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.dataset.DatasetActionRestore</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionDelete</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp</span>
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <span class="method-start">832400 ms</span>
               </div> <!-- configuration-method before -->
@@ -1482,11 +2039,18 @@ return data;
                 <span class="method-start">76811 ms</span>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
               </div> <!-- configuration-method after -->
+=======
+                <span class="method-start">349241 ms</span>
+              </div> <!-- configuration-method before -->
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.dataset.DatasetActionLock</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionRestore</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp</span>
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <span class="method-start">844119 ms</span>
               </div> <!-- configuration-method before -->
@@ -1509,11 +2073,18 @@ return data;
                 <span class="method-start">89139 ms</span>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
               </div> <!-- configuration-method after -->
+=======
+                <span class="method-start">352273 ms</span>
+              </div> <!-- configuration-method before -->
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.dataset.DatasetActionUnLock</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionLock</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp</span>
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <span class="method-start">857023 ms</span>
               </div> <!-- configuration-method before -->
@@ -1536,11 +2107,18 @@ return data;
                 <span class="method-start">101454 ms</span>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
               </div> <!-- configuration-method after -->
+=======
+                <span class="method-start">355295 ms</span>
+              </div> <!-- configuration-method before -->
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.dataset.DatasetActionPublish</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionUnLock</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp</span>
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <span class="method-start">869812 ms</span>
               </div> <!-- configuration-method before -->
@@ -1563,11 +2141,18 @@ return data;
                 <span class="method-start">113758 ms</span>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
               </div> <!-- configuration-method after -->
+=======
+                <span class="method-start">358313 ms</span>
+              </div> <!-- configuration-method before -->
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.dataset.DatasetActionUnPublish</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionPublish</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp</span>
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <span class="method-start">883005 ms</span>
               </div> <!-- configuration-method before -->
@@ -1590,11 +2175,18 @@ return data;
                 <span class="method-start">126071 ms</span>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
               </div> <!-- configuration-method after -->
+=======
+                <span class="method-start">361326 ms</span>
+              </div> <!-- configuration-method before -->
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.dataset.DatasetActionClone</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionUnPublish</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp</span>
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <span class="method-start">895856 ms</span>
               </div> <!-- configuration-method before -->
@@ -1619,13 +2211,27 @@ return data;
                 <span class="method-start">138383 ms</span>
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
               </div> <!-- configuration-method after -->
+=======
+                <span class="method-start">364338 ms</span>
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.dataset.DatasetActionExport</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionClone</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">setUp</span>
+                <span class="method-start">367358 ms</span>
+              </div> <!-- configuration-method before -->
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionExport</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp</span>
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <span class="method-start">908692 ms</span>
               </div> <!-- configuration-method before -->
@@ -1641,10 +2247,94 @@ return data;
               </div> <!-- configuration-method after -->
 =======
                 <span class="method-start">144439 ms</span>
+=======
+                <span class="method-start">370385 ms</span>
+>>>>>>> 7ebc5fd87d71cf6aab536f803d31162524aa1473
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.datapod.DatapodAdd</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">datasetEditAction</span>
-                <span class="method-start">-1549548576558 ms</span>
+                <span class="method-name">validateAdd</span>
+                <span class="method-start">-1549553867543 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateAdd</span>
+                <span class="method-start">-1549553867543 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateAdd</span>
+                <span class="method-start">-1549553867543 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionView</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">datapodViewAction</span>
+                <span class="method-start">-1549553867543 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionEdit</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">datapodEditAction</span>
+                <span class="method-start">-1549553867543 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionDelete</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">datapodDeleteAction</span>
+                <span class="method-start">-1549553867543 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionRestore</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">datapodRestoreAction</span>
+                <span class="method-start">-1549553867543 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionLock</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">datapodLockAction</span>
+                <span class="method-start">-1549553867543 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionUnLock</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">datapodUnLockAction</span>
+                <span class="method-start">-1549553867543 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionPublish</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">datapodPublishAction</span>
+                <span class="method-start">-1549553867543 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionUnPublish</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">datapodUnPublishAction</span>
+                <span class="method-start">-1549553867543 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionClone</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">datapodEditAction</span>
+                <span class="method-start">-1549553867543 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.inferyx.framework.dataPreparation.datapod.DatapodActionExport</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">datapodEditAction</span>
+                <span class="method-start">-1549553867543 ms</span>
               </div> <!-- test-method -->
 >>>>>>> a154ba926ae7431b6817ef8936425d4f63da57b5
           </div> <!-- main-panel-content rounded-window-bottom -->
