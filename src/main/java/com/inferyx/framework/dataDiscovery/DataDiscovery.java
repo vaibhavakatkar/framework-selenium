@@ -73,7 +73,7 @@ public class DataDiscovery extends TestBase {
 		}
 	}
 
-	@Test(priority = 3, description = "datapodMetaComp")
+	@Test(priority = 4, description = "datapodMetaComp")
 	public void dataDiscoveryCardMetaComp() throws IOException, InterruptedException {
 		// datapodMetaComp
 		try {
@@ -101,7 +101,7 @@ public class DataDiscovery extends TestBase {
 			dataFromExcelSheet.updateResult(4, 5, "DatapodMetaComp", "FAIL", totalTime);
 		}
 	}
-	@Test(priority = 4, description = "datapodDataStore")
+	@Test(priority = 5, description = "datapodDataStore")
 	public void dataStore() throws IOException, InterruptedException {
 		// datapodDataStore
 		try {
@@ -121,7 +121,7 @@ public class DataDiscovery extends TestBase {
 			dataFromExcelSheet.updateResult(4, 5, "DatapodDataStore", "FAIL", totalTime);
 		}
 	}
-	@Test(priority = 5, description = "datapodEdit")
+	@Test(priority = 6, description = "datapodEdit")
 	public void dataDiscoveryCardEdit() throws IOException, InterruptedException {
 		// datapodEdit
 		try {
@@ -140,7 +140,7 @@ public class DataDiscovery extends TestBase {
 		}
 	}
 
-	@Test(priority = 6, description = "datapodGraph")
+	@Test(priority = 7, description = "datapodGraph")
 	public void knowledgeGraph() throws IOException, InterruptedException {
 		// datapodGraph
 		try {
@@ -159,7 +159,7 @@ public class DataDiscovery extends TestBase {
 		}
 	}
 
-	@Test(priority = 7, description = "datapodSampleRecord")
+	@Test(priority = 8, description = "datapodSampleRecord")
 	public void dataDiscoverySampleRecord() throws IOException, InterruptedException {
 		// datapodSampleRecord
 		try {
@@ -180,7 +180,7 @@ public class DataDiscovery extends TestBase {
 			dataFromExcelSheet.updateResult(4, 5, "DatapodSampleRecord", "FAIL", totalTime);
 		}
 	}
-	@Test(priority = 8, description = "histogram")
+	@Test(priority = 9, description = "histogram")
 	public void histogram() throws IOException, InterruptedException {
 		// histogram
 		try {
@@ -211,7 +211,7 @@ public class DataDiscovery extends TestBase {
 			dataFromExcelSheet.updateResult(4, 5, "Histogram", "FAIL", totalTime);
 		}
 	}
-	@Test(priority = 9, description = "histogram")
+	@Test(priority = 10, description = "histogram")
 	public void histogramChart() throws IOException, InterruptedException {
 		// histogramChart
 		try {
@@ -227,7 +227,7 @@ public class DataDiscovery extends TestBase {
 			dataFromExcelSheet.updateResult(4, 5, "HistogramChart", "FAIL", totalTime);
 		}
 	}
-	@Test(priority = 10, description = "histogramGrid")
+	@Test(priority = 11, description = "histogramGrid")
 	public void histogramGrid() throws IOException, InterruptedException {
 		// histogramGrid
 		try {
