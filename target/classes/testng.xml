@@ -13,7 +13,7 @@
 			<class name="com.inferyx.framework.dataDiscovery.DataDiscovery" />
 		</classes>
 	</test>
-	<test name="DATA Visualization">
+	<!-- <test name="DATA Visualization">
 		<classes>
 			<class name="com.inferyx.framework.dataVisualization.DataVisualization" />
 		</classes>
@@ -32,8 +32,8 @@
 			<class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionUnPublish" />
 			<class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionClone" />
 			<class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionExport" />
-<!-- 			<class name="com.inferyx.framework.dataPreparation.DatapodActionUpload" />
- -->		</classes>
+			<class name="com.inferyx.framework.dataPreparation.DatapodActionUpload" />
+		</classes>
 
 	</test>
 
@@ -54,4 +54,4 @@
 		</classes>
 
 	</test>
-</suite>
+ --></suite>
