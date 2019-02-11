@@ -5,7 +5,6 @@
     <classes>
       <class name="com.inferyx.framework.dataDiscovery.DataDiscovery">
         <methods>
-          <include name="closeIcon"/>
           <include name="datapodGraph"/>
         </methods>
       </class> <!-- com.inferyx.framework.dataDiscovery.DataDiscovery -->
