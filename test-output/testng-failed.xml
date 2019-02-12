@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [seq tests]">
-  <test thread-count="2" name="DATA DISCOVERY(failed)">
+  <test thread-count="2" name="DATA Visualization(failed)">
     <classes>
-      <class name="com.inferyx.framework.dataDiscovery.DataDiscovery">
+      <class name="com.inferyx.framework.dataVisualization.Dashboard">
         <methods>
-          <include name="datapodGraph"/>
+          <include name="dashboardAdd" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.inferyx.framework.dataDiscovery.DataDiscovery -->
+      </class> <!-- com.inferyx.framework.dataVisualization.Dashboard -->
     </classes>
-  </test> <!-- DATA DISCOVERY(failed) -->
+  </test> <!-- DATA Visualization(failed) -->
 </suite> <!-- Failed suite [seq tests] -->

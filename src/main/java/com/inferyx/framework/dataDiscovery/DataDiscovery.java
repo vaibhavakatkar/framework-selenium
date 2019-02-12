@@ -203,6 +203,8 @@ public class DataDiscovery extends TestBase {
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
 			dataFromExcelSheet.updateResult(4, 5, "DataStoreResult", "PASS", totalTime);
+			Thread.sleep(3000);
+
 		} catch (NoSuchElementException e) {
 			dataFromExcelSheet.updateResult(4, 5, "DataStoreResult", "FAIL", totalTime);
 		}
@@ -238,16 +240,17 @@ public class DataDiscovery extends TestBase {
 	public void datapodGraph() throws IOException, InterruptedException {
 		// datapodGraph
 		try {
-			//Thread.sleep(2000);
+			Thread.sleep(2000);
 			WebElement datapodGraph = driver.findElement(
 					By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[1]/div[2]/a[7]/i"));
 			start = System.currentTimeMillis();
-			Thread.sleep(1000);
+			Thread.sleep(4000);
 			datapodGraph.click();
 			Thread.sleep(6000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
 			dataFromExcelSheet.updateResult(4, 5, "DatapodGraph", "PASS", totalTime);
+			Thread.sleep(4000);
 		} catch (NoSuchElementException e) {
 			dataFromExcelSheet.updateResult(4, 5, "DatapodGraph", "FAIL", totalTime);
 		}
@@ -287,6 +290,7 @@ public class DataDiscovery extends TestBase {
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
 			dataFromExcelSheet.updateResult(4, 5, "DatapodEdit", "PASS", totalTime);
+			Thread.sleep(3000);
 		} catch (NoSuchElementException e) {
 			dataFromExcelSheet.updateResult(4, 5, "DatapodEdit", "FAIL", totalTime);
 
@@ -305,6 +309,7 @@ public class DataDiscovery extends TestBase {
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
 			dataFromExcelSheet.updateResult(4, 5, "DatapodClose", "PASS", totalTime);
+			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
 			dataFromExcelSheet.updateResult(4, 5, "DatapodClose", "FAIL", totalTime);
 		}

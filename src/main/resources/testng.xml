@@ -6,19 +6,22 @@
 			<class name="com.inferyx.framework.selenium.LoginPage" />
 		</classes>
 	</test>
-
-	<test name="DATA DISCOVERY">
+	<!-- <test name="DATA DISCOVERY">
 
 		<classes>
 			<class name="com.inferyx.framework.dataDiscovery.DataDiscovery" />
 		</classes>
-	</test>
-	<!-- <test name="DATA Visualization">
+	</test> -->
+	<test name="DATA Visualization">
 		<classes>
 			<class name="com.inferyx.framework.dataVisualization.DataVisualization" />
+			<class name="com.inferyx.framework.dataVisualization.Dashboard" />
+		<!-- 	<class name="com.inferyx.framework.dataVisualization.Vizpod" />
+			<class name="com.inferyx.framework.dataVisualization.Report" /> -->
 		</classes>
 	</test>
-<test name="DATA Preaparation.Datapod">
+	
+<!-- <test name="DATA Preaparation.Datapod">
 		<classes>
 			<class name="com.inferyx.framework.dataPreparation.datapod.DataPreaparation" />
 	  		<class name="com.inferyx.framework.dataPreparation.datapod.DatapodAdd" /> 
@@ -53,5 +56,5 @@
 			<class name="com.inferyx.framework.dataPreparation.DatasetActionUpload" />
 		</classes>
 
-	</test>
- --></suite>
+	</test> -->
+</suite>

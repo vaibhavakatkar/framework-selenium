@@ -3,19 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.inferyx.framework.dataDiscovery.DataDiscovery">
+      <class name="com.inferyx.framework.dataVisualization.Vizpod">
         <methods>
-          <include name="closeIcon"/>
-          <include name="dataDiscoveryCardMetaComp"/>
-          <include name="dataDiscoverySampleRecord"/>
-          <include name="downloadSample"/>
-          <include name="dataDiscoveryList"/>
-          <include name="knowledgeGraph"/>
-          <include name="dataDiscoveryCard"/>
-          <include name="dataStore"/>
-          <include name="dataDiscoveryCardEdit"/>
+          <include name="Vizpod"/>
         </methods>
-      </class> <!-- com.inferyx.framework.dataDiscovery.DataDiscovery -->
+      </class> <!-- com.inferyx.framework.dataVisualization.Vizpod -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -46,8 +46,7 @@ public class DatapodPage extends TestBase {
 	public void createNewDatapod(String name1, String tags1, String desc, String comp)
 			throws IOException, InterruptedException {
 		try {
-			WebElement name = driver.findElement(By.xpath(
-					"/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[2]/div/form/div[2]/div/input"));
+			WebElement name = driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[2]/div/form/div[2]/div/input"));
 			name.sendKeys(name1);
 
 			

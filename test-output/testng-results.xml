@@ -1,91 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="16" passed="15">
+<testng-results skipped="0" failed="1" ignored="0" total="8" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="seq tests" duration-ms="650157" started-at="2019-02-11T07:59:00Z" finished-at="2019-02-11T08:09:50Z">
+  <suite name="seq tests" duration-ms="417886" started-at="2019-02-11T14:56:17Z" finished-at="2019-02-11T15:03:15Z">
     <groups>
     </groups>
-    <test name="LOGIN" duration-ms="29241" started-at="2019-02-11T07:59:00Z" finished-at="2019-02-11T07:59:29Z">
+    <test name="LOGIN" duration-ms="24108" started-at="2019-02-11T14:56:17Z" finished-at="2019-02-11T14:56:42Z">
       <class name="com.inferyx.framework.selenium.LoginPage">
-        <test-method status="PASS" signature="openBrowser()[pri:1, instance:com.inferyx.framework.selenium.LoginPage@1d296da]" name="openBrowser" duration-ms="10848" started-at="2019-02-11T07:59:00Z" description="openBrowser" finished-at="2019-02-11T07:59:11Z">
+        <test-method status="PASS" signature="openBrowser()[pri:1, instance:com.inferyx.framework.selenium.LoginPage@1d296da]" name="openBrowser" duration-ms="6626" started-at="2019-02-11T14:56:18Z" description="openBrowser" finished-at="2019-02-11T14:56:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="login()[pri:2, instance:com.inferyx.framework.selenium.LoginPage@1d296da]" name="login" duration-ms="3933" started-at="2019-02-11T07:59:11Z" description="login check" finished-at="2019-02-11T07:59:15Z">
+        <test-method status="PASS" signature="login()[pri:2, instance:com.inferyx.framework.selenium.LoginPage@1d296da]" name="login" duration-ms="4041" started-at="2019-02-11T14:56:24Z" description="login check" finished-at="2019-02-11T14:56:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="appSelection()[pri:3, instance:com.inferyx.framework.selenium.LoginPage@1d296da]" name="appSelection" duration-ms="14358" started-at="2019-02-11T07:59:15Z" description="appSelection" finished-at="2019-02-11T07:59:29Z">
+        <test-method status="PASS" signature="appSelection()[pri:3, instance:com.inferyx.framework.selenium.LoginPage@1d296da]" name="appSelection" duration-ms="13353" started-at="2019-02-11T14:56:28Z" description="appSelection" finished-at="2019-02-11T14:56:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appSelection -->
       </class> <!-- com.inferyx.framework.selenium.LoginPage -->
     </test> <!-- LOGIN -->
-    <test name="DATA DISCOVERY" duration-ms="620865" started-at="2019-02-11T07:59:29Z" finished-at="2019-02-11T08:09:50Z">
-      <class name="com.inferyx.framework.dataDiscovery.DataDiscovery">
-        <test-method status="PASS" signature="dataDiscoveryList()[pri:1, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@233795b6]" name="dataDiscoveryList" duration-ms="1477" started-at="2019-02-11T07:59:29Z" description="dataDiscovery" finished-at="2019-02-11T07:59:30Z">
+    <test name="DATA Visualization" duration-ms="393737" started-at="2019-02-11T14:56:42Z" finished-at="2019-02-11T15:03:15Z">
+      <class name="com.inferyx.framework.dataVisualization.Dashboard">
+        <test-method status="PASS" signature="Dashboard()[pri:2, instance:com.inferyx.framework.dataVisualization.Dashboard@6f03482]" name="Dashboard" duration-ms="2590" started-at="2019-02-11T14:56:52Z" description="Dashboard" finished-at="2019-02-11T14:56:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dataDiscoveryList -->
-        <test-method status="PASS" signature="dataDiscoveryCard()[pri:2, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@233795b6]" name="dataDiscoveryCard" duration-ms="3486" started-at="2019-02-11T07:59:30Z" description="dataDiscoveryCard" finished-at="2019-02-11T07:59:34Z">
+        </test-method> <!-- Dashboard -->
+        <test-method status="PASS" signature="datshBoardTile()[pri:3, instance:com.inferyx.framework.dataVisualization.Dashboard@6f03482]" name="datshBoardTile" duration-ms="5181" started-at="2019-02-11T14:56:55Z" description="datshBoardTile" finished-at="2019-02-11T14:57:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dataDiscoveryCard -->
-        <test-method status="PASS" signature="dataDiscoveryCardMetaComp()[pri:3, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@233795b6]" name="dataDiscoveryCardMetaComp" duration-ms="18801" started-at="2019-02-11T07:59:34Z" description="datapodMetaComp" finished-at="2019-02-11T07:59:53Z">
+        </test-method> <!-- datshBoardTile -->
+        <test-method status="PASS" signature="datshBoardList()[pri:4, instance:com.inferyx.framework.dataVisualization.Dashboard@6f03482]" name="datshBoardList" duration-ms="8568" started-at="2019-02-11T14:57:00Z" description="datshBoardList" finished-at="2019-02-11T14:57:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dataDiscoveryCardMetaComp -->
-        <test-method status="PASS" signature="datapodSampleRecord()[pri:4, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@233795b6]" name="datapodSampleRecord" duration-ms="20672" started-at="2019-02-11T07:59:53Z" description="datapodSampleRecord" finished-at="2019-02-11T08:00:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- datapodSampleRecord -->
-        <test-method status="PASS" signature="histogramGrid()[pri:5, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@233795b6]" name="histogramGrid" duration-ms="5046" started-at="2019-02-11T08:00:13Z" description="histogramGrid" finished-at="2019-02-11T08:00:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- histogramGrid -->
-        <test-method status="PASS" signature="histogramChart()[pri:6, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@233795b6]" name="histogramChart" duration-ms="4688" started-at="2019-02-11T08:00:18Z" description="histogramChart" finished-at="2019-02-11T08:00:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- histogramChart -->
-        <test-method status="PASS" signature="downloadSample()[pri:7, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@233795b6]" name="downloadSample" duration-ms="3644" started-at="2019-02-11T08:00:23Z" description="datapodDownload" finished-at="2019-02-11T08:00:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- downloadSample -->
-        <test-method status="PASS" signature="dataStore()[pri:8, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@233795b6]" name="dataStore" duration-ms="28811" started-at="2019-02-11T08:00:27Z" description="datapodDataStore" finished-at="2019-02-11T08:00:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataStore -->
-        <test-method status="PASS" signature="dataStoreResult()[pri:9, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@233795b6]" name="dataStoreResult" duration-ms="262652" started-at="2019-02-11T08:00:56Z" description="dataStoreResult" finished-at="2019-02-11T08:05:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataStoreResult -->
-        <test-method status="PASS" signature="dataStoreResultDownload()[pri:10, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@233795b6]" name="dataStoreResultDownload" duration-ms="209121" started-at="2019-02-11T08:05:18Z" description="dataStoreResultDownload" finished-at="2019-02-11T08:08:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataStoreResultDownload -->
-        <test-method status="FAIL" signature="datapodGraph()[pri:11, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@233795b6]" name="datapodGraph" duration-ms="18634" started-at="2019-02-11T08:08:47Z" description="datapodGraph" finished-at="2019-02-11T08:09:06Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        </test-method> <!-- datshBoardList -->
+        <test-method status="FAIL" signature="dashboardAdd(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.inferyx.framework.dataVisualization.Dashboard@6f03482]" name="dashboardAdd" duration-ms="366632" started-at="2019-02-11T14:57:09Z" description="dashboardAdd" data-provider="getDummyData" finished-at="2019-02-11T15:03:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test add]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dshdbjvbf]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[datapod]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[account]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[unknown error: Element <i class="fa fa-sitemap" style="display: block;margin:0px 2px 0px 0px;color:white;"></i> is not clickable at point (1219, 7). Other element would receive the click: <a href="#" class="dropdown-toggle" dropdown-menu-hover="" data-toggle="dropdown" data-close-others="true">...</a>
+              <![CDATA[stale element reference: element is not attached to the page document
   (Session info: chrome=72.0.3626.81)
   (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.4.0-140-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 268 milliseconds
+Command duration or timeout: 498 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.2.0', revision: '8c03df6b79', time: '2017-02-23 10:51:31 +0000'
 System info: host: 'rohini007-Inspiron-3551', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-140-generic', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:39394}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706), userDataDir=/tmp/.org.chromium.Chromium.jo9klJ}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.81, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 5b1eeb1dbc233d3b4476d0615d899a70]]>
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:44093}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706), userDataDir=/tmp/.org.chromium.Chromium.IVQTFM}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.81, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 584d534c2dd1c8d25a97db2268e76fe2]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <i class="fa fa-sitemap" style="display: block;margin:0px 2px 0px 0px;color:white;"></i> is not clickable at point (1219, 7). Other element would receive the click: <a href="#" class="dropdown-toggle" dropdown-menu-hover="" data-toggle="dropdown" data-close-others="true">...</a>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=72.0.3626.81)
   (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.4.0-140-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 268 milliseconds
+Command duration or timeout: 498 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.2.0', revision: '8c03df6b79', time: '2017-02-23 10:51:31 +0000'
 System info: host: 'rohini007-Inspiron-3551', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-140-generic', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:39394}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706), userDataDir=/tmp/.org.chromium.Chromium.jo9klJ}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.81, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 5b1eeb1dbc233d3b4476d0615d899a70
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:44093}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706), userDataDir=/tmp/.org.chromium.Chromium.IVQTFM}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.81, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 584d534c2dd1c8d25a97db2268e76fe2
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -95,7 +91,8 @@ at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.ja
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at com.inferyx.framework.dataDiscovery.DataDiscovery.datapodGraph(DataDiscovery.java:246)
+at com.inferyx.framework.dataVisualization.DashboardPage.createDashboard(DashboardPage.java:30)
+at com.inferyx.framework.dataVisualization.Dashboard.dashboardAdd(Dashboard.java:99)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -123,19 +120,17 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- datapodGraph -->
-        <test-method status="PASS" signature="dataDiscoveryCardEdit()[pri:12, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@233795b6]" name="dataDiscoveryCardEdit" duration-ms="14860" started-at="2019-02-11T08:09:06Z" description="datapodEdit" finished-at="2019-02-11T08:09:21Z">
+        </test-method> <!-- dashboardAdd -->
+      </class> <!-- com.inferyx.framework.dataVisualization.Dashboard -->
+      <class name="com.inferyx.framework.dataVisualization.DataVisualization">
+        <test-method status="PASS" signature="dataVisualization()[pri:1, instance:com.inferyx.framework.dataVisualization.DataVisualization@185a6e9]" name="dataVisualization" duration-ms="10561" started-at="2019-02-11T14:56:42Z" description="dataVisualization" finished-at="2019-02-11T14:56:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dataDiscoveryCardEdit -->
-        <test-method status="PASS" signature="closeIcon()[pri:13, instance:com.inferyx.framework.dataDiscovery.DataDiscovery@233795b6]" name="closeIcon" duration-ms="28853" started-at="2019-02-11T08:09:21Z" description="datapodClose" finished-at="2019-02-11T08:09:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeIcon -->
-      </class> <!-- com.inferyx.framework.dataDiscovery.DataDiscovery -->
-    </test> <!-- DATA DISCOVERY -->
+        </test-method> <!-- dataVisualization -->
+      </class> <!-- com.inferyx.framework.dataVisualization.DataVisualization -->
+    </test> <!-- DATA Visualization -->
   </suite> <!-- seq tests -->
 </testng-results>

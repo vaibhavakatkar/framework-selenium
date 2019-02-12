@@ -33,12 +33,12 @@ public class DatapodAdd extends TestBase {
 		Thread.sleep(1000);
 	}
 	@DataProvider
-	public Object[][] getCRMTestData() {
+	public Object[][] getDummyData() {
 		Object data[][] = TestUtil.getTestData("datapod");
 		return data;
 	}
 
-	@Test(priority = 3, dataProvider = "getCRMTestData", description = "Datapod  Add")
+	@Test(priority = 3, dataProvider = "getDummyData", description = "Datapod  Add")
 	public void validateAdd(String title, String firstName, String lastName, String company)
 			throws IOException, InterruptedException {
 		// Datapod

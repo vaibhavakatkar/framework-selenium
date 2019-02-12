@@ -3,6 +3,7 @@ com/inferyx/framework/dataDiscovery/DataDiscovery.class
 com/inferyx/framework/selenium/LoginPage.class
 com/inferyx/framework/dataPreparation/datapod/DatapodActionUnPublish.class
 com/inferyx/framework/dataPreparation/dataset/DatasetActionExport.class
+com/inferyx/framework/dataVisualization/DashboardPage.class
 com/inferyx/framework/dataPreparation/dataset/DatasetActionPublish.class
 com/inferyx/framework/dataPreparation/datapod/DataPreaparation.class
 com/inferyx/framework/dataPreparation/dataset/DatasetActionLock.class
@@ -13,7 +14,9 @@ com/inferyx/framework/dataPreparation/dataset/DatasetActionDelete.class
 com/inferyx/framework/dataPreparation/dataset/DatasetActionView.class
 com/inferyx/framework/util/TestUtil.class
 com/inferyx/framework/dataPreparation/dataset/DatasetActionEdit.class
+com/inferyx/framework/dataVisualization/Dashboard.class
 com/inferyx/framework/dataPreparation/dataset/DatasetActionUnLock.class
+com/inferyx/framework/dataVisualization/Report.class
 com/inferyx/framework/dataPreparation/datapod/DatapodActionEdit.class
 com/inferyx/framework/dataPreparation/datapod/DatapodActionPublish.class
 com/inferyx/framework/dataPreparation/datapod/DatapodActionUnLock.class
@@ -27,6 +30,7 @@ com/inferyx/framework/dataPreparation/datapod/DatapodActionLock.class
 com/inferyx/framework/pages/DatapodPage.class
 com/inferyx/framework/dataPreparation/dataset/DataPreaparation.class
 com/inferyx/framework/dataPreparation/dataset/DatasetActionRestore.class
+com/inferyx/framework/dataVisualization/Vizpod.class
 com/inferyx/framework/dataPreparation/datapod/DatapodActionRestore.class
 com/inferyx/framework/dataPreparation/dataset/DatasetActionUnPublish.class
 com/inferyx/framework/dataPreparation/datapod/DatapodActionExport.class
