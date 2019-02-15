@@ -1,4 +1,4 @@
-package com.inferyx.framework.dataVisualization;
+package com.inferyx.framework.dataVisualization.report;
 
 import java.io.IOException;
 
@@ -11,7 +11,7 @@ import com.inferyx.framework.selenium.TestBase;
 
 public class Report extends TestBase {
  
-	@Test(priority =8, description = "Report")
+	@Test(priority =1, description = "Report")
 	public void Report() throws IOException, InterruptedException {
 		Thread.sleep(1000);
 		//Report

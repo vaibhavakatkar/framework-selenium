@@ -12,12 +12,52 @@
 			<class name="com.inferyx.framework.dataDiscovery.DataDiscovery" />
 		</classes>
 	</test> -->
-	<test name="DATA Visualization">
+	<!-- <test name="DATA Visualization">
 		<classes>
 			<class name="com.inferyx.framework.dataVisualization.DataVisualization" />
-			<class name="com.inferyx.framework.dataVisualization.Dashboard" />
-		<!-- 	<class name="com.inferyx.framework.dataVisualization.Vizpod" />
-			<class name="com.inferyx.framework.dataVisualization.Report" /> -->
+			<class name="com.inferyx.framework.dataVisualization.Dashboard" />	
+		</classes>
+	</test> -->	
+	<!-- <test name="Vizpod">
+	<classes>
+			<class name="com.inferyx.framework.dataVisualization.Vizpod" />
+ 			<class name="com.inferyx.framework.dataVisualization.VizpodActionView" />
+ 			<class name="com.inferyx.framework.dataVisualization.VizpodActionEdit" />
+ 			<class name="com.inferyx.framework.dataVisualization.VizpodActionDelete" />
+ 		 	<class name="com.inferyx.framework.dataVisualization.VizpodActionRestore" />
+ 			 <class name="com.inferyx.framework.dataVisualization.VizpodActionLock" />
+ 			<class name="com.inferyx.framework.dataVisualization.VizpodActionUnlock" />
+ 			<class name="com.inferyx.framework.dataVisualization.VizpodActionPublish" />
+ 			<class name="com.inferyx.framework.dataVisualization.VizpodActionUnPublish" />
+ 			<class name="com.inferyx.framework.dataVisualization.VizpodActionClone" />
+ 			<class name="com.inferyx.framework.dataVisualization.VizpodActionExport" />	
+	</classes>
+	</test> -->
+	<!-- <test name="Report">
+			<classes>
+				<class name="com.inferyx.framework.dataVisualization.Report" /> 
+			</classes>	
+	</test> -->
+	<test name="Data Profiling">
+		<classes>
+		<class name="com.inferyx.framework.dataProfiling.DataProfiling" />	
+		</classes>
+	</test>
+	<test name="Data Profiling Rule">
+		<classes>
+		<class name="com.inferyx.framework.dataProfiling.rule.Rule" />	
+		<class name="com.inferyx.framework.dataProfiling.rule.RuleAdd" />
+		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionView" />
+		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionEdit" />
+		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionDelete" />
+		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionRestore" />
+		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionLock" />
+		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionUnlock" />
+		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionPublish" />
+		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionUnPublish" />
+		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionExecute" />
+		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionClone" />
+		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionExport" />	
 		</classes>
 	</test>
 	

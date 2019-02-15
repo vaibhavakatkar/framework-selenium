@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [seq tests]">
-  <test thread-count="2" name="DATA Visualization(failed)">
+  <test thread-count="2" name="Data Profiling Rule(failed)">
     <classes>
-      <class name="com.inferyx.framework.dataVisualization.Dashboard">
+      <class name="com.inferyx.framework.dataProfiling.rule.RuleActionClone">
         <methods>
-          <include name="dashboardAdd" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="datapodEditAction"/>
+          <include name="AfterMethod"/>
         </methods>
-      </class> <!-- com.inferyx.framework.dataVisualization.Dashboard -->
+      </class> <!-- com.inferyx.framework.dataProfiling.rule.RuleActionClone -->
+      <class name="com.inferyx.framework.dataProfiling.rule.RuleActionExport">
+        <methods>
+          <include name="datapodEditAction"/>
+          <include name="AfterMethod"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataProfiling.rule.RuleActionExport -->
     </classes>
-  </test> <!-- DATA Visualization(failed) -->
+  </test> <!-- Data Profiling Rule(failed) -->
 </suite> <!-- Failed suite [seq tests] -->

@@ -45,9 +45,7 @@ public class DatapodActionView extends TestBase {
 		}
 		Thread.sleep(3000);
 	}
-	
-	
-	
+
 	@AfterMethod
 	public void AfterMethod() throws InterruptedException {
 		Thread.sleep(3000);
