@@ -255,7 +255,26 @@ public class DataDiscovery extends TestBase {
 			dataFromExcelSheet.updateResult(4, 5, "DatapodGraph", "FAIL", totalTime);
 		}
 	}
-	@Test(priority = 12, description = "datapodEdit")
+	@Test(priority = 12, description = "Datapod Graph Refresh")
+	public void datapodGraphRefresh() throws IOException, InterruptedException {
+		// datapodGraph
+		try {
+			Thread.sleep(2000);
+			WebElement datapodGraphRefresh = driver.findElement(
+					By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[1]/div[2]/a[8]/i"));
+			start = System.currentTimeMillis();
+			Thread.sleep(4000);
+			datapodGraphRefresh.click();
+			Thread.sleep(6000);
+			finish = System.currentTimeMillis();
+			totalTime = finish - start;
+			dataFromExcelSheet.updateResult(4, 5, "Datapod Graph Refresh", "PASS", totalTime);
+			Thread.sleep(4000);
+		} catch (NoSuchElementException e) {
+			dataFromExcelSheet.updateResult(4, 5, "Datapod Graph Refresh", "FAIL", totalTime);
+		}
+	}
+	@Test(priority = 13, description = "datapodEdit")
 	public void dataDiscoveryCardEdit() throws IOException, InterruptedException {
 		// datapodEdit
 		try {
@@ -296,7 +315,7 @@ public class DataDiscovery extends TestBase {
 
 		}
 	}
-	@Test(priority = 13, description = "datapodClose")
+	@Test(priority = 14, description = "datapodClose")
 	public void closeIcon() throws IOException, InterruptedException {
 		// datapodClose
 		try {

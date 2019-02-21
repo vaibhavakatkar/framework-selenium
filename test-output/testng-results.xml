@@ -1,222 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="17" passed="17">
+<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="seq tests" duration-ms="201654" started-at="2019-02-15T09:27:58Z" finished-at="2019-02-15T09:31:20Z">
+  <suite name="seq tests" duration-ms="97515" started-at="2019-02-21T10:03:45Z" finished-at="2019-02-21T10:05:22Z">
     <groups>
     </groups>
-    <test name="LOGIN" duration-ms="20313" started-at="2019-02-15T09:27:58Z" finished-at="2019-02-15T09:28:19Z">
+    <test name="LOGIN" duration-ms="20442" started-at="2019-02-21T10:03:45Z" finished-at="2019-02-21T10:04:05Z">
       <class name="com.inferyx.framework.selenium.LoginPage">
-        <test-method status="PASS" signature="openBrowser()[pri:1, instance:com.inferyx.framework.selenium.LoginPage@7a3d45bd]" name="openBrowser" duration-ms="5117" started-at="2019-02-15T09:27:58Z" description="openBrowser" finished-at="2019-02-15T09:28:03Z">
+        <test-method status="PASS" signature="openBrowser()[pri:1, instance:com.inferyx.framework.selenium.LoginPage@7a3d45bd]" name="openBrowser" duration-ms="5177" started-at="2019-02-21T10:03:45Z" description="openBrowser" finished-at="2019-02-21T10:03:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="login()[pri:2, instance:com.inferyx.framework.selenium.LoginPage@7a3d45bd]" name="login" duration-ms="3277" started-at="2019-02-15T09:28:03Z" description="login check" finished-at="2019-02-15T09:28:07Z">
+        <test-method status="PASS" signature="login()[pri:2, instance:com.inferyx.framework.selenium.LoginPage@7a3d45bd]" name="login" duration-ms="3503" started-at="2019-02-21T10:03:50Z" description="login check" finished-at="2019-02-21T10:03:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="appSelection()[pri:3, instance:com.inferyx.framework.selenium.LoginPage@7a3d45bd]" name="appSelection" duration-ms="11876" started-at="2019-02-15T09:28:07Z" description="appSelection" finished-at="2019-02-15T09:28:19Z">
+        <test-method status="PASS" signature="appSelection()[pri:3, instance:com.inferyx.framework.selenium.LoginPage@7a3d45bd]" name="appSelection" duration-ms="11709" started-at="2019-02-21T10:03:53Z" description="appSelection" finished-at="2019-02-21T10:04:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appSelection -->
       </class> <!-- com.inferyx.framework.selenium.LoginPage -->
     </test> <!-- LOGIN -->
-    <test name="Data Profiling" duration-ms="10424" started-at="2019-02-15T09:28:19Z" finished-at="2019-02-15T09:28:29Z">
-      <class name="com.inferyx.framework.dataProfiling.DataProfiling">
-        <test-method status="PASS" signature="dataProfiling()[pri:1, instance:com.inferyx.framework.dataProfiling.DataProfiling@7a30d1e6]" name="dataProfiling" duration-ms="10419" started-at="2019-02-15T09:28:19Z" description="dataProfiling" finished-at="2019-02-15T09:28:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataProfiling -->
-      </class> <!-- com.inferyx.framework.dataProfiling.DataProfiling -->
-    </test> <!-- Data Profiling -->
-    <test name="Data Profiling Rule" duration-ms="170891" started-at="2019-02-15T09:28:29Z" finished-at="2019-02-15T09:31:20Z">
-      <class name="com.inferyx.framework.dataProfiling.rule.RuleActionDelete">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataProfiling.rule.RuleActionDelete@150c158]" name="setUp" is-config="true" duration-ms="4149" started-at="2019-02-15T09:29:35Z" finished-at="2019-02-15T09:29:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="vizpodDelete()[pri:6, instance:com.inferyx.framework.dataProfiling.rule.RuleActionDelete@150c158]" name="vizpodDelete" duration-ms="4257" started-at="2019-02-15T09:29:39Z" description="ruleDelete" finished-at="2019-02-15T09:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- vizpodDelete -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataProfiling.rule.RuleActionDelete@150c158]" name="AfterMethod" is-config="true" duration-ms="3195" started-at="2019-02-15T09:29:43Z" finished-at="2019-02-15T09:29:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-      </class> <!-- com.inferyx.framework.dataProfiling.rule.RuleActionDelete -->
-      <class name="com.inferyx.framework.dataProfiling.rule.Rule">
-        <test-method status="PASS" signature="dataVisualization()[pri:2, instance:com.inferyx.framework.dataProfiling.rule.Rule@6ec8211c]" name="dataVisualization" duration-ms="11546" started-at="2019-02-15T09:28:29Z" description="Data Profile Rule" finished-at="2019-02-15T09:28:41Z">
+    <test name="DATA Visualization" duration-ms="10410" started-at="2019-02-21T10:04:05Z" finished-at="2019-02-21T10:04:16Z">
+      <class name="com.inferyx.framework.dataVisualization.DataVisualization">
+        <test-method status="PASS" signature="dataVisualization()[pri:1, instance:com.inferyx.framework.dataVisualization.DataVisualization@7a30d1e6]" name="dataVisualization" duration-ms="10407" started-at="2019-02-21T10:04:05Z" description="dataVisualization" finished-at="2019-02-21T10:04:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataVisualization -->
-      </class> <!-- com.inferyx.framework.dataProfiling.rule.Rule -->
-      <class name="com.inferyx.framework.dataProfiling.rule.RuleActionLock">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataProfiling.rule.RuleActionLock@401e7803]" name="setUp" is-config="true" duration-ms="4128" started-at="2019-02-15T09:29:58Z" finished-at="2019-02-15T09:30:02Z">
+      </class> <!-- com.inferyx.framework.dataVisualization.DataVisualization -->
+    </test> <!-- DATA Visualization -->
+    <test name="DATA Visualization Dashboard" duration-ms="66639" started-at="2019-02-21T10:04:16Z" finished-at="2019-02-21T10:05:22Z">
+      <class name="com.inferyx.framework.dataVisualization.dashboard.DashBoard">
+        <test-method status="PASS" signature="Dashboard()[pri:2, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoard@2e3fc542]" name="Dashboard" duration-ms="2430" started-at="2019-02-21T10:04:16Z" description="Dashboard" finished-at="2019-02-21T10:04:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Dashboard -->
+        <test-method status="PASS" signature="datshBoardTile()[pri:3, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoard@2e3fc542]" name="datshBoardTile" duration-ms="4658" started-at="2019-02-21T10:04:18Z" description="datshBoardTile" finished-at="2019-02-21T10:04:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- datshBoardTile -->
+        <test-method status="PASS" signature="datshBoardList()[pri:4, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoard@2e3fc542]" name="datshBoardList" duration-ms="7809" started-at="2019-02-21T10:04:23Z" description="datshBoardList" finished-at="2019-02-21T10:04:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- datshBoardList -->
+      </class> <!-- com.inferyx.framework.dataVisualization.dashboard.DashBoard -->
+      <class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardDelete">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoardDelete@4524411f]" name="setUp" is-config="true" duration-ms="4704" started-at="2019-02-21T10:04:47Z" finished-at="2019-02-21T10:04:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="datapodLockAction()[pri:8, instance:com.inferyx.framework.dataProfiling.rule.RuleActionLock@401e7803]" name="datapodLockAction" duration-ms="4198" started-at="2019-02-15T09:30:02Z" description="Rule Lock Action" finished-at="2019-02-15T09:30:06Z">
+        <test-method status="PASS" signature="vizpodDelete()[pri:6, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoardDelete@4524411f]" name="vizpodDelete" duration-ms="4182" started-at="2019-02-21T10:04:52Z" description="dashboardDelete" finished-at="2019-02-21T10:04:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- datapodLockAction -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataProfiling.rule.RuleActionLock@401e7803]" name="AfterMethod" is-config="true" duration-ms="3136" started-at="2019-02-15T09:30:06Z" finished-at="2019-02-15T09:30:09Z">
+        </test-method> <!-- vizpodDelete -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoardDelete@4524411f]" name="AfterMethod" is-config="true" duration-ms="3126" started-at="2019-02-21T10:04:56Z" finished-at="2019-02-21T10:04:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-      </class> <!-- com.inferyx.framework.dataProfiling.rule.RuleActionLock -->
-      <class name="com.inferyx.framework.dataProfiling.rule.RuleActionUnlock">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataProfiling.rule.RuleActionUnlock@10dba097]" name="setUp" is-config="true" duration-ms="4123" started-at="2019-02-15T09:30:09Z" finished-at="2019-02-15T09:30:13Z">
+      </class> <!-- com.inferyx.framework.dataVisualization.dashboard.DashBoardDelete -->
+      <class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardEdit">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoardEdit@150c158]" name="setUp" is-config="true" duration-ms="4134" started-at="2019-02-21T10:04:30Z" finished-at="2019-02-21T10:04:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="datapodUnLockAction()[pri:9, instance:com.inferyx.framework.dataProfiling.rule.RuleActionUnlock@10dba097]" name="datapodUnLockAction" duration-ms="4207" started-at="2019-02-15T09:30:13Z" description="Rule UnLock Action" finished-at="2019-02-15T09:30:17Z">
+        <test-method status="PASS" signature="datshBoardList()[pri:5, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoardEdit@150c158]" name="datshBoardList" duration-ms="7434" started-at="2019-02-21T10:04:35Z" description="Dashboard Edit" finished-at="2019-02-21T10:04:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- datapodUnLockAction -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataProfiling.rule.RuleActionUnlock@10dba097]" name="AfterMethod" is-config="true" duration-ms="3100" started-at="2019-02-15T09:30:17Z" finished-at="2019-02-15T09:30:21Z">
+        </test-method> <!-- datshBoardList -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoardEdit@150c158]" name="AfterMethod" is-config="true" duration-ms="5278" started-at="2019-02-21T10:04:42Z" finished-at="2019-02-21T10:04:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-      </class> <!-- com.inferyx.framework.dataProfiling.rule.RuleActionUnlock -->
-      <class name="com.inferyx.framework.dataProfiling.rule.RuleActionRestore">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataProfiling.rule.RuleActionRestore@4524411f]" name="setUp" is-config="true" duration-ms="4141" started-at="2019-02-15T09:29:46Z" finished-at="2019-02-15T09:29:50Z">
+      </class> <!-- com.inferyx.framework.dataVisualization.dashboard.DashBoardEdit -->
+      <class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardRestore">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoardRestore@401e7803]" name="setUp" is-config="true" duration-ms="4100" started-at="2019-02-21T10:04:59Z" finished-at="2019-02-21T10:05:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ruleRestore()[pri:7, instance:com.inferyx.framework.dataProfiling.rule.RuleActionRestore@4524411f]" name="ruleRestore" duration-ms="4258" started-at="2019-02-15T09:29:50Z" description="ruleRestore" finished-at="2019-02-15T09:29:55Z">
+        <test-method status="PASS" signature="vizpodRestore()[pri:7, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoardRestore@401e7803]" name="vizpodRestore" duration-ms="4216" started-at="2019-02-21T10:05:03Z" description="dashboardRestore" finished-at="2019-02-21T10:05:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ruleRestore -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataProfiling.rule.RuleActionRestore@4524411f]" name="AfterMethod" is-config="true" duration-ms="3098" started-at="2019-02-15T09:29:55Z" finished-at="2019-02-15T09:29:58Z">
+        </test-method> <!-- vizpodRestore -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoardRestore@401e7803]" name="AfterMethod" is-config="true" duration-ms="3126" started-at="2019-02-21T10:05:08Z" finished-at="2019-02-21T10:05:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-      </class> <!-- com.inferyx.framework.dataProfiling.rule.RuleActionRestore -->
-      <class name="com.inferyx.framework.dataProfiling.rule.RuleActionView">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataProfiling.rule.RuleActionView@544a2ea6]" name="setUp" is-config="true" duration-ms="4128" started-at="2019-02-15T09:29:06Z" finished-at="2019-02-15T09:29:10Z">
+      </class> <!-- com.inferyx.framework.dataVisualization.dashboard.DashBoardRestore -->
+      <class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardLock">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoardLock@704d6e83]" name="setUp" is-config="true" duration-ms="4128" started-at="2019-02-21T10:05:11Z" finished-at="2019-02-21T10:05:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="vizpodView()[pri:4, instance:com.inferyx.framework.dataProfiling.rule.RuleActionView@544a2ea6]" name="vizpodView" duration-ms="4494" started-at="2019-02-15T09:29:10Z" description="ruleView" finished-at="2019-02-15T09:29:15Z">
+        <test-method status="PASS" signature="dashboardLockAction()[pri:8, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoardLock@704d6e83]" name="dashboardLockAction" duration-ms="4200" started-at="2019-02-21T10:05:15Z" description="Dashboard Lock Action" finished-at="2019-02-21T10:05:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- vizpodView -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataProfiling.rule.RuleActionView@544a2ea6]" name="AfterMethod" is-config="true" duration-ms="5706" started-at="2019-02-15T09:29:15Z" finished-at="2019-02-15T09:29:20Z">
+        </test-method> <!-- dashboardLockAction -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoardLock@704d6e83]" name="AfterMethod" is-config="true" duration-ms="3087" started-at="2019-02-21T10:05:19Z" finished-at="2019-02-21T10:05:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-      </class> <!-- com.inferyx.framework.dataProfiling.rule.RuleActionView -->
-      <class name="com.inferyx.framework.dataProfiling.rule.RuleActionEdit">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataProfiling.rule.RuleActionEdit@2e3fc542]" name="setUp" is-config="true" duration-ms="4153" started-at="2019-02-15T09:29:20Z" finished-at="2019-02-15T09:29:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ruleEdit()[pri:5, instance:com.inferyx.framework.dataProfiling.rule.RuleActionEdit@2e3fc542]" name="ruleEdit" duration-ms="4472" started-at="2019-02-15T09:29:24Z" description="ruleEdit" finished-at="2019-02-15T09:29:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ruleEdit -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataProfiling.rule.RuleActionEdit@2e3fc542]" name="AfterMethod" is-config="true" duration-ms="5688" started-at="2019-02-15T09:29:29Z" finished-at="2019-02-15T09:29:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-      </class> <!-- com.inferyx.framework.dataProfiling.rule.RuleActionEdit -->
-      <class name="com.inferyx.framework.dataProfiling.rule.RuleActionExecute">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataProfiling.rule.RuleActionExecute@43a0cee9]" name="setUp" is-config="true" duration-ms="4134" started-at="2019-02-15T09:30:44Z" finished-at="2019-02-15T09:30:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="vizpodView()[pri:12, instance:com.inferyx.framework.dataProfiling.rule.RuleActionExecute@43a0cee9]" name="vizpodView" duration-ms="4209" started-at="2019-02-15T09:30:48Z" description="Rule Execute Action" finished-at="2019-02-15T09:30:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- vizpodView -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataProfiling.rule.RuleActionExecute@43a0cee9]" name="AfterMethod" is-config="true" duration-ms="5138" started-at="2019-02-15T09:30:52Z" finished-at="2019-02-15T09:30:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-      </class> <!-- com.inferyx.framework.dataProfiling.rule.RuleActionExecute -->
-      <class name="com.inferyx.framework.dataProfiling.rule.RuleActionUnPublish">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataProfiling.rule.RuleActionUnPublish@704d6e83]" name="setUp" is-config="true" duration-ms="4109" started-at="2019-02-15T09:30:32Z" finished-at="2019-02-15T09:30:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="datapodUnPublishAction()[pri:11, instance:com.inferyx.framework.dataProfiling.rule.RuleActionUnPublish@704d6e83]" name="datapodUnPublishAction" duration-ms="4230" started-at="2019-02-15T09:30:36Z" description="Rule UnPublish Action" finished-at="2019-02-15T09:30:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- datapodUnPublishAction -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataProfiling.rule.RuleActionUnPublish@704d6e83]" name="AfterMethod" is-config="true" duration-ms="3108" started-at="2019-02-15T09:30:40Z" finished-at="2019-02-15T09:30:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-      </class> <!-- com.inferyx.framework.dataProfiling.rule.RuleActionUnPublish -->
-      <class name="com.inferyx.framework.dataProfiling.rule.RuleActionPublish">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataProfiling.rule.RuleActionPublish@1786f9d5]" name="setUp" is-config="true" duration-ms="4126" started-at="2019-02-15T09:30:21Z" finished-at="2019-02-15T09:30:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="datapodPublishAction()[pri:10, instance:com.inferyx.framework.dataProfiling.rule.RuleActionPublish@1786f9d5]" name="datapodPublishAction" duration-ms="4275" started-at="2019-02-15T09:30:25Z" description="Rule Publish Action" finished-at="2019-02-15T09:30:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- datapodPublishAction -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataProfiling.rule.RuleActionPublish@1786f9d5]" name="AfterMethod" is-config="true" duration-ms="3136" started-at="2019-02-15T09:30:29Z" finished-at="2019-02-15T09:30:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-      </class> <!-- com.inferyx.framework.dataProfiling.rule.RuleActionPublish -->
-      <class name="com.inferyx.framework.dataProfiling.rule.RuleActionExport">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataProfiling.rule.RuleActionExport@2eda0940]" name="setUp" is-config="true" duration-ms="4098" started-at="2019-02-15T09:31:09Z" finished-at="2019-02-15T09:31:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="datapodEditAction()[pri:14, instance:com.inferyx.framework.dataProfiling.rule.RuleActionExport@2eda0940]" name="datapodEditAction" duration-ms="4252" started-at="2019-02-15T09:31:13Z" description="Rule Export Action" finished-at="2019-02-15T09:31:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- datapodEditAction -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataProfiling.rule.RuleActionExport@2eda0940]" name="AfterMethod" is-config="true" duration-ms="3123" started-at="2019-02-15T09:31:17Z" finished-at="2019-02-15T09:31:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-      </class> <!-- com.inferyx.framework.dataProfiling.rule.RuleActionExport -->
-      <class name="com.inferyx.framework.dataProfiling.rule.RuleActionClone">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataProfiling.rule.RuleActionClone@eb21112]" name="setUp" is-config="true" duration-ms="4093" started-at="2019-02-15T09:30:57Z" finished-at="2019-02-15T09:31:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="datapodEditAction()[pri:13, instance:com.inferyx.framework.dataProfiling.rule.RuleActionClone@eb21112]" name="datapodEditAction" duration-ms="4250" started-at="2019-02-15T09:31:01Z" description="Rule Clone  Action" finished-at="2019-02-15T09:31:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- datapodEditAction -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataProfiling.rule.RuleActionClone@eb21112]" name="AfterMethod" is-config="true" duration-ms="3127" started-at="2019-02-15T09:31:05Z" finished-at="2019-02-15T09:31:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-      </class> <!-- com.inferyx.framework.dataProfiling.rule.RuleActionClone -->
-      <class name="com.inferyx.framework.dataProfiling.rule.RuleAdd">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataProfiling.rule.RuleAdd@7276c8cd]" name="setUp" is-config="true" duration-ms="5173" started-at="2019-02-15T09:28:41Z" finished-at="2019-02-15T09:28:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateAdd(java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.inferyx.framework.dataProfiling.rule.RuleAdd@7276c8cd]" name="validateAdd" duration-ms="20026" started-at="2019-02-15T09:28:46Z" description="Rule  Add" data-provider="getDummyData" finished-at="2019-02-15T09:29:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[profile_bank_test]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Data profiling to see statistical check results on raw tables for all columns]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[datapod]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateAdd -->
-      </class> <!-- com.inferyx.framework.dataProfiling.rule.RuleAdd -->
-    </test> <!-- Data Profiling Rule -->
+      </class> <!-- com.inferyx.framework.dataVisualization.dashboard.DashBoardLock -->
+    </test> <!-- DATA Visualization Dashboard -->
   </suite> <!-- seq tests -->
 </testng-results>

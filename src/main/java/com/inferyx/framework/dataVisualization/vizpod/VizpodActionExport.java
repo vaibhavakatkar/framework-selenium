@@ -21,8 +21,8 @@ public class VizpodActionExport extends TestBase{
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority = 13, description = "Vizpod Export Action")
-	public void datapodEditAction() throws IOException, InterruptedException {
+	@Test(priority = 18, description = "Vizpod Export Action")
+	public void vizpodEditAction() throws IOException, InterruptedException {
 		try {
 			WebElement actionExport = driver.findElement(By.xpath("/html/body/ul/li[7]/a"));
 			actionExport.click();

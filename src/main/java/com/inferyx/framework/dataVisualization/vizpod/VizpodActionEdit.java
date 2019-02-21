@@ -21,7 +21,7 @@ public class VizpodActionEdit extends TestBase{
 
 		Thread.sleep(1000);
 	}
-	@Test(priority =5, description = "vizpodEdit")
+	@Test(priority =10, description = "vizpodEdit")
 	public void vizpodEdit() throws IOException, InterruptedException {
 		Thread.sleep(3000);
 		//vizpodEdit
@@ -43,10 +43,10 @@ public class VizpodActionEdit extends TestBase{
 	public void AfterMethod() throws InterruptedException {
 		Thread.sleep(3000);
 		start = System.currentTimeMillis();
-		WebElement datapodAcationbutton = driver
+		WebElement actionBtn = driver
 				.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[1]/div[2]/a[7]/i"));
 		Thread.sleep(1000);
-		datapodAcationbutton.click();
+		actionBtn.click();
 		Thread.sleep(1000);
 	}
 }

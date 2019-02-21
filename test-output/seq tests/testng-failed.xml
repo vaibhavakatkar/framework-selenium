@@ -1,22 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [seq tests]">
-  <test thread-count="2" name="Data Profiling Rule(failed)">
+  <test thread-count="2" name="DATA Visualization Dashboard(failed)">
     <classes>
-      <class name="com.inferyx.framework.dataProfiling.rule.RuleActionClone">
+      <class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardClone">
         <methods>
+          <include name="vizpodEditAction"/>
           <include name="setUp"/>
-          <include name="datapodEditAction"/>
           <include name="AfterMethod"/>
         </methods>
-      </class> <!-- com.inferyx.framework.dataProfiling.rule.RuleActionClone -->
-      <class name="com.inferyx.framework.dataProfiling.rule.RuleActionExport">
+      </class> <!-- com.inferyx.framework.dataVisualization.dashboard.DashBoardClone -->
+      <class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardRestore">
         <methods>
-          <include name="datapodEditAction"/>
+          <include name="setUp"/>
+          <include name="vizpodRestore"/>
           <include name="AfterMethod"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataVisualization.dashboard.DashBoardRestore -->
+      <class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardUnlock">
+        <methods>
+          <include name="vizpodUnLockAction"/>
+          <include name="setUp"/>
+          <include name="AfterMethod"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataVisualization.dashboard.DashBoardUnlock -->
+      <class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardPublish">
+        <methods>
+          <include name="setUp"/>
+          <include name="vizpodPublishAction"/>
+          <include name="AfterMethod"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataVisualization.dashboard.DashBoardPublish -->
+      <class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardExport">
+        <methods>
+          <include name="vizpodEditAction"/>
+          <include name="setUp"/>
+          <include name="AfterMethod"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataVisualization.dashboard.DashBoardExport -->
+      <class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardUnPublish">
+        <methods>
+          <include name="AfterMethod"/>
+          <include name="vizpodUnPublishAction"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.inferyx.framework.dataProfiling.rule.RuleActionExport -->
+      </class> <!-- com.inferyx.framework.dataVisualization.dashboard.DashBoardUnPublish -->
+      <class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardAdd">
+        <methods>
+          <include name="datshBoardAdd" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataVisualization.dashboard.DashBoardAdd -->
+      <class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardLock">
+        <methods>
+          <include name="setUp"/>
+          <include name="dashboardLockAction"/>
+          <include name="AfterMethod"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataVisualization.dashboard.DashBoardLock -->
     </classes>
-  </test> <!-- Data Profiling Rule(failed) -->
+  </test> <!-- DATA Visualization Dashboard(failed) -->
 </suite> <!-- Failed suite [seq tests] -->

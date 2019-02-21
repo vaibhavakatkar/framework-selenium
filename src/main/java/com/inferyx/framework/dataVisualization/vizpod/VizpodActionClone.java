@@ -21,11 +21,11 @@ public class VizpodActionClone extends TestBase{
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority = 12, description = "Vizpod Clone  Action")
-	public void datapodEditAction() throws IOException, InterruptedException {
+	@Test(priority = 17, description = "Vizpod Clone  Action")
+	public void vizpodEditAction() throws IOException, InterruptedException {
 		try {
-			WebElement actionEdit = driver.findElement(By.xpath("/html/body/ul/li[6]/a"));
-			actionEdit.click();
+			WebElement actionClone = driver.findElement(By.xpath("/html/body/ul/li[6]/a"));
+			actionClone.click();
 			start = System.currentTimeMillis();
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();

@@ -30,6 +30,15 @@ public class RuleActionView extends TestBase{
 					.findElement(By.xpath("/html/body/ul/li[1]/a"));
 			long start1 = System.currentTimeMillis();
 			ruleView.click();
+			
+		/*	WebElement nxtPag =driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[1]/div/div[4]/div[2]/div/div/div[2]/div[1]/form/div/div/div[12]/div/button"));
+			nxtPag.click();
+			
+			
+			WebElement attr=driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[1]/div/div[4]/div[2]/div/div/div[2]/div[2]/form/div[2]/div[1]/tags-input/div/div"));
+			String text=attr.getText();
+			System.out.println(text);*/
+			
 			Thread.sleep(1000);
 			long finish1 = System.currentTimeMillis();
 			totalTime = finish1 - start1; 

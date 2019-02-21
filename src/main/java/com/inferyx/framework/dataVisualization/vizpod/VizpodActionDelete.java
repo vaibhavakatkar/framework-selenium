@@ -21,18 +21,18 @@ public class VizpodActionDelete extends TestBase{
 
 		Thread.sleep(1000);
 	}
-	@Test(priority =6, description = "vizpodDelete")
+	@Test(priority =11, description = "vizpodDelete")
 	public void vizpodDelete() throws IOException, InterruptedException {
 		Thread.sleep(3000);
 		//vizpodDelete
 		try {
 			WebElement vizpodDelete = driver
 					.findElement(By.xpath("/html/body/ul/li[3]/a"));
-			long start1 = System.currentTimeMillis();
+			start = System.currentTimeMillis();
 			vizpodDelete.click();
 			Thread.sleep(1000);
-			long finish1 = System.currentTimeMillis();
-			totalTime = finish1 - start1; 
+			finish = System.currentTimeMillis();
+			totalTime = finish - start;  
 			dataFromExcelSheet.updateResult(4,5, "Vizpod Action Delete", "PASS", totalTime);
 		} catch (NoSuchElementException e) {
 			dataFromExcelSheet.updateResult(4,5, "Vizpod Action Delete", "FAIL", totalTime);
@@ -46,7 +46,5 @@ public class VizpodActionDelete extends TestBase{
 		WebElement actionDelete = driver.findElement(By.xpath("//*[@id='DeleteConfModal']/div/div/div[3]/button[2]"));
 		actionDelete.click();
 	}
-	
-  
 	
 }

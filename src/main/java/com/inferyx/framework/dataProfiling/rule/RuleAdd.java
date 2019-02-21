@@ -42,7 +42,7 @@ public class RuleAdd extends TestBase{
 			throws IOException, InterruptedException {
 		// Rule
 		try {
-			dataProfilingRulePage.createNewDatapod(name, desc, source);
+			dataProfilingRulePage.addNewRule(name, desc, source);
 			WebElement submitBtn = driver.findElement(By.xpath(
 					"/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[1]/div/div[4]/div[2]/div/div/div[2]/div[3]/form/div[2]/div/button"));
 			submitBtn.click();

@@ -22,18 +22,18 @@ public class VizpodActionView extends TestBase{
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority =4, description = "vizpodView")
+	@Test(priority =9, description = "vizpodView")
 	public void vizpodView() throws IOException, InterruptedException {
 		Thread.sleep(3000);
 		//vizpodView
 		try {
 			WebElement vizpodView = driver
 					.findElement(By.xpath("/html/body/ul/li[1]/a"));
-			long start1 = System.currentTimeMillis();
+			start = System.currentTimeMillis();
 			vizpodView.click();
 			Thread.sleep(1000);
-			long finish1 = System.currentTimeMillis();
-			totalTime = finish1 - start1; 
+			finish = System.currentTimeMillis();
+			totalTime = finish - start; 
 			dataFromExcelSheet.updateResult(4,5, "Vizpod Action View", "PASS", totalTime);
 		} catch (NoSuchElementException e) {
 			dataFromExcelSheet.updateResult(4,5, "Vizpod Action View", "FAIL", totalTime);
@@ -44,10 +44,10 @@ public class VizpodActionView extends TestBase{
 	public void AfterMethod() throws InterruptedException {
 		Thread.sleep(3000);
 		start = System.currentTimeMillis();
-		WebElement datapodAcationbutton = driver
+		WebElement vizpodAcationbutton = driver
 				.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[1]/div[2]/a[7]/i"));
 		Thread.sleep(1000);
-		datapodAcationbutton.click();
+		vizpodAcationbutton.click();
 		Thread.sleep(1000);
 	}
 	

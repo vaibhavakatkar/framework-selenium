@@ -21,8 +21,8 @@ public class VizpodActionUnPublish extends TestBase{
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority = 11, description = "Vizpod UnPublish Action")
-	public void datapodUnPublishAction() throws IOException, InterruptedException {
+	@Test(priority = 16, description = "Vizpod UnPublish Action")
+	public void vizpodUnPublishAction() throws IOException, InterruptedException {
 		try {
 			WebElement actionUnPublish = driver.findElement(By.xpath("/html/body/ul/li[5]/a"));
 			actionUnPublish.click();

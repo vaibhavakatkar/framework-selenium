@@ -22,8 +22,8 @@ public class VizpodActionLock extends TestBase{
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority =8, description = "Vizpod Lock Action")
-	public void datapodLockAction() throws IOException, InterruptedException {
+	@Test(priority =13, description = "Vizpod Lock Action")
+	public void vizpodLockAction() throws IOException, InterruptedException {
 		try {
 			WebElement actionLock = driver.findElement(By.xpath("/html/body/ul/li[4]/a"));
 			actionLock.click();

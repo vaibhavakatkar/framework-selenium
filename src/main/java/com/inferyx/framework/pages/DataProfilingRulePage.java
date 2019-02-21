@@ -9,7 +9,7 @@ import com.inferyx.framework.selenium.TestBase;
 
 public class DataProfilingRulePage extends TestBase{
 
-public void createNewDatapod(String name, String desc, String source) throws InterruptedException {
+public void addNewRule(String name, String desc, String source) throws InterruptedException {
 	
 	WebElement ruleName=driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[1]/div/div[4]/div[2]/div/div/div[2]/div[1]/form/div/div/div[2]/div/input"));
 	ruleName.sendKeys(name);
@@ -29,9 +29,11 @@ public void createNewDatapod(String name, String desc, String source) throws Int
 	
 	WebElement selectAllAttr =driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[1]/div/div[4]/div[2]/div/div/div[2]/div[2]/form/div[2]/div[2]/span[2]"));
 	selectAllAttr.click();
+	Thread.sleep(2000);
 	
 	WebElement clearAllAttr =driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[1]/div/div[4]/div[2]/div/div/div[2]/div[2]/form/div[2]/div[2]/span[1]"));
 	clearAllAttr.click();
+	Thread.sleep(1000);
 	
 	WebElement attribute =driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[1]/div/div[4]/div[2]/div/div/div[2]/div[2]/form/div[2]/div[1]/tags-input/div/div"));
 	attribute.click();
@@ -43,9 +45,11 @@ public void createNewDatapod(String name, String desc, String source) throws Int
 	
 	WebElement sideClick = driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[1]/div/div[4]/div[2]/div/div/ul/li[2]/a"));
 	sideClick.click();
+	Thread.sleep(1000);
 	
 	WebElement addFilter=driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[1]/div/div[4]/div[2]/div/div/div[2]/div[2]/form/div[3]/div[1]/div[2]/div/div/button[2]"));
 	addFilter.click();
+	Thread.sleep(1000);
 	
 	WebElement LhsTypeDropdown=driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[1]/div/div[4]/div[2]/div/div/div[2]/div[2]/form/div[3]/div[2]/div/table/tbody/tr/td[3]/span/select"));
 	LhsTypeDropdown.click();
@@ -67,13 +71,17 @@ public void createNewDatapod(String name, String desc, String source) throws Int
 	selectOperator.click();
 	Thread.sleep(1000);
 	
-	WebElement operator=driver.findElement(By.xpath("//*[@id=\"submit_form2\"]/div[3]/div[2]/div/table/tbody/tr/td[5]/span/select/option[4]"));	operator.click();
+	WebElement operator=driver.findElement(By.xpath("//*[@id=\"submit_form2\"]/div[3]/div[2]/div/table/tbody/tr/td[5]/span/select/option[4]"));	
+	operator.click();
+	Thread.sleep(1000);
 	
 	WebElement rhsType=driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[1]/div/div[4]/div[2]/div/div/div[2]/div[2]/form/div[3]/div[2]/div/table/tbody/tr/td[6]/span/select"));
 	rhsType.click();
+	Thread.sleep(1000);
 	
 	WebElement selectrhsType=driver.findElement(By.xpath("//*[@id=\"submit_form2\"]/div[3]/div[2]/div/table/tbody/tr/td[6]/span/select/option[1]"));
 	selectrhsType.click();
+	Thread.sleep(1000);
 
 	WebElement RhsAttribute=driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[1]/div/div[4]/div[2]/div/div/div[2]/div[2]/form/div[3]/div[2]/div/table/tbody/tr/td[7]/div/span/span/span[1]/span"));
 	RhsAttribute.click();
@@ -85,6 +93,7 @@ public void createNewDatapod(String name, String desc, String source) throws Int
 
 	WebElement nextPage = driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[1]/div/div[4]/div[2]/div/div/div[2]/div[2]/form/div[4]/div/button"));
 	nextPage.click();
+	Thread.sleep(1000);
 
 	}
 }

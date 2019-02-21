@@ -21,18 +21,18 @@ public class VizpodActionRestore extends TestBase{
 
 		Thread.sleep(1000);
 	}
-	@Test(priority =7, description = "vizpodRestore")
+	@Test(priority =12, description = "vizpodRestore")
 	public void vizpodRestore() throws IOException, InterruptedException {
 		Thread.sleep(3000);
 		//vizpodRestore
 		try {
 			WebElement vizpodRestore = driver
 					.findElement(By.xpath("/html/body/ul/li[3]/a"));
-			long start1 = System.currentTimeMillis();
+			start = System.currentTimeMillis();
 			vizpodRestore.click();
 			Thread.sleep(1000);
-			long finish1 = System.currentTimeMillis();
-			totalTime = finish1 - start1; 
+			finish = System.currentTimeMillis();
+			totalTime = finish - start; 
 			dataFromExcelSheet.updateResult(4,5, "Vizpod Action Restore", "PASS", totalTime);
 		} catch (NoSuchElementException e) {
 			dataFromExcelSheet.updateResult(4,5, "Vizpod Action Restore", "FAIL", totalTime);

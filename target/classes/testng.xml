@@ -12,33 +12,63 @@
 			<class name="com.inferyx.framework.dataDiscovery.DataDiscovery" />
 		</classes>
 	</test> -->
-	<!-- <test name="DATA Visualization">
+	<test name="DATA Visualization">
 		<classes>
 			<class name="com.inferyx.framework.dataVisualization.DataVisualization" />
-			<class name="com.inferyx.framework.dataVisualization.Dashboard" />	
 		</classes>
-	</test> -->	
-	<!-- <test name="Vizpod">
+	</test>	
+	
+	<test name="DATA Visualization Dashboard">
+		<classes>
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoard" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardEdit" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardDelete" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardRestore" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardPublish" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardUnPublish" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardLock" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardUnlock" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardClone" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardExport" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardAdd" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardSearch" />	
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardView" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardMenuIcon" />				
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardFilter" />						
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardIcon" />					
+	</classes>
+	</test>
+	
+	<!-- <test name="Vizpod List Page">
+		<classes>
+			<class name="com.inferyx.framework.dataVisualization.vizpod.listPage.Vizpod" />
+	 		<class name="com.inferyx.framework.dataVisualization.vizpod.listPage.VizpodListPage" />	
+		</classes>
+	</test>
+	
+	<test name="Vizpod Action">
 	<classes>
-			<class name="com.inferyx.framework.dataVisualization.Vizpod" />
- 			<class name="com.inferyx.framework.dataVisualization.VizpodActionView" />
- 			<class name="com.inferyx.framework.dataVisualization.VizpodActionEdit" />
- 			<class name="com.inferyx.framework.dataVisualization.VizpodActionDelete" />
- 		 	<class name="com.inferyx.framework.dataVisualization.VizpodActionRestore" />
- 			 <class name="com.inferyx.framework.dataVisualization.VizpodActionLock" />
- 			<class name="com.inferyx.framework.dataVisualization.VizpodActionUnlock" />
- 			<class name="com.inferyx.framework.dataVisualization.VizpodActionPublish" />
- 			<class name="com.inferyx.framework.dataVisualization.VizpodActionUnPublish" />
- 			<class name="com.inferyx.framework.dataVisualization.VizpodActionClone" />
- 			<class name="com.inferyx.framework.dataVisualization.VizpodActionExport" />	
+ 			<class name="com.inferyx.framework.dataVisualization.vizpod.VizpodAdd" />
+ 			<class name="com.inferyx.framework.dataVisualization.vizpod.VizpodActionView" />
+ 			<class name="com.inferyx.framework.dataVisualization.vizpod.VizpodActionEdit" />
+ 			<class name="com.inferyx.framework.dataVisualization.vizpod.VizpodActionDelete" />
+ 		 	<class name="com.inferyx.framework.dataVisualization.vizpod.VizpodActionRestore" />
+ 			 <class name="com.inferyx.framework.dataVisualization.vizpod.VizpodActionLock" />
+ 			<class name="com.inferyx.framework.dataVisualization.vizpod.VizpodActionUnlock" />
+ 			<class name="com.inferyx.framework.dataVisualization.vizpod.VizpodActionPublish" />
+ 			<class name="com.inferyx.framework.dataVisualization.vizpod.VizpodActionUnPublish" />
+ 			<class name="com.inferyx.framework.dataVisualization.vizpod.VizpodActionClone" />
+ 			<class name="com.inferyx.framework.dataVisualization.vizpod.VizpodActionExport" />	
 	</classes>
 	</test> -->
+
 	<!-- <test name="Report">
 			<classes>
 				<class name="com.inferyx.framework.dataVisualization.Report" /> 
 			</classes>	
 	</test> -->
-	<test name="Data Profiling">
+	
+	<!-- <test name="Data Profiling">
 		<classes>
 		<class name="com.inferyx.framework.dataProfiling.DataProfiling" />	
 		</classes>
@@ -58,9 +88,11 @@
 		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionExecute" />
 		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionClone" />
 		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionExport" />	
+		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionViewIcon" />	
+		
 		</classes>
 	</test>
-	
+	 -->
 <!-- <test name="DATA Preaparation.Datapod">
 		<classes>
 			<class name="com.inferyx.framework.dataPreparation.datapod.DataPreaparation" />

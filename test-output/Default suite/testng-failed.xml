@@ -3,26 +3,36 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.inferyx.framework.dataPreparation.dataset.DataPreaparation">
-        <methods>
-          <include name="dataPreparationList"/>
-        </methods>
-      </class> <!-- com.inferyx.framework.dataPreparation.dataset.DataPreaparation -->
-      <class name="com.inferyx.framework.dataVisualization.DataVisualization">
-        <methods>
-          <include name="dataVisualization"/>
-        </methods>
-      </class> <!-- com.inferyx.framework.dataVisualization.DataVisualization -->
-      <class name="com.inferyx.framework.dataDiscovery.DataDiscovery">
-        <methods>
-          <include name="dataDiscoveryList"/>
-        </methods>
-      </class> <!-- com.inferyx.framework.dataDiscovery.DataDiscovery -->
       <class name="com.inferyx.framework.dataPreparation.datapod.DataPreaparation">
         <methods>
           <include name="dataPreparationList"/>
         </methods>
       </class> <!-- com.inferyx.framework.dataPreparation.datapod.DataPreaparation -->
+      <class name="com.inferyx.framework.dataVisualization.vizpod.Vizpod">
+        <methods>
+          <include name="Vizpod"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataVisualization.vizpod.Vizpod -->
+      <class name="com.inferyx.framework.dataPreparation.dataset.DataPreaparation">
+        <methods>
+          <include name="dataPreparationList"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataPreparation.dataset.DataPreaparation -->
+      <class name="com.inferyx.framework.dataDiscovery.DataDiscovery">
+        <methods>
+          <include name="dataDiscoveryList"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataDiscovery.DataDiscovery -->
+      <class name="com.inferyx.framework.dataProfiling.DataProfiling">
+        <methods>
+          <include name="dataProfiling"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataProfiling.DataProfiling -->
+      <class name="com.inferyx.framework.dataVisualization.DataVisualization">
+        <methods>
+          <include name="dataVisualization"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataVisualization.DataVisualization -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

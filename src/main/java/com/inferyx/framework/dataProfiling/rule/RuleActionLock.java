@@ -30,9 +30,9 @@ public class RuleActionLock extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(7, 8, "Vizpod Action Lock", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Action Lock", "PASS", totalTime);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(7, 8, "Vizpod Action Lock", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Action Lock", "FAIL", totalTime);
 		}
 		Thread.sleep(3000);
 	}
