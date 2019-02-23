@@ -37,7 +37,7 @@ public class RuleAdd extends TestBase{
 		Object data[][] = TestUtil.getTestData("dataProfileRule");
 		return data;
 	}
-	@Test(priority = 3, dataProvider = "getDummyData", description = "Rule  Add")
+	@Test(priority = 9, dataProvider = "getDummyData", description = "Rule  Add")
 	public void validateAdd(String name, String desc, String source)
 			throws IOException, InterruptedException {
 		// Rule

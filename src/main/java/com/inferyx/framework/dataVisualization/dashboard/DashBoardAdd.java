@@ -29,11 +29,7 @@ DashboardPage dashboardPage;
 	@Test(priority =14, dataProvider = "getDummyData", description = "dashboardAdd")
 	public void datshBoardAdd(String dashboardName, String desc, String dependsOn, String name) throws IOException, InterruptedException {
 		Thread.sleep(3000);
-		//datshBoardAdd
-		/*WebElement dashboardTile = driver
-				.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div/span[2]"));
-		dashboardTile.click();
-		Thread.sleep(1000);*/
+		
 		WebElement dashboardAdd =driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[5]/div/div/div[1]/div[2]/a"));
 		dashboardAdd.click();
 		start = System.currentTimeMillis();

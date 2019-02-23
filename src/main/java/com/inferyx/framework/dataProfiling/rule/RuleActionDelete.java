@@ -20,8 +20,8 @@ public class RuleActionDelete extends TestBase{
 
 		Thread.sleep(1000);
 	}
-	@Test(priority =6, description = "ruleDelete")
-	public void vizpodDelete() throws IOException, InterruptedException {
+	@Test(priority =12, description = "ruleDelete")
+	public void ruleDelete() throws IOException, InterruptedException {
 		Thread.sleep(3000);
 		//ruleDelete
 		try {

@@ -18,14 +18,14 @@ public class Report extends TestBase {
 		try {
 			WebElement report = driver
 					.findElement(By.xpath("/html/body/screenshot/div[4]/div[1]/div/ul/li[3]/ul/li[3]/a/span[1]"));
-			long start1 = System.currentTimeMillis();
+			start = System.currentTimeMillis();
 			Thread.sleep(1000);
 			report.click();
-			long finish1 = System.currentTimeMillis();
-			totalTime = finish1 - start1;
-			dataFromExcelSheet.updateResult(updateResult, "Report", "PASS", totalTime);
+			finish = System.currentTimeMillis();
+			totalTime = finish - start;
+			dataFromExcelSheet.updateResult(4,5, "Report", "PASS", totalTime);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(updateResult, "Report", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Report", "FAIL", totalTime);
 		}
 	}
 }

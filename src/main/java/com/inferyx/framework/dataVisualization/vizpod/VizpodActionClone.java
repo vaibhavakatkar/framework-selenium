@@ -41,8 +41,8 @@ public class VizpodActionClone extends TestBase{
 	public void AfterMethod() throws InterruptedException {
 		Thread.sleep(1000);
 		start = System.currentTimeMillis();
-		WebElement actionDelete = driver.findElement(By.xpath("//*[@id='clonemodal']/div/div/div[3]/button[2]"));
-		actionDelete.click();
+		WebElement actionClone = driver.findElement(By.xpath("//*[@id='clonemodal']/div/div/div[3]/button[2]"));
+		actionClone.click();
 		Thread.sleep(2000);
 	}
 }

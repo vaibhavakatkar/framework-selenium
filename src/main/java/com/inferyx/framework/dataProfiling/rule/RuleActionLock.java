@@ -21,7 +21,7 @@ public class RuleActionLock extends TestBase{
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority =8, description = "Rule Lock Action")
+	@Test(priority =14, description = "Rule Lock Action")
 	public void datapodLockAction() throws IOException, InterruptedException {
 		try {
 			WebElement actionLock = driver.findElement(By.xpath("/html/body/ul/li[4]/a"));

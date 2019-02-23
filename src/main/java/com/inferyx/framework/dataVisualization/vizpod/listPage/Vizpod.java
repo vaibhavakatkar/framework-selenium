@@ -29,24 +29,5 @@ public class Vizpod extends TestBase{
 			dataFromExcelSheet.updateResult(updateResult, "Vizpod", "FAIL", totalTime);
 		}
 	}
-	
-	/*@Test(priority =3, description = "closeAdd")
-	public void closeAdd() throws IOException, InterruptedException {
-		Thread.sleep(5000);
-		//closeAdd
-		try {
-			WebElement closeAdd = driver
-					.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[1]/div[2]/a[7]/i"));
-			start = System.currentTimeMillis();
-			closeAdd.click();
-			Thread.sleep(1000);
-			finish = System.currentTimeMillis();
-			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "closeAdd", "PASS", totalTime);
-		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "closeAdd", "FAIL", totalTime);
-		}
-	}*/
-	
 
 }

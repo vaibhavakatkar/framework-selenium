@@ -21,8 +21,8 @@ public class RuleActionClone extends TestBase{
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority = 13, description = "Rule Clone  Action")
-	public void datapodEditAction() throws IOException, InterruptedException {
+	@Test(priority = 19, description = "Rule Clone  Action")
+	public void ruledEditAction() throws IOException, InterruptedException {
 		try {
 			WebElement actionClone = driver.findElement(By.xpath("/html/body/ul/li[7]/a"));
 			actionClone.click();

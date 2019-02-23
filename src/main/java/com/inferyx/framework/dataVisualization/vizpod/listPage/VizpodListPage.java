@@ -175,7 +175,6 @@ public class VizpodListPage extends TestBase{
 			System.out.println("ss");
 
 			vizpodSearch.sendKeys("viz_cust");
-			System.out.println("ss");
 			Thread.sleep(2000);
 			start = System.currentTimeMillis();
 		

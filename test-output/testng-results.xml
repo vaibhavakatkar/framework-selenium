@@ -1,105 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
+<testng-results skipped="0" failed="0" ignored="0" total="19" passed="19">
   <reporter-output>
   </reporter-output>
-  <suite name="seq tests" duration-ms="97515" started-at="2019-02-21T10:03:45Z" finished-at="2019-02-21T10:05:22Z">
+  <suite name="seq tests" duration-ms="211696" started-at="2019-02-23T14:31:20Z" finished-at="2019-02-23T14:34:51Z">
     <groups>
     </groups>
-    <test name="LOGIN" duration-ms="20442" started-at="2019-02-21T10:03:45Z" finished-at="2019-02-21T10:04:05Z">
+    <test name="LOGIN" duration-ms="20705" started-at="2019-02-23T14:31:20Z" finished-at="2019-02-23T14:31:40Z">
       <class name="com.inferyx.framework.selenium.LoginPage">
-        <test-method status="PASS" signature="openBrowser()[pri:1, instance:com.inferyx.framework.selenium.LoginPage@7a3d45bd]" name="openBrowser" duration-ms="5177" started-at="2019-02-21T10:03:45Z" description="openBrowser" finished-at="2019-02-21T10:03:50Z">
+        <test-method status="PASS" signature="openBrowser()[pri:1, instance:com.inferyx.framework.selenium.LoginPage@1d296da]" name="openBrowser" duration-ms="5778" started-at="2019-02-23T14:31:20Z" description="openBrowser" finished-at="2019-02-23T14:31:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="login()[pri:2, instance:com.inferyx.framework.selenium.LoginPage@7a3d45bd]" name="login" duration-ms="3503" started-at="2019-02-21T10:03:50Z" description="login check" finished-at="2019-02-21T10:03:53Z">
+        <test-method status="PASS" signature="login()[pri:2, instance:com.inferyx.framework.selenium.LoginPage@1d296da]" name="login" duration-ms="3044" started-at="2019-02-23T14:31:25Z" description="login check" finished-at="2019-02-23T14:31:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="appSelection()[pri:3, instance:com.inferyx.framework.selenium.LoginPage@7a3d45bd]" name="appSelection" duration-ms="11709" started-at="2019-02-21T10:03:53Z" description="appSelection" finished-at="2019-02-21T10:04:05Z">
+        <test-method status="PASS" signature="appSelection()[pri:3, instance:com.inferyx.framework.selenium.LoginPage@1d296da]" name="appSelection" duration-ms="11838" started-at="2019-02-23T14:31:29Z" description="appSelection" finished-at="2019-02-23T14:31:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appSelection -->
       </class> <!-- com.inferyx.framework.selenium.LoginPage -->
     </test> <!-- LOGIN -->
-    <test name="DATA Visualization" duration-ms="10410" started-at="2019-02-21T10:04:05Z" finished-at="2019-02-21T10:04:16Z">
-      <class name="com.inferyx.framework.dataVisualization.DataVisualization">
-        <test-method status="PASS" signature="dataVisualization()[pri:1, instance:com.inferyx.framework.dataVisualization.DataVisualization@7a30d1e6]" name="dataVisualization" duration-ms="10407" started-at="2019-02-21T10:04:05Z" description="dataVisualization" finished-at="2019-02-21T10:04:16Z">
+    <test name="Data Profiling" duration-ms="10417" started-at="2019-02-23T14:31:40Z" finished-at="2019-02-23T14:31:51Z">
+      <class name="com.inferyx.framework.dataProfiling.DataProfiling">
+        <test-method status="PASS" signature="dataProfiling()[pri:1, instance:com.inferyx.framework.dataProfiling.DataProfiling@77c2494c]" name="dataProfiling" duration-ms="10412" started-at="2019-02-23T14:31:40Z" description="dataProfiling" finished-at="2019-02-23T14:31:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProfiling -->
+      </class> <!-- com.inferyx.framework.dataProfiling.DataProfiling -->
+    </test> <!-- Data Profiling -->
+    <test name="Data Profiling List Page" duration-ms="57285" started-at="2019-02-23T14:31:51Z" finished-at="2019-02-23T14:32:48Z">
+      <class name="com.inferyx.framework.dataProfiling.rule.listPage.RuleListPage">
+        <test-method status="PASS" signature="RuleSearchByName()[pri:3, instance:com.inferyx.framework.dataProfiling.rule.listPage.RuleListPage@1fa121e2]" name="RuleSearchByName" duration-ms="5565" started-at="2019-02-23T14:32:02Z" description="Rule Search By Name" finished-at="2019-02-23T14:32:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RuleSearchByName -->
+        <test-method status="PASS" signature="RuleSearchByUser()[pri:4, instance:com.inferyx.framework.dataProfiling.rule.listPage.RuleListPage@1fa121e2]" name="RuleSearchByUser" duration-ms="5510" started-at="2019-02-23T14:32:08Z" description="Rule Search By User" finished-at="2019-02-23T14:32:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RuleSearchByUser -->
+        <test-method status="PASS" signature="VizpodSearchCriteriaRefresh()[pri:5, instance:com.inferyx.framework.dataProfiling.rule.listPage.RuleListPage@1fa121e2]" name="VizpodSearchCriteriaRefresh" duration-ms="4274" started-at="2019-02-23T14:32:14Z" description="Rule Search Criteria Refresh" finished-at="2019-02-23T14:32:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VizpodSearchCriteriaRefresh -->
+        <test-method status="PASS" signature="RuleStartAndEndDate()[pri:6, instance:com.inferyx.framework.dataProfiling.rule.listPage.RuleListPage@1fa121e2]" name="RuleStartAndEndDate" duration-ms="15815" started-at="2019-02-23T14:32:18Z" description="Rule Start and End Date" finished-at="2019-02-23T14:32:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RuleStartAndEndDate -->
+        <test-method status="PASS" signature="RuleSearchStatus()[pri:7, instance:com.inferyx.framework.dataProfiling.rule.listPage.RuleListPage@1fa121e2]" name="RuleSearchStatus" duration-ms="8679" started-at="2019-02-23T14:32:34Z" description="Rule Search Status" finished-at="2019-02-23T14:32:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RuleSearchStatus -->
+        <test-method status="PASS" signature="RuleSearchName()[pri:8, instance:com.inferyx.framework.dataProfiling.rule.listPage.RuleListPage@1fa121e2]" name="RuleSearchName" duration-ms="5732" started-at="2019-02-23T14:32:42Z" description="Rule Search Name" finished-at="2019-02-23T14:32:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RuleSearchName -->
+      </class> <!-- com.inferyx.framework.dataProfiling.rule.listPage.RuleListPage -->
+      <class name="com.inferyx.framework.dataProfiling.rule.listPage.Rule">
+        <test-method status="PASS" signature="dataVisualization()[pri:2, instance:com.inferyx.framework.dataProfiling.rule.listPage.Rule@3cd3e762]" name="dataVisualization" duration-ms="11680" started-at="2019-02-23T14:31:51Z" description="Data Profile Rule" finished-at="2019-02-23T14:32:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataVisualization -->
-      </class> <!-- com.inferyx.framework.dataVisualization.DataVisualization -->
-    </test> <!-- DATA Visualization -->
-    <test name="DATA Visualization Dashboard" duration-ms="66639" started-at="2019-02-21T10:04:16Z" finished-at="2019-02-21T10:05:22Z">
-      <class name="com.inferyx.framework.dataVisualization.dashboard.DashBoard">
-        <test-method status="PASS" signature="Dashboard()[pri:2, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoard@2e3fc542]" name="Dashboard" duration-ms="2430" started-at="2019-02-21T10:04:16Z" description="Dashboard" finished-at="2019-02-21T10:04:18Z">
+      </class> <!-- com.inferyx.framework.dataProfiling.rule.listPage.Rule -->
+    </test> <!-- Data Profiling List Page -->
+    <test name="DataProfiling Group List Page" duration-ms="56041" started-at="2019-02-23T14:32:48Z" finished-at="2019-02-23T14:33:44Z">
+      <class name="com.inferyx.framework.dataProfiling.group.listPage.DataProfilingGroup">
+        <test-method status="PASS" signature="dataVisualization()[pri:1, instance:com.inferyx.framework.dataProfiling.group.listPage.DataProfilingGroup@3857f613]" name="dataVisualization" duration-ms="10869" started-at="2019-02-23T14:32:48Z" description="Data Profile Group" finished-at="2019-02-23T14:32:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Dashboard -->
-        <test-method status="PASS" signature="datshBoardTile()[pri:3, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoard@2e3fc542]" name="datshBoardTile" duration-ms="4658" started-at="2019-02-21T10:04:18Z" description="datshBoardTile" finished-at="2019-02-21T10:04:23Z">
+        </test-method> <!-- dataVisualization -->
+      </class> <!-- com.inferyx.framework.dataProfiling.group.listPage.DataProfilingGroup -->
+      <class name="com.inferyx.framework.dataProfiling.group.listPage.GroupListPage">
+        <test-method status="PASS" signature="RuleSearchByName()[pri:2, instance:com.inferyx.framework.dataProfiling.group.listPage.GroupListPage@198b6731]" name="RuleSearchByName" duration-ms="5537" started-at="2019-02-23T14:32:59Z" description="Group Search By Name" finished-at="2019-02-23T14:33:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- datshBoardTile -->
-        <test-method status="PASS" signature="datshBoardList()[pri:4, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoard@2e3fc542]" name="datshBoardList" duration-ms="7809" started-at="2019-02-21T10:04:23Z" description="datshBoardList" finished-at="2019-02-21T10:04:30Z">
+        </test-method> <!-- RuleSearchByName -->
+        <test-method status="PASS" signature="RuleSearchByUser()[pri:3, instance:com.inferyx.framework.dataProfiling.group.listPage.GroupListPage@198b6731]" name="RuleSearchByUser" duration-ms="5490" started-at="2019-02-23T14:33:05Z" description="Group Search By User" finished-at="2019-02-23T14:33:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- datshBoardList -->
-      </class> <!-- com.inferyx.framework.dataVisualization.dashboard.DashBoard -->
-      <class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardDelete">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoardDelete@4524411f]" name="setUp" is-config="true" duration-ms="4704" started-at="2019-02-21T10:04:47Z" finished-at="2019-02-21T10:04:52Z">
+        </test-method> <!-- RuleSearchByUser -->
+        <test-method status="PASS" signature="VizpodSearchCriteriaRefresh()[pri:4, instance:com.inferyx.framework.dataProfiling.group.listPage.GroupListPage@198b6731]" name="VizpodSearchCriteriaRefresh" duration-ms="4305" started-at="2019-02-23T14:33:10Z" description="Group Search Criteria Refresh" finished-at="2019-02-23T14:33:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="vizpodDelete()[pri:6, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoardDelete@4524411f]" name="vizpodDelete" duration-ms="4182" started-at="2019-02-21T10:04:52Z" description="dashboardDelete" finished-at="2019-02-21T10:04:56Z">
+        </test-method> <!-- VizpodSearchCriteriaRefresh -->
+        <test-method status="PASS" signature="GroupStartAndEndDate()[pri:5, instance:com.inferyx.framework.dataProfiling.group.listPage.GroupListPage@198b6731]" name="GroupStartAndEndDate" duration-ms="15457" started-at="2019-02-23T14:33:14Z" description="Group Start and End Date" finished-at="2019-02-23T14:33:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- vizpodDelete -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoardDelete@4524411f]" name="AfterMethod" is-config="true" duration-ms="3126" started-at="2019-02-21T10:04:56Z" finished-at="2019-02-21T10:04:59Z">
+        </test-method> <!-- GroupStartAndEndDate -->
+        <test-method status="PASS" signature="RuleSearchStatus()[pri:6, instance:com.inferyx.framework.dataProfiling.group.listPage.GroupListPage@198b6731]" name="RuleSearchStatus" duration-ms="8635" started-at="2019-02-23T14:33:30Z" description="Group Search Status" finished-at="2019-02-23T14:33:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AfterMethod -->
-      </class> <!-- com.inferyx.framework.dataVisualization.dashboard.DashBoardDelete -->
-      <class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardEdit">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoardEdit@150c158]" name="setUp" is-config="true" duration-ms="4134" started-at="2019-02-21T10:04:30Z" finished-at="2019-02-21T10:04:35Z">
+        </test-method> <!-- RuleSearchStatus -->
+        <test-method status="PASS" signature="GroupSearchName()[pri:7, instance:com.inferyx.framework.dataProfiling.group.listPage.GroupListPage@198b6731]" name="GroupSearchName" duration-ms="5720" started-at="2019-02-23T14:33:38Z" description="Group Search Name" finished-at="2019-02-23T14:33:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="datshBoardList()[pri:5, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoardEdit@150c158]" name="datshBoardList" duration-ms="7434" started-at="2019-02-21T10:04:35Z" description="Dashboard Edit" finished-at="2019-02-21T10:04:42Z">
+        </test-method> <!-- GroupSearchName -->
+      </class> <!-- com.inferyx.framework.dataProfiling.group.listPage.GroupListPage -->
+    </test> <!-- DataProfiling Group List Page -->
+    <test name="DataProfiling Group" duration-ms="67212" started-at="2019-02-23T14:33:44Z" finished-at="2019-02-23T14:34:51Z">
+      <class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupAdd">
+        <test-method status="PASS" signature="vizpodAdd(java.lang.String, java.lang.String)[pri:8, instance:com.inferyx.framework.dataProfiling.group.DataProfilingGroupAdd@3d285d7e]" name="vizpodAdd" duration-ms="67121" started-at="2019-02-23T14:33:44Z" description="dataProfilingGroup Add" data-provider="getDummyData" finished-at="2019-02-23T14:34:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[profile_group_dw_test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Profile group for datawarehouse data]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- datshBoardList -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoardEdit@150c158]" name="AfterMethod" is-config="true" duration-ms="5278" started-at="2019-02-21T10:04:42Z" finished-at="2019-02-21T10:04:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-      </class> <!-- com.inferyx.framework.dataVisualization.dashboard.DashBoardEdit -->
-      <class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardRestore">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoardRestore@401e7803]" name="setUp" is-config="true" duration-ms="4100" started-at="2019-02-21T10:04:59Z" finished-at="2019-02-21T10:05:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="vizpodRestore()[pri:7, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoardRestore@401e7803]" name="vizpodRestore" duration-ms="4216" started-at="2019-02-21T10:05:03Z" description="dashboardRestore" finished-at="2019-02-21T10:05:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- vizpodRestore -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoardRestore@401e7803]" name="AfterMethod" is-config="true" duration-ms="3126" started-at="2019-02-21T10:05:08Z" finished-at="2019-02-21T10:05:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-      </class> <!-- com.inferyx.framework.dataVisualization.dashboard.DashBoardRestore -->
-      <class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardLock">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoardLock@704d6e83]" name="setUp" is-config="true" duration-ms="4128" started-at="2019-02-21T10:05:11Z" finished-at="2019-02-21T10:05:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="dashboardLockAction()[pri:8, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoardLock@704d6e83]" name="dashboardLockAction" duration-ms="4200" started-at="2019-02-21T10:05:15Z" description="Dashboard Lock Action" finished-at="2019-02-21T10:05:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dashboardLockAction -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.inferyx.framework.dataVisualization.dashboard.DashBoardLock@704d6e83]" name="AfterMethod" is-config="true" duration-ms="3087" started-at="2019-02-21T10:05:19Z" finished-at="2019-02-21T10:05:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-      </class> <!-- com.inferyx.framework.dataVisualization.dashboard.DashBoardLock -->
-    </test> <!-- DATA Visualization Dashboard -->
+        </test-method> <!-- vizpodAdd -->
+      </class> <!-- com.inferyx.framework.dataProfiling.group.DataProfilingGroupAdd -->
+    </test> <!-- DataProfiling Group -->
   </suite> <!-- seq tests -->
 </testng-results>

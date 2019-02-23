@@ -21,7 +21,7 @@ public class RuleActionExecute extends TestBase{
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority =12, description = "Rule Execute Action")
+	@Test(priority =18, description = "Rule Execute Action")
 	public void vizpodView() throws IOException, InterruptedException {
 		Thread.sleep(3000);
 		//ruleExecute

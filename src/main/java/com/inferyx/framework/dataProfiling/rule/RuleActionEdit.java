@@ -20,7 +20,7 @@ public class RuleActionEdit extends TestBase{
 
 		Thread.sleep(1000);
 	}
-	@Test(priority =5, description = "ruleEdit")
+	@Test(priority =11, description = "ruleEdit")
 	public void ruleEdit() throws IOException, InterruptedException {
 		Thread.sleep(3000);
 		//vizpodEdit

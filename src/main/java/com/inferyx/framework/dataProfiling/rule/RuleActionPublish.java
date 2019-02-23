@@ -21,7 +21,7 @@ public class RuleActionPublish extends TestBase{
 	Thread.sleep(1000);
 	}
 	
-	@Test(priority = 10, description = "Rule Publish Action")
+	@Test(priority = 16, description = "Rule Publish Action")
 	public void datapodPublishAction() throws IOException, InterruptedException {
 		try {
 			WebElement actionPublish = driver.findElement(By.xpath("/html/body/ul/li[5]/a"));

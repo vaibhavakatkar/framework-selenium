@@ -12,7 +12,7 @@
 			<class name="com.inferyx.framework.dataDiscovery.DataDiscovery" />
 		</classes>
 	</test> -->
-	<test name="DATA Visualization">
+	<!-- <test name="DATA Visualization">
 		<classes>
 			<class name="com.inferyx.framework.dataVisualization.DataVisualization" />
 		</classes>
@@ -24,10 +24,10 @@
 			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardEdit" />
 			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardDelete" />
 			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardRestore" />
-			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardPublish" />
-			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardUnPublish" />
 			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardLock" />
 			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardUnlock" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardPublish" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardUnPublish" />
 			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardClone" />
 			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardExport" />
 			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardAdd" />
@@ -39,7 +39,7 @@
 	</classes>
 	</test>
 	
-	<!-- <test name="Vizpod List Page">
+	<test name="Vizpod List Page">
 		<classes>
 			<class name="com.inferyx.framework.dataVisualization.vizpod.listPage.Vizpod" />
 	 		<class name="com.inferyx.framework.dataVisualization.vizpod.listPage.VizpodListPage" />	
@@ -60,22 +60,47 @@
  			<class name="com.inferyx.framework.dataVisualization.vizpod.VizpodActionClone" />
  			<class name="com.inferyx.framework.dataVisualization.vizpod.VizpodActionExport" />	
 	</classes>
-	</test> -->
+	</test>
 
-	<!-- <test name="Report">
+	<test name="Report">
 			<classes>
-				<class name="com.inferyx.framework.dataVisualization.Report" /> 
+				<class name="com.inferyx.framework.dataVisualization.report.Report" /> 
+				<class name="com.inferyx.framework.dataVisualization.report.ReportAdd" /> 
+				<class name="com.inferyx.framework.dataVisualization.report.ReportActionView" /> 
+				<class name="com.inferyx.framework.dataVisualization.report.ReportActionEdit" /> 
+				<class name="com.inferyx.framework.dataVisualization.report.ReportActionDelete" /> 					<class name="com.inferyx.framework.dataVisualization.report.ReportActionView" /> 
+				<class name="com.inferyx.framework.dataVisualization.report.ReportActionRestore" /> 
+				<class name="com.inferyx.framework.dataVisualization.report.ReportActionLock" /> 
+				<class name="com.inferyx.framework.dataVisualization.report.ReportActionUnlock" /> 
+				<class name="com.inferyx.framework.dataVisualization.report.ReportActionPublish" /> 
+				<class name="com.inferyx.framework.dataVisualization.report.ReportActionUnPublish" /> 
+				<class name="com.inferyx.framework.dataVisualization.report.ReportActionExecute" /> 
+				<class name="com.inferyx.framework.dataVisualization.report.ReportActionClone" /> 
+				<class name="com.inferyx.framework.dataVisualization.report.ReportActionExport" /> 
 			</classes>	
-	</test> -->
-	
-	<!-- <test name="Data Profiling">
+	</test>
+	<test name="Report Result">
+	<classes>
+				<class name="com.inferyx.framework.dataVisualization.result.Result" /> 
+				<class name="com.inferyx.framework.dataVisualization.result.ResultView" /> 
+				
+	</classes>
+	</test>
+	 -->
+	<test name="Data Profiling">
 		<classes>
 		<class name="com.inferyx.framework.dataProfiling.DataProfiling" />	
 		</classes>
 	</test>
-	<test name="Data Profiling Rule">
+	<test name="Data Profiling List Page">
+	<classes>
+			<class name="com.inferyx.framework.dataProfiling.rule.listPage.Rule" />
+			<class name="com.inferyx.framework.dataProfiling.rule.listPage.RuleListPage" />	
+				
+	</classes>
+	</test>
+	<!-- <test name="Data Profiling Rule">
 		<classes>
-		<class name="com.inferyx.framework.dataProfiling.rule.Rule" />	
 		<class name="com.inferyx.framework.dataProfiling.rule.RuleAdd" />
 		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionView" />
 		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionEdit" />
@@ -91,8 +116,21 @@
 		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionViewIcon" />	
 		
 		</classes>
+	</test> -->
+	
+	<test name="DataProfiling Group List Page">
+	<classes>
+			<class name="com.inferyx.framework.dataProfiling.group.listPage.DataProfilingGroup" />
+			<class name="com.inferyx.framework.dataProfiling.group.listPage.GroupListPage" />
+	</classes>	
 	</test>
-	 -->
+	
+	<test name="DataProfiling Group">
+	<classes>
+			<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupAdd" />
+	</classes>
+	</test>
+	
 <!-- <test name="DATA Preaparation.Datapod">
 		<classes>
 			<class name="com.inferyx.framework.dataPreparation.datapod.DataPreaparation" />

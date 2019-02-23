@@ -20,7 +20,7 @@ public class RuleActionRestore extends TestBase{
 
 		Thread.sleep(1000);
 	}
-	@Test(priority =7, description = "ruleRestore")
+	@Test(priority =13, description = "ruleRestore")
 	public void ruleRestore() throws IOException, InterruptedException {
 		Thread.sleep(3000);
 		//ruleRestore

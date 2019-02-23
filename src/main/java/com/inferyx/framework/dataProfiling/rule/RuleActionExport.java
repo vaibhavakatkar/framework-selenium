@@ -21,8 +21,8 @@ public class RuleActionExport extends TestBase{
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority = 14, description = "Rule Export Action")
-	public void datapodEditAction() throws IOException, InterruptedException {
+	@Test(priority = 20, description = "Rule Export Action")
+	public void ruleEditAction() throws IOException, InterruptedException {
 		try {
 			WebElement actionExport = driver.findElement(By.xpath("/html/body/ul/li[8]/a"));
 			actionExport.click();
@@ -42,6 +42,7 @@ public class RuleActionExport extends TestBase{
 		start = System.currentTimeMillis();
 		WebElement actionExport = driver.findElement(By.xpath("//*[@id=\"filemodal\"]/div/div/div[3]/button[2]"));
 		actionExport.click();
+		Thread.sleep(2000);
 	
 	}
 }
