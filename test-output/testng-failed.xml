@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [seq tests]">
-  <test thread-count="2" name="DataProfiling Group(failed)">
+  <test thread-count="2" name="Data Profiling Group(failed)">
     <classes>
-      <class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupAdd">
+      <class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupExecute">
         <methods>
-          <include name="vizpodAdd" invocation-numbers="0"/>
+          <include name="groupRestart"/>
         </methods>
-      </class> <!-- com.inferyx.framework.dataProfiling.group.DataProfilingGroupAdd -->
+      </class> <!-- com.inferyx.framework.dataProfiling.group.DataProfilingGroupExecute -->
     </classes>
-  </test> <!-- DataProfiling Group(failed) -->
+  </test> <!-- Data Profiling Group(failed) -->
 </suite> <!-- Failed suite [seq tests] -->

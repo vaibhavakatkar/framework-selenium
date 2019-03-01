@@ -25,15 +25,15 @@ public class DataProfilingGroup extends TestBase{
 		profileNameFirst.click();
 		Thread.sleep(1000);
 		
-		WebElement profileNameThird=driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div/div[4]/div[2]/form/div/div[1]/div[13]/div[1]/tags-input/div/auto-complete/div/ul/li[8]/ti-autocomplete-match/ng-include/span"));
-		profileNameThird.click();
+		WebElement profileNameSecond=driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div/div[4]/div[2]/form/div/div[1]/div[13]/div[1]/tags-input/div/auto-complete/div/ul/li[5]/ti-autocomplete-match/ng-include/span"));
+		profileNameSecond.click();
 		Thread.sleep(1000);
 		
 		driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div/div[4]/div[2]/form/div/div[1]/div[13]/label")).click();
 		
-		WebElement runImmediately=driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div/div[4]/div[2]/form/div/div[1]/div[14]/div/div/label/span"));
+		/*WebElement runImmediately=driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div/div[4]/div[2]/form/div/div[1]/div[14]/div/div/label/span"));
 		runImmediately.click();
-		Thread.sleep(1000);
+		Thread.sleep(1000);*/
 		
 	}
   

@@ -68,7 +68,7 @@
 				<class name="com.inferyx.framework.dataVisualization.report.ReportAdd" /> 
 				<class name="com.inferyx.framework.dataVisualization.report.ReportActionView" /> 
 				<class name="com.inferyx.framework.dataVisualization.report.ReportActionEdit" /> 
-				<class name="com.inferyx.framework.dataVisualization.report.ReportActionDelete" /> 					<class name="com.inferyx.framework.dataVisualization.report.ReportActionView" /> 
+				<class name="com.inferyx.framework.dataVisualization.report.ReportActionDelete" /> 				
 				<class name="com.inferyx.framework.dataVisualization.report.ReportActionRestore" /> 
 				<class name="com.inferyx.framework.dataVisualization.report.ReportActionLock" /> 
 				<class name="com.inferyx.framework.dataVisualization.report.ReportActionUnlock" /> 
@@ -92,44 +92,74 @@
 		<class name="com.inferyx.framework.dataProfiling.DataProfiling" />	
 		</classes>
 	</test>
-	<test name="Data Profiling List Page">
+	
+	<test name="Data Profiling Rule List Page">
 	<classes>
-			<class name="com.inferyx.framework.dataProfiling.rule.listPage.Rule" />
-			<class name="com.inferyx.framework.dataProfiling.rule.listPage.RuleListPage" />	
-				
-	</classes>
+			<class name="com.inferyx.framework.dataProfiling.rule.listPage.DataProfilingRule" />
+<!-- 			<class name="com.inferyx.framework.dataProfiling.rule.listPage.DataProfilingRuleListPage" />				
+ -->	</classes>
 	</test>
 	<!-- <test name="Data Profiling Rule">
 		<classes>
-		<class name="com.inferyx.framework.dataProfiling.rule.RuleAdd" />
-		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionView" />
-		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionEdit" />
-		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionDelete" />
-		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionRestore" />
-		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionLock" />
-		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionUnlock" />
-		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionPublish" />
-		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionUnPublish" />
-		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionExecute" />
-		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionClone" />
-		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionExport" />	
-		<class name="com.inferyx.framework.dataProfiling.rule.RuleActionViewIcon" />	
-		
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleAdd" />
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionView" />
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionEdit" />
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionDelete" />
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionRestore" />
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionLock" />
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionUnlock" />
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionPublish" />
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionUnPublish" />
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionClone" />
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionExport" />	
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionViewIcon" />
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionExecute" />
+				
 		</classes>
 	</test> -->
 	
-	<test name="DataProfiling Group List Page">
-	<classes>
-			<class name="com.inferyx.framework.dataProfiling.group.listPage.DataProfilingGroup" />
-			<class name="com.inferyx.framework.dataProfiling.group.listPage.GroupListPage" />
-	</classes>	
+	<test name="Data Profiling Group List Page">
+		<classes>
+			<class name="com.inferyx.framework.dataProfiling.group.listPage.DataProfilingGroup"/>
+			<!-- <class name="com.inferyx.framework.dataProfiling.group.listPage.DataProfilingGroupListPage"/> -->
+		</classes>
 	</test>
 	
-	<test name="DataProfiling Group">
-	<classes>
-			<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupAdd" />
-	</classes>
+	<test name="Data Profiling Group">
+		<classes>
+		<!-- <class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupAdd" />
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupView" />
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupEdit" />
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupDelete" />
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupRestore" />
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupLock" />
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupUnlock" />
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupPublish" />
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupUnPublish" />
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupClone" />
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupExport" />	
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupActionViewIcon" />		 -->
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupExecute" />
+		
+		</classes>
 	</test>
+	
+	<!-- <test name="Data Profiling Result">
+	<classes>
+			<class name="com.inferyx.framework.dataProfiling.result.DataProfilingResult"/>
+			<class name="com.inferyx.framework.dataProfiling.result.DataProfilingRuleViewResult"/>
+			<class name="com.inferyx.framework.dataProfiling.result.DataProfilingGroupViewResult"/>
+		
+	</classes>
+	</test> -->
+		
+	<!-- <test name="Data Profiling Compare Result">
+	<classes>
+			<class name="com.inferyx.framework.dataProfiling.compareResult.DataProfilingCompareResult"/>
+			<class name="com.inferyx.framework.dataProfiling.compareResult.DataProfilingSearchCriteria"/>
+			<class name="com.inferyx.framework.dataProfiling.compareResult.DataProfilingAttribute"/>
+	</classes>
+	</test>	 -->
 	
 <!-- <test name="DATA Preaparation.Datapod">
 		<classes>

@@ -26,7 +26,7 @@ public class DataProfilingGroupAdd extends TestBase{
 		return data;
 	}
 	
-	@Test(priority =8,dataProvider = "getDummyData", description = "dataProfilingGroup Add")
+	@Test(priority =1,dataProvider = "getDummyData", description = "dataProfilingGroup Add")
 	public void vizpodAdd(String name, String desc) throws IOException, InterruptedException {
 		Thread.sleep(5000);
 		//groupAdd

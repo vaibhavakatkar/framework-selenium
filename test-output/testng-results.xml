@@ -1,121 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="19" passed="19">
+<testng-results skipped="0" failed="1" ignored="0" total="9" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="seq tests" duration-ms="211696" started-at="2019-02-23T14:31:20Z" finished-at="2019-02-23T14:34:51Z">
+  <suite name="seq tests" duration-ms="101061" started-at="2019-03-01T12:43:44Z" finished-at="2019-03-01T12:45:25Z">
     <groups>
     </groups>
-    <test name="LOGIN" duration-ms="20705" started-at="2019-02-23T14:31:20Z" finished-at="2019-02-23T14:31:40Z">
+    <test name="LOGIN" duration-ms="21337" started-at="2019-03-01T12:43:44Z" finished-at="2019-03-01T12:44:05Z">
       <class name="com.inferyx.framework.selenium.LoginPage">
-        <test-method status="PASS" signature="openBrowser()[pri:1, instance:com.inferyx.framework.selenium.LoginPage@1d296da]" name="openBrowser" duration-ms="5778" started-at="2019-02-23T14:31:20Z" description="openBrowser" finished-at="2019-02-23T14:31:25Z">
+        <test-method status="PASS" signature="openBrowser()[pri:1, instance:com.inferyx.framework.selenium.LoginPage@1d296da]" name="openBrowser" duration-ms="6144" started-at="2019-03-01T12:43:44Z" description="openBrowser" finished-at="2019-03-01T12:43:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="login()[pri:2, instance:com.inferyx.framework.selenium.LoginPage@1d296da]" name="login" duration-ms="3044" started-at="2019-02-23T14:31:25Z" description="login check" finished-at="2019-02-23T14:31:29Z">
+        <test-method status="PASS" signature="login()[pri:2, instance:com.inferyx.framework.selenium.LoginPage@1d296da]" name="login" duration-ms="3142" started-at="2019-03-01T12:43:50Z" description="login check" finished-at="2019-03-01T12:43:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="appSelection()[pri:3, instance:com.inferyx.framework.selenium.LoginPage@1d296da]" name="appSelection" duration-ms="11838" started-at="2019-02-23T14:31:29Z" description="appSelection" finished-at="2019-02-23T14:31:40Z">
+        <test-method status="PASS" signature="appSelection()[pri:3, instance:com.inferyx.framework.selenium.LoginPage@1d296da]" name="appSelection" duration-ms="12002" started-at="2019-03-01T12:43:53Z" description="appSelection" finished-at="2019-03-01T12:44:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appSelection -->
       </class> <!-- com.inferyx.framework.selenium.LoginPage -->
     </test> <!-- LOGIN -->
-    <test name="Data Profiling" duration-ms="10417" started-at="2019-02-23T14:31:40Z" finished-at="2019-02-23T14:31:51Z">
+    <test name="Data Profiling" duration-ms="10360" started-at="2019-03-01T12:44:05Z" finished-at="2019-03-01T12:44:15Z">
       <class name="com.inferyx.framework.dataProfiling.DataProfiling">
-        <test-method status="PASS" signature="dataProfiling()[pri:1, instance:com.inferyx.framework.dataProfiling.DataProfiling@77c2494c]" name="dataProfiling" duration-ms="10412" started-at="2019-02-23T14:31:40Z" description="dataProfiling" finished-at="2019-02-23T14:31:51Z">
+        <test-method status="PASS" signature="dataProfiling()[pri:1, instance:com.inferyx.framework.dataProfiling.DataProfiling@77c2494c]" name="dataProfiling" duration-ms="10355" started-at="2019-03-01T12:44:05Z" description="dataProfiling" finished-at="2019-03-01T12:44:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataProfiling -->
       </class> <!-- com.inferyx.framework.dataProfiling.DataProfiling -->
     </test> <!-- Data Profiling -->
-    <test name="Data Profiling List Page" duration-ms="57285" started-at="2019-02-23T14:31:51Z" finished-at="2019-02-23T14:32:48Z">
-      <class name="com.inferyx.framework.dataProfiling.rule.listPage.RuleListPage">
-        <test-method status="PASS" signature="RuleSearchByName()[pri:3, instance:com.inferyx.framework.dataProfiling.rule.listPage.RuleListPage@1fa121e2]" name="RuleSearchByName" duration-ms="5565" started-at="2019-02-23T14:32:02Z" description="Rule Search By Name" finished-at="2019-02-23T14:32:08Z">
+    <test name="Data Profiling Rule List Page" duration-ms="11569" started-at="2019-03-01T12:44:15Z" finished-at="2019-03-01T12:44:27Z">
+      <class name="com.inferyx.framework.dataProfiling.rule.listPage.DataProfilingRule">
+        <test-method status="PASS" signature="dataProfileRule()[pri:2, instance:com.inferyx.framework.dataProfiling.rule.listPage.DataProfilingRule@9d5509a]" name="dataProfileRule" duration-ms="11564" started-at="2019-03-01T12:44:15Z" description="Data Profile Rule" finished-at="2019-03-01T12:44:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RuleSearchByName -->
-        <test-method status="PASS" signature="RuleSearchByUser()[pri:4, instance:com.inferyx.framework.dataProfiling.rule.listPage.RuleListPage@1fa121e2]" name="RuleSearchByUser" duration-ms="5510" started-at="2019-02-23T14:32:08Z" description="Rule Search By User" finished-at="2019-02-23T14:32:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RuleSearchByUser -->
-        <test-method status="PASS" signature="VizpodSearchCriteriaRefresh()[pri:5, instance:com.inferyx.framework.dataProfiling.rule.listPage.RuleListPage@1fa121e2]" name="VizpodSearchCriteriaRefresh" duration-ms="4274" started-at="2019-02-23T14:32:14Z" description="Rule Search Criteria Refresh" finished-at="2019-02-23T14:32:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VizpodSearchCriteriaRefresh -->
-        <test-method status="PASS" signature="RuleStartAndEndDate()[pri:6, instance:com.inferyx.framework.dataProfiling.rule.listPage.RuleListPage@1fa121e2]" name="RuleStartAndEndDate" duration-ms="15815" started-at="2019-02-23T14:32:18Z" description="Rule Start and End Date" finished-at="2019-02-23T14:32:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RuleStartAndEndDate -->
-        <test-method status="PASS" signature="RuleSearchStatus()[pri:7, instance:com.inferyx.framework.dataProfiling.rule.listPage.RuleListPage@1fa121e2]" name="RuleSearchStatus" duration-ms="8679" started-at="2019-02-23T14:32:34Z" description="Rule Search Status" finished-at="2019-02-23T14:32:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RuleSearchStatus -->
-        <test-method status="PASS" signature="RuleSearchName()[pri:8, instance:com.inferyx.framework.dataProfiling.rule.listPage.RuleListPage@1fa121e2]" name="RuleSearchName" duration-ms="5732" started-at="2019-02-23T14:32:42Z" description="Rule Search Name" finished-at="2019-02-23T14:32:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RuleSearchName -->
-      </class> <!-- com.inferyx.framework.dataProfiling.rule.listPage.RuleListPage -->
-      <class name="com.inferyx.framework.dataProfiling.rule.listPage.Rule">
-        <test-method status="PASS" signature="dataVisualization()[pri:2, instance:com.inferyx.framework.dataProfiling.rule.listPage.Rule@3cd3e762]" name="dataVisualization" duration-ms="11680" started-at="2019-02-23T14:31:51Z" description="Data Profile Rule" finished-at="2019-02-23T14:32:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataVisualization -->
-      </class> <!-- com.inferyx.framework.dataProfiling.rule.listPage.Rule -->
-    </test> <!-- Data Profiling List Page -->
-    <test name="DataProfiling Group List Page" duration-ms="56041" started-at="2019-02-23T14:32:48Z" finished-at="2019-02-23T14:33:44Z">
+        </test-method> <!-- dataProfileRule -->
+      </class> <!-- com.inferyx.framework.dataProfiling.rule.listPage.DataProfilingRule -->
+    </test> <!-- Data Profiling Rule List Page -->
+    <test name="Data Profiling Group List Page" duration-ms="10946" started-at="2019-03-01T12:44:27Z" finished-at="2019-03-01T12:44:38Z">
       <class name="com.inferyx.framework.dataProfiling.group.listPage.DataProfilingGroup">
-        <test-method status="PASS" signature="dataVisualization()[pri:1, instance:com.inferyx.framework.dataProfiling.group.listPage.DataProfilingGroup@3857f613]" name="dataVisualization" duration-ms="10869" started-at="2019-02-23T14:32:48Z" description="Data Profile Group" finished-at="2019-02-23T14:32:59Z">
+        <test-method status="PASS" signature="dataVisualization()[pri:1, instance:com.inferyx.framework.dataProfiling.group.listPage.DataProfilingGroup@74e52ef6]" name="dataVisualization" duration-ms="10942" started-at="2019-03-01T12:44:27Z" description="Data Profile Group" finished-at="2019-03-01T12:44:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataVisualization -->
       </class> <!-- com.inferyx.framework.dataProfiling.group.listPage.DataProfilingGroup -->
-      <class name="com.inferyx.framework.dataProfiling.group.listPage.GroupListPage">
-        <test-method status="PASS" signature="RuleSearchByName()[pri:2, instance:com.inferyx.framework.dataProfiling.group.listPage.GroupListPage@198b6731]" name="RuleSearchByName" duration-ms="5537" started-at="2019-02-23T14:32:59Z" description="Group Search By Name" finished-at="2019-02-23T14:33:05Z">
+    </test> <!-- Data Profiling Group List Page -->
+    <test name="Data Profiling Group" duration-ms="46818" started-at="2019-03-01T12:44:38Z" finished-at="2019-03-01T12:45:25Z">
+      <class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupExecute">
+        <test-method status="PASS" signature="groupExecute()[pri:1, instance:com.inferyx.framework.dataProfiling.group.DataProfilingGroupExecute@79079097]" name="groupExecute" duration-ms="12174" started-at="2019-03-01T12:44:38Z" description="Group Execute Action" finished-at="2019-03-01T12:44:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RuleSearchByName -->
-        <test-method status="PASS" signature="RuleSearchByUser()[pri:3, instance:com.inferyx.framework.dataProfiling.group.listPage.GroupListPage@198b6731]" name="RuleSearchByUser" duration-ms="5490" started-at="2019-02-23T14:33:05Z" description="Group Search By User" finished-at="2019-02-23T14:33:10Z">
+        </test-method> <!-- groupExecute -->
+        <test-method status="PASS" signature="groupKilled()[pri:2, instance:com.inferyx.framework.dataProfiling.group.DataProfilingGroupExecute@79079097]" name="groupKilled" duration-ms="31063" started-at="2019-03-01T12:44:50Z" description="Rule Group Killed" finished-at="2019-03-01T12:45:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RuleSearchByUser -->
-        <test-method status="PASS" signature="VizpodSearchCriteriaRefresh()[pri:4, instance:com.inferyx.framework.dataProfiling.group.listPage.GroupListPage@198b6731]" name="VizpodSearchCriteriaRefresh" duration-ms="4305" started-at="2019-02-23T14:33:10Z" description="Group Search Criteria Refresh" finished-at="2019-02-23T14:33:14Z">
+        </test-method> <!-- groupKilled -->
+        <test-method status="FAIL" signature="groupRestart()[pri:3, instance:com.inferyx.framework.dataProfiling.group.DataProfilingGroupExecute@79079097]" name="groupRestart" duration-ms="3567" started-at="2019-03-01T12:45:21Z" description="Rule Group Restart" finished-at="2019-03-01T12:45:25Z">
+          <exception class="org.openqa.selenium.ElementNotVisibleException">
+            <message>
+              <![CDATA[element not visible
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-45-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 112 milliseconds
+Build info: version: '3.2.0', revision: '8c03df6b79', time: '2017-02-23 10:51:31 +0000'
+System info: host: 'rohini', ip: '10.10.0.14', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-45-generic', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:44687}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706), userDataDir=/tmp/.org.chromium.Chromium.vc9ZK6}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.98, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3301333061c7372f9aba04d44dbb7d30]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-45-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 112 milliseconds
+Build info: version: '3.2.0', revision: '8c03df6b79', time: '2017-02-23 10:51:31 +0000'
+System info: host: 'rohini', ip: '10.10.0.14', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-45-generic', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:44687}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706), userDataDir=/tmp/.org.chromium.Chromium.vc9ZK6}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.98, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3301333061c7372f9aba04d44dbb7d30
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.inferyx.framework.dataProfiling.group.DataProfilingGroupExecute.groupRestart(DataProfilingGroupExecute.java:96)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VizpodSearchCriteriaRefresh -->
-        <test-method status="PASS" signature="GroupStartAndEndDate()[pri:5, instance:com.inferyx.framework.dataProfiling.group.listPage.GroupListPage@198b6731]" name="GroupStartAndEndDate" duration-ms="15457" started-at="2019-02-23T14:33:14Z" description="Group Start and End Date" finished-at="2019-02-23T14:33:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GroupStartAndEndDate -->
-        <test-method status="PASS" signature="RuleSearchStatus()[pri:6, instance:com.inferyx.framework.dataProfiling.group.listPage.GroupListPage@198b6731]" name="RuleSearchStatus" duration-ms="8635" started-at="2019-02-23T14:33:30Z" description="Group Search Status" finished-at="2019-02-23T14:33:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RuleSearchStatus -->
-        <test-method status="PASS" signature="GroupSearchName()[pri:7, instance:com.inferyx.framework.dataProfiling.group.listPage.GroupListPage@198b6731]" name="GroupSearchName" duration-ms="5720" started-at="2019-02-23T14:33:38Z" description="Group Search Name" finished-at="2019-02-23T14:33:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GroupSearchName -->
-      </class> <!-- com.inferyx.framework.dataProfiling.group.listPage.GroupListPage -->
-    </test> <!-- DataProfiling Group List Page -->
-    <test name="DataProfiling Group" duration-ms="67212" started-at="2019-02-23T14:33:44Z" finished-at="2019-02-23T14:34:51Z">
-      <class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupAdd">
-        <test-method status="PASS" signature="vizpodAdd(java.lang.String, java.lang.String)[pri:8, instance:com.inferyx.framework.dataProfiling.group.DataProfilingGroupAdd@3d285d7e]" name="vizpodAdd" duration-ms="67121" started-at="2019-02-23T14:33:44Z" description="dataProfilingGroup Add" data-provider="getDummyData" finished-at="2019-02-23T14:34:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[profile_group_dw_test]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Profile group for datawarehouse data]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- vizpodAdd -->
-      </class> <!-- com.inferyx.framework.dataProfiling.group.DataProfilingGroupAdd -->
-    </test> <!-- DataProfiling Group -->
+        </test-method> <!-- groupRestart -->
+      </class> <!-- com.inferyx.framework.dataProfiling.group.DataProfilingGroupExecute -->
+    </test> <!-- Data Profiling Group -->
   </suite> <!-- seq tests -->
 </testng-results>

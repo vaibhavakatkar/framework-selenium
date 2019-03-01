@@ -6,7 +6,9 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -18,6 +20,7 @@ import com.inferyx.framework.util.WebEventListener;
 public class TestBase {
 
 	public static WebDriver driver;
+	public static WebElement webElement;
 	public static Properties prop;
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
@@ -28,6 +31,14 @@ public class TestBase {
 	public long start = 0;
 	public ReadDataFromExcelSheet dataFromExcelSheet = new ReadDataFromExcelSheet();
 
+	
+	public WebElement getHtmlElementByXpath(String xpath) {
+		return driver.findElement(By.xpath(xpath));
+	}
+	/*public WebElement getHtmlElementByid(String id) {
+		return driver.findElement(By.id(id));
+	}*/
+	
 	public TestBase() {
 		try {
 			prop = new Properties();
