@@ -33,9 +33,9 @@ public class DataProfilingRuleActionView extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(7, 8, "Rule Action View", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Action View", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(7, 8, "Rule Action View", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Action View", "FAIL", totalTime, newFile);
 		}
 	}
 	

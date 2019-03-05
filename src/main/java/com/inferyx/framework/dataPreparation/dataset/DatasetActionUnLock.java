@@ -35,9 +35,9 @@ public class DatasetActionUnLock extends TestBase {
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4, 5, "DataSet Action UnLock", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "DataSet Action UnLock", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4, 5, "DataSet Action UnLock", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "DataSet Action UnLock", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(3000);
 	}

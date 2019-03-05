@@ -24,9 +24,9 @@ public class DataProfilingRuleActionViewIcon extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(7, 8, "Rule Action View", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Action View", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(7, 8, "Rule Action View", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Action View", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(2000);
 	}
@@ -40,9 +40,9 @@ public class DataProfilingRuleActionViewIcon extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(7, 8, "Rule Graph", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Graph", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(7, 8, "Rule Graph", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Graph", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(2000);
 	}
@@ -56,9 +56,9 @@ public class DataProfilingRuleActionViewIcon extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(7, 8, "Rule Graph Refresh", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Graph Refresh", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(7, 8, "Rule Graph Refresh", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Graph Refresh", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(2000);
 	}
@@ -72,9 +72,9 @@ public class DataProfilingRuleActionViewIcon extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(7, 8, "Rule Home", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Home", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(7, 8, "Rule Home", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Home", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(2000);
 	}
@@ -109,17 +109,17 @@ public class DataProfilingRuleActionViewIcon extends TestBase{
 					.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[1]/div/div[4]/div[2]/div/div/div[2]/div[1]/form/div/div/div[2]/div/input"));
 			String text=ruleNameVerify.getAttribute("value");
 			if(!text.equalsIgnoreCase("Edit Rule")) {
-				dataFromExcelSheet.updateResult(7, 8, "Rule Edit", "FAIL", totalTime);
+				dataFromExcelSheet.updateResult(7, 8, "Rule Edit", "FAIL", totalTime, newFile);
 
 			}else {
-				dataFromExcelSheet.updateResult(7, 8, "Rule Edit", "PASS", totalTime);
+				dataFromExcelSheet.updateResult(7, 8, "Rule Edit", "PASS", totalTime, newFile);
 			}
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(7, 8, "Rule Edit", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Edit", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(7, 8, "Rule Edit", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Edit", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(2000);
 	}
@@ -133,9 +133,9 @@ public class DataProfilingRuleActionViewIcon extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(7, 8, "Rule Close", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Close", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(7, 8, "Rule Close", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Close", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(2000);
 	}

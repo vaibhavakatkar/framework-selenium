@@ -23,7 +23,7 @@ public class CopyContentOneWorkbookToOther {
 		int inputSheetCount=inputWorkbook.getNumberOfSheets();
 		
 		Date date = new Date();
-		SimpleDateFormat dateFormat=new SimpleDateFormat("dd-MM-yyyy hh:mm:ss aa");
+		SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy-mm-dd hh:mm:ss aa");
 		
 		// Step #2 : Locate path and file of output excel.
 		File outputFile=new File("/home/rohini/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report"+dateFormat.format(date)+".xlsx");

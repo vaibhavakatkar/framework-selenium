@@ -28,10 +28,10 @@ public class DataProfilingGroupViewResult extends TestBase{
 			Thread.sleep(30000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Group View", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Group View", "PASS", totalTime, newFile);
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Group View", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Group View", "FAIL", totalTime, newFile);
 		}
 	}
 	/*@Test(priority =10 , description = "Data Profile Result Show Details")
@@ -76,10 +76,10 @@ public class DataProfilingGroupViewResult extends TestBase{
 			Thread.sleep(2000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Group Graph", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Group Graph", "PASS", totalTime, newFile);
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Group Graph", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Group Graph", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =11 , description = "Data Profile Group Refresh")
@@ -94,10 +94,10 @@ public class DataProfilingGroupViewResult extends TestBase{
 			Thread.sleep(2000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Group Refresh", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Group Refresh", "PASS", totalTime, newFile);
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Group Refresh", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Group Refresh", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =12 , description = "Data Profile Group Home")
@@ -112,10 +112,10 @@ public class DataProfilingGroupViewResult extends TestBase{
 			Thread.sleep(2000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Group Home", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Group Home", "PASS", totalTime, newFile);
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Group Home", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Group Home", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =13 , description = "Data Profile Group Close")
@@ -130,10 +130,10 @@ public class DataProfilingGroupViewResult extends TestBase{
 			Thread.sleep(2000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Group Close", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Group Close", "PASS", totalTime, newFile);
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Group Close", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Group Close", "FAIL", totalTime, newFile);
 		}
 	}
 }

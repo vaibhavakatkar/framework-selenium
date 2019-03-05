@@ -64,7 +64,7 @@ public class AllTests extends TestBase{
 			System.out.println(driver.getTitle() + dataVisualization.getText());
 			long finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(updateResult, "Data Visualization", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Data Visualization", "PASS", totalTime, newFile);
 			Thread.sleep(1000);
 					// Dashboard
 					try {
@@ -75,9 +75,9 @@ public class AllTests extends TestBase{
 						dashboard.click();
 						long finish11 = System.currentTimeMillis();
 						totalTime = finish11 - start11; 
-						dataFromExcelSheet.updateResult(updateResult, "Dashboard", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Dashboard", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Dashboard", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Dashboard", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(1000);
 					//Vizpod
@@ -89,9 +89,9 @@ public class AllTests extends TestBase{
 						Thread.sleep(1000);
 						long finish1 = System.currentTimeMillis();
 						totalTime = finish1 - start1; 
-						dataFromExcelSheet.updateResult(updateResult, "Vizpod", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Vizpod", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Vizpod", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Vizpod", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(1000);
 					//Report
@@ -103,13 +103,13 @@ public class AllTests extends TestBase{
 						report.click();
 						long finish1 = System.currentTimeMillis();
 						totalTime = finish1 - start1;
-						dataFromExcelSheet.updateResult(updateResult, "Report", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Report", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Report", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Report", "FAIL", totalTime, newFile);
 					}
 
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(updateResult, "Data Visualization", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Data Visualization", "FAIL", totalTime, newFile);
 
 		}
 		// Data Ingest
@@ -121,7 +121,7 @@ public class AllTests extends TestBase{
 			dataIngest.click();
 			long finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(updateResult, "Data Ingest", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Data Ingest", "PASS", totalTime, newFile);
 			System.out.println(driver.getTitle() + dataIngest.getText());
 			Thread.sleep(1000);
 					//Rule
@@ -133,9 +133,9 @@ public class AllTests extends TestBase{
 						rule.click();
 						long finish1 = System.currentTimeMillis();
 						totalTime = finish1 - start1;
-						dataFromExcelSheet.updateResult(updateResult, "Rule", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Rule", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Rule", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Rule", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(1000);
 					//Rule Group
@@ -147,9 +147,9 @@ public class AllTests extends TestBase{
 						group.click();
 						long finish1 = System.currentTimeMillis();
 						totalTime = finish1 - start1;
-						dataFromExcelSheet.updateResult(updateResult, "Rule Group", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Rule Group", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Rule Group", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Rule Group", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(1000);
 					//Result
@@ -161,12 +161,12 @@ public class AllTests extends TestBase{
 						result.click();
 						long finish1 = System.currentTimeMillis();
 						totalTime = finish1 - start1;
-						dataFromExcelSheet.updateResult(updateResult, "Result", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Result", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Result", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Result", "FAIL", totalTime, newFile);
 					}
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(updateResult, "Data Ingest", "FAIL", 0);
+			dataFromExcelSheet.updateResult(updateResult, "Data Ingest", "FAIL", 0, newFile);
 		}
 		//Data Profile
 		try {
@@ -177,7 +177,7 @@ public class AllTests extends TestBase{
 			dataProfile.click();
 			long finish1 = System.currentTimeMillis();
 			totalTime = finish1 - start1;
-			dataFromExcelSheet.updateResult(updateResult, "Data Profile", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Data Profile", "PASS", totalTime, newFile);
 			System.out.println(driver.getTitle() + dataProfile.getText());
 			Thread.sleep(1000);
 						//Rule
@@ -189,9 +189,9 @@ public class AllTests extends TestBase{
 							rule.click();
 							long finish11 = System.currentTimeMillis();
 							totalTime = finish11 - start11;
-							dataFromExcelSheet.updateResult(updateResult, "Rule", "PASS", totalTime);
+							dataFromExcelSheet.updateResult(updateResult, "Rule", "PASS", totalTime, newFile);
 						} catch (NoSuchElementException e) {
-							dataFromExcelSheet.updateResult(updateResult, "Rule", "FAIL", totalTime);
+							dataFromExcelSheet.updateResult(updateResult, "Rule", "FAIL", totalTime, newFile);
 						}
 						Thread.sleep(1000);
 						//Group
@@ -203,9 +203,9 @@ public class AllTests extends TestBase{
 							group.click();
 							long finish11 = System.currentTimeMillis();
 							totalTime = finish11 - start11;
-							dataFromExcelSheet.updateResult(updateResult, "Rule Group", "PASS", totalTime);
+							dataFromExcelSheet.updateResult(updateResult, "Rule Group", "PASS", totalTime, newFile);
 						} catch (NoSuchElementException e) {
-							dataFromExcelSheet.updateResult(updateResult, "Rule Group", "FAIL", totalTime);
+							dataFromExcelSheet.updateResult(updateResult, "Rule Group", "FAIL", totalTime, newFile);
 						}
 						Thread.sleep(1000);
 						//Result
@@ -217,9 +217,9 @@ public class AllTests extends TestBase{
 							result.click();
 							long finish11 = System.currentTimeMillis();
 							totalTime = finish11 - start11;
-							dataFromExcelSheet.updateResult(updateResult, "Result", "PASS", totalTime);
+							dataFromExcelSheet.updateResult(updateResult, "Result", "PASS", totalTime, newFile);
 						} catch (NoSuchElementException e) {
-							dataFromExcelSheet.updateResult(updateResult, "Result", "FAIL", totalTime);
+							dataFromExcelSheet.updateResult(updateResult, "Result", "FAIL", totalTime, newFile);
 						}
 						//Compare Result
 						try {
@@ -230,12 +230,12 @@ public class AllTests extends TestBase{
 							compResult.click();
 							long finish11 = System.currentTimeMillis();
 							totalTime = finish11 - start11;
-							dataFromExcelSheet.updateResult(updateResult, "Compare Result", "PASS", totalTime);
+							dataFromExcelSheet.updateResult(updateResult, "Compare Result", "PASS", totalTime, newFile);
 						} catch (NoSuchElementException e) {
-							dataFromExcelSheet.updateResult(updateResult, "Compare Result", "FAIL", totalTime);
+							dataFromExcelSheet.updateResult(updateResult, "Compare Result", "FAIL", totalTime, newFile);
 						}
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(updateResult, "Data Profile", "FAIL", 0);
+			dataFromExcelSheet.updateResult(updateResult, "Data Profile", "FAIL", 0, newFile);
 		}
 		//Data Quality
 		try {
@@ -246,7 +246,7 @@ public class AllTests extends TestBase{
 			dataQuality.click();
 			long finish11 = System.currentTimeMillis();
 			totalTime = finish11 - start11;
-			dataFromExcelSheet.updateResult(updateResult, "Data Quality", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Data Quality", "PASS", totalTime, newFile);
 			System.out.println(driver.getTitle() + dataQuality.getText());
 			Thread.sleep(1000);
 					//Rule
@@ -258,9 +258,9 @@ public class AllTests extends TestBase{
 						rule.click();
 						long finish111 = System.currentTimeMillis();
 						totalTime = finish111 - start111;
-						dataFromExcelSheet.updateResult(updateResult, "Rule", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Rule", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Rule", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Rule", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(1000);
 					//Group
@@ -272,9 +272,9 @@ public class AllTests extends TestBase{
 						group.click();
 						long finish111 = System.currentTimeMillis();
 						totalTime = finish111 - start111;
-						dataFromExcelSheet.updateResult(updateResult, "Rule Group" + "", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Rule Group" + "", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Rule Group", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Rule Group", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(1000);
 					//Result
@@ -286,9 +286,9 @@ public class AllTests extends TestBase{
 						result.click();
 						long finish111 = System.currentTimeMillis();
 						totalTime = finish111 - start111;
-						dataFromExcelSheet.updateResult(updateResult, "Result", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Result", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Result", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Result", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(1000);
 					//Compare Result
@@ -300,12 +300,12 @@ public class AllTests extends TestBase{
 						compResult.click();
 						long finish111 = System.currentTimeMillis();
 						totalTime = finish111 - start111;
-						dataFromExcelSheet.updateResult(updateResult, "Compare Result", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Compare Result", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Compare Result", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Compare Result", "FAIL", totalTime, newFile);
 					}
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(updateResult, "Data Quality", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Data Quality", "FAIL", totalTime, newFile);
 		}
 		//Data Preparation
 		try {
@@ -316,7 +316,7 @@ public class AllTests extends TestBase{
 			dataPreparation.click();
 			long finish111 = System.currentTimeMillis();
 			totalTime = finish111 - start111;
-			dataFromExcelSheet.updateResult(updateResult, "Data Preparation", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Data Preparation", "PASS", totalTime, newFile);
 			System.out.println(driver.getTitle() + dataPreparation.getText());
 			Thread.sleep(1000);
 					//Datapod
@@ -328,9 +328,9 @@ public class AllTests extends TestBase{
 						datapod.click();
 						long finish1111 = System.currentTimeMillis();
 						totalTime = finish1111 - start1111;
-						dataFromExcelSheet.updateResult(updateResult, "Datapod", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Datapod", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Datapod", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Datapod", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(1000);
 					//Dataset
@@ -342,9 +342,9 @@ public class AllTests extends TestBase{
 						dataset.click();
 						long finish1111 = System.currentTimeMillis();
 						totalTime = finish1111 - start1111;
-						dataFromExcelSheet.updateResult(updateResult, "Dataset", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Dataset", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Dataset", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Dataset", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(1000);
 					//Expression
@@ -356,9 +356,9 @@ public class AllTests extends TestBase{
 						expression.click();
 						long finish1111 = System.currentTimeMillis();
 						totalTime = finish1111 - start1111;
-						dataFromExcelSheet.updateResult(updateResult, "Expression", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Expression", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Expression", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Expression", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(1000);
 					//Formula
@@ -370,9 +370,9 @@ public class AllTests extends TestBase{
 						formula.click();
 						long finish1111 = System.currentTimeMillis();
 						totalTime = finish1111 - start1111;
-						dataFromExcelSheet.updateResult(updateResult, "Formula", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Formula", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Formula", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Formula", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(1000);
 					//Function
@@ -384,9 +384,9 @@ public class AllTests extends TestBase{
 						function.click();
 						long finish1111 = System.currentTimeMillis();
 						totalTime = finish1111 - start1111;
-						dataFromExcelSheet.updateResult(updateResult, "Function", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Function", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Function", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Function", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(6000);
 					//Map
@@ -398,9 +398,9 @@ public class AllTests extends TestBase{
 						map.click();
 						long finish1111 = System.currentTimeMillis();
 						totalTime = finish1111 - start1111;
-						dataFromExcelSheet.updateResult(updateResult, "Map", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Map", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Map", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Map", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(8000);
 					//Relation
@@ -412,9 +412,9 @@ public class AllTests extends TestBase{
 						relation.click();
 						long finish1111 = System.currentTimeMillis();
 						totalTime = finish1111 - start1111;
-						dataFromExcelSheet.updateResult(updateResult, "Relation", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Relation", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Relation", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Relation", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(3000);
 					//Result
@@ -426,12 +426,12 @@ public class AllTests extends TestBase{
 						result.click();
 						long finish1111 = System.currentTimeMillis();
 						totalTime = finish1111 - start1111;
-						dataFromExcelSheet.updateResult(updateResult, "Result", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Result", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Result", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Result", "FAIL", totalTime, newFile);
 					}
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(updateResult, "Data Preparation", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Data Preparation", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(6000);
 		//Data Recon
@@ -444,7 +444,7 @@ public class AllTests extends TestBase{
 			long finish1111 = System.currentTimeMillis();
 			totalTime = finish1111 - start1111;
 			Thread.sleep(2000);
-			dataFromExcelSheet.updateResult(updateResult, "Data Renconciliation", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Data Renconciliation", "PASS", totalTime, newFile);
 			System.out.println(driver.getTitle() + dataRecon.getText());
 			Thread.sleep(2000);
 					//Rule
@@ -456,9 +456,9 @@ public class AllTests extends TestBase{
 						rule.click();
 						long finish11111 = System.currentTimeMillis();
 						totalTime = finish11111 - start11111;
-						dataFromExcelSheet.updateResult(updateResult, "Rule", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Rule", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Rule", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Rule", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(2000);
 					//Rule Group
@@ -470,9 +470,9 @@ public class AllTests extends TestBase{
 						group.click();
 						long finish11111 = System.currentTimeMillis();
 						totalTime = finish11111 - start11111;
-						dataFromExcelSheet.updateResult(updateResult, "Rule Group", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Rule Group", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Rule Group", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Rule Group", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(2000);
 					//Result
@@ -484,9 +484,9 @@ public class AllTests extends TestBase{
 						result.click();
 						long finish11111 = System.currentTimeMillis();
 						totalTime = finish11111 - start11111;
-						dataFromExcelSheet.updateResult(updateResult, "Result", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Result", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Result", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Result", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(2000);
 					//Compare Result
@@ -498,12 +498,12 @@ public class AllTests extends TestBase{
 						compResult.click();
 						long finish11111 = System.currentTimeMillis();
 						totalTime = finish11111 - start11111;
-						dataFromExcelSheet.updateResult(updateResult, "Compare Result", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Compare Result", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Compare Result", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Compare Result", "FAIL", totalTime, newFile);
 					}
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(updateResult, "Data Renconciliation", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Data Renconciliation", "FAIL", totalTime, newFile);
 		}
 		//Business Rule
 		try {
@@ -514,7 +514,7 @@ public class AllTests extends TestBase{
 			businessRule.click();
 			long finish11111 = System.currentTimeMillis();
 			totalTime = finish11111 - start11111;
-			dataFromExcelSheet.updateResult(updateResult, "Business Rule", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Business Rule", "PASS", totalTime, newFile);
 			System.out.println(driver.getTitle() + businessRule.getText());
 			Thread.sleep(2000);
 					//Rule
@@ -526,9 +526,9 @@ public class AllTests extends TestBase{
 						rule.click();
 						long finish111111 = System.currentTimeMillis();
 						totalTime = finish111111 - start111111;
-						dataFromExcelSheet.updateResult(updateResult, "Rule", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Rule", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Rule", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Rule", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(2000);
 					//Rule Group
@@ -540,9 +540,9 @@ public class AllTests extends TestBase{
 						group.click();
 						long finish111111 = System.currentTimeMillis();
 						totalTime = finish111111 - start111111;
-						dataFromExcelSheet.updateResult(updateResult, "Rule Group", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Rule Group", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Rule Group", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Rule Group", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(2000);
 					//Parameter List
@@ -554,9 +554,9 @@ public class AllTests extends TestBase{
 						paramList.click();
 						long finish111111 = System.currentTimeMillis();
 						totalTime = finish111111 - start111111;
-						dataFromExcelSheet.updateResult(updateResult, "Parameter List", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Parameter List", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Parameter List", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Parameter List", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(2000);
 					//Result
@@ -568,9 +568,9 @@ public class AllTests extends TestBase{
 						result.click();
 						long finish111111 = System.currentTimeMillis();
 						totalTime = finish111111 - start111111;
-						dataFromExcelSheet.updateResult(updateResult, "Result", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Result", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Result", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Result", "FAIL", totalTime, newFile);
 					}	
 					Thread.sleep(2000);
 					//Compare Result
@@ -582,12 +582,12 @@ public class AllTests extends TestBase{
 						compResult.click();
 						long finish111111 = System.currentTimeMillis();
 						totalTime = finish111111 - start111111;
-						dataFromExcelSheet.updateResult(updateResult, "Compare Result", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Compare Result", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Compare Result", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Compare Result", "FAIL", totalTime, newFile);
 					}
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(updateResult, "Business Rule", "FAIL", 0);
+			dataFromExcelSheet.updateResult(updateResult, "Business Rule", "FAIL", 0, newFile);
 		}
 		Thread.sleep(3000);
 		//Data Science
@@ -601,7 +601,7 @@ public class AllTests extends TestBase{
 			totalTime = finish111111 - start111111;
 			Thread.sleep(2000); // driver.findElement(By.className("title ng-binding")).click();
 			// driver.findElement(By.id(id)).click();
-			dataFromExcelSheet.updateResult(updateResult, "Data Science", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Data Science", "PASS", totalTime, newFile);
 			System.out.println(driver.getTitle() + dataScience.getText());
 			Thread.sleep(2000);
 							//Algorithm
@@ -613,9 +613,9 @@ public class AllTests extends TestBase{
 								algo.click();
 								long finish1111111 = System.currentTimeMillis();
 								totalTime = finish1111111 - start1111111;
-								dataFromExcelSheet.updateResult(updateResult, "Algorithm", "PASS", totalTime);
+								dataFromExcelSheet.updateResult(updateResult, "Algorithm", "PASS", totalTime, newFile);
 							} catch (NoSuchElementException e) {
-								dataFromExcelSheet.updateResult(updateResult, "Algorithm", "FAIL", totalTime);
+								dataFromExcelSheet.updateResult(updateResult, "Algorithm", "FAIL", totalTime, newFile);
 							}
 							Thread.sleep(2000);
 							//Distribution
@@ -627,9 +627,9 @@ public class AllTests extends TestBase{
 								dist.click();
 								long finish1111111 = System.currentTimeMillis();
 								totalTime = finish1111111 - start1111111;
-								dataFromExcelSheet.updateResult(updateResult, "Distribution", "PASS", totalTime);
+								dataFromExcelSheet.updateResult(updateResult, "Distribution", "PASS", totalTime, newFile);
 							} catch (NoSuchElementException e) {
-								dataFromExcelSheet.updateResult(updateResult, "Distribution", "FAIL", totalTime);
+								dataFromExcelSheet.updateResult(updateResult, "Distribution", "FAIL", totalTime, newFile);
 							}
 							Thread.sleep(2000);
 							//Model
@@ -641,9 +641,9 @@ public class AllTests extends TestBase{
 								model.click();
 								long finish1111111 = System.currentTimeMillis();
 								totalTime = finish1111111 - start1111111;
-								dataFromExcelSheet.updateResult(updateResult, "Model", "PASS", totalTime);
+								dataFromExcelSheet.updateResult(updateResult, "Model", "PASS", totalTime, newFile);
 							} catch (NoSuchElementException e) {
-								dataFromExcelSheet.updateResult(updateResult, "Model", "FAIL", totalTime);
+								dataFromExcelSheet.updateResult(updateResult, "Model", "FAIL", totalTime, newFile);
 							}
 							Thread.sleep(2000);
 							//Parameter List
@@ -655,9 +655,9 @@ public class AllTests extends TestBase{
 								paramList.click();
 								long finish1111111 = System.currentTimeMillis();
 								totalTime = finish1111111 - start1111111;
-								dataFromExcelSheet.updateResult(updateResult, "Parameter List", "PASS", totalTime);
+								dataFromExcelSheet.updateResult(updateResult, "Parameter List", "PASS", totalTime, newFile);
 							} catch (NoSuchElementException e) {
-								dataFromExcelSheet.updateResult(updateResult, "Parameter List", "FAIL", totalTime);
+								dataFromExcelSheet.updateResult(updateResult, "Parameter List", "FAIL", totalTime, newFile);
 							}
 							Thread.sleep(2000);
 							//Parameter Set
@@ -669,9 +669,9 @@ public class AllTests extends TestBase{
 								paramSet.click();
 								long finish1111111 = System.currentTimeMillis();
 								totalTime = finish1111111 - start1111111;
-								dataFromExcelSheet.updateResult(updateResult, "Parameter Set", "PASS", totalTime);
+								dataFromExcelSheet.updateResult(updateResult, "Parameter Set", "PASS", totalTime, newFile);
 							} catch (NoSuchElementException e) {
-								dataFromExcelSheet.updateResult(updateResult, "Parameter Set", "FAIL", totalTime);
+								dataFromExcelSheet.updateResult(updateResult, "Parameter Set", "FAIL", totalTime, newFile);
 							}
 							Thread.sleep(2000);
 							//Operator
@@ -683,9 +683,9 @@ public class AllTests extends TestBase{
 								operator.click();
 								long finish1111111 = System.currentTimeMillis();
 								totalTime = finish1111111 - start1111111;
-								dataFromExcelSheet.updateResult(updateResult, "Operator", "PASS", totalTime);
+								dataFromExcelSheet.updateResult(updateResult, "Operator", "PASS", totalTime, newFile);
 							} catch (NoSuchElementException e) {
-								dataFromExcelSheet.updateResult(updateResult, "Operator", "FAIL", totalTime);
+								dataFromExcelSheet.updateResult(updateResult, "Operator", "FAIL", totalTime, newFile);
 							}
 							Thread.sleep(2000);
 							//Training
@@ -697,9 +697,9 @@ public class AllTests extends TestBase{
 								training.click();
 								long finish1111111 = System.currentTimeMillis();
 								totalTime = finish1111111 - start1111111;
-								dataFromExcelSheet.updateResult(updateResult, "Training", "PASS", totalTime);
+								dataFromExcelSheet.updateResult(updateResult, "Training", "PASS", totalTime, newFile);
 							} catch (NoSuchElementException e) {
-								dataFromExcelSheet.updateResult(updateResult, "Training", "FAIL", totalTime);
+								dataFromExcelSheet.updateResult(updateResult, "Training", "FAIL", totalTime, newFile);
 							}
 							Thread.sleep(2000);
 							//Prediction
@@ -711,9 +711,9 @@ public class AllTests extends TestBase{
 								prediction.click();
 								long finish1111111 = System.currentTimeMillis();
 								totalTime = finish1111111 - start1111111;
-								dataFromExcelSheet.updateResult(updateResult, "Prediction", "PASS", totalTime);
+								dataFromExcelSheet.updateResult(updateResult, "Prediction", "PASS", totalTime, newFile);
 							} catch (NoSuchElementException e) {
-								dataFromExcelSheet.updateResult(updateResult, "Prediction", "FAIL", totalTime);
+								dataFromExcelSheet.updateResult(updateResult, "Prediction", "FAIL", totalTime, newFile);
 							}
 							Thread.sleep(2000);
 							//Simulation
@@ -725,9 +725,9 @@ public class AllTests extends TestBase{
 								simulation.click();
 								long finish1111111 = System.currentTimeMillis();
 								totalTime = finish1111111 - start1111111;
-								dataFromExcelSheet.updateResult(updateResult, "Simulation", "PASS", totalTime);
+								dataFromExcelSheet.updateResult(updateResult, "Simulation", "PASS", totalTime, newFile);
 							} catch (NoSuchElementException e) {
-								dataFromExcelSheet.updateResult(updateResult, "Simulation", "FAIL", totalTime);
+								dataFromExcelSheet.updateResult(updateResult, "Simulation", "FAIL", totalTime, newFile);
 							}
 							Thread.sleep(2000);
 							//Model Deploy
@@ -739,9 +739,9 @@ public class AllTests extends TestBase{
 								modelDeploy.click();
 								long finish1111111 = System.currentTimeMillis();
 								totalTime = finish1111111 - start1111111;
-								dataFromExcelSheet.updateResult(updateResult, "Model Deploy", "PASS", totalTime);
+								dataFromExcelSheet.updateResult(updateResult, "Model Deploy", "PASS", totalTime, newFile);
 							} catch (NoSuchElementException e) {
-								dataFromExcelSheet.updateResult(updateResult, "Model Deploy", "FAIL", totalTime);
+								dataFromExcelSheet.updateResult(updateResult, "Model Deploy", "FAIL", totalTime, newFile);
 							}
 							Thread.sleep(2000);
 							//what-If-Analysis
@@ -753,9 +753,9 @@ public class AllTests extends TestBase{
 								whatIf.click();
 								long finish1111111 = System.currentTimeMillis();
 								totalTime = finish1111111 - start1111111;
-								dataFromExcelSheet.updateResult(updateResult, "what-If-Analysis", "PASS", totalTime);
+								dataFromExcelSheet.updateResult(updateResult, "what-If-Analysis", "PASS", totalTime, newFile);
 							} catch (NoSuchElementException e) {
-								dataFromExcelSheet.updateResult(updateResult, "what-If-Analysis", "FAIL", totalTime);
+								dataFromExcelSheet.updateResult(updateResult, "what-If-Analysis", "FAIL", totalTime, newFile);
 							}
 							Thread.sleep(2000);
 							//Result
@@ -767,12 +767,12 @@ public class AllTests extends TestBase{
 								result.click();
 								long finish1111111 = System.currentTimeMillis();
 								totalTime = finish1111111 - start1111111;
-								dataFromExcelSheet.updateResult(updateResult, "Result", "PASS", totalTime);
+								dataFromExcelSheet.updateResult(updateResult, "Result", "PASS", totalTime, newFile);
 							} catch (NoSuchElementException e) {
-								dataFromExcelSheet.updateResult(updateResult, "Result", "FAIL", totalTime);
+								dataFromExcelSheet.updateResult(updateResult, "Result", "FAIL", totalTime, newFile);
 							}
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(updateResult, "Data Science", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Data Science", "FAIL", totalTime, newFile);
 		}
 		//Graph Analysis
 		try {
@@ -783,7 +783,7 @@ public class AllTests extends TestBase{
 			graph.click();
 			long finish1111111 = System.currentTimeMillis();
 			totalTime = finish1111111 - start1111111;
-			dataFromExcelSheet.updateResult(updateResult, "Graph Analysis", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Graph Analysis", "PASS", totalTime, newFile);
 			System.out.println(driver.getTitle() + graph.getText());
 			Thread.sleep(1000);
 					//Create New
@@ -795,9 +795,9 @@ public class AllTests extends TestBase{
 						create.click();
 						long finish11111111 = System.currentTimeMillis();
 						totalTime = finish11111111 - start11111111;
-						dataFromExcelSheet.updateResult(updateResult, "Create New", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Create New", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Create New", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Create New", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(2000);
 					//List
@@ -809,9 +809,9 @@ public class AllTests extends TestBase{
 						list.click();
 						long finish11111111 = System.currentTimeMillis();
 						totalTime = finish11111111 - start11111111;
-						dataFromExcelSheet.updateResult(updateResult, "List", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "List", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "List", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "List", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(2000);
 					//Result
@@ -823,12 +823,12 @@ public class AllTests extends TestBase{
 						result.click();
 						long finish11111111 = System.currentTimeMillis();
 						totalTime = finish11111111 - start11111111;
-						dataFromExcelSheet.updateResult(updateResult, "Result", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Result", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Result", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Result", "FAIL", totalTime, newFile);
 					}
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(updateResult, "Graph Analysis", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Graph Analysis", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(3000);
 		//Pipeline
@@ -840,7 +840,7 @@ public class AllTests extends TestBase{
 			pipeline.click();
 			long finish11111111 = System.currentTimeMillis();
 			totalTime = finish11111111 - start11111111;
-			dataFromExcelSheet.updateResult(updateResult, "Pipeline", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Pipeline", "PASS", totalTime, newFile);
 			System.out.println(driver.getTitle() + pipeline.getText());
 			Thread.sleep(2000);
 					//Create New
@@ -852,9 +852,9 @@ public class AllTests extends TestBase{
 						create.click();
 						long finish111111111 = System.currentTimeMillis();
 						totalTime = finish111111111 - start111111111;
-						dataFromExcelSheet.updateResult(updateResult, "Create New", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Create New", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Create New", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Create New", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(2000);
 					//List
@@ -866,9 +866,9 @@ public class AllTests extends TestBase{
 						list.click();
 						long finish111111111 = System.currentTimeMillis();
 						totalTime = finish111111111 - start111111111;
-						dataFromExcelSheet.updateResult(updateResult, "List", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "List", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "List", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "List", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(2000);
 					//Parameter List
@@ -880,9 +880,9 @@ public class AllTests extends TestBase{
 						parameterList.click();
 						long finish111111111 = System.currentTimeMillis();
 						totalTime = finish111111111 - start111111111;
-						dataFromExcelSheet.updateResult(updateResult, "Parameter List", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Parameter List", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Parameter List", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Parameter List", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(2000);
 					//Result
@@ -894,13 +894,13 @@ public class AllTests extends TestBase{
 						result.click();
 						long finish111111111 = System.currentTimeMillis();
 						totalTime = finish111111111 - start111111111;
-						dataFromExcelSheet.updateResult(updateResult, "Result", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Result", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Result", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Result", "FAIL", totalTime, newFile);
 					}
 			
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(updateResult, "Pipeline", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Pipeline", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(6000);
 		//Batch Scheduler
@@ -913,7 +913,7 @@ public class AllTests extends TestBase{
 			long finish111111111 = System.currentTimeMillis();
 			totalTime = finish111111111 - start111111111;
 			Thread.sleep(1000);
-			dataFromExcelSheet.updateResult(updateResult, "Batch Scheduler", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Batch Scheduler", "PASS", totalTime, newFile);
 			System.out.println(driver.getTitle() + batch.getText());
 			Thread.sleep(2000);
 					//Create New
@@ -925,9 +925,9 @@ public class AllTests extends TestBase{
 						create.click();
 						long finish1111111111 = System.currentTimeMillis();
 						totalTime = finish1111111111 - start1111111111;
-						dataFromExcelSheet.updateResult(updateResult, "Create New", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Create New", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Create New", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Create New", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(2000);
 					//List
@@ -939,9 +939,9 @@ public class AllTests extends TestBase{
 						list.click();
 						long finish1111111111 = System.currentTimeMillis();
 						totalTime = finish1111111111 - start1111111111;
-						dataFromExcelSheet.updateResult(updateResult, "List", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "List", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "List", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "List", "FAIL", totalTime, newFile);
 					}
 					Thread.sleep(2000);
 					//Result
@@ -953,13 +953,13 @@ public class AllTests extends TestBase{
 						result.click();
 						long finish1111111111 = System.currentTimeMillis();
 						totalTime = finish1111111111 - start1111111111;
-						dataFromExcelSheet.updateResult(updateResult, "Result", "PASS", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Result", "PASS", totalTime, newFile);
 					} catch (NoSuchElementException e) {
-						dataFromExcelSheet.updateResult(updateResult, "Result", "FAIL", totalTime);
+						dataFromExcelSheet.updateResult(updateResult, "Result", "FAIL", totalTime, newFile);
 					}
 			
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(updateResult, "Batch Scheduler", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Batch Scheduler", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(3000);
 		//Admin
@@ -971,7 +971,7 @@ public class AllTests extends TestBase{
 			admin.click();
 			long finish1111111111 = System.currentTimeMillis();
 			totalTime = finish1111111111 - start1111111111;
-			dataFromExcelSheet.updateResult(updateResult, "Admin", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Admin", "PASS", totalTime, newFile);
 			System.out.println(driver.getTitle() + admin.getText());
 			Thread.sleep(2000);
 			//Activity
@@ -983,9 +983,9 @@ public class AllTests extends TestBase{
 				activity.click();
 				long finish11111111111 = System.currentTimeMillis();
 				totalTime = finish11111111111 - start11111111111;
-				dataFromExcelSheet.updateResult(updateResult, "Activity", "PASS", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "Activity", "PASS", totalTime, newFile);
 			} catch (NoSuchElementException e) {
-				dataFromExcelSheet.updateResult(updateResult, "Activity", "FAIL", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "Activity", "FAIL", totalTime, newFile);
 			}
 			Thread.sleep(2000);
 			//Application
@@ -997,9 +997,9 @@ public class AllTests extends TestBase{
 				application.click();
 				long finish11111111111 = System.currentTimeMillis();
 				totalTime = finish11111111111 - start11111111111;
-				dataFromExcelSheet.updateResult(updateResult, "Application", "PASS", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "Application", "PASS", totalTime, newFile);
 			} catch (NoSuchElementException e) {
-				dataFromExcelSheet.updateResult(updateResult, "Application", "FAIL", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "Application", "FAIL", totalTime, newFile);
 			}
 			Thread.sleep(2000);
 			//Datasource
@@ -1011,9 +1011,9 @@ public class AllTests extends TestBase{
 				datasource.click();
 				long finish11111111111 = System.currentTimeMillis();
 				totalTime = finish11111111111 - start11111111111;
-				dataFromExcelSheet.updateResult(updateResult, "Datasource", "PASS", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "Datasource", "PASS", totalTime, newFile);
 			} catch (NoSuchElementException e) {
-				dataFromExcelSheet.updateResult(updateResult, "Datasource", "FAIL", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "Datasource", "FAIL", totalTime, newFile);
 			}
 			Thread.sleep(2000);
 			//Datastore
@@ -1025,9 +1025,9 @@ public class AllTests extends TestBase{
 				datastore.click();
 				long finish11111111111 = System.currentTimeMillis();
 				totalTime = finish11111111111 - start11111111111;
-				dataFromExcelSheet.updateResult(updateResult, "Datastore", "PASS", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "Datastore", "PASS", totalTime, newFile);
 			} catch (NoSuchElementException e) {
-				dataFromExcelSheet.updateResult(updateResult, "Datastore", "FAIL", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "Datastore", "FAIL", totalTime, newFile);
 			}
 			Thread.sleep(2000);
 			//Group
@@ -1039,9 +1039,9 @@ public class AllTests extends TestBase{
 				group.click();
 				long finish11111111111 = System.currentTimeMillis();
 				totalTime = finish11111111111 - start11111111111;
-				dataFromExcelSheet.updateResult(updateResult, "Group", "PASS", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "Group", "PASS", totalTime, newFile);
 			} catch (NoSuchElementException e) {
-				dataFromExcelSheet.updateResult(updateResult, "Group", "FAIL", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "Group", "FAIL", totalTime, newFile);
 			}
 			Thread.sleep(2000);
 			//Organization
@@ -1053,9 +1053,9 @@ public class AllTests extends TestBase{
 				organization.click();
 				long finish11111111111 = System.currentTimeMillis();
 				totalTime = finish11111111111 - start11111111111;
-				dataFromExcelSheet.updateResult(updateResult, "Organization", "PASS", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "Organization", "PASS", totalTime, newFile);
 			} catch (NoSuchElementException e) {
-				dataFromExcelSheet.updateResult(updateResult, "Organization", "FAIL", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "Organization", "FAIL", totalTime, newFile);
 			}
 			Thread.sleep(2000);
 			//Privilege
@@ -1067,9 +1067,9 @@ public class AllTests extends TestBase{
 				privilege.click();
 				long finish11111111111 = System.currentTimeMillis();
 				totalTime = finish11111111111 - start11111111111;
-				dataFromExcelSheet.updateResult(updateResult, "Privilege", "PASS", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "Privilege", "PASS", totalTime, newFile);
 			} catch (NoSuchElementException e) {
-				dataFromExcelSheet.updateResult(updateResult, "Privilege", "FAIL", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "Privilege", "FAIL", totalTime, newFile);
 			}
 			Thread.sleep(2000);
 			//Role
@@ -1081,9 +1081,9 @@ public class AllTests extends TestBase{
 				role.click();
 				long finish11111111111 = System.currentTimeMillis();
 				totalTime = finish11111111111 - start11111111111;
-				dataFromExcelSheet.updateResult(updateResult, "Role", "PASS", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "Role", "PASS", totalTime, newFile);
 			} catch (NoSuchElementException e) {
-				dataFromExcelSheet.updateResult(updateResult, "Role", "FAIL", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "Role", "FAIL", totalTime, newFile);
 			}
 			Thread.sleep(2000);
 			//Session
@@ -1095,9 +1095,9 @@ public class AllTests extends TestBase{
 				session.click();
 				long finish11111111111 = System.currentTimeMillis();
 				totalTime = finish11111111111 - start11111111111;
-				dataFromExcelSheet.updateResult(updateResult, "Session", "PASS", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "Session", "PASS", totalTime, newFile);
 			} catch (NoSuchElementException e) {
-				dataFromExcelSheet.updateResult(updateResult, "Session", "FAIL", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "Session", "FAIL", totalTime, newFile);
 			}
 			Thread.sleep(2000);
 			//User
@@ -1109,9 +1109,9 @@ public class AllTests extends TestBase{
 				user.click();
 				long finish11111111111 = System.currentTimeMillis();
 				totalTime = finish11111111111 - start11111111111;
-				dataFromExcelSheet.updateResult(updateResult, "User", "PASS", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "User", "PASS", totalTime, newFile);
 			} catch (NoSuchElementException e) {
-				dataFromExcelSheet.updateResult(updateResult, "User", "FAIL", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "User", "FAIL", totalTime, newFile);
 			}
 			Thread.sleep(2000);
 			//Register Source
@@ -1123,9 +1123,9 @@ public class AllTests extends TestBase{
 				registerSource.click();
 				long finish11111111111 = System.currentTimeMillis();
 				totalTime = finish11111111111 - start11111111111;
-				dataFromExcelSheet.updateResult(updateResult, "Register Source", "PASS", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "Register Source", "PASS", totalTime, newFile);
 			} catch (NoSuchElementException e) {
-				dataFromExcelSheet.updateResult(updateResult, "Register Source", "FAIL", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "Register Source", "FAIL", totalTime, newFile);
 			}
 			Thread.sleep(2000);
 			//Migration Assist
@@ -1137,9 +1137,9 @@ public class AllTests extends TestBase{
 				migrationAssist.click();
 				long finish11111111111 = System.currentTimeMillis();
 				totalTime = finish11111111111 - start11111111111;
-				dataFromExcelSheet.updateResult(updateResult, "Migration Assist", "PASS", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "Migration Assist", "PASS", totalTime, newFile);
 			} catch (NoSuchElementException e) {
-				dataFromExcelSheet.updateResult(updateResult, "Migration Assist", "FAIL", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "Migration Assist", "FAIL", totalTime, newFile);
 			}
 			Thread.sleep(2000);
 			//Setting
@@ -1151,9 +1151,9 @@ public class AllTests extends TestBase{
 				setting.click();
 				long finish11111111111 = System.currentTimeMillis();
 				totalTime = finish11111111111 - start11111111111;
-				dataFromExcelSheet.updateResult(updateResult, "Setting", "PASS", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "Setting", "PASS", totalTime, newFile);
 			} catch (NoSuchElementException e) {
-				dataFromExcelSheet.updateResult(updateResult, "Setting", "FAIL", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "Setting", "FAIL", totalTime, newFile);
 			}
 			Thread.sleep(2000);
 			//File Manager
@@ -1165,13 +1165,13 @@ public class AllTests extends TestBase{
 				fileManager.click();
 				long finish11111111111 = System.currentTimeMillis();
 				totalTime = finish11111111111 - start11111111111;
-				dataFromExcelSheet.updateResult(updateResult, "File Manager", "PASS", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "File Manager", "PASS", totalTime, newFile);
 			} catch (NoSuchElementException e) {
-				dataFromExcelSheet.updateResult(updateResult, "File Manager", "FAIL", totalTime);
+				dataFromExcelSheet.updateResult(updateResult, "File Manager", "FAIL", totalTime, newFile);
 			}
 			
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(updateResult, "Admin", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Admin", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(3000);
 		try {
@@ -1183,10 +1183,10 @@ public class AllTests extends TestBase{
 			Thread.sleep(3000); 
 			long finish11111111111 = System.currentTimeMillis();
 			totalTime = finish11111111111 - start11111111111;
-			dataFromExcelSheet.updateResult(updateResult, "Job Monitoring", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Job Monitoring", "PASS", totalTime, newFile);
 			System.out.println(driver.getTitle() + jobMonitoring.getText());
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(updateResult, "Job Monitoring", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Job Monitoring", "FAIL", totalTime, newFile);
 		}
 		try {
 			WebElement systemMonitoring = driver
@@ -1197,10 +1197,10 @@ public class AllTests extends TestBase{
 			Thread.sleep(3000); 
 			long finish11111111111 = System.currentTimeMillis();
 			totalTime = finish11111111111 - start11111111111;
-			dataFromExcelSheet.updateResult(updateResult, "System Monitoring", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "System Monitoring", "PASS", totalTime, newFile);
 			System.out.println(driver.getTitle() + systemMonitoring.getText());
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(updateResult, "System Monitoring", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "System Monitoring", "FAIL", totalTime, newFile);
 		}
 		try {
 			WebElement metadata = driver
@@ -1211,10 +1211,10 @@ public class AllTests extends TestBase{
 			Thread.sleep(5000); 
 			long finish11111111111 = System.currentTimeMillis();
 			totalTime = finish11111111111 - start11111111111;
-			dataFromExcelSheet.updateResult(updateResult, "Metadata Navigator", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Metadata Navigator", "PASS", totalTime, newFile);
 			System.out.println(driver.getTitle() + metadata.getText());
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(updateResult, "Metadata Navigator", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Metadata Navigator", "FAIL", totalTime, newFile);
 		}
 
 	}

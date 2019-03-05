@@ -30,9 +30,9 @@ public class ReportActionUnPublish extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4, 5, "Report Action UnPublish ", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Report Action UnPublish ", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4, 5, "Report Action UnPublish ", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Report Action UnPublish ", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(3000);
 	}

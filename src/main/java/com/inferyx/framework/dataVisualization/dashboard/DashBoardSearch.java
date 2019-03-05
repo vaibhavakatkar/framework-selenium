@@ -25,16 +25,16 @@ public class DashBoardSearch extends TestBase{
 			WebElement dashName=driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[5]/div/div/div[2]/div/div[2]/div/a/div[1]/span[1]"));
 			String text=dashName.getText();
 			if(!text.contains("test add")) {
-				dataFromExcelSheet.updateResult(4,5, "Dashboard Search", "FAIL", totalTime);
+				dataFromExcelSheet.updateResult(4,5, "Dashboard Search", "FAIL", totalTime, newFile);
 			}else {
-				dataFromExcelSheet.updateResult(4,5, "Dashboard Search", "PASS", totalTime);
+				dataFromExcelSheet.updateResult(4,5, "Dashboard Search", "PASS", totalTime, newFile);
 			}
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Search", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Search", "PASS", totalTime, newFile);
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Search", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Search", "FAIL", totalTime, newFile);
 		}
 	}
   

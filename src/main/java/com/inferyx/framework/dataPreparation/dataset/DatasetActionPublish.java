@@ -35,9 +35,9 @@ public class DatasetActionPublish extends TestBase {
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4, 5, "DataSet Action Publish", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "DataSet Action Publish", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4, 5, "DataSet Action Publish", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "DataSet Action Publish", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(3000);
 	}

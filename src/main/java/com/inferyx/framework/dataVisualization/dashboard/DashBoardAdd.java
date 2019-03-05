@@ -41,10 +41,10 @@ DashboardPage dashboardPage;
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Add", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Add", "PASS", totalTime, newFile);
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Add", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Add", "FAIL", totalTime, newFile);
 		}
 	}
 

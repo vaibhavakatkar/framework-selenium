@@ -33,9 +33,9 @@ public class ReportActionView extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Report Action View", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Report Action View", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Vizpod Action View", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Vizpod Action View", "FAIL", totalTime, newFile);
 		}
 	}
 	

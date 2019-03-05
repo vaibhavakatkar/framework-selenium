@@ -25,12 +25,12 @@ public class DataPreaparation extends TestBase {
 			dataPreparation.click();
 			 finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(updateResult, "Data Preparation", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Data Preparation", "PASS", totalTime, newFile);
 			System.out.println(driver.getTitle() + dataPreparation.getText());
 			Thread.sleep(1000);
 		
 		} catch (InterruptedException e) {
-			dataFromExcelSheet.updateResult(updateResult, "Data Preparation", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Data Preparation", "FAIL", totalTime, newFile);
 		}
 	}
 	
@@ -45,9 +45,9 @@ public class DataPreaparation extends TestBase {
 			dataSet.click();
 		    finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(updateResult, "DataSet", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "DataSet", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(updateResult, "DataSet", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "DataSet", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(1000);
 	}

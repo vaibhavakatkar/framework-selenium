@@ -33,9 +33,9 @@ public class VizpodActionDelete extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;  
-			dataFromExcelSheet.updateResult(4,5, "Vizpod Action Delete", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Vizpod Action Delete", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Vizpod Action Delete", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Vizpod Action Delete", "FAIL", totalTime, newFile);
 		}
 	}
 	

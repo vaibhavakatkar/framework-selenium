@@ -22,10 +22,10 @@ public class DataProfilingCompareResult extends TestBase{
 			System.out.println(driver.getTitle() + compareResult.getText());
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Data Profile Compare Result", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Data Profile Compare Result", "PASS", totalTime, newFile);
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			dataFromExcelSheet.updateResult(4,5, "Data Profile Compare Result", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Data Profile Compare Result", "FAIL", totalTime, newFile);
 		}
 	}
 	

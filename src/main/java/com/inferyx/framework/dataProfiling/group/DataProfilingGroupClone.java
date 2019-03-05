@@ -30,9 +30,9 @@ public class DataProfilingGroupClone extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(7, 8, "Group Action Clone", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Group Action Clone", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(7, 8, "Group Action Clone", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Group Action Clone", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(3000);
 	}

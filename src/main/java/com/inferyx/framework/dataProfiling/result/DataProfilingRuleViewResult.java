@@ -23,10 +23,10 @@ public class DataProfilingRuleViewResult extends TestBase{
 			Thread.sleep(30000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Auto Refresh", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Auto Refresh", "PASS", totalTime, newFile);
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Auto Refresh", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Auto Refresh", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =3 , description = "Data Profile View Result")
@@ -44,10 +44,10 @@ public class DataProfilingRuleViewResult extends TestBase{
 			driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div/div[5]/div[2]/div/div[3]/div/div[1]/div[3]/div[1]/div/div[2]/div[2]/div/div[2]/div/div[1]/div/div"));
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Result View", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Result View", "PASS", totalTime, newFile);
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Result View", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Result View", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =4 , description = "Data Profile Download")
@@ -66,10 +66,10 @@ public class DataProfilingRuleViewResult extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Result Download", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Result Download", "PASS", totalTime, newFile);
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Result Download", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Result Download", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =5 , description = "Data Profile Graph")
@@ -84,10 +84,10 @@ public class DataProfilingRuleViewResult extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Graph", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Graph", "PASS", totalTime, newFile);
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
-			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Graph", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Graph", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =6 , description = "Data Profile Refresh")
@@ -103,10 +103,10 @@ public class DataProfilingRuleViewResult extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Refresh", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Refresh", "PASS", totalTime, newFile);
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Refresh", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Refresh", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =7 , description = "Data Profile Home")
@@ -121,10 +121,10 @@ public class DataProfilingRuleViewResult extends TestBase{
 			Thread.sleep(10000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Home", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Home", "PASS", totalTime, newFile);
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Home", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Home", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =8 , description = "Data Profile Close")
@@ -139,10 +139,10 @@ public class DataProfilingRuleViewResult extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Close", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Close", "PASS", totalTime, newFile);
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Close", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7,8, "Data Profile Rule Close", "FAIL", totalTime, newFile);
 		}
 	}
 }

@@ -1,4 +1,4 @@
-package com.inferyx.framework.selenium;
+/*package com.inferyx.framework.selenium;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -29,9 +29,9 @@ public class TestScript {
 		driver.manage().window().maximize();
 		System.out.println(driver.getTitle());
 		if (driver.getTitle().isEmpty() || !driver.getTitle().equalsIgnoreCase("Inferyx | Login")) {
-			dataFromExcelSheet.updateResult(excellocation, sheetName, "Open Browser", "FAIL");
+			dataFromExcelSheet.updateResult(excellocation, sheetName, "Open Browser", "FAIL", fis);
 		} else {
-			dataFromExcelSheet.updateResult(excellocation, sheetName, "Open Browser", "PASS");
+			dataFromExcelSheet.updateResult(excellocation, sheetName, "Open Browser", "PASS", fis);
 		}
 
 	}
@@ -40,10 +40,10 @@ public class TestScript {
 		       // Enter user id
 				WebElement username = driver.findElement(By.xpath("/html/body/div[2]/form[1]/div[2]/input"));
 				username.sendKeys("ypalrecha");
-				/*
+				
 				 * //wait 5 secs for userid to be entered
 				 * driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-				 */
+				 
 				// Enter Password
 				WebElement password = driver.findElement(By.xpath("/html/body/div[2]/form[1]/div[3]/input"));
 				password.sendKeys("ypalrecha");
@@ -69,4 +69,4 @@ public class TestScript {
 		
 	}
 
-}
+}*/

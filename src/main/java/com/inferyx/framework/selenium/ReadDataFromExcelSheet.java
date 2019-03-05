@@ -4,11 +4,14 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Iterator;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -80,50 +83,39 @@ public class ReadDataFromExcelSheet {
 		}
 		return null;
 	}
+	/*
+	 * public void updateResult(String excellocation, String sheetName, String
+	 * testCaseName, long totalTime, FileInputStream newFile) throws IOException {
+	 * 
+	 * try { FileInputStream file = new FileInputStream( new
+	 * File(System.getProperty("user.dir") +
+	 * "/src/main/resources/Framework_Selenium_Testing_Report.xlsx"));
+	 * 
+	 * // Create Workbook instance holding reference to .xlsx file XSSFWorkbook
+	 * workbook = new XSSFWorkbook(file);
+	 * 
+	 * // Get first/desired sheet from the workbook XSSFSheet sheet =
+	 * workbook.getSheet(sheetName); // count number of active tows int totalRow =
+	 * sheet.getLastRowNum() + 1; // count number of active columns in row for (int
+	 * i = 1; i < totalRow; i++) { XSSFRow r = sheet.getRow(i);
+	 * 
+	 * String ce = r.getCell(1).getStringCellValue(); if (ce.contains(testCaseName))
+	 * { r.createCell(2).setCellValue(totalTime); file.close();
+	 * System.out.println("result updated"); FileOutputStream outFile = new
+	 * FileOutputStream( new File(System.getProperty("user.dir") +
+	 * "/src/main/resources/Framework_Selenium_Testing_Report.xlsx"));
+	 * workbook.write(outFile); outFile.close(); break; }
+	 * 
+	 * } } catch (Exception e) { e.printStackTrace(); } }
+	 */
 
-	public void updateResult(String excellocation, String sheetName, String testCaseName, String testStatus)
-			throws IOException {
-
-		try {
-			FileInputStream file = new FileInputStream(
-					new File(System.getProperty("user.dir") + "/src/main/resources/Framework_Selenium_Testing_Report.xlsx"));
-
-			// Create Workbook instance holding reference to .xlsx file
-			XSSFWorkbook workbook = new XSSFWorkbook(file);
-
-			// Get first/desired sheet from the workbook
-			XSSFSheet sheet = workbook.getSheet(sheetName);
-			// count number of active tows
-			int totalRow = sheet.getLastRowNum() + 1;
-			// count number of active columns in row
-			for (int i = 1; i < totalRow; i++) {
-				XSSFRow r = sheet.getRow(i);
-
-				String ce = r.getCell(1).getStringCellValue();
-				if (ce.contains(testCaseName)) {
-					r.createCell(2).setCellValue(testStatus);
-					file.close();
-					System.out.println("result updated");
-					FileOutputStream outFile = new FileOutputStream(
-							new File(System.getProperty("user.dir") + "/src/main/resources/Framework_Selenium_Testing_Report.xlsx"));
-					workbook.write(outFile);
-					outFile.close();
-					break;
-				}
-
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	public void updateResult(int CheckCell, int putCell, String testCaseName, String testStatus, long totaltime)
-			throws IOException {
+	public void updateResult(int CheckCell, int putCell, String testCaseName, String testStatus, long totaltime,
+			File newFile) throws IOException {
 
 		try {
-			FileInputStream file = new FileInputStream(
-					new File(System.getProperty("user.dir") + "/src/main/resources/Framework_Selenium_Testing_Report.xlsx"));
-
+			
+			  FileInputStream file = new FileInputStream(newFile);
+			 
 			// Create Workbook instance holding reference to .xlsx file
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 
@@ -141,12 +133,11 @@ public class ReadDataFromExcelSheet {
 					if (ce.contains(testCaseName)) {
 						r.createCell(putCell).setCellValue(testStatus);
 						r.createCell(putCell + 1).setCellValue(totaltime);
-						file.close();
+						
 						System.out.println("result updated");
-						FileOutputStream outFile = new FileOutputStream(
-								new File(System.getProperty("user.dir") + "/src/main/resources/Framework_Selenium_Testing_Report.xlsx"));
+						FileOutputStream outFile = new FileOutputStream(newFile);
 						workbook.write(outFile);
-						outFile.close();
+						outFile.flush();
 						break;
 					}
 				}
@@ -291,12 +282,11 @@ public class ReadDataFromExcelSheet {
 		return arr2d;
 	}
 
-	public String getResult(String sheetName, String param) throws IOException {
+	public String getResult(String sheetName, String param, File newFile) throws IOException {
 		String value = null;
 
 		try {
-			FileInputStream file = new FileInputStream(
-					new File(System.getProperty("user.dir") + "/src/main/resources/Framework_Selenium_Testing_Report.xlsx"));
+			FileInputStream file = new FileInputStream(newFile);
 			// Create Workbook instance holding reference to .xlsx file
 			// XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
@@ -313,12 +303,11 @@ public class ReadDataFromExcelSheet {
 				String ce = r.getCell(1).getStringCellValue();
 				if (ce.contains(param)) {
 					value = r.getCell(2).getStringCellValue();
-					file.close();
+
 					System.out.println("result updated");
-					FileOutputStream outFile = new FileOutputStream(
-							new File(System.getProperty("user.dir") + "/src/main/resources/Framework_Selenium_Testing_Report.xlsx"));
+					FileOutputStream outFile = new FileOutputStream(newFile);
 					workbook.write(outFile);
-					outFile.close();
+					outFile.flush();
 					break;
 				}
 
@@ -331,13 +320,13 @@ public class ReadDataFromExcelSheet {
 
 	}
 
-	public void updateResult(String sheetName, String testCaseName, String testStatus, long totalTime)
-			throws IOException {
+	public void updateResult(String sheetName, String testCaseName, String testStatus, long totalTime,
+			File newFile) throws IOException {
 
 		try {
-			FileInputStream file = new FileInputStream(
-					new File(System.getProperty("user.dir") + "/src/main/resources/Framework_Selenium_Testing_Report.xlsx"));
-
+			
+			  FileInputStream file = new FileInputStream(newFile);
+			 
 			// Create Workbook instance holding reference to .xlsx file
 			// XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
@@ -357,18 +346,81 @@ public class ReadDataFromExcelSheet {
 					if (ce.contains(testCaseName)) {
 						r.createCell(2).setCellValue(testStatus);
 						r.createCell(3).setCellValue(totalTime);
-						file.close();
 						System.out.println("result updated");
-						FileOutputStream outFile = new FileOutputStream(
-								new File(System.getProperty("user.dir") + "/src/main/resources/Framework_Selenium_Testing_Report.xlsx"));
+						FileOutputStream outFile = new FileOutputStream(newFile);
 						workbook.write(outFile);
-						outFile.close();
+						outFile.flush();
 						break;
 					}
 				}
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
+		}
+	}
+
+	public File getWorkbook() throws IOException {
+
+		File inputFile = new File(
+				"/home/rohini/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report.xlsx");
+		FileInputStream newFile = new FileInputStream(inputFile);
+
+		XSSFWorkbook inputWorkbook = new XSSFWorkbook(newFile);
+
+		int inputSheetCount = inputWorkbook.getNumberOfSheets();
+
+		Date date = new Date();
+		SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss aa");
+
+		// Step #2 : Locate path and file of output excel.
+		File outputFile = new File(
+				"/home/rohini/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report"
+						+ dateFormat.format(date) + ".xlsx");
+		FileOutputStream fos = new FileOutputStream(outputFile);
+
+		// Step #3 : Creating workbook for output excel file.
+		XSSFWorkbook outputWorkbook = new XSSFWorkbook();
+
+		for (int i = 0; i < inputSheetCount; i++) {
+			XSSFSheet inputSheet = inputWorkbook.getSheetAt(i);
+			String inputSheetName = inputWorkbook.getSheetName(i);
+			XSSFSheet outputSheet = outputWorkbook.createSheet(inputSheetName);
+
+			// Create and call method to copy the sheet and content in new workbook.
+			copySheet(inputSheet, outputSheet);
+		}
+		// Step #9 : Write all the sheets in the new Workbook(testData_Copy.xlsx) using
+		// FileOutStream Object
+		outputWorkbook.write(fos);
+		// Step #10 : At the end of the Program close the FileOutputStream object.
+		fos.close();
+		return outputFile;
+
+	}
+
+	public static void copySheet(XSSFSheet inputSheet, XSSFSheet outputSheet) {
+		int rowCount = inputSheet.getLastRowNum();
+
+		int currentRowIndex = 0;
+		if (rowCount > 0) {
+			Iterator rowIterator = inputSheet.iterator();
+			while (rowIterator.hasNext()) {
+				int currentCellIndex = 0;
+				Iterator cellIterator = ((XSSFRow) rowIterator.next()).cellIterator();
+				while (cellIterator.hasNext()) {
+					// Step #5-8 : Creating new Row, Cell and Input value in the newly created
+					// sheet.
+					String cellData = cellIterator.next().toString();
+					if (currentCellIndex == 0)
+						outputSheet.createRow(currentRowIndex).createCell(currentCellIndex).setCellValue(cellData);
+					else
+						outputSheet.getRow(currentRowIndex).createCell(currentCellIndex).setCellValue(cellData);
+
+					currentCellIndex++;
+				}
+				currentRowIndex++;
+			}
+
 		}
 	}
 

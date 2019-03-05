@@ -30,9 +30,9 @@ public class DataProfilingRuleActionExport extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(7, 8, "Rule Action Export", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Action Export", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(7, 8, "Rule Action Export", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Action Export", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(3000);
 	}

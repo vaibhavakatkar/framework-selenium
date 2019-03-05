@@ -117,10 +117,10 @@ public class DataProfilingSearchCriteria extends TestBase{
 			Thread.sleep(2000);			
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Data Profile Search Result", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Data Profile Search Result", "PASS", totalTime, newFile);
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
-			dataFromExcelSheet.updateResult(4,5, "Data Profile Search Result", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Data Profile Search Result", "FAIL", totalTime, newFile);
 		}
 	}
 }

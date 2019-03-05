@@ -33,9 +33,9 @@ public class DataProfilingGroupView extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(7, 8, "Group Action View", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Group Action View", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(7, 8, "Group Action View", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Group Action View", "FAIL", totalTime, newFile);
 		}
 	}
 	

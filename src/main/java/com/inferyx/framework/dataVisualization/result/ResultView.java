@@ -25,9 +25,9 @@ public class ResultView extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4,5, "Result View", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Result View", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Result View", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Result View", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =3, description = "Result Download")
@@ -47,9 +47,9 @@ public class ResultView extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4,5, "Result Download", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Result Download", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Result Download", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Result Download", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =4, description = "Result Graph")
@@ -65,9 +65,9 @@ public class ResultView extends TestBase{
 			Thread.sleep(2000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4,5, "Result Graph", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Result Graph", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Result Graph", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Result Graph", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =5, description = "Result Home")
@@ -83,9 +83,9 @@ public class ResultView extends TestBase{
 			Thread.sleep(2000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4,5, "Result Home", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Result Home", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Result Home", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Result Home", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =6, description = "Result Refresh")
@@ -102,9 +102,9 @@ public class ResultView extends TestBase{
 			Thread.sleep(2000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4,5, "Result Refresh", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Result Refresh", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Result Refresh", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Result Refresh", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =7, description = "Result Close")
@@ -120,9 +120,9 @@ public class ResultView extends TestBase{
 			Thread.sleep(2000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4,5, "Result Close", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Result Close", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Result Close", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Result Close", "FAIL", totalTime, newFile);
 		}
 	}
 }

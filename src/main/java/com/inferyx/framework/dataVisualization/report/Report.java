@@ -23,9 +23,9 @@ public class Report extends TestBase {
 			report.click();
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4,5, "Report", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Report", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Report", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Report", "FAIL", totalTime, newFile);
 		}
 	}
 }

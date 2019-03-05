@@ -36,9 +36,9 @@ public class DatasetActionClone extends TestBase {
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4, 5, "DataSet Action Clone", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "DataSet Action Clone", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4, 5, "DataSet Action Clone", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "DataSet Action Clone", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(3000);
 	}

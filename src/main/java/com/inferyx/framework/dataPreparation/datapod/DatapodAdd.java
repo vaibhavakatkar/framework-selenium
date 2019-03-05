@@ -52,9 +52,9 @@ public class DatapodAdd extends TestBase {
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4, 5, "Datapod  Add", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Datapod  Add", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4, 5, "Datapod  Add", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Datapod  Add", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(3000);
 	}

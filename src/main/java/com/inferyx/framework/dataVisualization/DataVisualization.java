@@ -26,10 +26,10 @@ public class DataVisualization extends TestBase {
 			System.out.println(driver.getTitle() + dataVisualization.getText());
 			long finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(updateResult, "Data Visualization", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Data Visualization", "PASS", totalTime, newFile);
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			dataFromExcelSheet.updateResult(updateResult, "Data Visualization", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Data Visualization", "FAIL", totalTime, newFile);
 		}
 	}
 	

@@ -24,10 +24,10 @@ public class DashBoardView extends TestBase{
 			driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[2]/div/div/div[2]/div[2]/div/div/div"));	
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Dashboard View", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard View", "PASS", totalTime, newFile);
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Dashboard View", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard View", "FAIL", totalTime, newFile);
 		}
 	}
 	

@@ -23,10 +23,10 @@ public class DataProfilingAttribute extends TestBase{
 			attribute.click();
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Data Profile Attribute", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Data Profile Attribute", "PASS", totalTime, newFile);
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			dataFromExcelSheet.updateResult(4,5, "Data Profile Attribute", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Data Profile Attribute", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =4 , description = "Data Profile Attribute Search Criteria")
@@ -119,10 +119,10 @@ public class DataProfilingAttribute extends TestBase{
 			driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[3]/div/div[2]/div/div[2]/div/div/div[2]/div/div"));
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Data Profile Attribute Search Criteria", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Data Profile Attribute Search Criteria", "PASS", totalTime, newFile);
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			dataFromExcelSheet.updateResult(4,5, "Data Profile Attribute Search Criteria", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Data Profile Attribute Search Criteria", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =5 , description = "Data Profile Trend Analysis Minimize")
@@ -138,10 +138,10 @@ public class DataProfilingAttribute extends TestBase{
 			driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[3]/div/div[2]/div/div[2]/div"));
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Data Profile Trend Analysis Minimize", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Data Profile Trend Analysis Minimize", "PASS", totalTime, newFile);
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			dataFromExcelSheet.updateResult(4,5, "Data Profile Trend Analysis Minimize", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Data Profile Trend Analysis Minimize", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =6 , description = "Data Profile Trend Analysis Maximize")
@@ -157,10 +157,10 @@ public class DataProfilingAttribute extends TestBase{
 			driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[3]/div/div[2]/div/div[2]/div/div/div[2]"));
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Data Profile Trend Analysis Maximize", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Data Profile Trend Analysis Maximize", "PASS", totalTime, newFile);
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			dataFromExcelSheet.updateResult(4,5, "Data Profile Trend Analysis Maximize", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Data Profile Trend Analysis Maximize", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =7 , description = "Data Profile Search Criteria Minimize")
@@ -176,10 +176,10 @@ public class DataProfilingAttribute extends TestBase{
 			driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[3]/div/div[2]/div"));
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Data Profile Search Criteria Minimize", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Data Profile Search Criteria Minimize", "PASS", totalTime, newFile);
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			dataFromExcelSheet.updateResult(4,5, "Data Profile Search Criteria Minimize", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Data Profile Search Criteria Minimize", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =8 , description = "Data Profile Search Criteria Maximize")
@@ -195,10 +195,10 @@ public class DataProfilingAttribute extends TestBase{
 			driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[3]/div"));
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Data Profile Trend Analysis Maximize", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Data Profile Trend Analysis Maximize", "PASS", totalTime, newFile);
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			dataFromExcelSheet.updateResult(4,5, "Data Profile Trend Analysis Maximize", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Data Profile Trend Analysis Maximize", "FAIL", totalTime, newFile);
 		}
 	}
 }

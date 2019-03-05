@@ -32,9 +32,9 @@ public class DataProfilingGroupEdit extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(7, 8, "Group Action Edit", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Group Action Edit", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(7, 8, "Group Action Edit", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Group Action Edit", "FAIL", totalTime, newFile);
 		}
 	}
 	

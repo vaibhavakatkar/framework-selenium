@@ -24,10 +24,10 @@ public class DataProfilingRule extends TestBase{
 			System.out.println(driver.getTitle() + dataProfilingRule.getText());
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Data Profile Rule", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Data Profile Rule", "PASS", totalTime, newFile);
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			dataFromExcelSheet.updateResult(4,5, "Data Profile Rule", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Data Profile Rule", "FAIL", totalTime, newFile);
 		}
 	}
 }

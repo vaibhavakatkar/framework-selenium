@@ -27,9 +27,9 @@ public class DashBoard extends TestBase {
 			dashboard.click();
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(updateResult, "Dashboard", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Dashboard", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(updateResult, "Dashboard", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Dashboard", "FAIL", totalTime, newFile);
 		}
 	}
 	
@@ -45,9 +45,9 @@ public class DashBoard extends TestBase {
 			dashboardTile.click();
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Tile", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Tile", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Tile", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Tile", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =4, description = "datshBoardList")
@@ -62,13 +62,13 @@ public class DashBoard extends TestBase {
 			Thread.sleep(2000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Dashboard List", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard List", "PASS", totalTime, newFile);
 			WebElement dashboardTile = driver
 					.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div/span[2]"));
 			dashboardTile.click();
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Dashboard List", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard List", "FAIL", totalTime, newFile);
 		}
 	}
 	

@@ -47,9 +47,9 @@ public class DataProfilingGroupExecute extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(7, 8, "Rule Execute View", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Execute View", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(7, 8, "Rule Execute View", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Execute View", "FAIL", totalTime, newFile);
 		}
 	}
 	
@@ -75,9 +75,9 @@ public class DataProfilingGroupExecute extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(7, 8, "Rule Group Killed", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Group Killed", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(7, 8, "Rule Group Killed", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Group Killed", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =20, description = "Rule Group Restart")
@@ -98,9 +98,9 @@ public class DataProfilingGroupExecute extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(7, 8, "Rule Group Restart", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Group Restart", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(7, 8, "Rule Group Restart", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Group Restart", "FAIL", totalTime, newFile);
 		}
 	}
 }

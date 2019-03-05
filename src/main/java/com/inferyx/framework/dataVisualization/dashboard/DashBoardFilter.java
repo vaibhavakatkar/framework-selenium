@@ -41,10 +41,10 @@ public class DashBoardFilter extends TestBase{
 			driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[2]/div/div/div[2]/div[1]/div/div[1]"));
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Filter", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Filter", "PASS", totalTime, newFile);
 			Thread.sleep(3000);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Filter", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Filter", "FAIL", totalTime, newFile);
 		}
 	}
 
@@ -60,10 +60,10 @@ public class DashBoardFilter extends TestBase{
 			Thread.sleep(1000);			
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Close", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Close", "PASS", totalTime, newFile);
 			Thread.sleep(3000);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Close", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Close", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =24, description = "Dashboard Delete")
@@ -78,10 +78,10 @@ public class DashBoardFilter extends TestBase{
 			Thread.sleep(1000);			
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Delete", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Delete", "PASS", totalTime, newFile);
 			Thread.sleep(3000);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Delete", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Delete", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =25, description = "Dashboard Restore")
@@ -96,10 +96,10 @@ public class DashBoardFilter extends TestBase{
 			Thread.sleep(1000);			
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Restore", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Restore", "PASS", totalTime, newFile);
 			Thread.sleep(3000);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Restore", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Restore", "FAIL", totalTime, newFile);
 		}
 	}
 	

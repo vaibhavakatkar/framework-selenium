@@ -22,10 +22,10 @@ public class DataProfilingGroup extends TestBase{
 			System.out.println(driver.getTitle() + dataProfilingRule.getText());
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Data Profile Group", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Data Profile Group", "PASS", totalTime, newFile);
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			dataFromExcelSheet.updateResult(4,5, "Data Profile Group", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Data Profile Group", "FAIL", totalTime, newFile);
 		}
 	}
 	

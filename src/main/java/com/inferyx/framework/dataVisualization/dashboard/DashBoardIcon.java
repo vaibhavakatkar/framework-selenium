@@ -24,10 +24,10 @@ public class DashBoardIcon extends TestBase{
 			driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[2]/div/div/div[2]"));
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Dashboard View", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard View", "PASS", totalTime, newFile);
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Dashboard View", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard View", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =27, description = "Dashboard Grid")
@@ -43,10 +43,10 @@ public class DashBoardIcon extends TestBase{
 			driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[2]/div/div/div[2]/div[2]/div[1]/div[1]/div/div[2]"));
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Grid", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Grid", "PASS", totalTime, newFile);
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Grid", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Grid", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =28, description = "Dashboard Chart")
@@ -62,10 +62,10 @@ public class DashBoardIcon extends TestBase{
 			driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[2]/div/div/div[2]/div[2]/div[1]/div[1]/div/div[2]"));
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Chart", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Chart", "PASS", totalTime, newFile);
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Chart", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Chart", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =29, description = "Dashboard Download")
@@ -84,10 +84,10 @@ public class DashBoardIcon extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Download", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Download", "PASS", totalTime, newFile);
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Download", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Download", "FAIL", totalTime, newFile);
 		}
 	}
   
@@ -105,10 +105,10 @@ public class DashBoardIcon extends TestBase{
 			driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[2]/div/div/div[2]/div[2]/div[1]/div[1]/div"));
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Graph Maximize", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Graph Maximize", "PASS", totalTime, newFile);
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Graph Maximize", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Graph Maximize", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =31, description = "Dashboard Graph Minimize")
@@ -124,10 +124,10 @@ public class DashBoardIcon extends TestBase{
 			driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[2]/div/div/div[2]/div[2]/div[1]/div[1]/div/div[2]"));
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Graph Minimize", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Graph Minimize", "PASS", totalTime, newFile);
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Graph Minimize", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Graph Minimize", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =32, description = "Dashboard Refresh")
@@ -142,10 +142,10 @@ public class DashBoardIcon extends TestBase{
 			Thread.sleep(15000);			
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Refresh", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Refresh", "PASS", totalTime, newFile);
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Refresh", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Refresh", "FAIL", totalTime, newFile);
 		}
 	}
 	
@@ -182,18 +182,18 @@ public class DashBoardIcon extends TestBase{
 			String text=editVerification.getAttribute("value");
 			System.out.println(text+"value of text");
 			if(!text.equalsIgnoreCase("check edit")) {
-				dataFromExcelSheet.updateResult(4,5, "Dashboard Vizpod Graph Edit", "FAIL", totalTime);
+				dataFromExcelSheet.updateResult(4,5, "Dashboard Vizpod Graph Edit", "FAIL", totalTime, newFile);
 	
 			}else {
-				dataFromExcelSheet.updateResult(4,5, "Dashboard Vizpod Graph Edit", "PASS", totalTime);
+				dataFromExcelSheet.updateResult(4,5, "Dashboard Vizpod Graph Edit", "PASS", totalTime, newFile);
 
 			}
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Vizpod Graph Edit", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Vizpod Graph Edit", "PASS", totalTime, newFile);
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Dashboard Vizpod Graph Edit", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Dashboard Vizpod Graph Edit", "FAIL", totalTime, newFile);
 		}
 	}
 }

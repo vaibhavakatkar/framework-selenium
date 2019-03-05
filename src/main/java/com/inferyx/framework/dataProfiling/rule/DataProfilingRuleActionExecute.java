@@ -69,9 +69,9 @@ public class DataProfilingRuleActionExecute extends TestBase{
 		
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(7, 8, "Rule Execute Action", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Execute Action", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(7, 8, "Rule Execute Action", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Execute Action", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =2, description = "Rule Killed Action")
@@ -96,9 +96,9 @@ public class DataProfilingRuleActionExecute extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(7, 8, "Rule Killed Action", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Killed Action", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(7, 8, "Rule Killed Action", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Killed Action", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority =3, description = "Rule Group Restart")
@@ -118,9 +118,9 @@ public class DataProfilingRuleActionExecute extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(7, 8, "Rule Restart Action", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Restart Action", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(7, 8, "Rule Restart Action", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Rule Restart Action", "FAIL", totalTime, newFile);
 		}
 	}
 }

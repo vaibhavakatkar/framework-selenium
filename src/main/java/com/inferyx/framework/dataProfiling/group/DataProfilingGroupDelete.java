@@ -32,9 +32,9 @@ public class DataProfilingGroupDelete extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(7, 8, "Group Action Delete", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Group Action Delete", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(7, 8, "Group Action Delete", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Group Action Delete", "FAIL", totalTime, newFile);
 		}
 	}
 	

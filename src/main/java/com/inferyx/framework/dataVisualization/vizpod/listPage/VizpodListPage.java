@@ -31,9 +31,9 @@ public class VizpodListPage extends TestBase{
 			searchBtn.click();
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Vizpod Search By Name", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Vizpod Search By Name", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Vizpod Search By Name", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Vizpod Search By Name", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority=3 , description = "Vizpod Search By User")
@@ -55,9 +55,9 @@ public class VizpodListPage extends TestBase{
 			searchBtn.click();
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Vizpod Search By User", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Vizpod Search By User", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Vizpod Search By User", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Vizpod Search By User", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority=4 , description = "Vizpod Search Criteria Refresh")
@@ -73,9 +73,9 @@ public class VizpodListPage extends TestBase{
 			start = System.currentTimeMillis();
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Vizpod Search Criteria Refresh", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Vizpod Search Criteria Refresh", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Vizpod Search Criteria Refresh", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Vizpod Search Criteria Refresh", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority=5 , description = "Vizpod Start and End Date")
@@ -128,9 +128,9 @@ public class VizpodListPage extends TestBase{
 			
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Vizpod Start and End Date", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Vizpod Start and End Date", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Vizpod Start and End Date", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Vizpod Start and End Date", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority=6 , description = "Vizpod Search Status")
@@ -160,9 +160,9 @@ public class VizpodListPage extends TestBase{
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
 
-			dataFromExcelSheet.updateResult(4,5, "Vizpod Search Status", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Vizpod Search Status", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Vizpod Search Status", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Vizpod Search Status", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority=7 , description = "Vizpod Search Name")
@@ -184,9 +184,9 @@ public class VizpodListPage extends TestBase{
 			
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Vizpod Search Name", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Vizpod Search Name", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Vizpod Search Name", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Vizpod Search Name", "FAIL", totalTime, newFile);
 		}
 	}
 }

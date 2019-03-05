@@ -24,9 +24,9 @@ public class Vizpod extends TestBase{
 			Thread.sleep(1000);
 			long finish1 = System.currentTimeMillis();
 			totalTime = finish1 - start1; 
-			dataFromExcelSheet.updateResult(updateResult, "Vizpod", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Vizpod", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(updateResult, "Vizpod", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Vizpod", "FAIL", totalTime, newFile);
 		}
 	}
 

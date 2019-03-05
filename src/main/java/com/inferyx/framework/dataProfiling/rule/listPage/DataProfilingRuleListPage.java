@@ -30,9 +30,9 @@ public class DataProfilingRuleListPage extends TestBase{
 			searchBtn.click();
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Rule Search By Name", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Rule Search By Name", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Rule Search By Name", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Rule Search By Name", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority=4 , description = "Rule Search By User")
@@ -54,9 +54,9 @@ public class DataProfilingRuleListPage extends TestBase{
 			searchBtn.click();
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Rule Search By User", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Rule Search By User", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Rule Search By User", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Rule Search By User", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority=5 , description = "Rule Search Criteria Refresh")
@@ -72,9 +72,9 @@ public class DataProfilingRuleListPage extends TestBase{
 			start = System.currentTimeMillis();
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Rule Search Criteria Refresh", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Rule Search Criteria Refresh", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Rule Search Criteria Refresh", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Rule Search Criteria Refresh", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority=6 , description = "Rule Start and End Date")
@@ -127,9 +127,9 @@ public class DataProfilingRuleListPage extends TestBase{
 			
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Rule Start and End Date", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Rule Start and End Date", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Rule Start and End Date", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Rule Start and End Date", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority=7 , description = "Rule Search Status")
@@ -159,9 +159,9 @@ public class DataProfilingRuleListPage extends TestBase{
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
 
-			dataFromExcelSheet.updateResult(4,5, "Rule Search Status", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Rule Search Status", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Rule Search Status", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Rule Search Status", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority=8 , description = "Rule Search Name")
@@ -180,9 +180,9 @@ public class DataProfilingRuleListPage extends TestBase{
 			
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(4,5, "Rule Search Name", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Rule Search Name", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Rule Search Name", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Rule Search Name", "FAIL", totalTime, newFile);
 		}
 	}
 }

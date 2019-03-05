@@ -1,16 +1,19 @@
 package com.inferyx.framework.selenium;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
+import org.apache.poi.ss.usermodel.Sheet;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
@@ -29,9 +32,10 @@ public class TestBase {
 	public long totalTime = 0;
 	public long finish = 0;
 	public long start = 0;
-	public ReadDataFromExcelSheet dataFromExcelSheet = new ReadDataFromExcelSheet();
+	public static ReadDataFromExcelSheet dataFromExcelSheet;
+	public static 	File newFile ;
 
-	
+ 
 	public WebElement getHtmlElementByXpath(String xpath) {
 		return driver.findElement(By.xpath(xpath));
 	}
@@ -42,6 +46,7 @@ public class TestBase {
 	public TestBase() {
 		try {
 			prop = new Properties();
+			dataFromExcelSheet = new ReadDataFromExcelSheet();
 			FileInputStream ip = new FileInputStream(
 					System.getProperty("user.dir") + "/src/main/java/com/inferyx/framework/config/config.properties");
 			prop.load(ip);
@@ -51,10 +56,20 @@ public class TestBase {
 			e.printStackTrace();
 		}
 	}
+	
+	
+	public void setFileName() throws IOException {
+		dataFromExcelSheet = new ReadDataFromExcelSheet();
+		
+		newFile = (File) dataFromExcelSheet.getWorkbook();
 
-	public static void initialization() {
+	}
+
+	public static void initialization() throws IOException {
 		String browserName = prop.getProperty("browser");
-
+		dataFromExcelSheet = new ReadDataFromExcelSheet();
+		
+		
 		if (browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 			driver = new ChromeDriver();
@@ -78,5 +93,6 @@ public class TestBase {
 		driver.get(prop.getProperty("url"));
 
 	}
-
+	
 }
+

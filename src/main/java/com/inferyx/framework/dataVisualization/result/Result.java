@@ -26,9 +26,9 @@ public class Result extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(updateResult, "Result", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Result", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(updateResult, "Result", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Result", "FAIL", totalTime, newFile);
 		}
 	}
 }

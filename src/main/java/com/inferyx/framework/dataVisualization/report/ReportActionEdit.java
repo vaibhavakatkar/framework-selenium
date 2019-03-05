@@ -46,18 +46,18 @@ public class ReportActionEdit extends TestBase{
 					.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div[1]/form/div[1]/div[2]/div[2]/div/div/div[2]/div/input"));
 			String text=editVerify.getAttribute("value");
 			if(!text.equalsIgnoreCase("Edit Report")) {
-				dataFromExcelSheet.updateResult(4,5, "Report Action Edit", "FAIL", totalTime);
+				dataFromExcelSheet.updateResult(4,5, "Report Action Edit", "FAIL", totalTime, newFile);
 	
 			}else {
-				dataFromExcelSheet.updateResult(4,5, "Report Action Edit", "PASS", totalTime);
+				dataFromExcelSheet.updateResult(4,5, "Report Action Edit", "PASS", totalTime, newFile);
 
 			}
 			
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4,5, "Report Action Edit", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Report Action Edit", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4,5, "Report Action Edit", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4,5, "Report Action Edit", "FAIL", totalTime, newFile);
 		}
 	}
 	

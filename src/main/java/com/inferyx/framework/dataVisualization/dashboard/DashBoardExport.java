@@ -30,9 +30,9 @@ public class DashBoardExport extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4, 5, "Dashboard Action Export", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Dashboard Action Export", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4, 5, "Dashboard Action Export", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Dashboard Action Export", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(3000);
 	}

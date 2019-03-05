@@ -23,9 +23,9 @@ public class DataProfilingGroupActionViewIcon extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(7, 8, "Group Action View", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Group Action View", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(7, 8, "Group Action View", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Group Action View", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(2000);
 	}
@@ -39,9 +39,9 @@ public class DataProfilingGroupActionViewIcon extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(7, 8, "Group Graph", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Group Graph", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(7, 8, "Group Graph", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Group Graph", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(2000);
 	}
@@ -55,9 +55,9 @@ public class DataProfilingGroupActionViewIcon extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(7, 8, "Group Graph Refresh", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Group Graph Refresh", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(7, 8, "Group Graph Refresh", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Group Graph Refresh", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(2000);
 	}
@@ -72,9 +72,9 @@ public class DataProfilingGroupActionViewIcon extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(7, 8, "Group Home", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Group Home", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(7, 8, "Group Home", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Group Home", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(2000);
 	}
@@ -104,17 +104,17 @@ public class DataProfilingGroupActionViewIcon extends TestBase{
 					.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div/div[4]/div[2]/form/div/div[1]/div[2]/div/input"));
 			String text=groupNameVerify.getAttribute("value");
 			if(!text.equalsIgnoreCase("Edit Group")) {
-				dataFromExcelSheet.updateResult(7, 8, "Group Edit", "FAIL", totalTime);
+				dataFromExcelSheet.updateResult(7, 8, "Group Edit", "FAIL", totalTime, newFile);
 
 			}else {
-				dataFromExcelSheet.updateResult(7, 8, "Group Edit", "PASS", totalTime);
+				dataFromExcelSheet.updateResult(7, 8, "Group Edit", "PASS", totalTime, newFile);
 			}
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(7, 8, "Group Edit", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Group Edit", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(7, 8, "Group Edit", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Group Edit", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(2000);
 	}
@@ -128,9 +128,9 @@ public class DataProfilingGroupActionViewIcon extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(7, 8, "Group Close", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Group Close", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(7, 8, "Group Close", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(7, 8, "Group Close", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(2000);
 	}

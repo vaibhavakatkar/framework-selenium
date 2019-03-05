@@ -22,11 +22,11 @@ public class DataDiscovery extends TestBase {
 			dataDiscovery.click();
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(updateResult, "Data Discovery", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Data Discovery", "PASS", totalTime, newFile);
 			System.out.println(driver.getTitle() + dataDiscovery.getText());
 
 		} catch (InterruptedException e) {
-			dataFromExcelSheet.updateResult(updateResult, "Data Discovery", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(updateResult, "Data Discovery", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority = 2, description = "Data Discovery Card")
@@ -40,9 +40,9 @@ public class DataDiscovery extends TestBase {
 			dataDiscoveryCard.click();
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4, 5, "Data Discovery Card", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Data Discovery Card", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4, 5, "Data Discovery Card", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Data Discovery Card", "FAIL", totalTime, newFile);
 		}
 	}
 	
@@ -64,13 +64,13 @@ public class DataDiscovery extends TestBase {
 			String text=datapodCompverification.getText();		
 			System.out.println(text);
 			if(!text.contains("No Change")) {
-				dataFromExcelSheet.updateResult(4, 5, "Datapod Meta Compare", "FAIL", totalTime);
+				dataFromExcelSheet.updateResult(4, 5, "Datapod Meta Compare", "FAIL", totalTime, newFile);
 			}else {
-			dataFromExcelSheet.updateResult(4, 5, "Datapod Meta Compare", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Datapod Meta Compare", "PASS", totalTime, newFile);
 			}
 
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4, 5, "DatapodMetaComp", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "DatapodMetaComp", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority = 4, description = "Datapod Sample Record")
@@ -89,9 +89,9 @@ public class DataDiscovery extends TestBase {
 			Thread.sleep(3000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4, 5, "Datapod Sample Record", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Datapod Sample Record", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4, 5, "Datapod Sample Record", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Datapod Sample Record", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority = 5, description = "Histogram Grid")
@@ -108,15 +108,15 @@ public class DataDiscovery extends TestBase {
 					By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[7]/div/div/form/div[1]/div/div/div[2]"));
 			String text=histogramGridVerify.getText();
 			if(!text.contains("Bucket")) {
-				dataFromExcelSheet.updateResult(4, 5, "Histogram Grid", "FAIL", totalTime);
+				dataFromExcelSheet.updateResult(4, 5, "Histogram Grid", "FAIL", totalTime, newFile);
 			}else {
-			dataFromExcelSheet.updateResult(4, 5, "HistogramGrid", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "HistogramGrid", "PASS", totalTime, newFile);
 			}
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4, 5, "Histogram Grid", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Histogram Grid", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4, 5, "Histogram Grid", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Histogram Grid", "FAIL", totalTime, newFile);
 		}
 	}
 	
@@ -137,9 +137,9 @@ public class DataDiscovery extends TestBase {
 			histogramClose.click();
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4, 5, "Histogram Chart", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Histogram Chart", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4, 5, "Histogram Chart", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Histogram Chart", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority = 7, description = "Datapod Download")
@@ -157,9 +157,9 @@ public class DataDiscovery extends TestBase {
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4, 5, "Datapod Download", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Datapod Download", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4, 5, "Datapod Download", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Datapod Download", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority = 8, description = "Datapod Data Store")
@@ -177,9 +177,9 @@ public class DataDiscovery extends TestBase {
 			Thread.sleep(15000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4, 5, "Datapod Data Store", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Datapod Data Store", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4, 5, "Datapod Data Store", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Datapod Data Store", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority = 9, description = "Data Store Result")
@@ -198,11 +198,11 @@ public class DataDiscovery extends TestBase {
 			Thread.sleep(10000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4, 5, "Data Store Result", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Data Store Result", "PASS", totalTime, newFile);
 			Thread.sleep(3000);
 
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4, 5, "Data Store Result", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Data Store Result", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority = 10, description = "DataStore Result Download")
@@ -225,10 +225,10 @@ public class DataDiscovery extends TestBase {
 			Thread.sleep(5000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4, 5, "DataStore Result Download", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "DataStore Result Download", "PASS", totalTime, newFile);
 			Thread.sleep(5000);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4, 5, "DataStore Result Download", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "DataStore Result Download", "FAIL", totalTime, newFile);
 		}
 	}
 	
@@ -245,10 +245,10 @@ public class DataDiscovery extends TestBase {
 			Thread.sleep(6000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4, 5, "Datapod Graph", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Datapod Graph", "PASS", totalTime, newFile);
 			Thread.sleep(4000);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4, 5, "Datapod Graph", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Datapod Graph", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority = 12, description = "Datapod Graph Refresh")
@@ -264,10 +264,10 @@ public class DataDiscovery extends TestBase {
 			Thread.sleep(6000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4, 5, "Datapod Graph Refresh", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Datapod Graph Refresh", "PASS", totalTime, newFile);
 			Thread.sleep(4000);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4, 5, "Datapod Graph Refresh", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Datapod Graph Refresh", "FAIL", totalTime, newFile);
 		}
 	}
 	@Test(priority = 13, description = "Datapod Edit")
@@ -297,17 +297,17 @@ public class DataDiscovery extends TestBase {
 					By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[2]/div/form/div[7]/div/textarea"));
 			String text = datapodVerify.getAttribute("value");
 			if(!text.contains("Test Edit Description")) {
-				dataFromExcelSheet.updateResult(4, 5, "Datapod Edit", "FAIL", totalTime);
+				dataFromExcelSheet.updateResult(4, 5, "Datapod Edit", "FAIL", totalTime, newFile);
 			}else {
-				dataFromExcelSheet.updateResult(4, 5, "Datapod Edit", "PASS", totalTime);
+				dataFromExcelSheet.updateResult(4, 5, "Datapod Edit", "PASS", totalTime, newFile);
 				Thread.sleep(3000);
 			}		
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4, 5, "Datapod Edit", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Datapod Edit", "PASS", totalTime, newFile);
 			Thread.sleep(3000);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4, 5, "Datapod Edit", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Datapod Edit", "FAIL", totalTime, newFile);
 
 		}
 	}
@@ -323,10 +323,10 @@ public class DataDiscovery extends TestBase {
 			Thread.sleep(4000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4, 5, "Datapod Close", "PASS", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Datapod Close", "PASS", totalTime, newFile);
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4, 5, "Datapod Close", "FAIL", totalTime);
+			dataFromExcelSheet.updateResult(4, 5, "Datapod Close", "FAIL", totalTime, newFile);
 		}
 	}
 
