@@ -6,6 +6,7 @@
       <class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupExecute">
         <methods>
           <include name="groupRestart"/>
+          <include name="groupKilled"/>
         </methods>
       </class> <!-- com.inferyx.framework.dataProfiling.group.DataProfilingGroupExecute -->
     </classes>

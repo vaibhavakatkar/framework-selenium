@@ -86,7 +86,7 @@ public class ReadDataFromExcelSheet {
 
 		try {
 			FileInputStream file = new FileInputStream(
-					new File(System.getProperty("user.dir") + "/src/main/resources/test.xlsx"));
+					new File(System.getProperty("user.dir") + "/src/main/resources/Framework_Selenium_Testing_Report.xlsx"));
 
 			// Create Workbook instance holding reference to .xlsx file
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
@@ -105,7 +105,7 @@ public class ReadDataFromExcelSheet {
 					file.close();
 					System.out.println("result updated");
 					FileOutputStream outFile = new FileOutputStream(
-							new File(System.getProperty("user.dir") + "/src/main/resources/test.xlsx"));
+							new File(System.getProperty("user.dir") + "/src/main/resources/Framework_Selenium_Testing_Report.xlsx"));
 					workbook.write(outFile);
 					outFile.close();
 					break;
@@ -122,13 +122,13 @@ public class ReadDataFromExcelSheet {
 
 		try {
 			FileInputStream file = new FileInputStream(
-					new File(System.getProperty("user.dir") + "/src/main/resources/test.xlsx"));
+					new File(System.getProperty("user.dir") + "/src/main/resources/Framework_Selenium_Testing_Report.xlsx"));
 
 			// Create Workbook instance holding reference to .xlsx file
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 
 			// Get first/desired sheet from the workbook
-			XSSFSheet sheet = workbook.getSheet("Sheet1");
+			XSSFSheet sheet = workbook.getSheet("Framework_Selenium_Result");
 			// count number of active tows
 			int totalRow = sheet.getLastRowNum() + 1;
 			// count number of active columns in row
@@ -144,7 +144,7 @@ public class ReadDataFromExcelSheet {
 						file.close();
 						System.out.println("result updated");
 						FileOutputStream outFile = new FileOutputStream(
-								new File(System.getProperty("user.dir") + "/src/main/resources/test.xlsx"));
+								new File(System.getProperty("user.dir") + "/src/main/resources/Framework_Selenium_Testing_Report.xlsx"));
 						workbook.write(outFile);
 						outFile.close();
 						break;
@@ -296,7 +296,7 @@ public class ReadDataFromExcelSheet {
 
 		try {
 			FileInputStream file = new FileInputStream(
-					new File(System.getProperty("user.dir") + "/src/main/resources/test.xlsx"));
+					new File(System.getProperty("user.dir") + "/src/main/resources/Framework_Selenium_Testing_Report.xlsx"));
 			// Create Workbook instance holding reference to .xlsx file
 			// XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
@@ -316,7 +316,7 @@ public class ReadDataFromExcelSheet {
 					file.close();
 					System.out.println("result updated");
 					FileOutputStream outFile = new FileOutputStream(
-							new File(System.getProperty("user.dir") + "/src/main/resources/test.xlsx"));
+							new File(System.getProperty("user.dir") + "/src/main/resources/Framework_Selenium_Testing_Report.xlsx"));
 					workbook.write(outFile);
 					outFile.close();
 					break;
@@ -336,7 +336,7 @@ public class ReadDataFromExcelSheet {
 
 		try {
 			FileInputStream file = new FileInputStream(
-					new File(System.getProperty("user.dir") + "/src/main/resources/test.xlsx"));
+					new File(System.getProperty("user.dir") + "/src/main/resources/Framework_Selenium_Testing_Report.xlsx"));
 
 			// Create Workbook instance holding reference to .xlsx file
 			// XSSFWorkbook workbook = new XSSFWorkbook(file);
@@ -360,7 +360,7 @@ public class ReadDataFromExcelSheet {
 						file.close();
 						System.out.println("result updated");
 						FileOutputStream outFile = new FileOutputStream(
-								new File(System.getProperty("user.dir") + "/src/main/resources/test.xlsx"));
+								new File(System.getProperty("user.dir") + "/src/main/resources/Framework_Selenium_Testing_Report.xlsx"));
 						workbook.write(outFile);
 						outFile.close();
 						break;

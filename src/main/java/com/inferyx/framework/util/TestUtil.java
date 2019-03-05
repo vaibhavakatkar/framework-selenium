@@ -21,7 +21,7 @@ public class TestUtil extends TestBase {
 	public static long PAGE_LOAD_TIMEOUT = 20;
 	public static long IMPLICIT_WAIT = 20;
 
-	public static String TESTDATA_SHEET_PATH =System.getProperty("user.dir") +"/src/main/resources/test.xlsx";
+	public static String TESTDATA_SHEET_PATH =System.getProperty("user.dir") +"/src/main/resources/Framework_Selenium_Testing_Report.xlsx";
 
 	static Workbook book;
 	static Sheet sheet;
