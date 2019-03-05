@@ -4,16 +4,14 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebElement;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+
 import org.testng.annotations.Test;
 
 import com.inferyx.framework.selenium.TestBase;
 
 public class DataProfilingGroupExecute extends TestBase{
 	
-	@Test(priority =1, description = "Group Execute Action")
+	@Test(priority =18, description = "Group Execute Action")
 	public void groupExecute() throws IOException, InterruptedException {
 		Thread.sleep(3000);
 		//groupExecute
@@ -55,7 +53,7 @@ public class DataProfilingGroupExecute extends TestBase{
 		}
 	}
 	
-	@Test(priority =2, description = "Rule Group Killed")
+	@Test(priority =19, description = "Rule Group Killed")
 	public void groupKilled() throws IOException, InterruptedException {
 		Thread.sleep(3000);
 		//Rule Group Killed
@@ -82,7 +80,7 @@ public class DataProfilingGroupExecute extends TestBase{
 			dataFromExcelSheet.updateResult(7, 8, "Rule Group Killed", "FAIL", totalTime);
 		}
 	}
-	@Test(priority =3, description = "Rule Group Restart")
+	@Test(priority =20, description = "Rule Group Restart")
 	public void groupRestart() throws IOException, InterruptedException {
 		Thread.sleep(3000);
 		//Rule Group Restart
