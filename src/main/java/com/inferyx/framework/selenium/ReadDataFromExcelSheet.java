@@ -9,12 +9,12 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
 
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.xssf.usermodel.XSSFRow;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.apache.poi.ss.usermodel.Workbook;
 
 public class ReadDataFromExcelSheet {
 
@@ -23,11 +23,11 @@ public class ReadDataFromExcelSheet {
 			String dataSets[][] = null;
 			FileInputStream file = new FileInputStream(new File(excellocation));
 
-			// Create Workbook instance holding reference to .xlsx file
-			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			// Create Workbook instance holding reference to .xls file
+			HSSFWorkbook workbook = new HSSFWorkbook(file);
 
 			// Get first/desired sheet from the workbook
-			XSSFSheet sheet = workbook.getSheet(sheetName);
+			HSSFSheet sheet = workbook.getSheet(sheetName);
 			// count number of active rows
 			int totalRow = sheet.getLastRowNum();
 			// count number of active columns in row
@@ -89,21 +89,21 @@ public class ReadDataFromExcelSheet {
 	 * 
 	 * try { FileInputStream file = new FileInputStream( new
 	 * File(System.getProperty("user.dir") +
-	 * "/src/main/resources/Framework_Selenium_Testing_Report.xlsx"));
+	 * "/src/main/resources/Framework_Selenium_Testing_Report.xls"));
 	 * 
-	 * // Create Workbook instance holding reference to .xlsx file XSSFWorkbook
-	 * workbook = new XSSFWorkbook(file);
+	 * // Create Workbook instance holding reference to .xls file HSSFWorkbook
+	 * workbook = new HSSFWorkbook(file);
 	 * 
-	 * // Get first/desired sheet from the workbook XSSFSheet sheet =
+	 * // Get first/desired sheet from the workbook HSSFSheet sheet =
 	 * workbook.getSheet(sheetName); // count number of active tows int totalRow =
 	 * sheet.getLastRowNum() + 1; // count number of active columns in row for (int
-	 * i = 1; i < totalRow; i++) { XSSFRow r = sheet.getRow(i);
+	 * i = 1; i < totalRow; i++) { HSSFRow r = sheet.getRow(i);
 	 * 
 	 * String ce = r.getCell(1).getStringCellValue(); if (ce.contains(testCaseName))
 	 * { r.createCell(2).setCellValue(totalTime); file.close();
 	 * System.out.println("result updated"); FileOutputStream outFile = new
 	 * FileOutputStream( new File(System.getProperty("user.dir") +
-	 * "/src/main/resources/Framework_Selenium_Testing_Report.xlsx"));
+	 * "/src/main/resources/Framework_Selenium_Testing_Report.xls"));
 	 * workbook.write(outFile); outFile.close(); break; }
 	 * 
 	 * } } catch (Exception e) { e.printStackTrace(); } }
@@ -116,24 +116,26 @@ public class ReadDataFromExcelSheet {
 			
 			  FileInputStream file = new FileInputStream(newFile);
 			 
-			// Create Workbook instance holding reference to .xlsx file
-			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			// Create Workbook instance holding reference to .xls file
+			HSSFWorkbook workbook = new HSSFWorkbook(file);
 
 			// Get first/desired sheet from the workbook
-			XSSFSheet sheet = workbook.getSheet("Framework_Selenium_Result");
+			HSSFSheet sheet = workbook.getSheet("Framework_Selenium_Result");
+					    
 			// count number of active tows
 			int totalRow = sheet.getLastRowNum() + 1;
 			// count number of active columns in row
 			for (int i = 1; i < totalRow; i++) {
-				XSSFRow r = sheet.getRow(i);
+				HSSFRow r = sheet.getRow(i);
 				Cell cell = r.getCell(CheckCell);
+				
 				if (cell != null) {
 					String ce = r.getCell(CheckCell).getStringCellValue();
 
 					if (ce.contains(testCaseName)) {
 						r.createCell(putCell).setCellValue(testStatus);
 						r.createCell(putCell + 1).setCellValue(totaltime);
-						
+
 						System.out.println("result updated");
 						FileOutputStream outFile = new FileOutputStream(newFile);
 						workbook.write(outFile);
@@ -152,11 +154,11 @@ public class ReadDataFromExcelSheet {
 			String dataSets[][] = null;
 			FileInputStream file = new FileInputStream(new File(excellocation));
 
-			// Create Workbook instance holding reference to .xlsx file
-			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			// Create Workbook instance holding reference to .xls file
+			HSSFWorkbook workbook = new HSSFWorkbook(file);
 
 			// Get first/desired sheet from the workbook
-			XSSFSheet sheet = workbook.getSheet(sheetName);
+			HSSFSheet sheet = workbook.getSheet(sheetName);
 			// count number of active rows
 			int totalRow = sheet.getLastRowNum();
 			int totalColumn = 0;
@@ -287,19 +289,19 @@ public class ReadDataFromExcelSheet {
 
 		try {
 			FileInputStream file = new FileInputStream(newFile);
-			// Create Workbook instance holding reference to .xlsx file
-			// XSSFWorkbook workbook = new XSSFWorkbook(file);
-			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			// Create Workbook instance holding reference to .xls file
+			// HSSFWorkbook workbook = new HSSFWorkbook(file);
+			HSSFWorkbook workbook = new HSSFWorkbook(file);
 
 			// Get first/desired sheet from the workbook
-			XSSFSheet sheet = workbook.getSheet(sheetName);
-			// XSSFSheet sheet = workbook.getSheetAt(0);
+			HSSFSheet sheet = workbook.getSheet(sheetName);
+			// HSSFSheet sheet = workbook.getSheetAt(0);
 
 			// count number of active tows
 			int totalRow = sheet.getLastRowNum() + 1;
 			// count number of active columns in row
 			for (int i = 1; i < totalRow; i++) {
-				XSSFRow r = sheet.getRow(i);
+				HSSFRow r = sheet.getRow(i);
 				String ce = r.getCell(1).getStringCellValue();
 				if (ce.contains(param)) {
 					value = r.getCell(2).getStringCellValue();
@@ -327,19 +329,19 @@ public class ReadDataFromExcelSheet {
 			
 			  FileInputStream file = new FileInputStream(newFile);
 			 
-			// Create Workbook instance holding reference to .xlsx file
-			// XSSFWorkbook workbook = new XSSFWorkbook(file);
-			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			// Create Workbook instance holding reference to .xls file
+			// HSSFWorkbook workbook = new HSSFWorkbook(file);
+			HSSFWorkbook workbook = new HSSFWorkbook(file);
 
 			// Get first/desired sheet from the workbook
-			XSSFSheet sheet = workbook.getSheet(sheetName);
-			// XSSFSheet sheet = workbook.getSheetAt(0);
+			HSSFSheet sheet = workbook.getSheet(sheetName);
+			// HSSFSheet sheet = workbook.getSheetAt(0);
 
 			// count number of active tows
 			int totalRow = sheet.getLastRowNum() + 1;
 			// count number of active columns in row
 			for (int i = 1; i < totalRow; i++) {
-				XSSFRow r = sheet.getRow(i);
+				HSSFRow r = sheet.getRow(i);
 				Cell cell = r.getCell(1);
 				if (cell != null) {
 					String ce = r.getCell(1).getStringCellValue();
@@ -360,12 +362,22 @@ public class ReadDataFromExcelSheet {
 	}
 
 	public File getWorkbook() throws IOException {
+		Date date = new Date();
+		SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss aa");
 
-		File inputFile = new File(
-				"/home/rohini/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report.xlsx");
+		File newFile = new File("/home/rohini/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report"
+				+ dateFormat.format(date) + ".xls");
+		
+		
+    	copyFile("/home/rohini/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report.xls", "/home/rohini/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report"
+				+ dateFormat.format(date) + ".xls");
+		return newFile;
+			
+	/*	File inputFile = new File(
+				"/home/rohini/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report.xls");
 		FileInputStream newFile = new FileInputStream(inputFile);
 
-		XSSFWorkbook inputWorkbook = new XSSFWorkbook(newFile);
+		HSSFWorkbook inputWorkbook = new HSSFWorkbook(newFile);
 
 		int inputSheetCount = inputWorkbook.getNumberOfSheets();
 
@@ -375,30 +387,38 @@ public class ReadDataFromExcelSheet {
 		// Step #2 : Locate path and file of output excel.
 		File outputFile = new File(
 				"/home/rohini/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report"
-						+ dateFormat.format(date) + ".xlsx");
+						+ dateFormat.format(date) + ".xls");
 		FileOutputStream fos = new FileOutputStream(outputFile);
 
 		// Step #3 : Creating workbook for output excel file.
-		XSSFWorkbook outputWorkbook = new XSSFWorkbook();
+		HSSFWorkbook outputWorkbook = new HSSFWorkbook();
 
 		for (int i = 0; i < inputSheetCount; i++) {
-			XSSFSheet inputSheet = inputWorkbook.getSheetAt(i);
+			HSSFSheet inputSheet = inputWorkbook.getSheetAt(i);
 			String inputSheetName = inputWorkbook.getSheetName(i);
-			XSSFSheet outputSheet = outputWorkbook.createSheet(inputSheetName);
+			HSSFSheet outputSheet = outputWorkbook.createSheet(inputSheetName);
 
 			// Create and call method to copy the sheet and content in new workbook.
 			copySheet(inputSheet, outputSheet);
 		}
-		// Step #9 : Write all the sheets in the new Workbook(testData_Copy.xlsx) using
+		// Step #9 : Write all the sheets in the new Workbook(testData_Copy.xls) using
 		// FileOutStream Object
 		outputWorkbook.write(fos);
 		// Step #10 : At the end of the Program close the FileOutputStream object.
-		fos.close();
-		return outputFile;
+		fos.close();*/
+	//return outputFile;
 
 	}
 
-	public static void copySheet(XSSFSheet inputSheet, XSSFSheet outputSheet) {
+	public void copyFile(String sourcePath, String destinationPath) throws IOException {
+	    FileInputStream excelFile = new FileInputStream(new File(sourcePath));
+	    Workbook workbook = new HSSFWorkbook(excelFile);
+	    FileOutputStream outputStream = new FileOutputStream(destinationPath);
+	    workbook.write(outputStream);
+	     
+	}
+	
+	/*public static void copySheet(HSSFSheet inputSheet, HSSFSheet outputSheet) {
 		int rowCount = inputSheet.getLastRowNum();
 
 		int currentRowIndex = 0;
@@ -406,7 +426,7 @@ public class ReadDataFromExcelSheet {
 			Iterator rowIterator = inputSheet.iterator();
 			while (rowIterator.hasNext()) {
 				int currentCellIndex = 0;
-				Iterator cellIterator = ((XSSFRow) rowIterator.next()).cellIterator();
+				Iterator cellIterator = ((HSSFRow) rowIterator.next()).cellIterator();
 				while (cellIterator.hasNext()) {
 					// Step #5-8 : Creating new Row, Cell and Input value in the newly created
 					// sheet.
@@ -423,10 +443,10 @@ public class ReadDataFromExcelSheet {
 
 		}
 	}
-
+*/
 	/*
 	 * public static void main(String[] args) throws IOException { String
-	 * excellocation = "/home/rohini/selenium/testReport.xlsx"; String sheetName =
+	 * excellocation = "/home/rohini/selenium/testReport.xls"; String sheetName =
 	 * "Sheet1"; ReadDataFromExcelSheet excel = new ReadDataFromExcelSheet();
 	 * //Object[][] data = excel.getExcelDataBasedOnStartingPoint(excellocation,
 	 * sheetName, "login"); //System.out.println(data);

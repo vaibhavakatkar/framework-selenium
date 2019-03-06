@@ -6,12 +6,12 @@
 			<class name="com.inferyx.framework.selenium.LoginPage" />
 		</classes>
 	</test>
-	<!-- <test name="DATA DISCOVERY">
+	<test name="DATA DISCOVERY">
 
 		<classes>
 			<class name="com.inferyx.framework.dataDiscovery.DataDiscovery" />
 		</classes>
-	</test> -->
+	</test>
 	<!-- <test name="DATA Visualization">
 		<classes>
 			<class name="com.inferyx.framework.dataVisualization.DataVisualization" />
@@ -87,18 +87,18 @@
 	</classes>
 	</test>
 	 -->
-	<test name="Data Profiling">
+	<!-- <test name="Data Profiling">
 		<classes>
 		<class name="com.inferyx.framework.dataProfiling.DataProfiling" />	
 		</classes>
-	</test>
+	</test> -->
 	
-	<test name="Data Profiling Rule List Page">
+	<!-- <test name="Data Profiling Rule List Page">
 	<classes>
 			<class name="com.inferyx.framework.dataProfiling.rule.listPage.DataProfilingRule" />
-<!-- 			<class name="com.inferyx.framework.dataProfiling.rule.listPage.DataProfilingRuleListPage" />				
- -->	</classes>
-	</test>
+			<class name="com.inferyx.framework.dataProfiling.rule.listPage.DataProfilingRuleListPage" />				
+	</classes>
+	</test> -->
 	<!-- <test name="Data Profiling Rule">
 		<classes>
 		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleAdd" />
@@ -118,16 +118,16 @@
 		</classes>
 	</test> -->
 	
-	<test name="Data Profiling Group List Page">
+	<!-- <test name="Data Profiling Group List Page">
 		<classes>
 			<class name="com.inferyx.framework.dataProfiling.group.listPage.DataProfilingGroup"/>
-			<!-- <class name="com.inferyx.framework.dataProfiling.group.listPage.DataProfilingGroupListPage"/> -->
+			<class name="com.inferyx.framework.dataProfiling.group.listPage.DataProfilingGroupListPage"/>
 		</classes>
-	</test>
+	</test> -->
 	
-	<test name="Data Profiling Group">
+	<!-- <test name="Data Profiling Group">
 		<classes>
-		<!-- <class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupAdd" />
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupAdd" />
 		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupView" />
 		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupEdit" />
 		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupDelete" />
@@ -138,11 +138,11 @@
 		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupUnPublish" />
 		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupClone" />
 		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupExport" />	
-		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupActionViewIcon" />		 -->
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupActionViewIcon" />		
 		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupExecute" />
 		
 		</classes>
-	</test>
+	</test> -->
 	
 	<!-- <test name="Data Profiling Result">
 	<classes>

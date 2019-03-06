@@ -7,18 +7,18 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Iterator;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Row;
 public class CopyContentOneWorkbookToOther {
 
 	public static void main(String[] args) throws IOException 
 	{
 		// Step #1 : Locate path and file of input excel.
-		File inputFile=new File("/home/rohini/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report.xlsx");
+		File inputFile=new File("/home/rohini/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report.xls");
 		FileInputStream fis=new FileInputStream(inputFile);
-		XSSFWorkbook inputWorkbook=new XSSFWorkbook(fis);
+		HSSFWorkbook inputWorkbook=new HSSFWorkbook(fis);
 		
 		int inputSheetCount=inputWorkbook.getNumberOfSheets();
 		
@@ -26,30 +26,30 @@ public class CopyContentOneWorkbookToOther {
 		SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy-mm-dd hh:mm:ss aa");
 		
 		// Step #2 : Locate path and file of output excel.
-		File outputFile=new File("/home/rohini/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report"+dateFormat.format(date)+".xlsx");
+		File outputFile=new File("/home/rohini/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report"+dateFormat.format(date)+".xls");
 		FileOutputStream fos=new FileOutputStream(outputFile);
 		
 		// Step #3 : Creating workbook for output excel file.
-		XSSFWorkbook outputWorkbook=new XSSFWorkbook();
+		HSSFWorkbook outputWorkbook=new HSSFWorkbook();
 		
 		// Step #4 : Creating sheets with the same name as appearing in input file.
 		for(int i=0;i<inputSheetCount;i++) 
                 { 
-                  XSSFSheet inputSheet=inputWorkbook.getSheetAt(i); 
+                  HSSFSheet inputSheet=inputWorkbook.getSheetAt(i); 
                   String inputSheetName=inputWorkbook.getSheetName(i); 
-                  XSSFSheet outputSheet=outputWorkbook.createSheet(inputSheetName); 
+                  HSSFSheet outputSheet=outputWorkbook.createSheet(inputSheetName); 
 
                  // Create and call method to copy the sheet and content in new workbook. 
                  copySheet(inputSheet,outputSheet); 
                 }
 
-               // Step #9 : Write all the sheets in the new Workbook(testData_Copy.xlsx) using FileOutStream Object
+               // Step #9 : Write all the sheets in the new Workbook(testData_Copy.xls) using FileOutStream Object
                outputWorkbook.write(fos);
               // Step #10 : At the end of the Program close the FileOutputStream object. 
                fos.close(); 
           }
 
-           public static void copySheet(XSSFSheet inputSheet,XSSFSheet outputSheet) 
+           public static void copySheet(HSSFSheet inputSheet,HSSFSheet outputSheet) 
            { 
               int rowCount=inputSheet.getLastRowNum(); 
                
