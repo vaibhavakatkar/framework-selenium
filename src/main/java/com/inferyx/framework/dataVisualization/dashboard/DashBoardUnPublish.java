@@ -21,7 +21,7 @@ public class DashBoardUnPublish extends TestBase{
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority = 9, description = "Dashboard UnPublish Action")
+	@Test(priority = 10, description = "Dashboard UnPublish Action")
 	public void dashboardUnPublishAction() throws IOException, InterruptedException {
 		try {
 			WebElement actionUnPublish = driver.findElement(By.xpath("/html/body/ul/li[5]/a"));

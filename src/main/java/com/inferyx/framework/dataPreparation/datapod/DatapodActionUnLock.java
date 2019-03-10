@@ -28,7 +28,7 @@ public class DatapodActionUnLock extends TestBase {
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority =9, description = "Datapod UnLock Action")
+	@Test(priority =8, description = "Datapod UnLock Action")
 	public void datapodUnLockAction() throws IOException, InterruptedException {
 		try {
 			WebElement actionUnLock = driver.findElement(By.xpath("/html/body/ul/li[4]/a"));

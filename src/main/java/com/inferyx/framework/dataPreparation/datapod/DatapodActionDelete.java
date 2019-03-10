@@ -29,7 +29,7 @@ public class DatapodActionDelete extends TestBase {
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority = 6, description = "Datapod Delete Action")
+	@Test(priority = 5, description = "Datapod Delete Action")
 	public void datapodDeleteAction() throws IOException, InterruptedException {
 		try {
 			WebElement actionDelete = driver.findElement(By.xpath("/html/body/ul/li[3]/a"));

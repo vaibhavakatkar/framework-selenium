@@ -21,7 +21,7 @@ public class DashBoardClone extends TestBase{
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority = 12, description = "Dashboard Clone  Action")
+	@Test(priority = 11, description = "Dashboard Clone  Action")
 	public void vizpodEditAction() throws IOException, InterruptedException {
 		try {
 			WebElement actionClone = driver.findElement(By.xpath("/html/body/ul/li[6]/a"));

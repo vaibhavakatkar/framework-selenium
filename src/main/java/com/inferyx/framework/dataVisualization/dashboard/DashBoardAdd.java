@@ -26,7 +26,7 @@ DashboardPage dashboardPage;
 		return data;
 	}
 	
-	@Test(priority =14, dataProvider = "getDummyData", description = "dashboardAdd")
+	@Test(priority =13, dataProvider = "getDummyData", description = "dashboardAdd")
 	public void datshBoardAdd(String dashboardName, String desc, String dependsOn, String name) throws IOException, InterruptedException {
 		Thread.sleep(3000);
 		

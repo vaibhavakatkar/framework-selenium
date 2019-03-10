@@ -11,7 +11,7 @@ import com.inferyx.framework.selenium.TestBase;
 
 public class DashBoardSearch extends TestBase{
 	
-	@Test(priority =15, description = "Dashboard Search")
+	@Test(priority =14, description = "Dashboard Search")
 	public void datshBoardSearch() throws IOException, InterruptedException {
 		Thread.sleep(3000);
 		// Search Dashboard
@@ -20,7 +20,7 @@ public class DashBoardSearch extends TestBase{
 					.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[5]/div/div/div[1]/div[1]/div[1]/input"));
 			start = System.currentTimeMillis();
 			Thread.sleep(1000);
-			datshBoardSearch.sendKeys("test add");
+			datshBoardSearch.sendKeys("Customer Transaction");
 			
 			WebElement dashName=driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[5]/div/div/div[2]/div/div[2]/div/a/div[1]/span[1]"));
 			String text=dashName.getText();

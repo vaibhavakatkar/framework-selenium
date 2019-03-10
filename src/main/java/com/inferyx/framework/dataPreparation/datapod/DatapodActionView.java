@@ -29,7 +29,7 @@ public class DatapodActionView extends TestBase {
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority = 4, description = "Datapod View Action")
+	@Test(priority = 3, description = "Datapod View Action")
 	public void datapodViewAction() throws IOException, InterruptedException {
 		// Datapod Action
 		try {

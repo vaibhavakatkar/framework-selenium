@@ -18,11 +18,10 @@ public class VizpodActionLock extends TestBase{
 		Thread.sleep(3000);
 		start = System.currentTimeMillis();
 		driver.findElement(By.cssSelector("button.btn.green.btn-xs.btn-outline.dropdown-toggle")).click();
-
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority =13, description = "Vizpod Lock Action")
+	@Test(priority =5, description = "Vizpod Lock Action")
 	public void vizpodLockAction() throws IOException, InterruptedException {
 		try {
 			WebElement actionLock = driver.findElement(By.xpath("/html/body/ul/li[4]/a"));
@@ -43,8 +42,9 @@ public class VizpodActionLock extends TestBase{
 		Thread.sleep(3000);
 		start = System.currentTimeMillis();
 		WebElement actionLock = driver.findElement(By.xpath("//*[@id='lockedConfModal']/div/div/div[3]/button[2]"));
-
 		actionLock.click();
+		finish = System.currentTimeMillis();
+		totalTime = finish - start;
 	}
 	
 }

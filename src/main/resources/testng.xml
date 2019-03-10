@@ -6,19 +6,32 @@
 			<class name="com.inferyx.framework.selenium.LoginPage" />
 		</classes>
 	</test>
-	<test name="DATA DISCOVERY">
+	<!-- <test name="DATA DISCOVERY">
 
 		<classes>
 			<class name="com.inferyx.framework.dataDiscovery.DataDiscovery" />
 		</classes>
+	</test> -->
+<!-- 
+<test name="Logout">
+		<classes>
+			<class name="com.inferyx.framework.logout.Logout" />
+		</classes>
 	</test>
-	<!-- <test name="DATA Visualization">
+	
+	<test name="LOGIN one">
+		<classes>
+			<class name="com.inferyx.framework.selenium.LoginPage" />
+		</classes>
+	</test>
+ -->	
+ <!--  <test name="DATA Visualization">
 		<classes>
 			<class name="com.inferyx.framework.dataVisualization.DataVisualization" />
 		</classes>
-	</test>	
+	</test>	 -->
 	
-	<test name="DATA Visualization Dashboard">
+	<!-- <test name="DATA Visualization Dashboard">
 		<classes>
 			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoard" />
 			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardEdit" />
@@ -37,9 +50,10 @@
 			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardFilter" />						
 			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardIcon" />					
 	</classes>
-	</test>
+	</test> -->
 	
-	<test name="Vizpod List Page">
+	
+	<!-- <test name="Vizpod List Page">
 		<classes>
 			<class name="com.inferyx.framework.dataVisualization.vizpod.listPage.Vizpod" />
 	 		<class name="com.inferyx.framework.dataVisualization.vizpod.listPage.VizpodListPage" />	
@@ -59,10 +73,11 @@
  			<class name="com.inferyx.framework.dataVisualization.vizpod.VizpodActionUnPublish" />
  			<class name="com.inferyx.framework.dataVisualization.vizpod.VizpodActionClone" />
  			<class name="com.inferyx.framework.dataVisualization.vizpod.VizpodActionExport" />	
+	
 	</classes>
-	</test>
+	</test> -->
 
-	<test name="Report">
+	<!-- <test name="Report">
 			<classes>
 				<class name="com.inferyx.framework.dataVisualization.report.Report" /> 
 				<class name="com.inferyx.framework.dataVisualization.report.ReportAdd" /> 
@@ -85,21 +100,22 @@
 				<class name="com.inferyx.framework.dataVisualization.result.ResultView" /> 
 				
 	</classes>
-	</test>
-	 -->
-	<!-- <test name="Data Profiling">
+	</test> -->
+	
+<!--	
+	<test name="Data Profiling">
 		<classes>
 		<class name="com.inferyx.framework.dataProfiling.DataProfiling" />	
 		</classes>
-	</test> -->
+	</test>	
 	
-	<!-- <test name="Data Profiling Rule List Page">
+	<test name="Data Profiling Rule List Page">
 	<classes>
 			<class name="com.inferyx.framework.dataProfiling.rule.listPage.DataProfilingRule" />
 			<class name="com.inferyx.framework.dataProfiling.rule.listPage.DataProfilingRuleListPage" />				
 	</classes>
-	</test> -->
-	<!-- <test name="Data Profiling Rule">
+	</test>
+	<test name="Data Profiling Rule">
 		<classes>
 		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleAdd" />
 		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionView" />
@@ -116,16 +132,16 @@
 		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionExecute" />
 				
 		</classes>
-	</test> -->
+	</test>
 	
-	<!-- <test name="Data Profiling Group List Page">
+	<test name="Data Profiling Group List Page">
 		<classes>
 			<class name="com.inferyx.framework.dataProfiling.group.listPage.DataProfilingGroup"/>
 			<class name="com.inferyx.framework.dataProfiling.group.listPage.DataProfilingGroupListPage"/>
 		</classes>
-	</test> -->
+	</test>
 	
-	<!-- <test name="Data Profiling Group">
+	<test name="Data Profiling Group">
 		<classes>
 		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupAdd" />
 		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupView" />
@@ -142,26 +158,43 @@
 		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupExecute" />
 		
 		</classes>
-	</test> -->
+	</test>
 	
-	<!-- <test name="Data Profiling Result">
+	<test name="Data Profiling Result">
 	<classes>
 			<class name="com.inferyx.framework.dataProfiling.result.DataProfilingResult"/>
 			<class name="com.inferyx.framework.dataProfiling.result.DataProfilingRuleViewResult"/>
 			<class name="com.inferyx.framework.dataProfiling.result.DataProfilingGroupViewResult"/>
 		
 	</classes>
-	</test> -->
+	</test>
 		
-	<!-- <test name="Data Profiling Compare Result">
+	<test name="Data Profiling Compare Result">
 	<classes>
 			<class name="com.inferyx.framework.dataProfiling.compareResult.DataProfilingCompareResult"/>
 			<class name="com.inferyx.framework.dataProfiling.compareResult.DataProfilingSearchCriteria"/>
 			<class name="com.inferyx.framework.dataProfiling.compareResult.DataProfilingAttribute"/>
 	</classes>
-	</test>	 -->
+	</test>	
 	
-<!-- <test name="DATA Preaparation.Datapod">
+	 -->
+	
+	<test name="Data Preparation">
+	<classes>
+			<class name="com.inferyx.framework.dataPreparation.DataPreaparation"/>
+	</classes>
+	</test>
+	
+	<test name="Data Preparation Datapod List Page">
+		<classes>
+			<class name="com.inferyx.framework.dataPreparation.datapod.listpage.Datapod"/>
+			<class name="com.inferyx.framework.dataPreparation.datapod.listpage.DatapodListPage"/>
+		</classes>
+	</test>
+	
+	
+	<!-- 
+	<test name="DATA Preaparation.Datapod">
 		<classes>
 			<class name="com.inferyx.framework.dataPreparation.datapod.DataPreaparation" />
 	  		<class name="com.inferyx.framework.dataPreparation.datapod.DatapodAdd" /> 
@@ -179,8 +212,10 @@
 		</classes>
 
 	</test>
+ -->
 
- 	<test name="DATA Preaparation.DataSet">
+
+ 	<!-- <test name="DATA Preaparation.DataSet">
 		<classes>
 			<class name="com.inferyx.framework.dataPreparation.dataset.DataPreaparation" />
 			<class name="com.inferyx.framework.dataPreparation.dataset.DatasetActionView" />

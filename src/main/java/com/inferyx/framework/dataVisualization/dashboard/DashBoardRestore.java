@@ -20,8 +20,8 @@ public class DashBoardRestore extends TestBase{
 
 		Thread.sleep(1000);
 	}
-	@Test(priority =7, description = "dashboardRestore")
-	public void vizpodRestore() throws IOException, InterruptedException {
+	@Test(priority =6, description = "dashboardRestore")
+	public void dashboardRestore() throws IOException, InterruptedException {
 		Thread.sleep(3000);
 		//dashboardRestore
 		try {

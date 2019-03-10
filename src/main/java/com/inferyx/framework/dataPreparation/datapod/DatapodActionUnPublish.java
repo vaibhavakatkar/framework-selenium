@@ -28,7 +28,7 @@ public class DatapodActionUnPublish extends TestBase {
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority = 11, description = "Datapod UnPublish Action")
+	@Test(priority = 10, description = "Datapod UnPublish Action")
 	public void datapodUnPublishAction() throws IOException, InterruptedException {
 		try {
 			WebElement actionUnPublish = driver.findElement(By.xpath("/html/body/ul/li[5]/a"));

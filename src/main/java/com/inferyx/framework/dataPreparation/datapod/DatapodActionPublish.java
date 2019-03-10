@@ -29,7 +29,7 @@ public class DatapodActionPublish extends TestBase {
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority = 10, description = "Datapod Publish Action")
+	@Test(priority = 9, description = "Datapod Publish Action")
 	public void datapodPublishAction() throws IOException, InterruptedException {
 		try {
 			WebElement actionPublish = driver.findElement(By.xpath("/html/body/ul/li[5]/a"));

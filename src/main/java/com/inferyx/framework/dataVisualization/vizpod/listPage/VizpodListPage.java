@@ -29,9 +29,13 @@ public class VizpodListPage extends TestBase{
 			
 			WebElement searchBtn=driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div/div[3]/div/search-criteria/div/div[2]/form/div[3]/div/div[1]/div/div/input"));
 			searchBtn.click();
+			Thread.sleep(1000);
+
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
 			dataFromExcelSheet.updateResult(4,5, "Vizpod Search By Name", "PASS", totalTime, newFile);
+			Thread.sleep(1000);
+
 		} catch (NoSuchElementException e) {
 			dataFromExcelSheet.updateResult(4,5, "Vizpod Search By Name", "FAIL", totalTime, newFile);
 		}
@@ -43,16 +47,20 @@ public class VizpodListPage extends TestBase{
 		try {
 			WebElement vizpodSearchByUser = driver
 					.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div/div[3]/div/search-criteria/div/div[2]/form/div[2]/div/div[1]/div/div/span/span[1]/span"));
+			Thread.sleep(1000);
+
 			vizpodSearchByUser.click();
 			Thread.sleep(1000);
 			start = System.currentTimeMillis();
 
 			WebElement selectUser=driver.findElement(By.xpath("//ul[@class='select2-results__options']//li[contains(text(),'ypalrecha')]"));
 			selectUser.click();
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 			
 			WebElement searchBtn=driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div/div[3]/div/search-criteria/div/div[2]/form/div[3]/div/div[1]/div/div/input"));
 			searchBtn.click();
+			Thread.sleep(1000);
+
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
 			dataFromExcelSheet.updateResult(4,5, "Vizpod Search By User", "PASS", totalTime, newFile);

@@ -21,7 +21,7 @@ public class DashBoardLock extends TestBase{
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority =10, description = "Dashboard Lock Action")
+	@Test(priority =7, description = "Dashboard Lock Action")
 	public void dashboardLockAction() throws IOException, InterruptedException {
 		try {
 			WebElement actionLock = driver.findElement(By.xpath("/html/body/ul/li[4]/a"));

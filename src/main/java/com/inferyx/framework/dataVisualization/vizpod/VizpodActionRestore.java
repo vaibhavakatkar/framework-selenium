@@ -21,7 +21,7 @@ public class VizpodActionRestore extends TestBase{
 
 		Thread.sleep(1000);
 	}
-	@Test(priority =12, description = "vizpodRestore")
+	@Test(priority =4, description = "vizpodRestore")
 	public void vizpodRestore() throws IOException, InterruptedException {
 		Thread.sleep(3000);
 		//vizpodRestore

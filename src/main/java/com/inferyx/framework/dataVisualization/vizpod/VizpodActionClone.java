@@ -21,7 +21,7 @@ public class VizpodActionClone extends TestBase{
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority = 17, description = "Vizpod Clone  Action")
+	@Test(priority = 9, description = "Vizpod Clone  Action")
 	public void vizpodEditAction() throws IOException, InterruptedException {
 		try {
 			WebElement actionClone = driver.findElement(By.xpath("/html/body/ul/li[6]/a"));
@@ -43,6 +43,8 @@ public class VizpodActionClone extends TestBase{
 		start = System.currentTimeMillis();
 		WebElement actionClone = driver.findElement(By.xpath("//*[@id='clonemodal']/div/div/div[3]/button[2]"));
 		actionClone.click();
+		finish = System.currentTimeMillis();
+		totalTime = finish - start;
 		Thread.sleep(2000);
 	}
 }

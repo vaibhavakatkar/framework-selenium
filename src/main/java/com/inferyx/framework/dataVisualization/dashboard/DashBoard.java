@@ -15,7 +15,7 @@ import com.inferyx.framework.util.TestUtil;
 public class DashBoard extends TestBase {
 	
 	
-	@Test(priority =2, description = "Dashboard")
+	@Test(priority =1, description = "Dashboard")
 	public void Dashboard() throws IOException, InterruptedException {
 		Thread.sleep(1000);
 		// Dashboard
@@ -33,7 +33,7 @@ public class DashBoard extends TestBase {
 		}
 	}
 	
-	@Test(priority =3, description = "datshBoardTile")
+	@Test(priority =2, description = "datshBoardTile")
 	public void datshBoardTile() throws IOException, InterruptedException {
 		Thread.sleep(3000);
 		// datshBoardTile
@@ -50,7 +50,7 @@ public class DashBoard extends TestBase {
 			dataFromExcelSheet.updateResult(4,5, "Dashboard Tile", "FAIL", totalTime, newFile);
 		}
 	}
-	@Test(priority =4, description = "datshBoardList")
+	@Test(priority =3, description = "datshBoardList")
 	public void datshBoardList() throws IOException, InterruptedException {
 		Thread.sleep(3000);
 		// datshBoardTile

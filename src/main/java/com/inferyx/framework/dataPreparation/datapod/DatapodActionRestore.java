@@ -24,7 +24,7 @@ public class DatapodActionRestore extends TestBase {
 
 	}
 	
-	@Test(priority = 7, description = "Datapod Restore Action")
+	@Test(priority = 6, description = "Datapod Restore Action")
 	public void datapodRestoreAction() throws IOException, InterruptedException {
 		try {
 			WebElement actionRestore = driver.findElement(By.xpath("/html/body/ul/li[3]/a"));

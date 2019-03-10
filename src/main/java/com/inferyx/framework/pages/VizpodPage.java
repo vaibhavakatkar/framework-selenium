@@ -33,10 +33,8 @@ public class VizpodPage extends TestBase{
 		selectLimit.click();
 		Thread.sleep(1000);
 		
-		WebElement increaseLimit=driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[2]/div/form/div/div[10]/div/input"));
-		increaseLimit.click();
-		Thread.sleep(1000);
-		
+		getHtmlElementByXpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[2]/div/form/div/div[10]/div/input").click();
+		getHtmlElementByXpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[2]/div/form/div/div[10]/div/input").click();
 		
 		WebElement selectValue=driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[2]/div/form/div/div[9]/div/select/option[2]"));
 		selectValue.click();
@@ -56,25 +54,27 @@ public class VizpodPage extends TestBase{
 				"/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[2]/div/form/div/div[11]/div/select"));
 		Select dropDownValue = new Select(sortOrder);
 		dropDownValue.selectByVisibleText("ASC");
-			
-		//Element which needs to drag.    		
-    	WebElement keyAttributeFrom=driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[2]/div/form/div/div[17]/div/ul/li[1]/span"));	
-     
+		getHtmlElementByXpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[2]/div/form/div/div[13]/div[1]/tags-input/div/div").click();
+    	getHtmlElementByXpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[2]/div/form/div/div[13]/div[2]/span[1]").click();
+    	//getHtmlElementByXpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[2]/div/form/div/div[13]/div[1]/tags-input/div/auto-complete/div/ul/li[4]/ti-autocomplete-match/ng-include/span").click();
+    	
+    	getHtmlElementByXpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[2]/div/form/div/div[14]/label").click();
+    	//Element which needs to drag.    		
+    	WebElement keyAttributeFrom=driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[2]/div/form/div/div[18]/div/ul/li[1]/span"));	
+    	System.out.println("ss");
     	//Element on which need to drop into keys		
-    	WebElement keyAttributeTo=driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[2]/div/form/div/div[18]/div/div/div[1]/ul"));
-     
+    	WebElement keyAttributeTo=driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[2]/div/form/div/div[19]/div/div/div[1]/ul"));
+   
     	Actions act=new Actions(driver);					
-
 	 	//Dragged and dropped.		
 	     act.dragAndDrop(keyAttributeFrom, keyAttributeTo).build().perform();
-	     System.out.println("aa");
 	     
 	     
 	   	//Element which needs to drag.    		
-	   	WebElement valueAttributeFrom=driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[2]/div/form/div/div[17]/div/ul/li[5]/span"));	
+	   	WebElement valueAttributeFrom=driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[2]/div/form/div/div[18]/div/ul/li[9]/span"));	
 	     
 	   	//Element on which need to drop into values	
-	   	WebElement valueAttributeTo=driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[2]/div/form/div/div[18]/div/div/div[3]/ul"));
+	   	WebElement valueAttributeTo=driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[2]/div/form/div/div[19]/div/div/div[3]/ul"));
 	     
     	Actions acttion=new Actions(driver);					
     	//Dragged and dropped.		

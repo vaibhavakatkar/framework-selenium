@@ -16,12 +16,13 @@ public class VizpodActionExport extends TestBase{
 	public void setUp() throws InterruptedException {
 		Thread.sleep(3000);
 		start = System.currentTimeMillis();
+
 		driver.findElement(By.cssSelector("button.btn.green.btn-xs.btn-outline.dropdown-toggle")).click();
 
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority = 18, description = "Vizpod Export Action")
+	@Test(priority = 11, description = "Vizpod Export Action")
 	public void vizpodEditAction() throws IOException, InterruptedException {
 		try {
 			WebElement actionExport = driver.findElement(By.xpath("/html/body/ul/li[7]/a"));
@@ -41,8 +42,11 @@ public class VizpodActionExport extends TestBase{
 	public void AfterMethod() throws InterruptedException {
 		Thread.sleep(3000);
 		start = System.currentTimeMillis();
+
 		WebElement actionExport = driver.findElement(By.xpath("//*[@id='filemodal']/div/div/div[3]/button[2]"));
 		actionExport.click();
+		finish = System.currentTimeMillis();
+		totalTime = finish - start;
 	
 	}
 

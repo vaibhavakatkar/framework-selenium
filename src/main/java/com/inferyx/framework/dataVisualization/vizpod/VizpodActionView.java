@@ -22,7 +22,7 @@ public class VizpodActionView extends TestBase{
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority =9, description = "vizpodView")
+	@Test(priority =2, description = "vizpodView")
 	public void vizpodView() throws IOException, InterruptedException {
 		Thread.sleep(3000);
 		//vizpodView

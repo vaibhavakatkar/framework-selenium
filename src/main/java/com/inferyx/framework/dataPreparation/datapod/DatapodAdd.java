@@ -38,7 +38,7 @@ public class DatapodAdd extends TestBase {
 		return data;
 	}
 
-	@Test(priority = 3, dataProvider = "getDummyData", description = "Datapod  Add")
+	@Test(priority = 2, dataProvider = "getDummyData", description = "Datapod  Add")
 	public void validateAdd(String title, String firstName, String lastName, String company)
 			throws IOException, InterruptedException {
 		// Datapod

@@ -1,13 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [seq tests]">
-  <test thread-count="2" name="Data Profiling Group(failed)">
+  <test thread-count="2" name="Report(failed)">
     <classes>
-      <class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupExecute">
+      <class name="com.inferyx.framework.dataVisualization.report.ReportActionLock">
         <methods>
-          <include name="groupRestart"/>
+          <include name="AfterMethod"/>
+          <include name="reportLockAction"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.inferyx.framework.dataProfiling.group.DataProfilingGroupExecute -->
+      </class> <!-- com.inferyx.framework.dataVisualization.report.ReportActionLock -->
+      <class name="com.inferyx.framework.dataVisualization.report.ReportActionExport">
+        <methods>
+          <include name="AfterMethod"/>
+          <include name="vizpodEditAction"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataVisualization.report.ReportActionExport -->
+      <class name="com.inferyx.framework.dataVisualization.report.ReportActionView">
+        <methods>
+          <include name="reportView"/>
+          <include name="AfterMethod"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataVisualization.report.ReportActionView -->
+      <class name="com.inferyx.framework.dataVisualization.report.ReportActionEdit">
+        <methods>
+          <include name="AfterMethod"/>
+          <include name="setUp"/>
+          <include name="reportEdit"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataVisualization.report.ReportActionEdit -->
+      <class name="com.inferyx.framework.dataVisualization.report.ReportActionUnPublish">
+        <methods>
+          <include name="AfterMethod"/>
+          <include name="setUp"/>
+          <include name="reportUnPublishAction"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataVisualization.report.ReportActionUnPublish -->
+      <class name="com.inferyx.framework.dataVisualization.report.ReportActionClone">
+        <methods>
+          <include name="AfterMethod"/>
+          <include name="vizpodEditAction"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataVisualization.report.ReportActionClone -->
+      <class name="com.inferyx.framework.dataVisualization.report.ReportActionPublish">
+        <methods>
+          <include name="setUp"/>
+          <include name="reportPublishAction"/>
+          <include name="AfterMethod"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataVisualization.report.ReportActionPublish -->
+      <class name="com.inferyx.framework.dataVisualization.report.ReportActionRestore">
+        <methods>
+          <include name="setUp"/>
+          <include name="AfterMethod"/>
+          <include name="reportRestore"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataVisualization.report.ReportActionRestore -->
+      <class name="com.inferyx.framework.dataVisualization.report.ReportAdd">
+        <methods>
+          <include name="ReportAdd" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataVisualization.report.ReportAdd -->
+      <class name="com.inferyx.framework.dataVisualization.report.ReportActionDelete">
+        <methods>
+          <include name="setUp"/>
+          <include name="reportDelete"/>
+          <include name="AfterMethod"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataVisualization.report.ReportActionDelete -->
+      <class name="com.inferyx.framework.dataVisualization.report.ReportActionExecute">
+        <methods>
+          <include name="AfterMethod"/>
+          <include name="reportEditAction"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataVisualization.report.ReportActionExecute -->
+      <class name="com.inferyx.framework.dataVisualization.report.ReportActionUnlock">
+        <methods>
+          <include name="AfterMethod"/>
+          <include name="setUp"/>
+          <include name="reportUnLockAction"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataVisualization.report.ReportActionUnlock -->
     </classes>
-  </test> <!-- Data Profiling Group(failed) -->
+  </test> <!-- Report(failed) -->
+  <test thread-count="2" name="Report Result(failed)">
+    <classes>
+      <class name="com.inferyx.framework.dataVisualization.result.Result">
+        <methods>
+          <include name="Report"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataVisualization.result.Result -->
+      <class name="com.inferyx.framework.dataVisualization.result.ResultView">
+        <methods>
+          <include name="ResultGraph"/>
+          <include name="ResultClose"/>
+          <include name="Report"/>
+          <include name="ResultDownload"/>
+          <include name="ResultHome"/>
+          <include name="ResultRefresh"/>
+        </methods>
+      </class> <!-- com.inferyx.framework.dataVisualization.result.ResultView -->
+    </classes>
+  </test> <!-- Report Result(failed) -->
 </suite> <!-- Failed suite [seq tests] -->

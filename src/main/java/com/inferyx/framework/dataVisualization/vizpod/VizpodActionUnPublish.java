@@ -21,7 +21,7 @@ public class VizpodActionUnPublish extends TestBase{
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority = 16, description = "Vizpod UnPublish Action")
+	@Test(priority = 8, description = "Vizpod UnPublish Action")
 	public void vizpodUnPublishAction() throws IOException, InterruptedException {
 		try {
 			WebElement actionUnPublish = driver.findElement(By.xpath("/html/body/ul/li[5]/a"));
@@ -30,6 +30,7 @@ public class VizpodActionUnPublish extends TestBase{
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
+			
 			dataFromExcelSheet.updateResult(4, 5, "Vizpod Action UnPublish", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
 			dataFromExcelSheet.updateResult(4, 5, "Vizpod Action UnPublish", "FAIL", totalTime, newFile);
@@ -43,5 +44,7 @@ public class VizpodActionUnPublish extends TestBase{
 		start = System.currentTimeMillis();
 		WebElement actionUnPublish = driver.findElement(By.xpath("//*[@id='publishedConfModal']/div/div/div[3]/button[2]"));
 		actionUnPublish.click();
+		finish = System.currentTimeMillis();
+		totalTime = finish - start;
 	}
 }

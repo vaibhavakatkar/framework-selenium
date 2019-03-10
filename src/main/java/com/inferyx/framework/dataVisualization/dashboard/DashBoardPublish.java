@@ -21,7 +21,7 @@ public class DashBoardPublish extends TestBase{
 	Thread.sleep(1000);
 	}
 	
-	@Test(priority = 8, description = "Dashboard Publish Action")
+	@Test(priority = 9, description = "Dashboard Publish Action")
 	public void dashboardPublishAction() throws IOException, InterruptedException {
 		try {
 			WebElement actionPublish = driver.findElement(By.xpath("/html/body/ul/li[5]/a"));

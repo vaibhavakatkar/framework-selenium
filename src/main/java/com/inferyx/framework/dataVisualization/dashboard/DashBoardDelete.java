@@ -23,8 +23,8 @@ public class DashBoardDelete extends TestBase{
 
 		Thread.sleep(1000);
 	}
-	@Test(priority =6, description = "dashboardDelete")
-	public void vizpodDelete() throws IOException, InterruptedException {
+	@Test(priority =5, description = "dashboardDelete")
+	public void dashboardDelete() throws IOException, InterruptedException {
 		Thread.sleep(3000);
 		//dashboardDelete
 		try {

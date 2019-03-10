@@ -21,23 +21,13 @@ public class LoginPage extends TestBase {
 
 	}
 
-	public void setUp() throws IOException {
-		System.out.println("initilization");
-		initialization();
 
-	}
 
 	@Test(priority = 1, description = "openBrowser")
 	public void openBrowser() throws IOException {
 		start = System.currentTimeMillis();
+		initialization();
 
-		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-		driver = new ChromeDriver();
-		// Open application
-		finish = System.currentTimeMillis();
-		totalTime = finish - start; 
-		driver.get("http://localhost:8080/app/login.html");
-		driver.manage().window().maximize();
 		// Assert.assertEquals(driver.getTitle().toString(), "Inferyx | Login");
 		if (driver.getTitle().isEmpty() || !driver.getTitle().equalsIgnoreCase("Inferyx | Login")) {
 			dataFromExcelSheet.updateResult(1, 2, "Open Browser", "FAIL",totalTime, newFile);
@@ -72,10 +62,10 @@ public class LoginPage extends TestBase {
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start; 
-			dataFromExcelSheet.updateResult(1, 2, "Login_page", "PASS",totalTime, newFile);
+			dataFromExcelSheet.updateResult(1, 2, "Login Page", "PASS",totalTime, newFile);
 
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(1, 2, "Login_page", "FAIL",totalTime, newFile);
+			dataFromExcelSheet.updateResult(1, 2, "Login Page", "FAIL",totalTime, newFile);
 		}
 	}
 
@@ -104,11 +94,11 @@ public class LoginPage extends TestBase {
 			WebElement nextResponse = driver
 					.findElement(By.xpath("//*[@id=\"myModal\"]/div/div/div[2]/form/div/div[2]/div[3]/button"));
 			System.out.println(nextResponse.getText());
-			dataFromExcelSheet.updateResult(1, 2, "Application_page", "PASS",totalTime, newFile);
+			dataFromExcelSheet.updateResult(1, 2, "Application Page", "PASS",totalTime, newFile);
 			Thread.sleep(2000);
 
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(1, 2, "Application_page", "FAIL",totalTime, newFile);
+			dataFromExcelSheet.updateResult(1, 2, "Application Page", "FAIL",totalTime, newFile);
 		}
 
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

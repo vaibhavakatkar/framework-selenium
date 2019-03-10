@@ -29,18 +29,18 @@ public class DatapodActionUpload extends TestBase {
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority = 14, description = "Datapod Edit Action")
+	@Test(priority = 13, description = "Datapod Upload Action")
 	public void datapodEditAction() throws IOException, InterruptedException {
 		try {
-			WebElement actionEdit = driver.findElement(By.xpath("/html/body/ul/li[8]/a"));
-			actionEdit.click();
+			WebElement actionUpload = driver.findElement(By.xpath("/html/body/ul/li[8]/a"));
+			actionUpload.click();
 			start = System.currentTimeMillis();
 			Thread.sleep(1000);
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
-			dataFromExcelSheet.updateResult(4, 5, "Datapod Action Edit", "PASS", totalTime, newFile);
+			dataFromExcelSheet.updateResult(4, 5, "Datapod Action Upload", "PASS", totalTime, newFile);
 		} catch (NoSuchElementException e) {
-			dataFromExcelSheet.updateResult(4, 5, "Datapod Action Edit", "FAIL", totalTime, newFile);
+			dataFromExcelSheet.updateResult(4, 5, "Datapod Action Upload", "FAIL", totalTime, newFile);
 		}
 		Thread.sleep(3000);
 	}
@@ -49,10 +49,10 @@ public class DatapodActionUpload extends TestBase {
 	public void AfterMethod() throws InterruptedException {
 		Thread.sleep(3000);
 		start = System.currentTimeMillis();
-		WebElement datapodAcationbutton = driver
+		WebElement actionButton = driver
 				.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[1]/div[2]/a[9]/i"));
 		Thread.sleep(1000);
-		datapodAcationbutton.click();
+		actionButton.click();
 		Thread.sleep(1000);
 	}
 	

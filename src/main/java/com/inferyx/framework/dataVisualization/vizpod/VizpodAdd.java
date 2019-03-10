@@ -27,7 +27,7 @@ public class VizpodAdd extends TestBase{
 		return data;
 	}
 	
-	@Test(priority =8,dataProvider = "getDummyData", description = "vizpodAdd")
+	@Test(priority =1,dataProvider = "getDummyData", description = "vizpodAdd")
 	public void vizpodAdd(String name, String desc, String source, String datapodName) throws IOException, InterruptedException {
 		Thread.sleep(5000);
 		//vizpodAdd
@@ -38,7 +38,7 @@ public class VizpodAdd extends TestBase{
 		vizpodPage.createVizpod(name, desc, source, datapodName);
 			
 			try {
-				WebElement submitBtn= driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[2]/div/form/div/div[19]/div/input"));
+				WebElement submitBtn= driver.findElement(By.xpath("/html/body/screenshot/div[4]/div[2]/div/div[4]/div/div[4]/div/div/div[2]/div[2]/div/form/div/div[20]/div/input"));
 				submitBtn.click();
 				Thread.sleep(1000);
 				finish = System.currentTimeMillis();

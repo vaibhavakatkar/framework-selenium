@@ -22,7 +22,7 @@ public class DashBoardEdit extends TestBase{
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority =5, description = "Dashboard Edit")
+	@Test(priority =4, description = "Dashboard Edit")
 	public void datshBoardList() throws IOException, InterruptedException {
 		Thread.sleep(3000);
 		// Dashboard Edit

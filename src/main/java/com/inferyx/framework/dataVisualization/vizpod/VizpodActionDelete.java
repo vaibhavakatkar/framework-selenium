@@ -21,7 +21,7 @@ public class VizpodActionDelete extends TestBase{
 
 		Thread.sleep(1000);
 	}
-	@Test(priority =11, description = "vizpodDelete")
+	@Test(priority =3, description = "vizpodDelete")
 	public void vizpodDelete() throws IOException, InterruptedException {
 		Thread.sleep(3000);
 		//vizpodDelete

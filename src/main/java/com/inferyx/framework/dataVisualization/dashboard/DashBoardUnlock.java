@@ -21,8 +21,8 @@ public class DashBoardUnlock extends TestBase{
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority =11, description = "Dashboard UnLock Action")
-	public void vizpodUnLockAction() throws IOException, InterruptedException {
+	@Test(priority =8, description = "Dashboard UnLock Action")
+	public void dashboardUnLockAction() throws IOException, InterruptedException {
 		try {
 			WebElement actionUnLock = driver.findElement(By.xpath("/html/body/ul/li[4]/a"));
 			actionUnLock.click();

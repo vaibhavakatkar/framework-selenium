@@ -29,7 +29,7 @@ public class DatapodActionEdit extends TestBase {
 		Thread.sleep(1000);
 	}
 	
-	@Test(priority = 5, description = "Datapod Edit Action")
+	@Test(priority = 4, description = "Datapod Edit Action")
 	public void datapodEditAction() throws IOException, InterruptedException {
 		try {
 			WebElement actionEdit = driver.findElement(By.xpath("/html/body/ul/li[2]/a"));

@@ -21,7 +21,7 @@ public class VizpodActionPublish extends TestBase{
 	Thread.sleep(1000);
 	}
 	
-	@Test(priority = 15, description = "Vizpod Publish Action")
+	@Test(priority = 7, description = "Vizpod Publish Action")
 	public void vizpodPublishAction() throws IOException, InterruptedException {
 		try {
 			WebElement actionPublish = driver.findElement(By.xpath("/html/body/ul/li[5]/a"));
@@ -43,6 +43,8 @@ public class VizpodActionPublish extends TestBase{
 		start = System.currentTimeMillis();
 		WebElement actionPublish = driver.findElement(By.xpath("//*[@id='publishedConfModal']/div/div/div[3]/button[2]"));
 		actionPublish.click();
+		finish = System.currentTimeMillis();
+		totalTime = finish - start;
 
 	}
 }

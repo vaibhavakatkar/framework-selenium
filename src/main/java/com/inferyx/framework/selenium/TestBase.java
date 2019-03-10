@@ -4,7 +4,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -14,7 +15,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.inferyx.framework.util.TestUtil;
@@ -72,7 +76,21 @@ public class TestBase {
 		
 		if (browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			/*Map<String, Object> chromePrefs = new HashMap<>();
+
+			String downloadFilepath = "/home/rohini/Downloads";
+			chromePrefs.put("profile.default_content_settings.popups", 2);
+		    chromePrefs.put("download.default_directory", downloadFilepath);
+		    chromePrefs.put("profile.content_settings.exceptions.automatic_downloads.*.setting", 1 );
+		    chromePrefs.put("download.prompt_for_download", false);
+			options.setExperimentalOption("prefs", chromePrefs);
+			
+			options.addArguments("--disable-popup-blocking");*/
+			DesiredCapabilities cap = DesiredCapabilities.chrome();
+			cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+			cap.setCapability(ChromeOptions.CAPABILITY, options);
+			driver = new ChromeDriver(cap);		
 		} else if (browserName.equals("FF")) {
 			System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
 			driver = new FirefoxDriver();
@@ -84,7 +102,7 @@ public class TestBase {
 		eventListener = new WebEventListener();
 		e_driver.register(eventListener);
 		driver = e_driver;
-
+		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
