@@ -47,7 +47,7 @@ public class LoginPage extends TestBase {
 		 * driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		 */
 		// Enter Password
-		WebElement password = driver.findElement(By.xpath("/html/body/div[2]/form[1]/div[3]/input"));
+		WebElement password = driver.findElement(By.xpath("/html/body/div[2]/form/div[3]/div/input"));
 		password.sendKeys(dataFromExcelSheet.getResult(getResult,"PASSWORD", newFile));
 		// Submit button
 		start = System.currentTimeMillis();
