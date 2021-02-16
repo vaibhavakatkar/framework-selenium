@@ -178,7 +178,7 @@
 	</test>	
 	
 	 -->
-	
+	<!--
 	<test name="Data Preparation">
 	<classes>
 			<class name="com.inferyx.framework.dataPreparation.DataPreaparation"/>
@@ -191,7 +191,7 @@
 			<class name="com.inferyx.framework.dataPreparation.datapod.listpage.DatapodListPage"/>
 		</classes>
 	</test>
-	
+	-->
 	
 	<!-- 
 	<test name="DATA Preaparation.Datapod">
