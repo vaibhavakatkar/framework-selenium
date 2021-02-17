@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="seq tests" parallel="false" thread-count="2">
-	<test name="LOGIN">
+	<test name="Login">
 		<classes>
 			<class name="com.inferyx.framework.selenium.LoginPage" />
 		</classes>
 	</test>
+	
+	<test name="Logout">
+		<classes>
+			<class name="com.inferyx.framework.logout.Logout" />
+		</classes>
+	</test>
+	
+	
 	<!-- <test name="DATA DISCOVERY">
 
 		<classes>
@@ -13,11 +21,7 @@
 		</classes>
 	</test> -->
 <!-- 
-<test name="Logout">
-		<classes>
-			<class name="com.inferyx.framework.logout.Logout" />
-		</classes>
-	</test>
+
 	
 	<test name="LOGIN one">
 		<classes>
