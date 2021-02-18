@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import com.inferyx.framework.selenium.TestBase;
@@ -15,15 +16,30 @@ public class Logout extends TestBase{
 		// DataDiscovery
 		try {
 			//Ypalrecha
-			getHtmlElementByXpath("/html/body/screenshot/div[2]/div/div[2]/ul/li[3]/a/span").click();
-			Thread.sleep(1000);
+			
+			Actions actions = new Actions(driver);
 
-			getHtmlElementByXpath("/html/body/screenshot/div[2]/div/div[2]/ul/li[3]/a/span").click();
+			WebElement menuOption = driver.findElement(By.xpath("/html/body/screenshot/div[2]/div/div[2]/ul/li[4]/a"));
+			actions.moveToElement(menuOption).perform();
 			Thread.sleep(1000);
-			start = System.currentTimeMillis();
-			//logout
-			getHtmlElementByXpath("/html/body/screenshot/div[2]/div/div[2]/ul/li[3]/ul/li[7]/a").click();
+			WebElement selectMenuOption = driver.findElement(By.xpath("/html/body/screenshot/div[2]/div/div[2]/ul/li[4]/ul/li[8]/a"));
+			selectMenuOption.click();
 			Thread.sleep(1000);
+			
+			
+			/*
+			 * getHtmlElementByXpath(
+			 * "/html/body/screenshot/div[2]/div/div[2]/ul/li[3]/a/span").click();
+			 * Thread.sleep(1000);
+			 * 
+			 * getHtmlElementByXpath(
+			 * "/html/body/screenshot/div[2]/div/div[2]/ul/li[3]/a/span").click();
+			  //logout
+			 * getHtmlElementByXpath(
+			 * "/html/body/screenshot/div[2]/div/div[2]/ul/li[3]/ul/li[7]/a").click();
+			 * Thread.sleep(1000);
+			 */		
+			Thread.sleep(1000); start = System.currentTimeMillis();
 			finish = System.currentTimeMillis();
 			totalTime = finish - start;
 			dataFromExcelSheet.updateResult(updateResult, "Logout", "PASS", totalTime, newFile);
