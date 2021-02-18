@@ -16,7 +16,7 @@ public class CopyContentOneWorkbookToOther {
 	public static void main(String[] args) throws IOException 
 	{
 		// Step #1 : Locate path and file of input excel.
-		File inputFile=new File("/home/rohini/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report.xls");
+		File inputFile=new File("/home/ubuntu/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report.xls");
 		FileInputStream fis=new FileInputStream(inputFile);
 		HSSFWorkbook inputWorkbook=new HSSFWorkbook(fis);
 		
@@ -26,7 +26,7 @@ public class CopyContentOneWorkbookToOther {
 		SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy-mm-dd hh:mm:ss aa");
 		
 		// Step #2 : Locate path and file of output excel.
-		File outputFile=new File("/home/rohini/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report"+dateFormat.format(date)+".xls");
+		File outputFile=new File("/home/ubuntu/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report"+dateFormat.format(date)+".xls");
 		FileOutputStream fos=new FileOutputStream(outputFile);
 		
 		// Step #3 : Creating workbook for output excel file.

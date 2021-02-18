@@ -12,7 +12,7 @@ public class CopyXSSFWorkbook {
 
     public static void main(String[] args) throws IOException {
     	CopyXSSFWorkbook copyHSSFWorkbook=new CopyXSSFWorkbook();
-    	copyHSSFWorkbook.copyFile("/home/rohini/git/framework-selenium/src/main/resources/excel.xls", "/home/rohini/git/framework-selenium/src/main/resources/excel_1273.xls");
+    	copyHSSFWorkbook.copyFile("/home/ubuntu/git/framework-selenium/src/main/resources/excel.xls", "/home/ubuntu/git/framework-selenium/src/main/resources/excel_1273.xls");
 	}
 	public void copyFile(String sourcePath, String destinationPath) throws IOException {
 	    FileInputStream excelFile = new FileInputStream(new File(sourcePath));

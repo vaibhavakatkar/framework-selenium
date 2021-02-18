@@ -365,16 +365,16 @@ public class ReadDataFromExcelSheet {
 		Date date = new Date();
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss aa");
 
-		File newFile = new File("/home/rohini/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report"
+		File newFile = new File("/home/ubuntu/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report"
 				+ dateFormat.format(date) + ".xls");
 		
 		
-    	copyFile("/home/rohini/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report.xls", "/home/rohini/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report"
+    	copyFile("/home/ubuntu/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report.xls", "/home/ubuntu/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report"
 				+ dateFormat.format(date) + ".xls");
 		return newFile;
 			
 	/*	File inputFile = new File(
-				"/home/rohini/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report.xls");
+				"/home/ubuntu/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report.xls");
 		FileInputStream newFile = new FileInputStream(inputFile);
 
 		HSSFWorkbook inputWorkbook = new HSSFWorkbook(newFile);
@@ -386,7 +386,7 @@ public class ReadDataFromExcelSheet {
 
 		// Step #2 : Locate path and file of output excel.
 		File outputFile = new File(
-				"/home/rohini/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report"
+				"/home/ubuntu/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report"
 						+ dateFormat.format(date) + ".xls");
 		FileOutputStream fos = new FileOutputStream(outputFile);
 
@@ -446,7 +446,7 @@ public class ReadDataFromExcelSheet {
 */
 	/*
 	 * public static void main(String[] args) throws IOException { String
-	 * excellocation = "/home/rohini/selenium/testReport.xls"; String sheetName =
+	 * excellocation = "/home/ubuntu/selenium/testReport.xls"; String sheetName =
 	 * "Sheet1"; ReadDataFromExcelSheet excel = new ReadDataFromExcelSheet();
 	 * //Object[][] data = excel.getExcelDataBasedOnStartingPoint(excellocation,
 	 * sheetName, "login"); //System.out.println(data);

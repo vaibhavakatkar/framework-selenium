@@ -79,7 +79,7 @@ public class TestBase {
 			ChromeOptions options = new ChromeOptions();
 			/*Map<String, Object> chromePrefs = new HashMap<>();
 
-			String downloadFilepath = "/home/rohini/Downloads";
+			String downloadFilepath = "/home/ubuntu/Downloads";
 			chromePrefs.put("profile.default_content_settings.popups", 2);
 		    chromePrefs.put("download.default_directory", downloadFilepath);
 		    chromePrefs.put("profile.content_settings.exceptions.automatic_downloads.*.setting", 1 );

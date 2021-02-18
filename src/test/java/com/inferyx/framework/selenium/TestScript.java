@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class TestScript {
-	String excellocation = "/home/rohini/selenium/testReport.xlsx";
+	String excellocation = "/home/ubuntu/selenium/testReport.xlsx";
 	String sheetName = "Sheet1";
 	ReadDataFromExcelSheet dataFromExcelSheet = new ReadDataFromExcelSheet();
 	WebDriver driver;
