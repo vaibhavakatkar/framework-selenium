@@ -11,7 +11,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-	<!-- <build>
+	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -20,12 +20,12 @@
 				<configuration>
 					<testFailureIgnore>true</testFailureIgnore>
 					<suiteXmlFiles>
-						<suiteXmlFile>${testngTarget}</suiteXmlFile>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
 		</plugins>
-	</build> -->
+	</build>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<!-- <dependency> <groupId>junit</groupId> <artifactId>junit</artifactId> 
