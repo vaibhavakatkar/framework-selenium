@@ -89,7 +89,7 @@ public class TestBase {
 			options.addArguments("--disable-popup-blocking");*/
 			DesiredCapabilities cap = DesiredCapabilities.chrome();
 			cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-			cap.setCapability(ChromeOptions.CAPABILITY, options);
+			//cap.setCapability(ChromeOptions.CAPABILITY, options);
 			driver = new ChromeDriver(cap);		
 		} else if (browserName.equals("FF")) {
 			System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
@@ -113,4 +113,3 @@ public class TestBase {
 	}
 	
 }
-
