@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import org.testng.annotations.Test;
 
+@Test
 public class LoginPage extends TestBase {
 	// Login loginPage;
 	ReadDataFromExcelSheet dataFromExcelSheet = new ReadDataFromExcelSheet();
