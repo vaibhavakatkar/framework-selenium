@@ -365,11 +365,11 @@ public class ReadDataFromExcelSheet {
 		Date date = new Date();
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss aa");
 
-		File newFile = new File("/home/ubuntu/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report"
+		File newFile = new File(System.getProperty("user.dir")+"/src/main/resources/Framework_Selenium_Testing_Report"
 				+ dateFormat.format(date) + ".xls");
 		
 		
-    	copyFile("/home/ubuntu/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report.xls", "/home/ubuntu/git/framework-selenium/src/main/resources/Framework_Selenium_Testing_Report"
+    	copyFile(System.getProperty("user.dir")+"/src/main/resources/Framework_Selenium_Testing_Report.xls", System.getProperty("user.dir")+"/src/main/resources/Framework_Selenium_Testing_Report"
 				+ dateFormat.format(date) + ".xls");
 		return newFile;
 			
