@@ -5,8 +5,7 @@
     <classes>
       <class name="com.inferyx.framework.selenium.LoginPage">
         <methods>
-          <include name="login"/>
-          <include name="openBrowser"/>
+          <include name="appSelection"/>
         </methods>
       </class> <!-- com.inferyx.framework.selenium.LoginPage -->
     </classes>

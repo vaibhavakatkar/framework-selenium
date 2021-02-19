@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="seq tests" parallel="false" thread-count="2">
+	<test name="Login">
+		<classes>
+			<class name="com.inferyx.framework.selenium.LoginPage" />
+		</classes>
+	</test>
+	
+	<test name="Logout">
+		<classes>
+			<class name="com.inferyx.framework.logout.Logout" />
+		</classes>
+	</test>
+	
+	
+	<!-- <test name="DATA DISCOVERY">
+
+		<classes>
+			<class name="com.inferyx.framework.dataDiscovery.DataDiscovery" />
+		</classes>
+	</test> -->
+<!-- 
+
+	
+	<test name="LOGIN one">
+		<classes>
+			<class name="com.inferyx.framework.selenium.LoginPage" />
+		</classes>
+	</test>
+ -->	
+ <!--  <test name="DATA Visualization">
+		<classes>
+			<class name="com.inferyx.framework.dataVisualization.DataVisualization" />
+		</classes>
+	</test>	 -->
+	
+	<!-- <test name="DATA Visualization Dashboard">
+		<classes>
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoard" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardEdit" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardDelete" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardRestore" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardLock" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardUnlock" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardPublish" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardUnPublish" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardClone" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardExport" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardAdd" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardSearch" />	
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardView" />
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardMenuIcon" />				
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardFilter" />						
+			<class name="com.inferyx.framework.dataVisualization.dashboard.DashBoardIcon" />					
+	</classes>
+	</test> -->
+	
+	
+	<!-- <test name="Vizpod List Page">
+		<classes>
+			<class name="com.inferyx.framework.dataVisualization.vizpod.listPage.Vizpod" />
+	 		<class name="com.inferyx.framework.dataVisualization.vizpod.listPage.VizpodListPage" />	
+		</classes>
+	</test>
+	
+	<test name="Vizpod Action">
+	<classes>
+ 			<class name="com.inferyx.framework.dataVisualization.vizpod.VizpodAdd" />
+ 			<class name="com.inferyx.framework.dataVisualization.vizpod.VizpodActionView" />
+ 			<class name="com.inferyx.framework.dataVisualization.vizpod.VizpodActionEdit" />
+ 			<class name="com.inferyx.framework.dataVisualization.vizpod.VizpodActionDelete" />
+ 		 	<class name="com.inferyx.framework.dataVisualization.vizpod.VizpodActionRestore" />
+ 			 <class name="com.inferyx.framework.dataVisualization.vizpod.VizpodActionLock" />
+ 			<class name="com.inferyx.framework.dataVisualization.vizpod.VizpodActionUnlock" />
+ 			<class name="com.inferyx.framework.dataVisualization.vizpod.VizpodActionPublish" />
+ 			<class name="com.inferyx.framework.dataVisualization.vizpod.VizpodActionUnPublish" />
+ 			<class name="com.inferyx.framework.dataVisualization.vizpod.VizpodActionClone" />
+ 			<class name="com.inferyx.framework.dataVisualization.vizpod.VizpodActionExport" />	
+	
+	</classes>
+	</test> -->
+
+	<!-- <test name="Report">
+			<classes>
+				<class name="com.inferyx.framework.dataVisualization.report.Report" /> 
+				<class name="com.inferyx.framework.dataVisualization.report.ReportAdd" /> 
+				<class name="com.inferyx.framework.dataVisualization.report.ReportActionView" /> 
+				<class name="com.inferyx.framework.dataVisualization.report.ReportActionEdit" /> 
+				<class name="com.inferyx.framework.dataVisualization.report.ReportActionDelete" /> 				
+				<class name="com.inferyx.framework.dataVisualization.report.ReportActionRestore" /> 
+				<class name="com.inferyx.framework.dataVisualization.report.ReportActionLock" /> 
+				<class name="com.inferyx.framework.dataVisualization.report.ReportActionUnlock" /> 
+				<class name="com.inferyx.framework.dataVisualization.report.ReportActionPublish" /> 
+				<class name="com.inferyx.framework.dataVisualization.report.ReportActionUnPublish" /> 
+				<class name="com.inferyx.framework.dataVisualization.report.ReportActionExecute" /> 
+				<class name="com.inferyx.framework.dataVisualization.report.ReportActionClone" /> 
+				<class name="com.inferyx.framework.dataVisualization.report.ReportActionExport" /> 
+			</classes>	
+	</test>
+	<test name="Report Result">
+	<classes>
+				<class name="com.inferyx.framework.dataVisualization.result.Result" /> 
+				<class name="com.inferyx.framework.dataVisualization.result.ResultView" /> 
+				
+	</classes>
+	</test> -->
+	
+<!--	
+	<test name="Data Profiling">
+		<classes>
+		<class name="com.inferyx.framework.dataProfiling.DataProfiling" />	
+		</classes>
+	</test>	
+	
+	<test name="Data Profiling Rule List Page">
+	<classes>
+			<class name="com.inferyx.framework.dataProfiling.rule.listPage.DataProfilingRule" />
+			<class name="com.inferyx.framework.dataProfiling.rule.listPage.DataProfilingRuleListPage" />				
+	</classes>
+	</test>
+	<test name="Data Profiling Rule">
+		<classes>
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleAdd" />
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionView" />
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionEdit" />
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionDelete" />
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionRestore" />
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionLock" />
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionUnlock" />
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionPublish" />
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionUnPublish" />
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionClone" />
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionExport" />	
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionViewIcon" />
+		<class name="com.inferyx.framework.dataProfiling.rule.DataProfilingRuleActionExecute" />
+				
+		</classes>
+	</test>
+	
+	<test name="Data Profiling Group List Page">
+		<classes>
+			<class name="com.inferyx.framework.dataProfiling.group.listPage.DataProfilingGroup"/>
+			<class name="com.inferyx.framework.dataProfiling.group.listPage.DataProfilingGroupListPage"/>
+		</classes>
+	</test>
+	
+	<test name="Data Profiling Group">
+		<classes>
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupAdd" />
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupView" />
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupEdit" />
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupDelete" />
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupRestore" />
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupLock" />
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupUnlock" />
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupPublish" />
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupUnPublish" />
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupClone" />
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupExport" />	
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupActionViewIcon" />		
+		<class name="com.inferyx.framework.dataProfiling.group.DataProfilingGroupExecute" />
+		
+		</classes>
+	</test>
+	
+	<test name="Data Profiling Result">
+	<classes>
+			<class name="com.inferyx.framework.dataProfiling.result.DataProfilingResult"/>
+			<class name="com.inferyx.framework.dataProfiling.result.DataProfilingRuleViewResult"/>
+			<class name="com.inferyx.framework.dataProfiling.result.DataProfilingGroupViewResult"/>
+		
+	</classes>
+	</test>
+		
+	<test name="Data Profiling Compare Result">
+	<classes>
+			<class name="com.inferyx.framework.dataProfiling.compareResult.DataProfilingCompareResult"/>
+			<class name="com.inferyx.framework.dataProfiling.compareResult.DataProfilingSearchCriteria"/>
+			<class name="com.inferyx.framework.dataProfiling.compareResult.DataProfilingAttribute"/>
+	</classes>
+	</test>	
+	
+	 -->
+	<!--
+	<test name="Data Preparation">
+	<classes>
+			<class name="com.inferyx.framework.dataPreparation.DataPreaparation"/>
+	</classes>
+	</test>
+	
+	<test name="Data Preparation Datapod List Page">
+		<classes>
+			<class name="com.inferyx.framework.dataPreparation.datapod.listpage.Datapod"/>
+			<class name="com.inferyx.framework.dataPreparation.datapod.listpage.DatapodListPage"/>
+		</classes>
+	</test>
+	-->
+	
+	<!-- 
+	<test name="DATA Preaparation.Datapod">
+		<classes>
+			<class name="com.inferyx.framework.dataPreparation.datapod.DataPreaparation" />
+	  		<class name="com.inferyx.framework.dataPreparation.datapod.DatapodAdd" /> 
+			<class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionView" />
+			<class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionEdit" />
+			<class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionDelete" />
+			<class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionRestore" />
+			<class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionLock" />
+			<class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionUnLock" />
+		    <class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionPublish" />
+			<class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionUnPublish" />
+			<class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionClone" />
+			<class name="com.inferyx.framework.dataPreparation.datapod.DatapodActionExport" />
+			<class name="com.inferyx.framework.dataPreparation.DatapodActionUpload" />
+		</classes>
+
+	</test>
+ -->
+
+
+ 	<!-- <test name="DATA Preaparation.DataSet">
+		<classes>
+			<class name="com.inferyx.framework.dataPreparation.dataset.DataPreaparation" />
+			<class name="com.inferyx.framework.dataPreparation.dataset.DatasetActionView" />
+			<class name="com.inferyx.framework.dataPreparation.dataset.DatasetActionEdit" />
+			<class name="com.inferyx.framework.dataPreparation.dataset.DatasetActionDelete" />
+			<class name="com.inferyx.framework.dataPreparation.dataset.DatasetActionRestore" />
+			<class name="com.inferyx.framework.dataPreparation.dataset.DatasetActionLock" />
+			<class name="com.inferyx.framework.dataPreparation.dataset.DatasetActionUnLock" />
+		    <class name="com.inferyx.framework.dataPreparation.dataset.DatasetActionPublish" />
+			<class name="com.inferyx.framework.dataPreparation.dataset.DatasetActionUnPublish" />
+			<class name="com.inferyx.framework.dataPreparation.dataset.DatasetActionClone" />
+			<class name="com.inferyx.framework.dataPreparation.dataset.DatasetActionExport" />
+			<class name="com.inferyx.framework.dataPreparation.DatasetActionUpload" />
+		</classes>
+
+	</test> -->
+</suite>

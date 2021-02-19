@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Logout</title>
+<title>TestNG:  Login</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Logout</h2><table border='1' align="center">
+<h2 align='center'>Login</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 19 15:08:23 IST 2021</td>
+<td>Started on:</td><td>Fri Feb 19 15:08:07 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5465 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15420 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,8 +75,9 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.inferyx.framework.logout.Logout.dataDiscoveryList()'><b>dataDiscoveryList</b><br>Test class: com.inferyx.framework.logout.Logout<br>Test method: Logout</td>
+<td title='com.inferyx.framework.selenium.LoginPage.appSelection()'><b>appSelection</b><br>Test class: com.inferyx.framework.selenium.LoginPage<br>Test method: appSelection</td>
 <td><div><pre>java.lang.StackOverflowError
+	at java.base/java.nio.CharBuffer.&lt;init&gt;(CharBuffer.java:286)
 	at java.base/java.nio.HeapCharBuffer.&lt;init&gt;(HeapCharBuffer.java:78)
 	at java.base/java.nio.CharBuffer.wrap(CharBuffer.java:406)
 	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:289)
@@ -794,9 +795,9 @@ function toggleAllBoxes() {
 	at com.inferyx.framework.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:62)
 	at com.inferyx.framework.util.WebEventListener.onException(WebEventListener.java:68)
 	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:81)
-	at com.sun.proxy.$Proxy6.onException(Unknown Source)
-... Removed 306 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace635001030", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace635001030'><pre>java.lang.StackOverflowError
+... Removed 306 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1919576980", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1919576980'><pre>java.lang.StackOverflowError
+	at java.base/java.nio.CharBuffer.&lt;init&gt;(CharBuffer.java:286)
 	at java.base/java.nio.HeapCharBuffer.&lt;init&gt;(HeapCharBuffer.java:78)
 	at java.base/java.nio.CharBuffer.wrap(CharBuffer.java:406)
 	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:289)
@@ -1820,10 +1821,27 @@ function toggleAllBoxes() {
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:81)
-	at com.sun.proxy.$Proxy6.onException(Unknown Source)
 </pre></div></td>
+<td>7</td>
+<td>com.inferyx.framework.selenium.LoginPage@421e361</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.inferyx.framework.selenium.LoginPage.login()'><b>login</b><br>Test class: com.inferyx.framework.selenium.LoginPage<br>Test method: login check</td>
+<td></td>
+<td>2</td>
+<td>com.inferyx.framework.selenium.LoginPage@421e361</td></tr>
+<tr>
+<td title='com.inferyx.framework.selenium.LoginPage.openBrowser()'><b>openBrowser</b><br>Test class: com.inferyx.framework.selenium.LoginPage<br>Test method: openBrowser</td>
+<td></td>
 <td>5</td>
-<td>com.inferyx.framework.logout.Logout@4032d386</td></tr>
+<td>com.inferyx.framework.selenium.LoginPage@421e361</td></tr>
 </table><p>
 </body>
 </html>
