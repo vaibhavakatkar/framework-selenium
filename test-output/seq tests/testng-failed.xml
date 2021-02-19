@@ -1,43 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [seq tests]">
-  <test thread-count="2" name="LOGIN(failed)">
+<suite thread-count="2" name="Failed suite [seq tests]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" name="Login(failed)">
     <classes>
       <class name="com.inferyx.framework.selenium.LoginPage">
         <methods>
-          <include name="appSelection"/>
           <include name="login"/>
           <include name="openBrowser"/>
         </methods>
       </class> <!-- com.inferyx.framework.selenium.LoginPage -->
     </classes>
-  </test> <!-- LOGIN(failed) -->
-  <test thread-count="2" name="Data Preparation(failed)">
+  </test> <!-- Login(failed) -->
+  <test thread-count="2" name="Logout(failed)">
     <classes>
-      <class name="com.inferyx.framework.dataPreparation.DataPreaparation">
+      <class name="com.inferyx.framework.logout.Logout">
         <methods>
-          <include name="dataPreparationList"/>
+          <include name="dataDiscoveryList"/>
         </methods>
-      </class> <!-- com.inferyx.framework.dataPreparation.DataPreaparation -->
+      </class> <!-- com.inferyx.framework.logout.Logout -->
     </classes>
-  </test> <!-- Data Preparation(failed) -->
-  <test thread-count="2" name="Data Preparation Datapod List Page(failed)">
-    <classes>
-      <class name="com.inferyx.framework.dataPreparation.datapod.listpage.Datapod">
-        <methods>
-          <include name="dataDatapod"/>
-        </methods>
-      </class> <!-- com.inferyx.framework.dataPreparation.datapod.listpage.Datapod -->
-      <class name="com.inferyx.framework.dataPreparation.datapod.listpage.DatapodListPage">
-        <methods>
-          <include name="DatapodSearchByName"/>
-          <include name="VizpodSearchCriteriaRefresh"/>
-          <include name="datapodSearchStatus"/>
-          <include name="RuleSearchByUser"/>
-          <include name="RuleStartAndEndDate"/>
-          <include name="datapodSearchName"/>
-        </methods>
-      </class> <!-- com.inferyx.framework.dataPreparation.datapod.listpage.DatapodListPage -->
-    </classes>
-  </test> <!-- Data Preparation Datapod List Page(failed) -->
+  </test> <!-- Logout(failed) -->
 </suite> <!-- Failed suite [seq tests] -->
