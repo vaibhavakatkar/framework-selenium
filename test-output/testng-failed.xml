@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" name="Failed suite [seq tests]" guice-stage="DEVELOPMENT">
-  <test thread-count="2" name="Login(failed)">
-    <classes>
-      <class name="com.inferyx.framework.selenium.LoginPage">
-        <methods>
-          <include name="appSelection"/>
-        </methods>
-      </class> <!-- com.inferyx.framework.selenium.LoginPage -->
-    </classes>
-  </test> <!-- Login(failed) -->
-  <test thread-count="2" name="Logout(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="com.inferyx.framework.logout.Logout">
         <methods>
@@ -18,5 +9,5 @@
         </methods>
       </class> <!-- com.inferyx.framework.logout.Logout -->
     </classes>
-  </test> <!-- Logout(failed) -->
-</suite> <!-- Failed suite [seq tests] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
